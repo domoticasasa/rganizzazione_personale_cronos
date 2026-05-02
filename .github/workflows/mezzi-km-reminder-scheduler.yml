@@ -1,6 +1,9 @@
 name: Mezzi KM Reminder Scheduler
 
 on:
+  push:
+    branches:
+      - master
   schedule:
     # Esegue ogni 10 minuti; il job interno filtra gli slot locali Europe/Rome.
     - cron: "*/10 * * * *"
