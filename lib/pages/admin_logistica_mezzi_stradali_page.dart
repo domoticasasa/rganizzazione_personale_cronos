@@ -98,27 +98,23 @@ class _AdminLogisticaMezziStradaliPageState
     try {
       await _loadCurrentUserIdentity();
       await _loadRows();
-      if (widget.dipendenteMode) {
-        if (widget.promptMonthlyKmOnOpen) {
-          await _promptMonthlyKmIfNeeded();
-        }
+      if (widget.promptMonthlyKmOnOpen) {
+        await _promptMonthlyKmIfNeeded();
       }
     } finally {
       if (mounted) setState(() => _loading = false);
     }
   }
 
-  String _normalizeName(String raw) {
-    var s = raw.toLowerCase().trim();
-    s = s.replaceAll(RegExp(r'->.*$'), ' ');
-    s = s.replaceAll(RegExp(r'\(.*?\)'), ' ');
-    s = s.replaceAll(RegExp(r'[^a-z0-9 ]'), ' ');
-    s = s.replaceAll(RegExp(r'\s+'), ' ').trim();
-    return s;
+  String _normalizeName(String raw) => MezziKmService.normalizePersonName(raw);
+
+  bool _showKmColumn(BuildContext context) {
+    if (widget.dipendenteMode) return true;
+    if (_loading) return false;
+    return _rows.any(_isRowAssignedToMe);
   }
 
   Future<void> _loadCurrentUserIdentity() async {
-    if (!widget.dipendenteMode) return;
     final authId = _supa.auth.currentUser?.id;
     if ((authId ?? '').trim().isEmpty) return;
     try {
@@ -138,33 +134,12 @@ class _AdminLogisticaMezziStradaliPageState
     }
   }
 
-  bool _isAssignedToMe(String rawAssignatario) {
-    if (_myNameNorm.isEmpty) return false;
-    final assign = _normalizeName(rawAssignatario);
-    if (assign.isEmpty) return false;
-    if (assign.contains(_myNameNorm) || _myNameNorm.contains(assign)) {
-      return true;
-    }
-
-    final myTokens = _myNameNorm
-        .split(' ')
-        .where((t) => t.length >= 3)
-        .toList(growable: false);
-    if (myTokens.isEmpty) return false;
-    var matches = 0;
-    for (final t in myTokens) {
-      if (assign.contains(t)) matches++;
-    }
-    return matches >= 2 || (myTokens.length == 1 && matches == 1);
-  }
-
   bool _isRowAssignedToMe(Map<String, dynamic> row) {
-    final assignedUuid =
-        (row['assegnatario_user_uuid'] ?? '').toString().trim();
-    if (_myUserIdUuid.isNotEmpty && assignedUuid.isNotEmpty) {
-      return assignedUuid == _myUserIdUuid;
-    }
-    return _isAssignedToMe((row['assegnatario_attuale'] ?? '').toString());
+    return MezziKmService.isRowAssignedToCurrentUser(
+      row,
+      _myUserIdUuid,
+      _myNameNorm,
+    );
   }
 
   Future<void> _loadRows({bool showLoader = true}) async {
@@ -231,13 +206,10 @@ class _AdminLogisticaMezziStradaliPageState
       if (showLoader) _loading = false;
     });
     maybeConsumeDeadlineFlashUuid(onHighlight: _onDeadlineHighlightUuid);
-    if (widget.dipendenteMode) {
-      await _loadKmStatusForCurrentMonth();
-    }
+    await _loadKmStatusForCurrentMonth();
   }
 
   Future<void> _loadKmStatusForCurrentMonth() async {
-    if (!widget.dipendenteMode) return;
     final pending = await MezziKmService.pendingAssignedMezziForCurrentMonth();
     final pendingIds = pending
         .map((e) => (e['id_uuid'] ?? '').toString().trim())
@@ -245,13 +217,14 @@ class _AdminLogisticaMezziStradaliPageState
         .toSet();
     if (!mounted) return;
     setState(() {
-      _mezziConKmMeseInserito
-        ..clear()
-        ..addAll(
-          _rows
-              .map((e) => (e['id_uuid'] ?? '').toString().trim())
-              .where((id) => id.isNotEmpty && !pendingIds.contains(id)),
-        );
+      _mezziConKmMeseInserito.clear();
+      for (final r in _rows) {
+        final id = (r['id_uuid'] ?? '').toString().trim();
+        if (id.isEmpty || !_isRowAssignedToMe(r)) continue;
+        if (!pendingIds.contains(id)) {
+          _mezziConKmMeseInserito.add(id);
+        }
+      }
     });
   }
 
@@ -318,6 +291,7 @@ class _AdminLogisticaMezziStradaliPageState
     Map<String, dynamic> row, {
     bool forceOpen = false,
   }) async {
+    if (!_isRowAssignedToMe(row)) return;
     final id = (row['id_uuid'] ?? '').toString().trim();
     if (id.isEmpty) return;
     final ok = await showDialog<bool>(
@@ -485,6 +459,7 @@ class _AdminLogisticaMezziStradaliPageState
   Widget build(BuildContext context) {
     final isMobileLayout =
         widget.forceMobileLayout || MediaQuery.of(context).size.width < 900;
+    final showKm = _showKmColumn(context);
     return Scaffold(
       appBar: AppBar(
         title: ResponsiveAppBarTitle(
@@ -493,7 +468,7 @@ class _AdminLogisticaMezziStradaliPageState
               : 'Logistica - Mezzi Stradali',
         ),
         actions: [
-          if (widget.dipendenteMode)
+          if (showKm)
             IconButton(
               tooltip: 'Verifica km mensili',
               onPressed: () => _showPendingKmDialog(forcePrompt: false),
@@ -604,7 +579,7 @@ class _AdminLogisticaMezziStradaliPageState
                                         const SizedBox(height: 6),
                                         Text(
                                             '${(r['marca'] ?? '').toString()} ${(r['modello'] ?? '').toString()}'),
-                                        if (widget.dipendenteMode)
+                                        if (_isRowAssignedToMe(r))
                                           Text(
                                             kmMeseInserito
                                                 ? 'Km mese corrente: inseriti'
@@ -841,7 +816,7 @@ class _AdminLogisticaMezziStradaliPageState
                             const DataColumn(label: Text('Kit ruota')),
                             const DataColumn(label: Text('Deposito gomme')),
                             const DataColumn(label: Text('Tipologia gomme')),
-                            if (widget.dipendenteMode)
+                            if (showKm)
                               const DataColumn(label: Text('Km mese')),
                             const DataColumn(label: Text('Note')),
                             const DataColumn(label: Text('Azioni')),
@@ -992,18 +967,25 @@ class _AdminLogisticaMezziStradaliPageState
                                           .toString()),
                                       r,
                                       'tipologia_gomme'),
-                                  if (widget.dipendenteMode)
+                                  if (showKm)
                                     _hoverCell(
                                       Text(
-                                        _mezziConKmMeseInserito.contains(id)
-                                            ? 'Inseriti'
-                                            : 'Da inserire',
+                                        !_isRowAssignedToMe(r)
+                                            ? '—'
+                                            : (_mezziConKmMeseInserito
+                                                    .contains(id)
+                                                ? 'Inseriti'
+                                                : 'Da inserire'),
                                         style: TextStyle(
                                           fontWeight: FontWeight.w600,
-                                          color: _mezziConKmMeseInserito
-                                                  .contains(id)
-                                              ? Colors.green.shade700
-                                              : Colors.orange.shade800,
+                                          color: !_isRowAssignedToMe(r)
+                                              ? Theme.of(context)
+                                                  .colorScheme
+                                                  .onSurfaceVariant
+                                              : (_mezziConKmMeseInserito
+                                                      .contains(id)
+                                                  ? Colors.green.shade700
+                                                  : Colors.orange.shade800),
                                         ),
                                       ),
                                       r,
@@ -1043,7 +1025,7 @@ class _AdminLogisticaMezziStradaliPageState
                                                 const BoxConstraints.tightFor(
                                                     width: 24, height: 24),
                                           ),
-                                          if (widget.dipendenteMode)
+                                          if (_isRowAssignedToMe(r))
                                             IconButton(
                                               tooltip: 'Inserisci km mese',
                                               onPressed: () =>
