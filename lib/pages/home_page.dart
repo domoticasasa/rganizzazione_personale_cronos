@@ -192,7 +192,7 @@ class _HomePageState extends State<HomePage> {
     _loadCustomRolePermissions();
     _loadPendingApprovals();
     MezziKmReminderService.instance.configure(
-      enabledForUser: isDipendenteLike,
+      enabledForUser: true,
       userId: widget.userId,
     );
     WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -247,7 +247,7 @@ class _HomePageState extends State<HomePage> {
 
   Future<void> _checkAndPromptMezziKmIfNeeded() async {
     if (!mounted || _kmPromptShownThisOpen) return;
-    if (!isDipendenteLike || !MezziKmService.shouldRequireMonthlyKm()) return;
+    if (!MezziKmService.shouldRequireMonthlyKm()) return;
     try {
       final pending =
           await MezziKmService.pendingAssignedMezziForCurrentMonth();
