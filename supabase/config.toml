@@ -1,0 +1,114 @@
+
+[auth]
+site_url = "https://6cae88f3.pernotti.pages.dev"
+additional_redirect_urls = ["myapp://auth-callback", "https://6cae88f3.pernotti.pages.dev/*"]
+
+[auth.mfa.totp]
+enroll_enabled = true
+verify_enabled = true
+
+[auth.email]
+enable_confirmations = true
+# Prima era 1m0s: troppo restrittivo per reset password / test (anche dopo 1 minuto poteva restare bloccato).
+# Dopo modifica: supabase config push (progetto collegato) oppure Dashboard → Authentication → Email.
+max_frequency = "10s"
+otp_length = 8
+
+[functions.admin-create-user]
+enabled = true
+verify_jwt = true
+import_map = "./functions/admin-create-user/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/admin-create-user/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/admin-create-user/*.html" ]
+
+[functions.admin-reset-password]
+enabled = true
+verify_jwt = true
+import_map = "./functions/admin-reset-password/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/admin-reset-password/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/admin-reset-password/*.html" ]
+
+[functions.admin-set-password]
+enabled = true
+verify_jwt = true
+import_map = "./functions/admin-set-password/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/admin-set-password/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/admin-set-password/*.html" ]
+
+[functions.promote-admin]
+enabled = true
+verify_jwt = true
+import_map = "./functions/promote-admin/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/promote-admin/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/promote-admin/*.html" ]
+
+[functions.admin-delete-user]
+enabled = true
+verify_jwt = true
+import_map = "./functions/admin-delete-user/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/admin-delete-user/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/admin-delete-user/*.html" ]
+
+[functions.admin-set-role]
+enabled = true
+verify_jwt = true
+import_map = "./functions/admin-set-role/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/admin-set-role/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/admin-set-role/*.html" ]
+
+[functions.admin-update-employee]
+enabled = true
+verify_jwt = false
+import_map = "./functions/admin-update-employee/deno.json"
+entrypoint = "./functions/admin-update-employee/index.ts"
+
+[functions.admin-send-notification]
+enabled = true
+verify_jwt = false
+import_map = "./functions/admin-send-notification/deno.json"
+entrypoint = "./functions/admin-send-notification/index.ts"
+
+[functions.send-notification]
+# DEPRECATA: evitare doppio canale notifiche.
+# Usare solo `admin-send-notification`.
+enabled = false
+verify_jwt = false
+import_map = "./functions/send-notification/deno.json"
+entrypoint = "./functions/send-notification/index.ts"
+
+[functions.web-push-subscribe]
+enabled = true
+verify_jwt = true
+import_map = "./functions/web-push-subscribe/deno.json"
+entrypoint = "./functions/web-push-subscribe/index.ts"
+
+[functions.mezzi-km-reminder]
+enabled = true
+verify_jwt = false
+import_map = "./functions/mezzi-km-reminder/deno.json"
+entrypoint = "./functions/mezzi-km-reminder/index.ts"
+

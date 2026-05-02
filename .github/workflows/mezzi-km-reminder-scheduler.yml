@@ -1,0 +1,58 @@
+name: Mezzi KM Reminder Scheduler
+
+on:
+  schedule:
+    # Esegue ogni 10 minuti; il job interno filtra gli slot locali Europe/Rome.
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mezzi-km-reminder-scheduler
+  cancel-in-progress: false
+
+jobs:
+  notify-missing-km:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Resolve slot in Europe/Rome
+        id: slot
+        shell: bash
+        run: |
+          LOCAL_HOUR=$(TZ=Europe/Rome date +%H)
+          LOCAL_MIN=$(TZ=Europe/Rome date +%M)
+          SLOT=""
+          if [[ "$LOCAL_HOUR:$LOCAL_MIN" == "08:00" ]]; then SLOT="08:00"; fi
+          if [[ "$LOCAL_HOUR:$LOCAL_MIN" == "11:50" ]]; then SLOT="11:50"; fi
+          if [[ "$LOCAL_HOUR:$LOCAL_MIN" == "14:00" ]]; then SLOT="14:00"; fi
+          if [[ "$LOCAL_HOUR:$LOCAL_MIN" == "16:30" ]]; then SLOT="16:30"; fi
+          echo "local_time=${LOCAL_HOUR}:${LOCAL_MIN}" >> "$GITHUB_OUTPUT"
+          echo "slot=${SLOT}" >> "$GITHUB_OUTPUT"
+
+      - name: Skip when out of slot
+        if: steps.slot.outputs.slot == ''
+        run: |
+          echo "Nessuno slot da eseguire ora (Europe/Rome: ${{ steps.slot.outputs.local_time }})."
+
+      - name: Call Supabase edge function
+        if: steps.slot.outputs.slot != ''
+        env:
+          SUPABASE_URL: https://bjdimalvbdablzoctrsf.supabase.co
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+          SUPABASE_ANON_KEY_FALLBACK: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJqZGltYWx2YmRhYmx6b2N0cnNmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE5MzczNTcsImV4cCI6MjA4NzUxMzM1N30.Lm4GHd1CWdSMMI87Wx2eBrHcmqFtMXO31hO7Q3BsYyc
+          SLOT: ${{ steps.slot.outputs.slot }}
+        shell: bash
+        run: |
+          APIKEY="${SUPABASE_ANON_KEY}"
+          if [[ -z "${APIKEY}" ]]; then
+            APIKEY="${SUPABASE_ANON_KEY_FALLBACK}"
+          fi
+          BODY=$(printf '{"slot":"%s"}' "$SLOT")
+          RESP=$(curl -sS -X POST \
+            "${SUPABASE_URL}/functions/v1/mezzi-km-reminder" \
+            -H "apikey: ${APIKEY}" \
+            -H "Content-Type: application/json" \
+            --data "$BODY")
+          echo "Risposta funzione: $RESP"
