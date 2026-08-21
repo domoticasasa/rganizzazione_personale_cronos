@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
-  <title id="title">Gestopro360 icona premium</title>
-  <desc id="desc">Icona moderna per app e favicon con monogramma G360.</desc>
+  <title id="title">Gestopro360 icona combinata</title>
+  <desc id="desc">Icona moderna con documento verificato e monogramma G360 insieme.</desc>
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0F1C4E"/>
-      <stop offset="100%" stop-color="#1A4CA5"/>
+      <stop offset="0%" stop-color="#132361"/>
+      <stop offset="100%" stop-color="#1B5BC1"/>
     </linearGradient>
-    <radialGradient id="halo" cx="50%" cy="50%" r="56%">
-      <stop offset="0%" stop-color="#57CFFF" stop-opacity="0.34"/>
-      <stop offset="100%" stop-color="#57CFFF" stop-opacity="0"/>
+    <radialGradient id="halo" cx="50%" cy="50%" r="58%">
+      <stop offset="0%" stop-color="#59C9FF" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#59C9FF" stop-opacity="0"/>
     </radialGradient>
     <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3C5DDF"/>
-      <stop offset="100%" stop-color="#29D9F5"/>
+      <stop offset="0%" stop-color="#4575F0"/>
+      <stop offset="100%" stop-color="#2AD9F4"/>
     </linearGradient>
     <filter id="shadow" x="-20%" y="-20%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#061233" flood-opacity="0.45"/>
+      <feDropShadow dx="0" dy="7" stdDeviation="10" flood-color="#08163D" flood-opacity="0.42"/>
     </filter>
   </defs>
 
@@ -23,11 +23,21 @@
   <circle cx="256" cy="256" r="188" fill="url(#halo)"/>
 
   <g filter="url(#shadow)">
-    <circle cx="256" cy="256" r="152" fill="#F9FCFF"/>
-    <circle cx="256" cy="256" r="134" fill="none" stroke="#9CC7FF" stroke-width="10"/>
-    <path d="M256 122 A134 134 0 1 1 144 338" fill="none" stroke="url(#ring)" stroke-width="19" stroke-linecap="round"/>
-    <path d="M149 333 L130 373 L176 366 Z" fill="#29D9F5"/>
-    <text x="247" y="284" text-anchor="middle" font-family="Sora, Inter, Arial, sans-serif" font-size="144" font-weight="800" fill="#243F97">G</text>
-    <text x="305" y="327" text-anchor="middle" font-family="Sora, Inter, Arial, sans-serif" font-size="41" font-weight="800" fill="#2B84D8">360</text>
+    <circle cx="256" cy="256" r="158" fill="#F9FCFF"/>
+    <circle cx="256" cy="256" r="141" fill="none" stroke="#9BC5F9" stroke-width="8"/>
+
+    <path d="M256 115 A141 141 0 1 1 138 348" fill="none" stroke="url(#ring)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M143 343 L126 377 L165 370 Z" fill="#2AD9F4"/>
+
+    <rect x="165" y="178" width="88" height="122" rx="14" fill="#EEF4FF" stroke="#A2C4F2" stroke-width="4"/>
+    <rect x="181" y="199" width="54" height="8" rx="4" fill="#9EBBEA"/>
+    <rect x="181" y="216" width="46" height="8" rx="4" fill="#AFC6EF"/>
+    <rect x="181" y="233" width="51" height="8" rx="4" fill="#BED2F4"/>
+    <path d="M181 264 L198 281 L238 243" fill="none" stroke="#16B77B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <text x="318" y="246" text-anchor="middle" font-family="Sora, Inter, Arial, sans-serif" font-size="86" font-weight="800" fill="#26449C">G</text>
+    <text x="327" y="293" text-anchor="middle" font-family="Sora, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#2F8DDE">360</text>
+
+    <rect x="256" y="172" width="6" height="128" rx="3" fill="#8EB8F7" opacity="0.45"/>
   </g>
 </svg>
