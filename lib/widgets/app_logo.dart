@@ -111,8 +111,8 @@ class _BrandText extends StatelessWidget {
   }
 }
 
-/// Splash intro centrata con icona grande Gestopro360.
-class GestoproIntroSplash extends StatelessWidget {
+/// Splash intro in stile premium con animazioni "video-like".
+class GestoproIntroSplash extends StatefulWidget {
   final double iconSize;
 
   const GestoproIntroSplash({
@@ -121,73 +121,332 @@ class GestoproIntroSplash extends StatelessWidget {
   });
 
   @override
+  State<GestoproIntroSplash> createState() => _GestoproIntroSplashState();
+}
+
+class _GestoproIntroSplashState extends State<GestoproIntroSplash>
+    with TickerProviderStateMixin {
+  late final AnimationController _revealCtrl;
+  late final AnimationController _loopCtrl;
+
+  @override
+  void initState() {
+    super.initState();
+    _revealCtrl = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 920),
+    )..forward();
+    _loopCtrl = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 3600),
+    )..repeat();
+  }
+
+  @override
+  void dispose() {
+    _revealCtrl.dispose();
+    _loopCtrl.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return ColoredBox(
-      color: const Color(0xFFF5F8FF),
-      child: Center(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
+    final iconSize = widget.iconSize.clamp(120.0, 190.0).toDouble();
+    return AnimatedBuilder(
+      animation: Listenable.merge([_revealCtrl, _loopCtrl]),
+      builder: (context, _) {
+        final reveal = Curves.easeOutCubic.transform(_revealCtrl.value);
+        final breathe = 0.5 + 0.5 * math.sin(_loopCtrl.value * 2 * math.pi);
+        final iconScale = 0.88 + (0.12 * reveal) + (0.018 * breathe);
+        final contentYOffset = (1 - reveal) * 36;
+        final titleShift = (_loopCtrl.value * 2) - 1;
+
+        return Stack(
           children: [
-            GestoproAppIcon(size: iconSize),
-            const SizedBox(height: 22),
-            ShaderMask(
-              shaderCallback: (bounds) => const LinearGradient(
-                colors: [Color(0xFF243F97), Color(0xFF2ADAF4)],
-              ).createShader(bounds),
-              child: const Text(
-                'GESTOPRO360',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 38,
-                  fontWeight: FontWeight.w800,
-                  letterSpacing: 4.2,
+            Positioned.fill(
+              child: CustomPaint(
+                painter: _PremiumSplashBackdropPainter(
+                  t: _loopCtrl.value,
+                  reveal: reveal,
                 ),
               ),
             ),
-            const SizedBox(height: 16),
-            const Text(
-              'Tutte le informazioni che contano.',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 26,
-                fontWeight: FontWeight.w600,
-                color: Color(0xFF304164),
-              ),
-            ),
-            const SizedBox(height: 6),
-            const Text(
-              'Sempre aggiornate. Con un solo clic.',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.w600,
-                color: Color(0xFF355080),
+            Center(
+              child: Opacity(
+                opacity: reveal,
+                child: Transform.translate(
+                  offset: Offset(0, contentYOffset),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      SizedBox(
+                        width: iconSize * 1.9,
+                        height: iconSize * 1.58,
+                        child: Stack(
+                          alignment: Alignment.center,
+                          clipBehavior: Clip.none,
+                          children: [
+                            Transform.scale(
+                              scale: 1.06 + (0.07 * breathe),
+                              child: Container(
+                                width: iconSize * 1.42,
+                                height: iconSize * 1.42,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: const Color(0xFF2ADAF4)
+                                          .withValues(alpha: 0.14 + (0.12 * breathe)),
+                                      blurRadius: 46 + (24 * breathe),
+                                      spreadRadius: 8 + (6 * breathe),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            Transform.rotate(
+                              angle: _loopCtrl.value * 2 * math.pi * 0.27,
+                              child: CustomPaint(
+                                size: Size(iconSize * 1.33, iconSize * 1.33),
+                                painter: _OrbitSweepPainter(glow: breathe),
+                              ),
+                            ),
+                            Transform.scale(
+                              scale: iconScale,
+                              child: GestoproAppIcon(size: iconSize),
+                            ),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(height: 20),
+                      ShaderMask(
+                        shaderCallback: (bounds) => LinearGradient(
+                          begin: Alignment(-1.1 + (titleShift * 0.20), -1),
+                          end: Alignment(1.1 + (titleShift * 0.20), 1),
+                          colors: const [
+                            Color(0xFF243F97),
+                            Color(0xFF3D6DE6),
+                            Color(0xFF2ADAF4),
+                          ],
+                        ).createShader(bounds),
+                        child: const Text(
+                          'GESTOPRO360',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 40,
+                            fontWeight: FontWeight.w800,
+                            letterSpacing: 4.4,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 14),
+                      const Text(
+                        'Tutte le informazioni che contano.',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 26,
+                          fontWeight: FontWeight.w600,
+                          color: Color(0xFF304164),
+                        ),
+                      ),
+                      const SizedBox(height: 6),
+                      const Text(
+                        'Sempre aggiornate. Con un solo clic.',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.w600,
+                          color: Color(0xFF355080),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ),
             ),
           ],
-        ),
-      ),
+        );
+      },
     );
+  }
+}
+
+class _PremiumSplashBackdropPainter extends CustomPainter {
+  final double t;
+  final double reveal;
+
+  const _PremiumSplashBackdropPainter({
+    required this.t,
+    required this.reveal,
+  });
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final baseRect = Offset.zero & size;
+    final basePaint = Paint()
+      ..shader = const LinearGradient(
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+        colors: [
+          Color(0xFFF8FBFF),
+          Color(0xFFEDF4FF),
+          Color(0xFFE9F1FF),
+        ],
+      ).createShader(baseRect);
+    canvas.drawRect(baseRect, basePaint);
+
+    void drawGlow({
+      required Offset center,
+      required double radius,
+      required Color color,
+      required double alpha,
+    }) {
+      final rect = Rect.fromCircle(center: center, radius: radius);
+      final paint = Paint()
+        ..shader = RadialGradient(
+          colors: [
+            color.withValues(alpha: alpha),
+            color.withValues(alpha: 0),
+          ],
+        ).createShader(rect);
+      canvas.drawCircle(center, radius, paint);
+    }
+
+    final p1 = Offset(
+      size.width * (0.18 + (0.05 * math.sin((t * 2 * math.pi) + 0.4))),
+      size.height * (0.23 + (0.03 * math.cos(t * 2 * math.pi))),
+    );
+    final p2 = Offset(
+      size.width * (0.84 + (0.05 * math.cos((t * 2 * math.pi) + 0.9))),
+      size.height * (0.76 + (0.04 * math.sin((t * 2 * math.pi) + 0.6))),
+    );
+    final p3 = Offset(
+      size.width * (0.52 + (0.02 * math.sin((t * 2 * math.pi) + 1.8))),
+      size.height * (0.48 + (0.03 * math.cos((t * 2 * math.pi) + 2.2))),
+    );
+
+    drawGlow(
+      center: p1,
+      radius: size.shortestSide * 0.34,
+      color: const Color(0xFF75B6FF),
+      alpha: 0.26 * reveal,
+    );
+    drawGlow(
+      center: p2,
+      radius: size.shortestSide * 0.30,
+      color: const Color(0xFF66E0FA),
+      alpha: 0.24 * reveal,
+    );
+    drawGlow(
+      center: p3,
+      radius: size.shortestSide * 0.26,
+      color: const Color(0xFF4B78ED),
+      alpha: 0.16 * reveal,
+    );
+
+    final highlightTop = Paint()
+      ..shader = LinearGradient(
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+        colors: [
+          Colors.white.withValues(alpha: 0.55 * reveal),
+          Colors.white.withValues(alpha: 0),
+        ],
+      ).createShader(Rect.fromLTWH(0, 0, size.width, size.height * 0.3));
+    canvas.drawRect(Rect.fromLTWH(0, 0, size.width, size.height * 0.3), highlightTop);
+  }
+
+  @override
+  bool shouldRepaint(covariant _PremiumSplashBackdropPainter oldDelegate) {
+    return oldDelegate.t != t || oldDelegate.reveal != reveal;
+  }
+}
+
+class _OrbitSweepPainter extends CustomPainter {
+  final double glow;
+
+  const _OrbitSweepPainter({required this.glow});
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final center = size.center(Offset.zero);
+    final radius = (size.shortestSide / 2) - 4;
+    final rect = Rect.fromCircle(center: center, radius: radius);
+    final stroke = math.max(2.0, size.width * 0.022);
+
+    final base = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = stroke
+      ..color = const Color(0xFFB6D7FF).withValues(alpha: 0.46 + (0.20 * glow));
+    canvas.drawCircle(center, radius, base);
+
+    final arc = Paint()
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = stroke + 0.5
+      ..strokeCap = StrokeCap.round
+      ..shader = const LinearGradient(
+        colors: [
+          Color(0xFF4D77EF),
+          Color(0xFF2ADAF4),
+        ],
+      ).createShader(rect);
+    const startAngle = -2.14;
+    const sweepAngle = 2.56;
+    canvas.drawArc(rect, startAngle, sweepAngle, false, arc);
+
+    final arrowAngle = startAngle + sweepAngle;
+    final tip = Offset(
+      center.dx + math.cos(arrowAngle) * radius,
+      center.dy + math.sin(arrowAngle) * radius,
+    );
+    final side = stroke * 1.35;
+    final wingA = Offset(
+      tip.dx - math.cos(arrowAngle - 0.55) * side,
+      tip.dy - math.sin(arrowAngle - 0.55) * side,
+    );
+    final wingB = Offset(
+      tip.dx - math.cos(arrowAngle + 0.55) * side,
+      tip.dy - math.sin(arrowAngle + 0.55) * side,
+    );
+    final arrow = Path()
+      ..moveTo(tip.dx, tip.dy)
+      ..lineTo(wingA.dx, wingA.dy)
+      ..lineTo(wingB.dx, wingB.dy)
+      ..close();
+    canvas.drawPath(
+      arrow,
+      Paint()..color = const Color(0xFF2ADAF4).withValues(alpha: 0.92),
+    );
+  }
+
+  @override
+  bool shouldRepaint(covariant _OrbitSweepPainter oldDelegate) {
+    return oldDelegate.glow != glow;
   }
 }
 
 /// Mostra splash introduttiva con auto-chiusura.
 Future<void> showGestoproIntroSplash(
   BuildContext context, {
-  Duration duration = const Duration(milliseconds: 1700),
+  Duration duration = const Duration(milliseconds: 2500),
 }) {
   return showGeneralDialog<void>(
     context: context,
     barrierDismissible: false,
     barrierLabel: 'intro-splash',
     barrierColor: const Color(0xD9F5F8FF),
-    transitionDuration: const Duration(milliseconds: 260),
+    transitionDuration: const Duration(milliseconds: 380),
     pageBuilder: (_, __, ___) => _AutoCloseSplash(duration: duration),
     transitionBuilder: (_, animation, __, child) {
       return FadeTransition(
         opacity: CurvedAnimation(parent: animation, curve: Curves.easeOutCubic),
-        child: child,
+        child: ScaleTransition(
+          scale: Tween<double>(begin: 0.985, end: 1).animate(
+            CurvedAnimation(parent: animation, curve: Curves.easeOutCubic),
+          ),
+          child: child,
+        ),
       );
     },
   );
