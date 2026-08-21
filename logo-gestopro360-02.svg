@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Gestopro360 logo concept 2</title>
+  <desc id="desc">Hexagonal emblem with GP monogram and clean wordmark.</desc>
+  <defs>
+    <linearGradient id="hexFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1D2E5E"/>
+      <stop offset="100%" stop-color="#2A5BC7"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="#F8FAFF"/>
+
+  <g transform="translate(130 140)">
+    <polygon points="270,20 490,145 490,395 270,520 50,395 50,145" fill="url(#hexFill)"/>
+    <polygon points="270,80 438,176 438,364 270,460 102,364 102,176" fill="none" stroke="#8FC1FF" stroke-width="16"/>
+    <path d="M216 230 C216 178 253 146 303 146 C350 146 388 174 397 221 L337 221 C329 202 317 193 299 193 C273 193 261 212 261 230 C261 248 273 268 299 268 L341 268 L341 318 L291 318 C244 318 216 282 216 230 Z" fill="#FFFFFF"/>
+    <path d="M305 318 L305 146 L380 146 C425 146 456 176 456 220 C456 264 425 294 380 294 L350 294 L350 318 Z M350 246 L376 246 C392 246 405 236 405 220 C405 204 392 194 376 194 L350 194 Z" fill="#D5E7FF"/>
+    <circle cx="437" cy="392" r="38" fill="#6ED0FF"/>
+    <text x="437" y="405" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#1D2E5E">360</text>
+  </g>
+
+  <g transform="translate(650 326)">
+    <text x="0" y="0" font-family="Poppins, Arial, sans-serif" font-weight="700" font-size="94" fill="#1D2E5E">GESTOPRO</text>
+    <text x="0" y="86" font-family="Poppins, Arial, sans-serif" font-weight="600" font-size="54" fill="#2A5BC7">360</text>
+    <line x1="0" y1="118" x2="460" y2="118" stroke="#A9C8F7" stroke-width="5"/>
+    <text x="0" y="172" font-family="Inter, Arial, sans-serif" font-weight="500" font-size="33" fill="#5E6A82">Data. Process. Control.</text>
+  </g>
+</svg>

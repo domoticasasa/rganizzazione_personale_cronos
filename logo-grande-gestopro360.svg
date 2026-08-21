@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 1600" role="img" aria-labelledby="title desc">
+  <title id="title">Gestopro360 logo grande</title>
+  <desc id="desc">Versione grande del logo moderno Gestopro360 con payoff in italiano.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4F7FF"/>
+      <stop offset="55%" stop-color="#EAF2FF"/>
+      <stop offset="100%" stop-color="#F8FCFF"/>
+    </linearGradient>
+    <linearGradient id="loop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2B3EA8"/>
+      <stop offset="45%" stop-color="#4D74FF"/>
+      <stop offset="100%" stop-color="#2ED2F2"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#23358E"/>
+      <stop offset="50%" stop-color="#3557C8"/>
+      <stop offset="100%" stop-color="#1DB8E8"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#EAF3FF" stop-opacity="0.82"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="11" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#4762B5" flood-opacity="0.20"/>
+    </filter>
+  </defs>
+
+  <rect width="2400" height="1600" fill="url(#bg)"/>
+  <circle cx="340" cy="220" r="170" fill="#DFF0FF" opacity="0.55"/>
+  <circle cx="2180" cy="1320" r="210" fill="#DCE7FF" opacity="0.48"/>
+
+  <g transform="translate(150 250)">
+    <circle cx="360" cy="360" r="280" fill="#FFFFFF" opacity="0.72" filter="url(#softShadow)"/>
+    <circle cx="360" cy="360" r="248" fill="none" stroke="#D7E7FF" stroke-width="18"/>
+    <path d="M360 112 A246 246 0 1 1 150 503" fill="none" stroke="url(#loop)" stroke-width="38" stroke-linecap="round" filter="url(#glow)"/>
+    <path d="M168 491 L126 572 L220 559 Z" fill="#2ED2F2"/>
+
+    <g filter="url(#softShadow)">
+      <rect x="250" y="220" width="220" height="290" rx="34" fill="url(#glass)" stroke="#A8C3FF" stroke-width="8"/>
+      <rect x="280" y="268" width="158" height="18" rx="9" fill="#A9BDEE"/>
+      <rect x="280" y="305" width="140" height="18" rx="9" fill="#B7CAF3"/>
+      <rect x="280" y="342" width="148" height="18" rx="9" fill="#C4D5F7"/>
+      <path d="M281 418 L324 459 L427 357" fill="none" stroke="#1CB37A" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <g>
+      <circle cx="470" cy="228" r="52" fill="url(#brand)"/>
+      <text x="470" y="242" text-anchor="middle" font-family="Sora, Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF">360</text>
+    </g>
+  </g>
+
+  <g transform="translate(980 640)">
+    <text x="0" y="0" font-family="Sora, Inter, Arial, sans-serif" font-size="160" font-weight="800" fill="url(#brand)" letter-spacing="4">GESTOPRO360</text>
+    <rect x="0" y="48" width="1040" height="7" rx="3.5" fill="#B7CAF8"/>
+    <text x="0" y="158" font-family="Inter, Arial, sans-serif" font-size="61" font-weight="600" fill="#2D3E6A">Tutte le informazioni che contano.</text>
+    <text x="0" y="240" font-family="Inter, Arial, sans-serif" font-size="61" font-weight="600" fill="#355080">Sempre aggiornate. Con un solo clic.</text>
+  </g>
+</svg>
