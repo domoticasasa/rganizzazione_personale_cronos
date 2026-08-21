@@ -54,6 +54,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  static bool _introSplashShownInSession = false;
   bool _hasPendingApprovals = false;
   int _pendingApprovalsCount = 0;
   bool _pendingBlinkOn = true;
@@ -98,6 +99,16 @@ class _HomePageState extends State<HomePage> {
     if (!allowCustomRoleOverride) return false;
     if (!_customPermissionsLoaded) return false;
     return _customAllowedPages.contains(pageKey);
+  }
+
+  Future<void> _showIntroSplashIfNeeded() async {
+    if (!mounted || _introSplashShownInSession) return;
+    _introSplashShownInSession = true;
+    try {
+      await showGestoproIntroSplash(context);
+    } catch (_) {
+      // non bloccare la home in caso di errore splash
+    }
   }
 
   Future<void> _loadCustomRolePermissions() async {
@@ -195,8 +206,9 @@ class _HomePageState extends State<HomePage> {
       enabledForUser: true,
       userId: widget.userId,
     );
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      _checkAndPromptMezziKmIfNeeded();
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      await _showIntroSplashIfNeeded();
+      await _checkAndPromptMezziKmIfNeeded();
     });
   }
 

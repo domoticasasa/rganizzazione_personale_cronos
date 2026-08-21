@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
@@ -19,7 +20,7 @@ class ResponsiveAppBarTitle extends StatelessWidget {
     return Row(
       children: [
         if (showIcon) ...[
-          const _AppIconBadge(size: 30),
+          const GestoproAppIcon(size: 30),
           const SizedBox(width: 10),
         ],
         Expanded(
@@ -61,7 +62,7 @@ class PageWithTopLogo extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
-              _AppIconBadge(size: 34),
+              GestoproAppIcon(size: 34),
               SizedBox(width: 10),
               _BrandText(),
             ],
@@ -110,10 +111,128 @@ class _BrandText extends StatelessWidget {
   }
 }
 
-class _AppIconBadge extends StatelessWidget {
+/// Splash intro centrata con icona grande Gestopro360.
+class GestoproIntroSplash extends StatelessWidget {
+  final double iconSize;
+
+  const GestoproIntroSplash({
+    super.key,
+    this.iconSize = 150,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ColoredBox(
+      color: const Color(0xFFF5F8FF),
+      child: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            GestoproAppIcon(size: iconSize),
+            const SizedBox(height: 22),
+            ShaderMask(
+              shaderCallback: (bounds) => const LinearGradient(
+                colors: [Color(0xFF243F97), Color(0xFF2ADAF4)],
+              ).createShader(bounds),
+              child: const Text(
+                'GESTOPRO360',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 38,
+                  fontWeight: FontWeight.w800,
+                  letterSpacing: 4.2,
+                ),
+              ),
+            ),
+            const SizedBox(height: 16),
+            const Text(
+              'Tutte le informazioni che contano.',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 26,
+                fontWeight: FontWeight.w600,
+                color: Color(0xFF304164),
+              ),
+            ),
+            const SizedBox(height: 6),
+            const Text(
+              'Sempre aggiornate. Con un solo clic.',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.w600,
+                color: Color(0xFF355080),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Mostra splash introduttiva con auto-chiusura.
+Future<void> showGestoproIntroSplash(
+  BuildContext context, {
+  Duration duration = const Duration(milliseconds: 1700),
+}) {
+  return showGeneralDialog<void>(
+    context: context,
+    barrierDismissible: false,
+    barrierLabel: 'intro-splash',
+    barrierColor: const Color(0xD9F5F8FF),
+    transitionDuration: const Duration(milliseconds: 260),
+    pageBuilder: (_, __, ___) => _AutoCloseSplash(duration: duration),
+    transitionBuilder: (_, animation, __, child) {
+      return FadeTransition(
+        opacity: CurvedAnimation(parent: animation, curve: Curves.easeOutCubic),
+        child: child,
+      );
+    },
+  );
+}
+
+class _AutoCloseSplash extends StatefulWidget {
+  final Duration duration;
+
+  const _AutoCloseSplash({required this.duration});
+
+  @override
+  State<_AutoCloseSplash> createState() => _AutoCloseSplashState();
+}
+
+class _AutoCloseSplashState extends State<_AutoCloseSplash> {
+  Timer? _closeTimer;
+
+  @override
+  void initState() {
+    super.initState();
+    _closeTimer = Timer(widget.duration, () {
+      if (!mounted) return;
+      Navigator.of(context).pop();
+    });
+  }
+
+  @override
+  void dispose() {
+    _closeTimer?.cancel();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold(
+      backgroundColor: Colors.transparent,
+      body: GestoproIntroSplash(),
+    );
+  }
+}
+
+class GestoproAppIcon extends StatelessWidget {
   final double size;
 
-  const _AppIconBadge({required this.size});
+  const GestoproAppIcon({super.key, required this.size});
 
   @override
   Widget build(BuildContext context) {
