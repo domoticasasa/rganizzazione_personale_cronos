@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
-  <title id="title">Gestopro360 icona combinata</title>
-  <desc id="desc">Icona moderna con documento verificato e monogramma G360 insieme.</desc>
+  <title id="title">Gestopro360 icona combinata wordmark</title>
+  <desc id="desc">Icona moderna con documento verificato e scritta Gestopro + 360.</desc>
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#132361"/>
@@ -35,8 +35,8 @@
     <rect x="181" y="233" width="51" height="8" rx="4" fill="#BED2F4"/>
     <path d="M181 264 L198 281 L238 243" fill="none" stroke="#16B77B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
 
-    <text x="318" y="246" text-anchor="middle" font-family="Sora, Inter, Arial, sans-serif" font-size="86" font-weight="800" fill="#26449C">G</text>
-    <text x="327" y="293" text-anchor="middle" font-family="Sora, Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#2F8DDE">360</text>
+    <text x="332" y="246" text-anchor="middle" font-family="Sora, Inter, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="1.1" fill="#26449C">GESTOPRO</text>
+    <text x="332" y="293" text-anchor="middle" font-family="Sora, Inter, Arial, sans-serif" font-size="44" font-weight="800" fill="#2F8DDE">360</text>
 
     <rect x="256" y="172" width="6" height="128" rx="3" fill="#8EB8F7" opacity="0.45"/>
   </g>
