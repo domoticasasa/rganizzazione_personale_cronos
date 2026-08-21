@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Gestopro360 logo concept 3</title>
+  <desc id="desc">Minimal orbit symbol with balanced typographic lockup.</desc>
+  <defs>
+    <linearGradient id="orbit" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#334F9E"/>
+      <stop offset="100%" stop-color="#67C5EC"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="#FFFFFF"/>
+
+  <g transform="translate(145 190)">
+    <circle cx="235" cy="200" r="126" fill="none" stroke="#D8E4FF" stroke-width="26"/>
+    <ellipse cx="235" cy="200" rx="166" ry="78" fill="none" stroke="url(#orbit)" stroke-width="20"/>
+    <circle cx="392" cy="212" r="21" fill="#67C5EC"/>
+    <text x="235" y="220" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="82" font-weight="700" fill="#334F9E">G</text>
+  </g>
+
+  <g transform="translate(520 318)">
+    <text x="0" y="0" font-family="Montserrat, Arial, sans-serif" font-size="90" font-weight="800" fill="#233253" letter-spacing="6">GESTOPRO</text>
+    <text x="0" y="76" font-family="Montserrat, Arial, sans-serif" font-size="52" font-weight="600" fill="#4F6EB0" letter-spacing="4">360 PLATFORM</text>
+    <rect x="0" y="110" width="490" height="5" rx="2.5" fill="#CCD8F4"/>
+    <text x="0" y="162" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="500" fill="#66738D">Always updated information in one place</text>
+  </g>
+</svg>

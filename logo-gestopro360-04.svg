@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Gestopro360 logo concept 4</title>
+  <desc id="desc">Document-check icon inside a 360 loop with modern lettering.</desc>
+  <defs>
+    <linearGradient id="loop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#24479A"/>
+      <stop offset="100%" stop-color="#37C0E8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="#F4F8FF"/>
+
+  <g transform="translate(120 120)">
+    <circle cx="280" cy="280" r="210" fill="#FFFFFF" stroke="#DDE8FF" stroke-width="16"/>
+    <path d="M280 82 A198 198 0 1 1 116 406" fill="none" stroke="url(#loop)" stroke-width="28" stroke-linecap="round"/>
+    <path d="M128 396 L97 454 L163 444 Z" fill="#37C0E8"/>
+    <rect x="198" y="170" width="164" height="216" rx="18" fill="#EDF4FF" stroke="#9EBBEE" stroke-width="10"/>
+    <line x1="228" y1="228" x2="332" y2="228" stroke="#8DA9D9" stroke-width="8"/>
+    <line x1="228" y1="266" x2="332" y2="266" stroke="#8DA9D9" stroke-width="8"/>
+    <path d="M228 318 L258 348 L330 276" fill="none" stroke="#2AAE6C" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(590 304)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="800" fill="#24479A" letter-spacing="5">GESTOPRO</text>
+    <text x="0" y="82" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="700" fill="#37A9D9" letter-spacing="3">360</text>
+    <text x="0" y="144" font-family="Inter, Arial, sans-serif" font-size="33" font-weight="500" fill="#5D6B86">Everything that matters, one click away</text>
+  </g>
+</svg>

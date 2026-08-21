@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Gestopro360 logo concept 1</title>
+  <desc id="desc">Circular 360 icon with modern wordmark.</desc>
+  <defs>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2446A8"/>
+      <stop offset="100%" stop-color="#48B6F3"/>
+    </linearGradient>
+    <linearGradient id="text" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1F2A44"/>
+      <stop offset="100%" stop-color="#405C99"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="#FFFFFF"/>
+
+  <g transform="translate(190 150)">
+    <circle cx="220" cy="220" r="170" fill="none" stroke="url(#ring)" stroke-width="34" stroke-linecap="round" stroke-dasharray="820 220"/>
+    <path d="M361 121 L426 139 L378 187 Z" fill="#48B6F3"/>
+    <text x="220" y="244" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="118" fill="#2446A8">360</text>
+  </g>
+
+  <g transform="translate(560 300)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-weight="800" font-size="96" letter-spacing="7" fill="url(#text)">GESTOPRO</text>
+    <text x="0" y="86" font-family="Inter, Arial, sans-serif" font-weight="600" font-size="46" letter-spacing="2" fill="#52617D">All your key info, always aligned</text>
+  </g>
+</svg>

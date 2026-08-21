@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Gestopro360 logo concept 5</title>
+  <desc id="desc">Network node mark expressing full 360 control and visibility.</desc>
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#DDF2FF"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </radialGradient>
+    <linearGradient id="net" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#26B9E8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bgGlow)"/>
+
+  <g transform="translate(130 120)">
+    <circle cx="260" cy="260" r="210" fill="#FFFFFF" stroke="#CFE1FF" stroke-width="14"/>
+    <circle cx="260" cy="260" r="162" fill="none" stroke="url(#net)" stroke-width="20"/>
+    <line x1="260" y1="98" x2="372" y2="172" stroke="#7AA8EA" stroke-width="10"/>
+    <line x1="372" y1="172" x2="372" y2="346" stroke="#7AA8EA" stroke-width="10"/>
+    <line x1="372" y1="346" x2="260" y2="422" stroke="#7AA8EA" stroke-width="10"/>
+    <line x1="260" y1="422" x2="148" y2="346" stroke="#7AA8EA" stroke-width="10"/>
+    <line x1="148" y1="346" x2="148" y2="172" stroke="#7AA8EA" stroke-width="10"/>
+    <line x1="148" y1="172" x2="260" y2="98" stroke="#7AA8EA" stroke-width="10"/>
+    <circle cx="260" cy="98" r="22" fill="#1E3A8A"/>
+    <circle cx="372" cy="172" r="22" fill="#2B67C9"/>
+    <circle cx="372" cy="346" r="22" fill="#2D8CD7"/>
+    <circle cx="260" cy="422" r="22" fill="#26B9E8"/>
+    <circle cx="148" cy="346" r="22" fill="#2D8CD7"/>
+    <circle cx="148" cy="172" r="22" fill="#2B67C9"/>
+    <text x="260" y="282" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="78" font-weight="800" fill="#1E3A8A">360</text>
+  </g>
+
+  <g transform="translate(600 300)">
+    <text x="0" y="0" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="800" fill="#1D3368" letter-spacing="6">GESTOPRO</text>
+    <text x="0" y="78" font-family="Inter, Arial, sans-serif" font-size="50" font-weight="700" fill="#2B67C9" letter-spacing="5">INTELLIGENT CONTROL</text>
+    <text x="0" y="145" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="500" fill="#55657F">Your complete information map</text>
+  </g>
+</svg>
