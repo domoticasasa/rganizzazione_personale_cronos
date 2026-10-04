@@ -1,15 +1,16 @@
-import 'package:flutter/material.dart';
-import 'package:data_table_2/data_table_2.dart';
 import 'dart:async';
 import 'dart:typed_data';
+
+import 'package:data_table_2/data_table_2.dart';
 import 'package:excel/excel.dart' hide Border;
+import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../services/deadline_nav_highlight.dart';
 import '../services/mezzi_km_service.dart';
 import '../utils/date_formatters.dart';
-import '../utils/field_timestamps.dart';
 import '../utils/excel_export_helper.dart';
+import '../utils/field_timestamps.dart';
 import '../utils/modify_feedback.dart';
 import '../widgets/app_logo.dart';
 import '../widgets/async_action_button.dart';
@@ -108,7 +109,7 @@ class _AdminLogisticaMezziStradaliPageState
 
   String _normalizeName(String raw) => MezziKmService.normalizePersonName(raw);
 
-  bool _showKmColumn(BuildContext context) {
+  bool _showKmColumn() {
     if (widget.dipendenteMode) return true;
     if (_loading) return false;
     return _rows.any(_isRowAssignedToMe);
@@ -459,7 +460,7 @@ class _AdminLogisticaMezziStradaliPageState
   Widget build(BuildContext context) {
     final isMobileLayout =
         widget.forceMobileLayout || MediaQuery.of(context).size.width < 900;
-    final showKm = _showKmColumn(context);
+    final showKm = _showKmColumn();
     return Scaffold(
       appBar: AppBar(
         title: ResponsiveAppBarTitle(
@@ -482,12 +483,12 @@ class _AdminLogisticaMezziStradaliPageState
           if (!widget.dipendenteMode)
             IconButton(
               tooltip: 'Nuovo mezzo',
-              onPressed: () => _openForm(),
+              onPressed: _openForm,
               icon: const Icon(Icons.add),
             ),
           IconButton(
             tooltip: 'Ricarica',
-            onPressed: () => _loadRows(),
+            onPressed: _loadRows,
             icon: const Icon(Icons.refresh),
           ),
         ],
@@ -593,8 +594,7 @@ class _AdminLogisticaMezziStradaliPageState
                                           ),
                                         TextButton.icon(
                                           style: TextButton.styleFrom(
-                                            padding: const EdgeInsets.symmetric(
-                                                horizontal: 0),
+                                            padding: EdgeInsets.zero,
                                             tapTargetSize: MaterialTapTargetSize
                                                 .shrinkWrap,
                                             minimumSize: const Size(0, 32),

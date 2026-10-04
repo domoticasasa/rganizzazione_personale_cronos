@@ -1,39 +1,33 @@
-import 'package:flutter/material.dart';
 import 'dart:async';
+
+import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-import '../widgets/app_logo.dart';
 
-// === SERVIZI ===
+import '../Mobile/admin_misc_mobile_pages.dart';
+import '../Mobile/aereo_mobile.dart';
+import '../Mobile/dt_assistenti_permissions_mobile.dart';
+import '../Mobile/dt_richieste_mobile.dart';
+import '../Mobile/prenotazione_pernottamenti_mobile.dart';
+import '../Mobile/treno_mobile.dart';
+import '../services/mezzi_km_reminder_service.dart';
+import '../services/mezzi_km_service.dart';
 import '../services/notification_bell.dart';
-
-// === VERSIONI DESKTOP ===
-import 'prenotazione_pernottamenti_page.dart';
-import 'treno_page.dart';
-import 'aereo_page.dart';
+import '../utils/device.dart';
+import '../utils/roles.dart';
+import '../widgets/app_logo.dart';
 import 'admin_dashboard_page.dart';
 import 'admin_formazione_dlgs_81_08_page.dart';
 import 'admin_formazione_rfi_page.dart';
 import 'admin_logistica_hub_page.dart';
 import 'admin_logistica_mdo_ferroviari_page.dart';
 import 'admin_logistica_mezzi_stradali_page.dart';
-import 'dt_richieste_page.dart';
-import 'dt_assistenti_permissions_page.dart';
-import 'dipendente_prenotazione_page.dart';
+import 'aereo_page.dart';
 import 'caposquadra_prenotazione_page.dart';
-
-// === VERSIONI MOBILE (USA LA CARTELLA CORRETTA: "Mobile") ===
-import '../Mobile/aereo_mobile.dart';
-import '../Mobile/treno_mobile.dart';
-import '../Mobile/prenotazione_pernottamenti_mobile.dart';
-import '../Mobile/dt_richieste_mobile.dart';
-import '../Mobile/dt_assistenti_permissions_mobile.dart';
-import '../Mobile/admin_misc_mobile_pages.dart';
-
-// === DEVICE DETECTOR ===
-import '../utils/device.dart';
-import '../utils/roles.dart';
-import '../services/mezzi_km_service.dart';
-import '../services/mezzi_km_reminder_service.dart';
+import 'dipendente_prenotazione_page.dart';
+import 'dt_assistenti_permissions_page.dart';
+import 'dt_richieste_page.dart';
+import 'prenotazione_pernottamenti_page.dart';
+import 'treno_page.dart';
 
 class HomePage extends StatefulWidget {
   final String username;
@@ -68,7 +62,6 @@ class _HomePageState extends State<HomePage> {
   bool get isAssistenteDt =>
       widget.role.toLowerCase().replaceAll(' ', '_') == 'assistente_dt';
   bool get isDT => widget.role.toLowerCase() == 'dt';
-  bool get isDipendente => widget.role.toLowerCase() == 'dipendente';
   bool get isDipendenteLike =>
       const {'dipendente', 'dipendenti', 'user'}.contains(_normalizedRole);
   bool get isLogistica => normalizeRole(widget.role) == 'logistica';
@@ -551,9 +544,8 @@ class _HomePageState extends State<HomePage> {
       );
     }
 
-    int crossAxis = MediaQuery.of(context).size.width >= 1000
-        ? (MediaQuery.of(context).size.width >= 1500 ? 4 : 3)
-        : 2;
+    final screenWidth = MediaQuery.of(context).size.width;
+    final crossAxis = screenWidth >= 1000 ? (screenWidth >= 1500 ? 4 : 3) : 2;
 
     return Scaffold(
       appBar: AppBar(
