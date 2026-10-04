@@ -180,16 +180,16 @@ class _HomePageState extends State<HomePage> {
       setState(() => _pendingBlinkOn = !_pendingBlinkOn);
     });
     _pendingRefreshTimer = Timer.periodic(const Duration(minutes: 1), (_) {
-      _loadPendingApprovals();
+      unawaited(_loadPendingApprovals());
     });
-    _loadCustomRolePermissions();
-    _loadPendingApprovals();
+    unawaited(_loadCustomRolePermissions());
+    unawaited(_loadPendingApprovals());
     MezziKmReminderService.instance.configure(
       enabledForUser: true,
       userId: widget.userId,
     );
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      _checkAndPromptMezziKmIfNeeded();
+      unawaited(_checkAndPromptMezziKmIfNeeded());
     });
   }
 

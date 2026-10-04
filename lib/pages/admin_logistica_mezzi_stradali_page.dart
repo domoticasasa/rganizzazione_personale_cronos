@@ -82,7 +82,7 @@ class _AdminLogisticaMezziStradaliPageState
   @override
   void initState() {
     super.initState();
-    _bootstrap();
+    unawaited(_bootstrap());
   }
 
   @override
@@ -326,7 +326,7 @@ class _AdminLogisticaMezziStradaliPageState
     _search = value;
     _searchDebounce?.cancel();
     _searchDebounce = Timer(const Duration(milliseconds: 250), () {
-      _loadRows(showLoader: false);
+      unawaited(_loadRows(showLoader: false));
     });
   }
 
@@ -1153,7 +1153,7 @@ class _MezzoDialogState extends State<_MezzoDialog> {
     tipologiaGommeCtrl =
         TextEditingController(text: (r['tipologia_gomme'] ?? '').toString());
     noteCtrl = TextEditingController(text: (r['note'] ?? '').toString());
-    _loadDipendentiOptions();
+    unawaited(_loadDipendentiOptions());
   }
 
   Future<void> _loadDipendentiOptions() async {

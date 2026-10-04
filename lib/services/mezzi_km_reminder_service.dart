@@ -30,8 +30,10 @@ class MezziKmReminderService {
     _userId = userId;
     _timer?.cancel();
     if (!_enabled) return;
-    _tick();
-    _timer = Timer.periodic(const Duration(seconds: 30), (_) => _tick());
+    unawaited(_tick());
+    _timer = Timer.periodic(const Duration(seconds: 30), (_) {
+      unawaited(_tick());
+    });
   }
 
   void stop() {
