@@ -7,7 +7,7 @@ class MezziKmService {
 
   static DateTime currentMonthStart([DateTime? now]) {
     final ref = now ?? DateTime.now();
-    return DateTime(ref.year, ref.month, 1);
+    return DateTime(ref.year, ref.month);
   }
 
   static bool shouldRequireMonthlyKm([DateTime? now]) {
