@@ -355,5 +355,5 @@ Scadenze visite e giudizi di idoneità | [es. per la durata del rapporto + ___]
 Posizione GPS | [es. 12 mesi]
 Log di attività dell'app | 14 giorni
 Chat interna | 7 giorni
-Backup tecnici | [10/60 giorni – DA ALLINEARE con l'Allegato C]
+Backup tecnici | 60 giorni
 Account dopo la cessazione del rapporto | [es. disattivato alla cessazione e cancellato dopo ___]''';
