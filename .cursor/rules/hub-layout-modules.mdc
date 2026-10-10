@@ -1,0 +1,52 @@
+---
+description: Registrazione nuove pagine/tile hub rispettando layout salvato dall'utente in app
+globs: lib/hub/**/*.dart,lib/pages/admin_*_hub*.dart,lib/services/app_ui_layout_service.dart
+alwaysApply: true
+---
+
+# Hub e layout tile (CRONOS)
+
+## Principio fondamentale
+
+**La disposizione reale dei pulsanti NON è quella dei file `*_hub_nav_items.dart`.**
+
+L'utente sposta e riordina i tile dall'app (modalità riordino). L'ordine e l'hub di destinazione sono salvati in Supabase (`app_ui_layout_order` / `app_ui_user_layout_order`). Il codice definisce solo il **catalogo** dei moduli disponibili.
+
+Non assumere mai che un modulo sia "sulla dashboard", "su Logistica" o "su Carburante" solo perché così è nel codice di default.
+
+## Come registrare una nuova pagina hub
+
+1. **Un solo `layoutKey` univoco** (es. `qt_fatturazione_verifica`).
+2. **Una sola voce in catalogo** — un solo `AdminHubNavItem` in un solo file `*_hub_nav_items.dart`. Mai duplicare lo stesso `layoutKey` in più file (il primo vince in `itemsByKey` e confonde i default).
+3. **`defaultLayoutKey`** = hub logico di prima installazione (es. `layoutLogisticaHub`), non dove l'utente ha spostato i tile.
+4. **Pagina** in `lib/pages/…` + eventuale wrapper mobile in `lib/Mobile/cronos_mobile_pages.dart`.
+5. **Gruppo affinità** — se il modulo è correlato ad altri già esistenti, aggiungere il `layoutKey` al gruppo corretto in `AppUiLayoutService._moduleAffinityGroups` (`app_ui_layout_service.dart`). Così il tile nuovo compare **nello stesso hub dove l'utente ha già messo un sibling** (es. carburante vicino a `rifornimento_mdo`).
+6. **Non** aggiungere tile duplicati su dashboard, hub secondari o `_shippedHubModuleKeys` senza motivo. Evitare hub launcher extra se i moduli correlati sono già sotto Logistica.
+7. **Hub canonico** — se l'utente chiede uno spostamento strutturale, aggiornare `_canonicalHubForModule` in `app_ui_layout_service.dart` (oltre al catalogo). Questo riallinea anche i layout già salvati in Supabase.
+
+## Mappa hub canonici attuale
+
+| layoutKey | Hub destinazione |
+|-----------|------------------|
+| `estintori`, `casette_ps` | UQSA (`layoutUqsaHub`) |
+| `attestati_dipendenti` | Stesso hub dei sibling Formazione (`formazione_dlgs` / `formazione_rfi` / pagina custom Formazioni) — non sulla dashboard da solo |
+| `rifornimento_mdo`, `rcc_carburante`, `qt_fatturazione_verifica` | Hub **Carburante** (`layoutCarburanteHub` = `carburante_hub`) — launcher dashboard: tile `carburante` |
+| `mdo_mappa_gps`, `documenti_firma` | Dashboard admin (`layoutDashboardAdmin`) + GESTOPRO (`layoutDashboardAdminFuturistic`) |
+
+## File da toccare (checklist)
+
+- `lib/hub/<area>_hub_nav_items.dart` — voce catalogo
+- `lib/hub/admin_hub_catalog.dart` — solo se serve nuovo builder (di solito no)
+- `lib/services/app_ui_layout_service.dart` — solo `_moduleAffinityGroups` / eventuale `_shippedHubModuleKeys`
+- `lib/Mobile/cronos_mobile_pages.dart` — wrapper mobile se serve `forceMobileLayout`
+
+## Cosa NON fare
+
+- Non creare lo stesso modulo in `logistica_hub_nav_items.dart` **e** `carburante_hub_nav_items.dart`.
+- Non aggiungere hub "Carburante" in dashboard se l'utente raggruppa tutto sotto Logistica.
+- Non usare `_shippedHubModuleKeys` per forzare hub fissi se esiste un gruppo affinità appropriato.
+- Non dire all'utente "vai su hub X" senza sapere dove ha spostato i tile: indicare il **nome del tile** (label).
+
+## Verifica
+
+Dopo l'implementazione: il tile deve comparire nel catalogo; il posizionamento lo decide il layout salvato + affinità. Chiedere all'utente solo il **nome del tile** se non lo trova, non presumere l'hub.

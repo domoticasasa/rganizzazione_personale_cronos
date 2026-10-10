@@ -1,0 +1,2007 @@
+[
+  {
+    "code": "S05386",
+    "name": "Anzola",
+    "region": "0"
+  },
+  {
+    "code": "S02673",
+    "name": "Gaggio Porta Est",
+    "region": "0"
+  },
+  {
+    "code": "S12143",
+    "name": "Lolli",
+    "region": "0"
+  },
+  {
+    "code": "S01104",
+    "name": "Pieve Emanuele",
+    "region": "0"
+  },
+  {
+    "code": "S02595",
+    "name": "Busa Di Vigonza",
+    "region": "0"
+  },
+  {
+    "code": "S11121",
+    "name": "Marconi",
+    "region": "0"
+  },
+  {
+    "code": "S11004",
+    "name": "Bari Torre Quetta",
+    "region": "0"
+  },
+  {
+    "code": "S01135",
+    "name": "Rescaldina",
+    "region": "0"
+  },
+  {
+    "code": "S01136",
+    "name": "Castellanza",
+    "region": "0"
+  },
+  {
+    "code": "S01137",
+    "name": "Busto Arsizio Nord",
+    "region": "0"
+  },
+  {
+    "code": "S01138",
+    "name": "Ferno-Lonate Pozzolo",
+    "region": "0"
+  },
+  {
+    "code": "S09839",
+    "name": "Arechi",
+    "region": "0"
+  },
+  {
+    "code": "S09835",
+    "name": "Torrione",
+    "region": "0"
+  },
+  {
+    "code": "S09836",
+    "name": "Pastena",
+    "region": "0"
+  },
+  {
+    "code": "S08680",
+    "name": "Piedimonte-V.S.L.-Aquino",
+    "region": "0"
+  },
+  {
+    "code": "S08654",
+    "name": "Labico",
+    "region": "0"
+  },
+  {
+    "code": "S09199",
+    "name": "Fontanarosa",
+    "region": "0"
+  },
+  {
+    "code": "S00060",
+    "name": "Torino Rebaudengo Fossata",
+    "region": "0"
+  },
+  {
+    "code": "S12023",
+    "name": "Fontane Bianche",
+    "region": "0"
+  },
+  {
+    "code": "S12819",
+    "name": "Elmas Aeroporto",
+    "region": "0"
+  },
+  {
+    "code": "S05081",
+    "name": "Bologna San Vitale",
+    "region": "0"
+  },
+  {
+    "code": "S12333",
+    "name": "Catania Ognina",
+    "region": "0"
+  },
+  {
+    "code": "S12334",
+    "name": "Picanello",
+    "region": "0"
+  },
+  {
+    "code": "S12335",
+    "name": "Catania Europa",
+    "region": "0"
+  },
+  {
+    "code": "S12066",
+    "name": "Sferracavallo",
+    "region": "0"
+  },
+  {
+    "code": "S12069",
+    "name": "Ems-La Malfa",
+    "region": "0"
+  },
+  {
+    "code": "S12144",
+    "name": "Guadagna",
+    "region": "0"
+  },
+  {
+    "code": "S02218",
+    "name": "Gargazzone",
+    "region": "0"
+  },
+  {
+    "code": "S02059",
+    "name": "Casanova Kaiserau",
+    "region": "0"
+  },
+  {
+    "code": "S08514",
+    "name": "La Rustica Uir",
+    "region": "0"
+  },
+  {
+    "code": "S08513",
+    "name": "La Rustica Citta'",
+    "region": "0"
+  },
+  {
+    "code": "S08509",
+    "name": "Palmiro Togliatti",
+    "region": "0"
+  },
+  {
+    "code": "S06001",
+    "name": "Lastra A Signa",
+    "region": "0"
+  },
+  {
+    "code": "S08812",
+    "name": "Canistro",
+    "region": "0"
+  },
+  {
+    "code": "S08817",
+    "name": "Santopadre",
+    "region": "0"
+  },
+  {
+    "code": "S08819",
+    "name": "Fontana Liri Inferiore",
+    "region": "0"
+  },
+  {
+    "code": "S08820",
+    "name": "Colfelice",
+    "region": "0"
+  },
+  {
+    "code": "S02517",
+    "name": "Venezia Mestre Ospedale",
+    "region": "0"
+  },
+  {
+    "code": "S03311",
+    "name": "Miramare",
+    "region": "0"
+  },
+  {
+    "code": "S08324",
+    "name": "Ottavia",
+    "region": "0"
+  },
+  {
+    "code": "S08327",
+    "name": "Roma Balduina",
+    "region": "0"
+  },
+  {
+    "code": "S05268",
+    "name": "Quattro Ville",
+    "region": "0"
+  },
+  {
+    "code": "S09771",
+    "name": "Rovigliano",
+    "region": "0"
+  },
+  {
+    "code": "S09819",
+    "name": "Duomo Via Vernieri",
+    "region": "0"
+  },
+  {
+    "code": "S05152",
+    "name": "Borgonuovo",
+    "region": "0"
+  },
+  {
+    "code": "S05010",
+    "name": "Calderara-Bargellino",
+    "region": "0"
+  },
+  {
+    "code": "S08653",
+    "name": "Colonna Galleria",
+    "region": "0"
+  },
+  {
+    "code": "S01530",
+    "name": "Bergamo Ospedale",
+    "region": "0"
+  },
+  {
+    "code": "S07019",
+    "name": "Pescara Tribunale",
+    "region": "0"
+  },
+  {
+    "code": "S01624",
+    "name": "S.Donato Milanese",
+    "region": "0"
+  },
+  {
+    "code": "S01648",
+    "name": "Milano Repubblica",
+    "region": "0"
+  },
+  {
+    "code": "S01069",
+    "name": "Milano Quarto Oggiaro",
+    "region": "0"
+  },
+  {
+    "code": "S01070",
+    "name": "Novate Milanese",
+    "region": "0"
+  },
+  {
+    "code": "S01071",
+    "name": "Bollate Centro",
+    "region": "0"
+  },
+  {
+    "code": "S01072",
+    "name": "Bollate Nord",
+    "region": "0"
+  },
+  {
+    "code": "S01073",
+    "name": "Garbagnate Parco Delle Groane",
+    "region": "0"
+  },
+  {
+    "code": "S01074",
+    "name": "Garbagnate Milanese",
+    "region": "0"
+  },
+  {
+    "code": "S01075",
+    "name": "Cesate",
+    "region": "0"
+  },
+  {
+    "code": "S01076",
+    "name": "Caronno Pertusella",
+    "region": "0"
+  },
+  {
+    "code": "S01077",
+    "name": "Saronno Sud",
+    "region": "0"
+  },
+  {
+    "code": "S01639",
+    "name": "Milano Villapizzone",
+    "region": "0"
+  },
+  {
+    "code": "S01492",
+    "name": "Milano Forlanini",
+    "region": "0"
+  },
+  {
+    "code": "S01039",
+    "name": "Rho Fiera Milano",
+    "region": "0"
+  },
+  {
+    "code": "S07025",
+    "name": "Chieti-Mad.D.P.",
+    "region": "0"
+  },
+  {
+    "code": "S08241",
+    "name": "Gavignano",
+    "region": "0"
+  },
+  {
+    "code": "S19919",
+    "name": "Stabio",
+    "region": "0"
+  },
+  {
+    "code": "S01206",
+    "name": "Cantello Gaggiolo",
+    "region": "0"
+  },
+  {
+    "code": "S12336",
+    "name": "Catania Aer. Fontanarossa",
+    "region": "0"
+  },
+  {
+    "code": "S12001",
+    "name": "Fiumara Gazzi",
+    "region": "0"
+  },
+  {
+    "code": "S12060",
+    "name": "Ponte Schiavo",
+    "region": "0"
+  },
+  {
+    "code": "S12059",
+    "name": "San Paolo",
+    "region": "0"
+  },
+  {
+    "code": "S04524",
+    "name": "Diano",
+    "region": "0"
+  },
+  {
+    "code": "S04525",
+    "name": "Andora",
+    "region": "0"
+  },
+  {
+    "code": "S03213",
+    "name": "Trieste Airport",
+    "region": "0"
+  },
+  {
+    "code": "S11516",
+    "name": "Modugno",
+    "region": "0"
+  },
+  {
+    "code": "S11003",
+    "name": "Bari Villaggio Del Lavoratore",
+    "region": "0"
+  },
+  {
+    "code": "S11507",
+    "name": "Castellaneta",
+    "region": "0"
+  },
+  {
+    "code": "S07515",
+    "name": "Martinsicuro",
+    "region": "0"
+  },
+  {
+    "code": "S02019",
+    "name": "Levata",
+    "region": "0"
+  },
+  {
+    "code": "S02021",
+    "name": "Borgochiesanuova",
+    "region": "0"
+  },
+  {
+    "code": "S05183",
+    "name": "Formigine",
+    "region": "0"
+  },
+  {
+    "code": "S05189",
+    "name": "Policlinico",
+    "region": "0"
+  },
+  {
+    "code": "S05188",
+    "name": "Modena Piazza Manzoni",
+    "region": "0"
+  },
+  {
+    "code": "S05187",
+    "name": "Fornaci",
+    "region": "0"
+  },
+  {
+    "code": "S05186",
+    "name": "Baggiovara Ospedale",
+    "region": "0"
+  },
+  {
+    "code": "S05185",
+    "name": "Baggiovara",
+    "region": "0"
+  },
+  {
+    "code": "S05184",
+    "name": "Casinalbo",
+    "region": "0"
+  },
+  {
+    "code": "S07021",
+    "name": "Camerano Aspio",
+    "region": "0"
+  },
+  {
+    "code": "S02013",
+    "name": "Trento S.Bartolameo",
+    "region": "0"
+  },
+  {
+    "code": "S02301",
+    "name": "Povo",
+    "region": "0"
+  },
+  {
+    "code": "S05978",
+    "name": "Vignola",
+    "region": "0"
+  },
+  {
+    "code": "S05967",
+    "name": "Ceretolo",
+    "region": "0"
+  },
+  {
+    "code": "S05968",
+    "name": "Casalecchio Palasport",
+    "region": "0"
+  },
+  {
+    "code": "S05969",
+    "name": "Riate",
+    "region": "0"
+  },
+  {
+    "code": "S05970",
+    "name": "Pilastrino",
+    "region": "0"
+  },
+  {
+    "code": "S05971",
+    "name": "Zola Centro",
+    "region": "0"
+  },
+  {
+    "code": "S05918",
+    "name": "Zola Chiesa",
+    "region": "0"
+  },
+  {
+    "code": "S05919",
+    "name": "Ponte Ronca",
+    "region": "0"
+  },
+  {
+    "code": "S05972",
+    "name": "Via Lunga",
+    "region": "0"
+  },
+  {
+    "code": "S05973",
+    "name": "Crespellano",
+    "region": "0"
+  },
+  {
+    "code": "S05974",
+    "name": "Muffa",
+    "region": "0"
+  },
+  {
+    "code": "S05975",
+    "name": "Bazzano",
+    "region": "0"
+  },
+  {
+    "code": "S05976",
+    "name": "Savignano Mulino",
+    "region": "0"
+  },
+  {
+    "code": "S05977",
+    "name": "Savignano Comune",
+    "region": "0"
+  },
+  {
+    "code": "S11120",
+    "name": "Bari Zona Industriale",
+    "region": "0"
+  },
+  {
+    "code": "S06607",
+    "name": "Crespino Del Lamone",
+    "region": "0"
+  },
+  {
+    "code": "S06618",
+    "name": "Fognano",
+    "region": "0"
+  },
+  {
+    "code": "S12035",
+    "name": "Ficarazzi",
+    "region": "0"
+  },
+  {
+    "code": "S12032",
+    "name": "Roccella",
+    "region": "0"
+  },
+  {
+    "code": "S11215",
+    "name": "Potenza Macchia Romana",
+    "region": "0"
+  },
+  {
+    "code": "S01059",
+    "name": "Albairate",
+    "region": "0"
+  },
+  {
+    "code": "S00059",
+    "name": "Grugliasco",
+    "region": "0"
+  },
+  {
+    "code": "S05057",
+    "name": "Riminifiera",
+    "region": "0"
+  },
+  {
+    "code": "S03023",
+    "name": "Tricesimo - San Pelagio",
+    "region": "0"
+  },
+  {
+    "code": "S11970",
+    "name": "Reggio Di Calabria Omeca",
+    "region": "0"
+  },
+  {
+    "code": "S01112",
+    "name": "Cesano Boscone",
+    "region": "0"
+  },
+  {
+    "code": "S01022",
+    "name": "Milano Tibaldi - Bocconi",
+    "region": "0"
+  },
+  {
+    "code": "S01929",
+    "name": "Seveso Baruccana",
+    "region": "0"
+  },
+  {
+    "code": "S01086",
+    "name": "Cesano Maderno",
+    "region": "0"
+  },
+  {
+    "code": "S01934",
+    "name": "Ceriano Laghetto-Solaro",
+    "region": "0"
+  },
+  {
+    "code": "S07431",
+    "name": "L`Aquila Campo Di Pile",
+    "region": "0"
+  },
+  {
+    "code": "S11973",
+    "name": "Reggio Di Calabria Archi",
+    "region": "0"
+  },
+  {
+    "code": "S11974",
+    "name": "Reggio Di Calabria Pentimele",
+    "region": "0"
+  },
+  {
+    "code": "S11975",
+    "name": "Reggio Di Calabria S.Caterina",
+    "region": "0"
+  },
+  {
+    "code": "S08737",
+    "name": "S. Gennaro",
+    "region": "0"
+  },
+  {
+    "code": "N00209",
+    "name": "Provaglio - Timoline",
+    "region": "0"
+  },
+  {
+    "code": "N00208",
+    "name": "Borgonato - Adro",
+    "region": "0"
+  },
+  {
+    "code": "N00206",
+    "name": "Passirano",
+    "region": "0"
+  },
+  {
+    "code": "N00205",
+    "name": "Paderno",
+    "region": "0"
+  },
+  {
+    "code": "N00204",
+    "name": "Castegnato",
+    "region": "0"
+  },
+  {
+    "code": "N00202",
+    "name": "Borgo S. Giovanni",
+    "region": "0"
+  },
+  {
+    "code": "S11001",
+    "name": "Potenza Univ.",
+    "region": "0"
+  },
+  {
+    "code": "S07013",
+    "name": "Perugia Silvestrini",
+    "region": "0"
+  },
+  {
+    "code": "S07026",
+    "name": "Nepezzano-Piano D'Accio",
+    "region": "0"
+  },
+  {
+    "code": "N00085",
+    "name": "Camnago Lentate",
+    "region": "0"
+  },
+  {
+    "code": "N00003",
+    "name": "Milano Bovisa",
+    "region": "0"
+  },
+  {
+    "code": "S02018",
+    "name": "Brunico Nord",
+    "region": "0"
+  },
+  {
+    "code": "S02060",
+    "name": "Perca",
+    "region": "0"
+  },
+  {
+    "code": "S02016",
+    "name": "S.Lorenzo",
+    "region": "0"
+  },
+  {
+    "code": "S09988",
+    "name": "Napoli Afragola",
+    "region": "0"
+  },
+  {
+    "code": "S11123",
+    "name": "Brindisi Ricerca",
+    "region": "0"
+  },
+  {
+    "code": "S11139",
+    "name": "Brindisi-Perrino",
+    "region": "0"
+  },
+  {
+    "code": "S05953",
+    "name": "S.Patrizio",
+    "region": "0"
+  },
+  {
+    "code": "S07023",
+    "name": "Monsampolo Del T",
+    "region": "0"
+  },
+  {
+    "code": "S07024",
+    "name": "Colli Del Tronto",
+    "region": "0"
+  },
+  {
+    "code": "S09798",
+    "name": "Acquamela",
+    "region": "0"
+  },
+  {
+    "code": "S09799",
+    "name": "Salerno Irno",
+    "region": "0"
+  },
+  {
+    "code": "S08816",
+    "name": "Compre S.Vincenzo",
+    "region": "0"
+  },
+  {
+    "code": "S08815",
+    "name": "Ridotti-Collepiano",
+    "region": "0"
+  },
+  {
+    "code": "S08814",
+    "name": "Roccavivi",
+    "region": "0"
+  },
+  {
+    "code": "S08813",
+    "name": "Morrea-Castronovo-Rendinara",
+    "region": "0"
+  },
+  {
+    "code": "S08699",
+    "name": "Pantanella",
+    "region": "0"
+  },
+  {
+    "code": "N00005",
+    "name": "Novate M.Se",
+    "region": "0"
+  },
+  {
+    "code": "N00001",
+    "name": "M N Cadorna",
+    "region": "0"
+  },
+  {
+    "code": "N00044",
+    "name": "Como Nord Lago",
+    "region": "0"
+  },
+  {
+    "code": "N00024",
+    "name": "Varese Nord",
+    "region": "0"
+  },
+  {
+    "code": "N00043",
+    "name": "Como Nord Borghi",
+    "region": "0"
+  },
+  {
+    "code": "N00100",
+    "name": "Milano Nord Domodossola",
+    "region": "0"
+  },
+  {
+    "code": "N00034",
+    "name": "Rovello Porro",
+    "region": "0"
+  },
+  {
+    "code": "N00035",
+    "name": "Rovellasca - Manera",
+    "region": "0"
+  },
+  {
+    "code": "N00036",
+    "name": "Lomazzo",
+    "region": "0"
+  },
+  {
+    "code": "N00037",
+    "name": "Caslino Al Piano",
+    "region": "0"
+  },
+  {
+    "code": "N00038",
+    "name": "Cadorago",
+    "region": "0"
+  },
+  {
+    "code": "N00039",
+    "name": "Fino Mornasco",
+    "region": "0"
+  },
+  {
+    "code": "N00040",
+    "name": "Portichetto - Luisago",
+    "region": "0"
+  },
+  {
+    "code": "N00041",
+    "name": "Grandate - Breccia",
+    "region": "0"
+  },
+  {
+    "code": "N00042",
+    "name": "Como Nord Camerlata",
+    "region": "0"
+  },
+  {
+    "code": "N00067",
+    "name": "Cabiate",
+    "region": "0"
+  },
+  {
+    "code": "N00066",
+    "name": "Meda",
+    "region": "0"
+  },
+  {
+    "code": "N00063",
+    "name": "Bovisio M. - Mombello",
+    "region": "0"
+  },
+  {
+    "code": "N00062",
+    "name": "Varedo",
+    "region": "0"
+  },
+  {
+    "code": "N00061",
+    "name": "Palazzolo M.Se",
+    "region": "0"
+  },
+  {
+    "code": "N00060",
+    "name": "Paderno Dugnano",
+    "region": "0"
+  },
+  {
+    "code": "N00263",
+    "name": "Cormano-Cusano Milanino",
+    "region": "0"
+  },
+  {
+    "code": "N00057",
+    "name": "M.N. Bruzzano",
+    "region": "0"
+  },
+  {
+    "code": "N00056",
+    "name": "M.N. Affori",
+    "region": "0"
+  },
+  {
+    "code": "N00004",
+    "name": "M.N. Quarto Oggiaro",
+    "region": "0"
+  },
+  {
+    "code": "N00008",
+    "name": "Garbagnate Parco Groane",
+    "region": "0"
+  },
+  {
+    "code": "N00009",
+    "name": "Garbagnate M.Se",
+    "region": "0"
+  },
+  {
+    "code": "N00011",
+    "name": "Caronno - Pertusella",
+    "region": "0"
+  },
+  {
+    "code": "N00023",
+    "name": "Malnate",
+    "region": "0"
+  },
+  {
+    "code": "N00022",
+    "name": "Vedano",
+    "region": "0"
+  },
+  {
+    "code": "N00021",
+    "name": "Venegono Sup. - Castiglio",
+    "region": "0"
+  },
+  {
+    "code": "N00020",
+    "name": "Venegono Inf.",
+    "region": "0"
+  },
+  {
+    "code": "N00019",
+    "name": "Tradate",
+    "region": "0"
+  },
+  {
+    "code": "N00018",
+    "name": "Abbiate Guazzone",
+    "region": "0"
+  },
+  {
+    "code": "N00017",
+    "name": "Locate V. - Carbonate",
+    "region": "0"
+  },
+  {
+    "code": "N00016",
+    "name": "Mozzate",
+    "region": "0"
+  },
+  {
+    "code": "N00015",
+    "name": "Cislago",
+    "region": "0"
+  },
+  {
+    "code": "N00014",
+    "name": "Gerenzano - Turate",
+    "region": "0"
+  },
+  {
+    "code": "S00884",
+    "name": "Rivarolo",
+    "region": "0"
+  },
+  {
+    "code": "S09842",
+    "name": "Franciosa",
+    "region": "0"
+  },
+  {
+    "code": "S01417",
+    "name": "Prata Camportaccio",
+    "region": "0"
+  },
+  {
+    "code": "S12902",
+    "name": "Olbia Terranova",
+    "region": "0"
+  },
+  {
+    "code": "N00086",
+    "name": "Barruccana",
+    "region": "0"
+  },
+  {
+    "code": "N00087",
+    "name": "Ceriano Laghetto",
+    "region": "0"
+  },
+  {
+    "code": "N00078",
+    "name": "Canzo",
+    "region": "0"
+  },
+  {
+    "code": "N00077",
+    "name": "Caslino D'Erba",
+    "region": "0"
+  },
+  {
+    "code": "N00076",
+    "name": "Pontelambro - Castelmarte",
+    "region": "0"
+  },
+  {
+    "code": "N00074",
+    "name": "Erba",
+    "region": "0"
+  },
+  {
+    "code": "N00072",
+    "name": "Lambrugo - Lurago",
+    "region": "0"
+  },
+  {
+    "code": "N00071",
+    "name": "Inverigo",
+    "region": "0"
+  },
+  {
+    "code": "N00070",
+    "name": "Arosio",
+    "region": "0"
+  },
+  {
+    "code": "N00069",
+    "name": "Carugo - Giussano",
+    "region": "0"
+  },
+  {
+    "code": "S05151",
+    "name": "Pistoia Ovest",
+    "region": "0"
+  },
+  {
+    "code": "S07415",
+    "name": "L'Aquila Sassa N.S.I.",
+    "region": "0"
+  },
+  {
+    "code": "N00217",
+    "name": "Pisogne",
+    "region": "0"
+  },
+  {
+    "code": "N00226",
+    "name": "Breno",
+    "region": "0"
+  },
+  {
+    "code": "N00212",
+    "name": "Sulzano",
+    "region": "0"
+  },
+  {
+    "code": "N00213",
+    "name": "Sale Marasino",
+    "region": "0"
+  },
+  {
+    "code": "N00214",
+    "name": "Marone - Zone",
+    "region": "0"
+  },
+  {
+    "code": "N00218",
+    "name": "Piancamuno - Gratacasolo",
+    "region": "0"
+  },
+  {
+    "code": "N00220",
+    "name": "Darfo - Corna",
+    "region": "0"
+  },
+  {
+    "code": "N00221",
+    "name": "Boario Terme",
+    "region": "0"
+  },
+  {
+    "code": "N00223",
+    "name": "Pian Di Borno",
+    "region": "0"
+  },
+  {
+    "code": "N00224",
+    "name": "Cogno - Esine",
+    "region": "0"
+  },
+  {
+    "code": "N00225",
+    "name": "Cividate - Malegno",
+    "region": "0"
+  },
+  {
+    "code": "S05921",
+    "name": "Ciano D'Enza",
+    "region": "0"
+  },
+  {
+    "code": "S05936",
+    "name": "Via Fanti - Tribunale",
+    "region": "0"
+  },
+  {
+    "code": "S05935",
+    "name": "Reggio S.Stefano",
+    "region": "0"
+  },
+  {
+    "code": "S05934",
+    "name": "Reggio All'Angelo",
+    "region": "0"
+  },
+  {
+    "code": "S05932",
+    "name": "Cavriago",
+    "region": "0"
+  },
+  {
+    "code": "S05931",
+    "name": "Cavriago S.Nicolo'",
+    "region": "0"
+  },
+  {
+    "code": "S05930",
+    "name": "C.C.9 Bivio Parco",
+    "region": "0"
+  },
+  {
+    "code": "S05929",
+    "name": "Barco",
+    "region": "0"
+  },
+  {
+    "code": "S05928",
+    "name": "Fossa",
+    "region": "0"
+  },
+  {
+    "code": "S05927",
+    "name": "Bibbiano",
+    "region": "0"
+  },
+  {
+    "code": "S05925",
+    "name": "Corniano",
+    "region": "0"
+  },
+  {
+    "code": "S05924",
+    "name": "Piazzola",
+    "region": "0"
+  },
+  {
+    "code": "S05923",
+    "name": "S.Polo D'Enza",
+    "region": "0"
+  },
+  {
+    "code": "S05922",
+    "name": "Ciano Via Tedaldo Da Canossa",
+    "region": "0"
+  },
+  {
+    "code": "S05960",
+    "name": "Guastalla",
+    "region": "0"
+  },
+  {
+    "code": "S05949",
+    "name": "Reggio S.Croce",
+    "region": "0"
+  },
+  {
+    "code": "S05191",
+    "name": "Reggio Stadio Giglio",
+    "region": "0"
+  },
+  {
+    "code": "S05195",
+    "name": "Reggio Mediopadana",
+    "region": "0"
+  },
+  {
+    "code": "S05947",
+    "name": "Pratofontana",
+    "region": "0"
+  },
+  {
+    "code": "S05946",
+    "name": "Bagnolo In Piano",
+    "region": "0"
+  },
+  {
+    "code": "S05945",
+    "name": "Bagnolo Soave",
+    "region": "0"
+  },
+  {
+    "code": "S05944",
+    "name": "Pieve Rossa",
+    "region": "0"
+  },
+  {
+    "code": "S05943",
+    "name": "S.Tomaso",
+    "region": "0"
+  },
+  {
+    "code": "S05942",
+    "name": "Vezzola",
+    "region": "0"
+  },
+  {
+    "code": "S05941",
+    "name": "S.Giovanni (Fer)",
+    "region": "0"
+  },
+  {
+    "code": "S05940",
+    "name": "Novellara",
+    "region": "0"
+  },
+  {
+    "code": "S05939",
+    "name": "S.Bernardino",
+    "region": "0"
+  },
+  {
+    "code": "S05938",
+    "name": "S.Giacomo (Fsc)",
+    "region": "0"
+  },
+  {
+    "code": "S05019",
+    "name": "Roveri",
+    "region": "0"
+  },
+  {
+    "code": "S05999",
+    "name": "Consandolo",
+    "region": "0"
+  },
+  {
+    "code": "S05018",
+    "name": "Molinella",
+    "region": "0"
+  },
+  {
+    "code": "S05998",
+    "name": "Guarda",
+    "region": "0"
+  },
+  {
+    "code": "S05997",
+    "name": "Mezzolara",
+    "region": "0"
+  },
+  {
+    "code": "S05996",
+    "name": "Budrio Centro",
+    "region": "0"
+  },
+  {
+    "code": "S05017",
+    "name": "Budrio",
+    "region": "0"
+  },
+  {
+    "code": "S05995",
+    "name": "Castenaso",
+    "region": "0"
+  },
+  {
+    "code": "S05994",
+    "name": "Castenaso Stellina",
+    "region": "0"
+  },
+  {
+    "code": "S05993",
+    "name": "Ca' Dell'Orbo",
+    "region": "0"
+  },
+  {
+    "code": "S05957",
+    "name": "Codisotto",
+    "region": "0"
+  },
+  {
+    "code": "S05958",
+    "name": "Luzzara",
+    "region": "0"
+  },
+  {
+    "code": "S05959",
+    "name": "Tagliata",
+    "region": "0"
+  },
+  {
+    "code": "S05961",
+    "name": "Gualtieri",
+    "region": "0"
+  },
+  {
+    "code": "S05962",
+    "name": "Pieve Saliceto",
+    "region": "0"
+  },
+  {
+    "code": "S05963",
+    "name": "Boretto",
+    "region": "0"
+  },
+  {
+    "code": "S05964",
+    "name": "Brescello Viadana",
+    "region": "0"
+  },
+  {
+    "code": "N00211",
+    "name": "Pilzone",
+    "region": "0"
+  },
+  {
+    "code": "N00215",
+    "name": "Vello",
+    "region": "0"
+  },
+  {
+    "code": "N00216",
+    "name": "Toline",
+    "region": "0"
+  },
+  {
+    "code": "S11969",
+    "name": "Reggio Di Calabria Bocale",
+    "region": "0"
+  },
+  {
+    "code": "S07006",
+    "name": "Perugia Universita'",
+    "region": "0"
+  },
+  {
+    "code": "S07020",
+    "name": "Perugia Capitini",
+    "region": "0"
+  },
+  {
+    "code": "N00033",
+    "name": "Laveno",
+    "region": "0"
+  },
+  {
+    "code": "N00032",
+    "name": "Cittiglio",
+    "region": "0"
+  },
+  {
+    "code": "N00031",
+    "name": "Gemonio",
+    "region": "0"
+  },
+  {
+    "code": "N00030",
+    "name": "Cocquio - Trevisago",
+    "region": "0"
+  },
+  {
+    "code": "N00028",
+    "name": "Gavirate",
+    "region": "0"
+  },
+  {
+    "code": "N00027",
+    "name": "Barasso - Comerio",
+    "region": "0"
+  },
+  {
+    "code": "N00026",
+    "name": "Morosolo - Casciago",
+    "region": "0"
+  },
+  {
+    "code": "N00025",
+    "name": "Varese Casbeno",
+    "region": "0"
+  },
+  {
+    "code": "S08302",
+    "name": "Sipicciano S.Nicola",
+    "region": "0"
+  },
+  {
+    "code": "S06806",
+    "name": "Barberino Val D`Elsa",
+    "region": "0"
+  },
+  {
+    "code": "S06003",
+    "name": "Luni",
+    "region": "0"
+  },
+  {
+    "code": "S12810",
+    "name": "Cagliari S.Gilla",
+    "region": "0"
+  },
+  {
+    "code": "S12809",
+    "name": "Assemini Carmine",
+    "region": "0"
+  },
+  {
+    "code": "S12808",
+    "name": "Assemini S. Lucia",
+    "region": "0"
+  },
+  {
+    "code": "S08550",
+    "name": "Aielli",
+    "region": "0"
+  },
+  {
+    "code": "S08548",
+    "name": "Collarmele",
+    "region": "0"
+  },
+  {
+    "code": "S05011",
+    "name": "Vaio Ospedale",
+    "region": "0"
+  },
+  {
+    "code": "S00618",
+    "name": "Vievola",
+    "region": "0"
+  },
+  {
+    "code": "S00619",
+    "name": "Tende",
+    "region": "0"
+  },
+  {
+    "code": "S00634",
+    "name": "La Brigue",
+    "region": "0"
+  },
+  {
+    "code": "S00620",
+    "name": "St.Dalmas De Tende",
+    "region": "0"
+  },
+  {
+    "code": "S00621",
+    "name": "Fontan Saorge",
+    "region": "0"
+  },
+  {
+    "code": "S01078",
+    "name": "Milano Affori",
+    "region": "0"
+  },
+  {
+    "code": "S01079",
+    "name": "Milano Bruzzano Parco Nord",
+    "region": "0"
+  },
+  {
+    "code": "S01083",
+    "name": "Palazzolo Milanese",
+    "region": "0"
+  },
+  {
+    "code": "S01085",
+    "name": "Bovisio Masciago",
+    "region": "0"
+  },
+  {
+    "code": "S07314",
+    "name": "Macerata Universita'",
+    "region": "0"
+  },
+  {
+    "code": "S05799",
+    "name": "Codigoro",
+    "region": "0"
+  },
+  {
+    "code": "S05196",
+    "name": "Ferrara Boschetto",
+    "region": "0"
+  },
+  {
+    "code": "S05193",
+    "name": "Ferrara-Cona Ospedale",
+    "region": "0"
+  },
+  {
+    "code": "S05169",
+    "name": "Cona F. C.",
+    "region": "0"
+  },
+  {
+    "code": "S05170",
+    "name": "Quartesana",
+    "region": "0"
+  },
+  {
+    "code": "S05171",
+    "name": "Masi Torello",
+    "region": "0"
+  },
+  {
+    "code": "S05172",
+    "name": "Tresigallo - Correggi",
+    "region": "0"
+  },
+  {
+    "code": "S05173",
+    "name": "Rovereto - S.V. - Medelana",
+    "region": "0"
+  },
+  {
+    "code": "S05174",
+    "name": "Dogato",
+    "region": "0"
+  },
+  {
+    "code": "S05175",
+    "name": "Ostellato",
+    "region": "0"
+  },
+  {
+    "code": "S05176",
+    "name": "Migliarino",
+    "region": "0"
+  },
+  {
+    "code": "S05177",
+    "name": "Valcesura",
+    "region": "0"
+  },
+  {
+    "code": "S05178",
+    "name": "Migliaro",
+    "region": "0"
+  },
+  {
+    "code": "S05179",
+    "name": "Massafiscaglia",
+    "region": "0"
+  },
+  {
+    "code": "S05166",
+    "name": "Vigarano Pieve",
+    "region": "0"
+  },
+  {
+    "code": "S05165",
+    "name": "Bondeno",
+    "region": "0"
+  },
+  {
+    "code": "S05164",
+    "name": "Stellata Ficarolo",
+    "region": "0"
+  },
+  {
+    "code": "S05162",
+    "name": "Felonica Po",
+    "region": "0"
+  },
+  {
+    "code": "S05161",
+    "name": "Sermide",
+    "region": "0"
+  },
+  {
+    "code": "S05159",
+    "name": "Magnacavallo",
+    "region": "0"
+  },
+  {
+    "code": "S05158",
+    "name": "Schivenoglia",
+    "region": "0"
+  },
+  {
+    "code": "S05156",
+    "name": "Quistello",
+    "region": "0"
+  },
+  {
+    "code": "S05155",
+    "name": "San Benedetto Po",
+    "region": "0"
+  },
+  {
+    "code": "S05154",
+    "name": "Pegognaga",
+    "region": "0"
+  },
+  {
+    "code": "S05719",
+    "name": "Coronella",
+    "region": "0"
+  },
+  {
+    "code": "N00055",
+    "name": "Novara Nord",
+    "region": "0"
+  },
+  {
+    "code": "N00029",
+    "name": "Gavirate Verbano",
+    "region": "0"
+  },
+  {
+    "code": "N00049",
+    "name": "Vanzaghello - Magnago",
+    "region": "0"
+  },
+  {
+    "code": "N00050",
+    "name": "Castano Primo",
+    "region": "0"
+  },
+  {
+    "code": "N00051",
+    "name": "Turbigo",
+    "region": "0"
+  },
+  {
+    "code": "N00054",
+    "name": "Galliate",
+    "region": "0"
+  },
+  {
+    "code": "N00107",
+    "name": "Busto Arsizio Rfi",
+    "region": "0"
+  },
+  {
+    "code": "N00081",
+    "name": "Ferno Lonate Pozzolo",
+    "region": "0"
+  },
+  {
+    "code": "S05194",
+    "name": "Sassuolo Radici",
+    "region": "0"
+  },
+  {
+    "code": "S05985",
+    "name": "Pratissolo",
+    "region": "0"
+  },
+  {
+    "code": "S05984",
+    "name": "Scandiano",
+    "region": "0"
+  },
+  {
+    "code": "S05983",
+    "name": "Chiozza",
+    "region": "0"
+  },
+  {
+    "code": "S05982",
+    "name": "Casalgrande",
+    "region": "0"
+  },
+  {
+    "code": "S05981",
+    "name": "Dinazzano",
+    "region": "0"
+  },
+  {
+    "code": "S05980",
+    "name": "Villalunga",
+    "region": "0"
+  },
+  {
+    "code": "S05979",
+    "name": "Veggia",
+    "region": "0"
+  },
+  {
+    "code": "S05986",
+    "name": "Pm Bosco",
+    "region": "0"
+  },
+  {
+    "code": "S09122",
+    "name": "Traccia",
+    "region": "0"
+  },
+  {
+    "code": "S05190",
+    "name": "Citta' Del Ragazzo",
+    "region": "0"
+  },
+  {
+    "code": "S05926",
+    "name": "Bibbiano Via Monti",
+    "region": "0"
+  },
+  {
+    "code": "S05192",
+    "name": "S.Lazzaro",
+    "region": "0"
+  },
+  {
+    "code": "S06071",
+    "name": "Pratovecchio Stia",
+    "region": "0"
+  },
+  {
+    "code": "S07022",
+    "name": "Spinet.V.S.Pio X",
+    "region": "0"
+  },
+  {
+    "code": "S07417",
+    "name": "L'Aquila S. Gregorio",
+    "region": "0"
+  },
+  {
+    "code": "S07436",
+    "name": "Bazzano (Aq)",
+    "region": "0"
+  },
+  {
+    "code": "S02598",
+    "name": "Piove Di Sacco",
+    "region": "0"
+  },
+  {
+    "code": "S11756",
+    "name": "Bivio S.Antonello",
+    "region": "0"
+  },
+  {
+    "code": "S01066",
+    "name": "Milano Cadorna",
+    "region": "0"
+  },
+  {
+    "code": "S01067",
+    "name": "Milano Domodossola",
+    "region": "0"
+  },
+  {
+    "code": "S01724",
+    "name": "Gerenzano-Turate",
+    "region": "0"
+  },
+  {
+    "code": "S01727",
+    "name": "Locate Varesino-Carbonate",
+    "region": "0"
+  },
+  {
+    "code": "S01734",
+    "name": "Venegono Inferiore",
+    "region": "0"
+  },
+  {
+    "code": "S01735",
+    "name": "Venegono Superiore-Castiglione O.",
+    "region": "0"
+  },
+  {
+    "code": "S01736",
+    "name": "Vedano Olona",
+    "region": "0"
+  },
+  {
+    "code": "S01740",
+    "name": "Morosolo Casciago",
+    "region": "0"
+  },
+  {
+    "code": "S01741",
+    "name": "Barasso-Comerio",
+    "region": "0"
+  },
+  {
+    "code": "S01744",
+    "name": "Cocquio Trevisago",
+    "region": "0"
+  },
+  {
+    "code": "S01747",
+    "name": "Laveno Mombello Lago",
+    "region": "0"
+  },
+  {
+    "code": "S01756",
+    "name": "Rovellasca-Manera",
+    "region": "0"
+  },
+  {
+    "code": "S01761",
+    "name": "Portichetto-Luisago",
+    "region": "0"
+  },
+  {
+    "code": "S01762",
+    "name": "Grandate-Breccia",
+    "region": "0"
+  },
+  {
+    "code": "S09998",
+    "name": "Como Camerlata",
+    "region": "0"
+  },
+  {
+    "code": "S01764",
+    "name": "Como Borghi",
+    "region": "0"
+  },
+  {
+    "code": "S01765",
+    "name": "Como Lago",
+    "region": "0"
+  },
+  {
+    "code": "S01797",
+    "name": "Brescia Borgo San Giovanni",
+    "region": "0"
+  },
+  {
+    "code": "S01794",
+    "name": "Paderno Franciacorta",
+    "region": "0"
+  },
+  {
+    "code": "S01789",
+    "name": "Bornato-Calino",
+    "region": "0"
+  },
+  {
+    "code": "S01788",
+    "name": "Borgonato-Adro",
+    "region": "0"
+  },
+  {
+    "code": "S01787",
+    "name": "Provaglio-Timoline",
+    "region": "0"
+  },
+  {
+    "code": "S01783",
+    "name": "Marone-Zone",
+    "region": "0"
+  },
+  {
+    "code": "S01091",
+    "name": "Carugo-Giussano",
+    "region": "0"
+  },
+  {
+    "code": "S01094",
+    "name": "Lambrugo-Lurago D'Erba",
+    "region": "0"
+  },
+  {
+    "code": "S01097",
+    "name": "Pontelambro-Castelmarte",
+    "region": "0"
+  },
+  {
+    "code": "S01753",
+    "name": "Vanzaghello-Magnago",
+    "region": "0"
+  },
+  {
+    "code": "S13143",
+    "name": "Mendrisio",
+    "region": "0"
+  },
+  {
+    "code": "S01774",
+    "name": "Cividate-Malegno",
+    "region": "0"
+  },
+  {
+    "code": "S01775",
+    "name": "Cogno-Esine",
+    "region": "0"
+  },
+  {
+    "code": "S01006",
+    "name": "Darfo-Corna",
+    "region": "0"
+  },
+  {
+    "code": "S01780",
+    "name": "Pian Camuno-Gratacasolo",
+    "region": "0"
+  },
+  {
+    "code": "S05209",
+    "name": "Biasca",
+    "region": "0"
+  },
+  {
+    "code": "S05212",
+    "name": "Castione",
+    "region": "0"
+  },
+  {
+    "code": "S05213",
+    "name": "Bellinzona",
+    "region": "0"
+  },
+  {
+    "code": "S05214",
+    "name": "Giubiasco",
+    "region": "0"
+  },
+  {
+    "code": "S05219",
+    "name": "Lamone-Cadempino",
+    "region": "0"
+  },
+  {
+    "code": "S05300",
+    "name": "Lugano",
+    "region": "0"
+  },
+  {
+    "code": "Z05304",
+    "name": "Capolago-Riva S.Vitale",
+    "region": "0"
+  },
+  {
+    "code": "S19901",
+    "name": "Mendrisio S. Martino",
+    "region": "0"
+  },
+  {
+    "code": "S05218",
+    "name": "Taverne-Torricella",
+    "region": "0"
+  },
+  {
+    "code": "S05217",
+    "name": "Mezzovico",
+    "region": "0"
+  },
+  {
+    "code": "S05216",
+    "name": "Rivera-Bironico",
+    "region": "0"
+  },
+  {
+    "code": "S05400",
+    "name": "Locarno",
+    "region": "0"
+  },
+  {
+    "code": "S05401",
+    "name": "Tenero",
+    "region": "0"
+  },
+  {
+    "code": "S05402",
+    "name": "Gordola",
+    "region": "0"
+  },
+  {
+    "code": "S05412",
+    "name": "Riazzino",
+    "region": "0"
+  },
+  {
+    "code": "S05404",
+    "name": "Cadenazzo",
+    "region": "0"
+  },
+  {
+    "code": "S05415",
+    "name": "S.Antonino",
+    "region": "0"
+  },
+  {
+    "code": "N00053",
+    "name": "Ponte Ticino",
+    "region": "0"
+  },
+  {
+    "code": "S01749",
+    "name": "Galliate Parco Del Ticino",
+    "region": "0"
+  },
+  {
+    "code": "N00091",
+    "name": "Groane",
+    "region": "0"
+  },
+  {
+    "code": "S01927",
+    "name": "Ceriano Laghetto Groane",
+    "region": "0"
+  },
+  {
+    "code": "S01146",
+    "name": "Malpensa Aeroporto T2",
+    "region": "0"
+  }
+]

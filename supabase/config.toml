@@ -1,16 +1,61 @@
 
+[storage]
+# Limite globale progetto (deve essere >= limite bucket video istruttivi).
+# Il limite per-bucket non può superare questo valore.
+file_size_limit = "700MiB"
+
+[storage.buckets.app_instructional_videos]
+public = false
+file_size_limit = "700MiB"
+allowed_mime_types = ["video/mp4", "video/quicktime", "video/webm", "video/3gpp"]
+
 [auth]
-site_url = "https://6cae88f3.pernotti.pages.dev"
-additional_redirect_urls = ["myapp://auth-callback", "https://6cae88f3.pernotti.pages.dev/*"]
+# Dominio canonico di produzione (custom domain Cloudflare).
+site_url = "https://gestopro360.it"
+additional_redirect_urls = [
+  "myapp://auth-callback",
+  "https://gestopro360.it",
+  "https://gestopro360.it/**",
+  "https://gestopro360.it/login",
+  "https://gestopro360.it/password-recovery",
+  "https://www.gestopro360.it",
+  "https://www.gestopro360.it/**",
+  "https://www.gestopro360.it/login",
+  "https://www.gestopro360.it/password-recovery",
+  "https://gestopro.pages.dev",
+  "https://gestopro.pages.dev/**",
+  "https://gestopro.pages.dev/login",
+  "https://pernotti.pages.dev",
+  "https://pernotti.pages.dev/**",
+  "https://pernotti.pages.dev/login",
+  "https://6cae88f3.pernotti.pages.dev",
+  "https://6cae88f3.pernotti.pages.dev/**",
+  "https://6cae88f3.pernotti.pages.dev/login",
+  "http://localhost:*/**",
+  "http://127.0.0.1:*/**",
+]
 
 [auth.mfa.totp]
 enroll_enabled = true
 verify_enabled = true
 
+# Passkeys / WebAuthn — RP produzione (commentato: CLI locale non supporta auth.passkey/webauthn).
+# Abilita in Dashboard → Authentication → Passkeys oppure Management API.
+# [auth.passkey]
+# enabled = true
+#
+# [auth.webauthn]
+# rp_display_name = "Cronos Gestopro"
+# rp_id = "gestopro360.it"
+# rp_origins = [
+#   "https://gestopro360.it",
+#   "https://www.gestopro360.it",
+# ]
+
 [auth.email]
 enable_confirmations = true
-# Prima era 1m0s: troppo restrittivo per reset password / test (anche dopo 1 minuto poteva restare bloccato).
-# Dopo modifica: supabase config push (progetto collegato) oppure Dashboard → Authentication → Email.
+# Prima era 1m0s: troppo restrittivo per reset password / test.
+# L'invio login usa Resend (request-password-reset); questo vale solo come fallback Auth.
 max_frequency = "10s"
 otp_length = 8
 
@@ -29,12 +74,24 @@ entrypoint = "./functions/admin-create-user/index.ts"
 enabled = true
 verify_jwt = true
 import_map = "./functions/admin-reset-password/deno.json"
-# Uncomment to specify a custom file path to the entrypoint.
-# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
 entrypoint = "./functions/admin-reset-password/index.ts"
-# Specifies static files to be bundled with the function. Supports glob patterns.
-# For example, if you want to serve static HTML pages in your function:
-# static_files = [ "./functions/admin-reset-password/*.html" ]
+
+[auth.email.template.recovery]
+# Template italiano GESTOPRO360 (fallback Auth; l'invio normale è via Resend).
+subject = "GESTOPRO360 - Imposta una nuova password"
+content_path = "./supabase/templates/recovery.html"
+
+[functions.notify-password-changed]
+enabled = true
+verify_jwt = true
+import_map = "./functions/notify-password-changed/deno.json"
+entrypoint = "./functions/notify-password-changed/index.ts"
+
+[functions.request-password-reset]
+enabled = true
+verify_jwt = false
+import_map = "./functions/request-password-reset/deno.json"
+entrypoint = "./functions/request-password-reset/index.ts"
 
 [functions.admin-set-password]
 enabled = true
@@ -111,4 +168,51 @@ enabled = true
 verify_jwt = false
 import_map = "./functions/mezzi-km-reminder/deno.json"
 entrypoint = "./functions/mezzi-km-reminder/index.ts"
+
+[functions.convert-office-pdf]
+enabled = true
+verify_jwt = true
+import_map = "./functions/convert-office-pdf/deno.json"
+entrypoint = "./functions/convert-office-pdf/index.ts"
+
+[functions.doc-firma-send-otp]
+enabled = true
+verify_jwt = true
+import_map = "./functions/doc-firma-send-otp/deno.json"
+entrypoint = "./functions/doc-firma-send-otp/index.ts"
+
+[functions.doc-firma-notify]
+enabled = true
+verify_jwt = true
+import_map = "./functions/doc-firma-notify/deno.json"
+entrypoint = "./functions/doc-firma-notify/index.ts"
+
+[functions.render-rfp03-pdf]
+enabled = true
+verify_jwt = true
+import_map = "./functions/render-rfp03-pdf/deno.json"
+entrypoint = "./functions/render-rfp03-pdf/index.ts"
+
+[functions.admin-data-backup]
+enabled = true
+verify_jwt = true
+import_map = "./functions/admin-data-backup/deno.json"
+entrypoint = "./functions/admin-data-backup/index.ts"
+
+[functions.daily-data-backup]
+enabled = true
+verify_jwt = false
+import_map = "./functions/daily-data-backup/deno.json"
+entrypoint = "./functions/daily-data-backup/index.ts"
+
+[functions.security-incident-public]
+enabled = true
+verify_jwt = false
+import_map = "./functions/security-incident-public/deno.json"
+entrypoint = "./functions/security-incident-public/index.ts"
+
+[functions.auth-qr-login]
+enabled = true
+verify_jwt = false
+entrypoint = "./functions/auth-qr-login/index.ts"
 

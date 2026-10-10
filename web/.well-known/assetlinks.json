@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls", "delegate_permission/common.get_login_creds"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.pernoti.app",
+      "sha256_cert_fingerprints": [
+        "A9:3F:5C:6C:B1:FB:CB:A7:1D:99:F8:0D:DE:65:04:6B:19:EB:3A:45:E0:B1:70:F7:B3:96:69:C6:75:5B:9D:6E"
+      ]
+    }
+  }
+]

@@ -1,0 +1,53 @@
+S08680|Piedimonte-V.S.L.-Aquino
+S12069|Ems-La Malfa
+S19919|Stabio
+S12336|Catania Aer. Fontanarossa
+S05969|Riate
+S11001|Potenza Univ.
+S11123|Brindisi Ricerca
+S05953|S.Patrizio
+S07023|Monsampolo Del T
+N00005|Novate M.Se
+N00001|M N Cadorna
+N00042|Como Nord Camerlata
+N00057|M.N. Bruzzano
+N00056|M.N. Affori
+N00004|M.N. Quarto Oggiaro
+N00009|Garbagnate M.Se
+N00021|Venegono Sup. - Castiglio
+N00020|Venegono Inf.
+N00017|Locate V. - Carbonate
+N00086|Barruccana
+S05936|Via Fanti - Tribunale
+S05934|Reggio All'Angelo
+S05930|C.C.9 Bivio Parco
+S05923|S.Polo D'Enza
+S05191|Reggio Stadio Giglio
+S05944|Pieve Rossa
+S05941|S.Giovanni (Fer)
+S05938|S.Giacomo (Fsc)
+S00618|Vievola
+S00619|Tende
+S00634|La Brigue
+S00620|St.Dalmas De Tende
+S00621|Fontan Saorge
+N00107|Busto Arsizio Rfi
+S05986|Pm Bosco
+S07022|Spinet.V.S.Pio X
+S07436|Bazzano (Aq)
+S11756|Bivio S.Antonello
+S13143|Mendrisio
+S01780|Pian Camuno-Gratacasolo
+S05209|Biasca
+S05214|Giubiasco
+S05219|Lamone-Cadempino
+Z05304|Capolago-Riva S.Vitale
+S19901|Mendrisio S. Martino
+S05218|Taverne-Torricella
+S05217|Mezzovico
+S05216|Rivera-Bironico
+S05400|Locarno
+S05401|Tenero
+S05402|Gordola
+S05412|Riazzino
+S05404|Cadenazzo

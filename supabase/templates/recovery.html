@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="it">
+<body style="margin:0;background:#f2f5f9;font-family:Arial,Helvetica,sans-serif">
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0"><tr><td align="center" style="padding:24px 12px">
+<table role="presentation" width="560" cellspacing="0" cellpadding="0" style="max-width:560px;background:#ffffff;border-radius:12px;overflow:hidden">
+<tr><td style="background:#0d47a1;padding:18px 24px;color:#ffffff;font-size:20px;font-weight:800;letter-spacing:1px">GESTOPRO360</td></tr>
+<tr><td style="padding:26px 24px">
+<h1 style="margin:0 0 16px;font-size:20px;color:#0d47a1">Imposta una nuova password</h1>
+<p style="margin:0 0 14px;font-size:15px;line-height:1.5;color:#1f2933">Ciao,</p>
+<p style="margin:0 0 14px;font-size:15px;line-height:1.5;color:#1f2933">abbiamo ricevuto una richiesta di reimpostazione della password del tuo account <strong>GESTOPRO360</strong> ({{ .Email }}).</p>
+<p style="margin:0 0 14px;font-size:15px;line-height:1.5;color:#1f2933">Premi il pulsante e scegli una nuova password (almeno 10 caratteri, con lettere e numeri).</p>
+<!-- Link alla nostra pagina (non a /verify): gli scanner antispam non consumano il token. -->
+<p style="margin:22px 0"><a href="https://gestopro360.it/password-recovery?token_hash={{ .TokenHash }}&type=recovery" style="display:inline-block;padding:12px 22px;background:#0d47a1;color:#ffffff;text-decoration:none;border-radius:8px;font-weight:700;font-size:15px">Imposta nuova password</a></p>
+<p style="margin:18px 0 0;font-size:12px;line-height:1.5;color:#6b7280">Il link vale <strong>60 minuti</strong> e si può usare una sola volta. Se non hai chiesto tu il reset, ignora questa email: la tua password resta invariata.</p>
+</td></tr>
+<tr><td style="background:#f8fafc;padding:14px 24px;font-size:11px;color:#9ca3af">Email automatica di GESTOPRO360 · non rispondere a questo messaggio.</td></tr>
+</table></td></tr></table>
+</body>
+</html>

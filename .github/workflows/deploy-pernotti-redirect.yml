@@ -1,0 +1,32 @@
+name: Deploy pernotti redirector (Pages)
+
+# Progetto Cloudflare "pernotti" = solo 301 → https://gestopro360.it
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'deploy/pernotti-redirect/**'
+      - '.github/workflows/deploy-pernotti-redirect.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cloudflare-pernotti-redirect
+  cancel-in-progress: true
+
+jobs:
+  deploy-redirect:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy redirector to Cloudflare Pages (pernotti)
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy deploy/pernotti-redirect --project-name=pernotti --branch=main --commit-dirty=true

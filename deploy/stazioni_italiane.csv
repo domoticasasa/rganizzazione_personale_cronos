@@ -1,0 +1,3048 @@
+code,region,long_name,short_name,latitude,longitude
+S01427,1,Ardenno Masino,Ardenno Masino,46.16198,9.651374
+S01947,1,Arena Po,Arena Po,45.082065,9.360394
+S01847,1,Asola,Asola,45.220454,10.402313
+S01041,1,Corbetta S. Stefano,Corbetta S.Stef.,45.480829,8.917457
+S01424,1,Cosio Traona,Cosio Traona,46.135564,9.525498
+S01207,1,Gazzada Schianno Morazzone,Gazzada Schian.M,45.77862,8.824815
+S02381,1,Gazzo Di Bigarello,Gazzo Di Bigarel,45.176648,10.894005
+S01841,1,Ghedi,Ghedi,45.409439,10.280506
+S02382,1,Castel D`Ario,Castel D'Ario,45.183399,10.97531
+S01606,1,Castelleone,Castelleone,45.301826,9.76779
+S01923,1,Castellucchio,Castellucchio,45.144293,10.64749
+S01429,1,Castione Andevenno,Castione A.,46.161659,9.806151
+S01208,1,Castronno,Castronno,45.74524,8.810302
+S00279,1,Cava Carbonara,Cava Carbonara,45.147055,9.071387
+S01914,1,Cava Tigozzi,Cava Tigozzi,45.156823,9.955827
+S01210,1,Cavaria Oggiona Jerago,Cavaria Oggiona,45.698145,8.8035
+S01513,1,Cernusco-Merate,Cernusco-Merate,45.695096,9.396794
+S01803,1,Certosa Di Pavia,Certosa Di Pavia,45.256927,9.154456
+S01930,1,Bressana Argine,Bressana Argine,45.072739,9.137038
+S01805,1,Bressana Bottarone,Bressana Bott.,45.086298,9.110602
+S01944,1,Broni,Broni,45.066263,9.258751
+S01713,1,Chiari,Chiari,45.54011,9.926474
+S01400,1,Chiavenna,Chiavenna,46.321258,9.407129
+S01868,1,Chignolo Po,Chignolo Po,45.160942,9.494196
+S01536,1,Chiuduno,Chiuduno,45.650449,9.846924
+S01435,1,Chiuro,Chiuro,46.164658,9.992317
+S01525,1,Cisano Caprino Bergamasco,Cisano Capr.B.,45.739606,9.474261
+S01462,1,Civate,Civate,45.831295,9.352877
+S01540,1,Coccaglio,Coccaglio,45.560971,9.977648
+S01828,1,Codogno,Codogno,45.154897,9.701376
+S01420,1,Colico,Colico,46.138019,9.375222
+S02338,1,Borgoforte,Borgoforte,45.050328,10.752388
+S01830,1,Borgolombardo,Borgolombardo,45.403856,9.27111
+S01920,1,Bozzolo,Bozzolo,45.107246,10.472655
+S01452,1,Brenna-Alzate,Brenna-Alzate,45.754044,9.183312
+S01717,1,Brescia,Brescia,45.532315,10.212828
+S00333,1,Candia Lomellina,Candia Lomellina,45.179911,8.593156
+S01848,1,Canneto Sull`Oglio,Canneto S/Oglio,45.150211,10.37147
+S01313,1,Cantu`- Cermenate,Cantu'-Cermenate,45.716236,9.099284
+S01603,1,Capralba,Capralba,45.443871,9.640015
+S01602,1,Caravaggio,Caravaggio,45.491158,9.637723
+S01315,1,Carimate,Carimate,45.697094,9.107188
+S01511,1,Carnate Usmate,Carnate Usmate,45.653072,9.375089
+S01609,1,Casalbuttano,Casalbuttano,45.255398,9.962361
+S01604,1,Casaletto Vaprio,Casaletto Vaprio,45.408641,9.631746
+S01850,1,Casalmaggiore,Casalmaggiore,44.993139,10.425023
+S01827,1,Casalpusterlengo,Casalpusterlengo,45.182473,9.653627
+S01457,1,Casletto-Rogeno,Casletto-Rogeno,45.786028,9.275375
+S01029,1,Casorate Sempione,Casorate Semp.,45.675075,8.743954
+S01490,1,Cassago-Nibionno-Bulciago,Cassago-N.-B.,45.746243,9.279834
+S01707,1,Cassano D`Adda,Cassano D'Adda,45.514372,9.512746
+S01942,1,Casteggio,Casteggio,45.017365,9.124595
+S01416,1,Abbadia Lariana,Abbadia Lariana,45.895864,9.335175
+S01062,1,Abbiategrasso,Abbiategrasso,45.400631,8.921305
+S01913,1,Acquanegra Cremonese,Acquanegra Crem.,45.172102,9.888456
+S01515,1,Airuno,Airuno,45.754086,9.422066
+S01310,1,Albate Camerlata,Albate-Camerlata,45.777371,9.073461
+S01450,1,Albate-Trecallo,Albate-Trecallo,45.777391,9.095752
+S01209,1,Albizzate Solbiate Arno,Albizzate S.A.,45.724117,8.80621
+S01863,1,Albuzzano,Albuzzano,45.172504,9.261624
+S01527,1,Ambivere Mapello,Ambivere Mapello,45.722163,9.550444
+S01453,1,Anzano Del Parco,Anzano Del Parco,45.764965,9.202676
+S01203,1,Arcisate,Arcisate,45.858579,8.86241
+S01510,1,Arcore,Arcore,45.623493,9.322798
+S00274,1,Gambolo`Remondo`,Gambolo'Remondo',45.23587,8.79757
+S01140,1,Sangiano,Sangiano,45.874464,8.630769
+S00038,1,Sartirana,Sartirana,45.111728,8.67012
+S01840,1,Montirone,Montirone,45.451352,10.239482
+S01322,1,Monza,Monza,45.577789,9.273253
+S01480,1,Monza Sobborghi,Monza Sobborghi,45.582082,9.284375
+S01425,1,Morbegno,Morbegno,46.136663,9.568646
+S01710,1,Morengo Bariano,Morengo Bariano,45.521639,9.703114
+S01144,1,Mornago Cimbro,Mornago Cimbro,45.729742,8.734193
+S00034,1,Mortara,Mortara,45.252171,8.731639
+S02339,1,Motteggiana,Motteggiana,45.029685,10.755439
+S01482,1,Buttafava,Buttafava,45.62141,9.301185
+S01712,1,Calcio,Calcio,45.532937,9.841342
+S01117,1,Calde`,Calde',45.945812,8.663157
+S01524,1,Calolziocorte Olginate,Calolziocorte O.,45.801619,9.42698
+S01503,1,Calusco,Calusco,45.684113,9.470646
+S01843,1,Calvisano,Calvisano,45.346572,10.349411
+S01861,1,Pavia Porta Garibaldi,Pavia P.Garib.,45.183996,9.167331
+S01845,1,Remedello Sopra,Remedello Sopra,45.27848,10.379211
+S01846,1,Remedello Sotto,Remedello Sotto,45.257477,10.388402
+S05305,1,Revere,Revere,45.049863,11.130884
+S05306,1,Revere Scalo,Revere Scalo,45.040431,11.129847
+S01037,1,Rho,Rho,45.523813,9.043563
+S01904,1,Robecco-Pontevico,Robecco P.,45.266224,10.078593
+S02344,1,Gonzaga-Reggiolo,Gonzaga-Reggiolo,44.939239,10.815533
+S00277,1,Gropello Cairoli,Gropello Cairoli,45.173101,8.991626
+S01537,1,Grumello Del Monte,Grumello D.M.,45.634102,9.862767
+S01204,1,Induno Olona,Induno Olona,45.846432,8.838357
+S01121,1,Ispra,Ispra,45.811573,8.621338
+S01869,1,Lambrinia,Lambrinia,45.164376,9.527436
+S01118,1,Laveno Mombello,Laveno Mombello,45.903272,8.624583
+S01520,1,Lecco,Lecco,45.856471,9.393638
+S01522,1,Lecco Maggianico,Lecco Maggianico,45.831179,9.411691
+S01120,1,Leggiuno Monvalle,Leggiuno Monval.,45.867349,8.629476
+S01033,1,Legnano,Legnano,45.593653,8.910638
+S01901,1,Bagnolo Mella,Bagnolo Mella,45.428532,10.183617
+S01409,1,Bellano Tartavelle Terme,Bellano T.Terme,46.039448,9.302776
+S01829,1,S.Stefano Lodigiano,S.Stefano Lodig.,45.122091,9.723606
+S01900,1,S. Zeno Folzano,S. Zeno Folzano,45.491552,10.211683
+S01823,1,S. Zenone Al Lambro,S. Zenone Al L.,45.337824,9.36126
+S00400,1,Sairano Zinasco,Sairano Zinasco,45.133795,9.030153
+S01461,1,Sala Al Barro-Galbiate,Sala Al Barro,45.821086,9.359223
+S01402,1,Samolaco,Samolaco,46.246436,9.423582
+S01539,1,Cologne,Cologne,45.576627,9.935316
+S01307,1,Como S. Giovanni,Como S.Giovanni,45.808946,9.072331
+S01826,1,Secugnago,Secugnago,45.223253,9.58684
+S01318,1,Seregno,Seregno,45.64601,9.20285
+S01533,1,Seriate,Seriate,45.683145,9.724628
+S01026,1,Sesto Calende,Sesto Calende,45.726241,8.628135
+S01325,1,Sesto S. Giovanni,Sesto S.Giovanni,45.541087,9.23926
+S01028,1,Somma Lombardo,Somma Lombardo,45.686423,8.712991
+S01430,1,Sondrio,Sondrio,46.167064,9.872928
+S01607,1,Soresina,Soresina,45.283083,9.85664
+S01945,1,Stradella,Stradella,45.079465,9.300865
+S02340,1,Suzzara,Suzzara,44.994432,10.756138
+S01122,1,Taino Angera,Taino Angera,45.772269,8.60599
+S01426,1,Talamona,Talamona,46.13952,9.599528
+S01143,1,Ternate Varano Borghi,Ternate V.B.,45.781835,8.700371
+S01504,1,Terno,Terno,45.688658,9.536169
+S00404,1,Ferrera Lomellina,Ferrera Lomell.,45.111807,8.862805
+S01412,1,Fiumelatte,Fiumelatte,45.999017,9.292857
+S01035,1,Parabiago,Parabiago,45.552441,8.946319
+S01060,1,Parona Lomellina,Parona Lomellina,45.280107,8.780315
+S01860,1,Pavia,Pavia,45.188843,9.144674
+S01700,1,Milano Centrale,Milano Centrale,45.486347,9.204528
+S01032,1,Milano Romolo,Milano Romolo,45.445008,9.168933
+S01925,1,Seveso,Seveso,45.648187,9.140488
+S01933,1,Saronno,Saronno,45.625309,9.030839
+S01089,1,Mariano Comense,Mariano Comense,45.693622,9.18147
+S01101,1,Asso,Asso,45.855228,9.268513
+S00332,1,Cozzo,Cozzo,45.182989,8.603292
+S01915,1,Cremona,Cremona,45.143215,10.017951
+S01312,1,Cucciago,Cucciago,45.740813,9.082205
+S01422,1,Delebio,Delebio,46.13865,9.461168
+S02084,1,Desenzano,Desenzano,45.462677,10.536322
+S01407,1,Dorio,Dorio,46.102756,9.319063
+S01460,1,Oggiono,Oggiono,45.788993,9.33748
+S01414,1,Olcio,Olcio,45.938011,9.313898
+S00036,1,Olevano,Olevano,45.212119,8.71182
+S01514,1,Olgiate-Calco-Brivio,Olgiate-C.-B.,45.729166,9.40377
+S01905,1,Olmeneta,Olmeneta,45.231099,10.03194
+S01870,1,Orio Litta,Orio Litta,45.166778,9.550592
+S01512,1,Osnago,Osnago,45.678532,9.386995
+S01871,1,Ospedaletto Lodigiano,Ospedaletto Lod.,45.16933,9.575164
+S01922,1,Ospitaletto Mantovano,Ospitaletto Man.,45.129748,10.604406
+S05304,1,Ostiglia,Ostiglia,45.072228,11.141059
+S01502,1,Paderno Robbiate,Paderno Robbiate,45.678307,9.439202
+S01538,1,Palazzolo Sull`Oglio,Palazzolo S/O.,45.601486,9.896235
+S00271,1,Palestro,Palestro,45.307274,8.534511
+S02343,1,Palidano,Palidano,44.972228,10.777412
+S01918,1,Torre De` Picenardi,Torre De' Picen.,45.137198,10.286849
+S00039,1,Torreberetti,Torreberetti,45.060533,8.660431
+S01142,1,Travedona Biandronno,Travedona Biand.,45.809601,8.696322
+S01706,1,Trecella,Trecella,45.512792,9.480674
+S01708,1,Treviglio,Treviglio,45.515063,9.587919
+S01601,1,Treviglio Ovest,Treviglio Ovest,45.521762,9.580281
+S01485,1,Triuggio-Ponte Albiate,Triuggio-P.A.,45.658956,9.266961
+S00275,1,Tromello,Tromello,45.211988,8.872154
+S00037,1,Valle Lomellina,Valle Lomellina,45.150588,8.685874
+S01501,1,Lesmo,Lesmo,45.644745,9.309318
+S01413,1,Lierna,Lierna,45.960973,9.303071
+S01321,1,Lissone-Muggio`,Lissone-Muggio',45.60592,9.235368
+S01801,1,Locate Triulzi,Locate Triulzi,45.35973,9.221398
+S01423,1,Rogolo,Rogolo,46.138696,9.486985
+S01711,1,Romano,Romano,45.523839,9.753402
+S02337,1,Romanore,Romanore,45.063834,10.750997
+S01714,1,Rovato,Rovato,45.55193,10.000924
+S02333,1,Roverbella,Roverbella,45.252645,10.796795
+S02334,1,S.Antonio Mantovano,S.A.Mantovano,45.187447,10.785806
+S01866,1,S. Cristina E Bissone,S.Cristina E Bis,45.160533,9.401006
+S00402,1,Pieve Albignola,Pieve Albignola,45.116248,8.959723
+S01406,1,Piona,Piona,46.124696,9.350759
+S01911,1,Pizzighettone,Pizzighettone,45.181772,9.777133
+S01488,1,Besana,Besana,45.702824,9.28288
+S01145,1,Besnate,Besnate,45.695409,8.761072
+S01438,1,Bianzone,Bianzone,46.179383,10.112507
+S01483,1,Biassono-Lesmo Parco,Biassono-Lesmo P,45.632209,9.298408
+S01867,1,Miradolo Terme,Miradolo Terme,45.162007,9.449952
+S02380,1,Mantova Frassine,Mantova Frassine,45.150491,10.831007
+S01456,1,Moiana,Moiana,45.787082,9.255607
+S01458,1,Molteno,Molteno,45.780939,9.301683
+S01535,1,Montello Gorlago,Montello Gorlago,45.67017,9.808488
+S01526,1,Pontida,Pontida,45.730084,9.511632
+S01200,1,Porto Ceresio,Porto Ceresio,45.903675,8.900357
+S01116,1,Porto Valtravaglia,Porto Valtrav.,45.958219,8.674141
+S01824,1,Tavazzano,Tavazzano,45.32629,9.402748
+S01030,1,Gallarate,Gallarate,45.659828,8.798243
+S00276,1,Garlasco,Garlasco,45.198948,8.926829
+S01917,1,Gazzo Pieve S. Giacomo,Gazzo Pieve S.G.,45.137151,10.189922
+S01534,1,Albano S.Alessandro,Albano S.Aless.,45.682744,9.768027
+S00033,1,Albonese,Albonese,45.297785,8.714601
+S01436,1,S. Giacomo Di Teglio,S. Giacomo Di T.,46.159722,10.027405
+S01849,1,S. Giovanni In Croce,S.Giov. In Croce,45.075783,10.377527
+S01943,1,S.Giuletta,S.Giuletta,45.035719,9.179239
+S01821,1,S. Giuliano Milanese,S. Giuliano Mil.,45.391226,9.286418
+S01924,1,S.Michele In Bosco,S.Michele In B.,45.122404,10.57329
+S05308,1,Poggio Rusco,Poggio Rusco,44.981859,11.124627
+S01864,1,Belgioioso,Belgioioso,45.16456,9.316875
+S01141,1,Besozzo,Besozzo,45.842188,8.662997
+S01862,1,Motta S. Damiano,Motta S.Damiano,45.178344,9.219866
+S00273,1,Nicorvo,Nicorvo,45.275462,8.6712
+S01403,1,Novate-Mezzola,Novate-Mezzola,46.216595,9.446573
+S01919,1,Piadena,Piadena,45.127608,10.369962
+S01931,1,Pinarolo Po,Pinarolo Po,45.073415,9.170273
+S01703,1,Pioltello Limito,Pioltello Lim.,45.486019,9.329319
+S01865,1,Corteolona,Corteolona,45.159701,9.375477
+S01491,1,Costa Masnaga,Costa Masnaga,45.76343,9.285231
+S01605,1,Crema,Crema,45.366864,9.694209
+S01408,1,Dervio,Dervio,46.077709,9.30596
+S01320,1,Desio,Desio,45.620112,9.218495
+S01411,1,Varenna Esino,Varenna Esino,46.015,9.286405
+S01205,1,Varese,Varese,45.816201,8.833089
+S01523,1,Vercurago S.Girolamo,Vercurago S.Gir.,45.812122,9.422349
+S01600,1,Verdello Dalmine,Verdello Dalmine,45.605715,9.619797
+S01027,1,Vergiate,Vergiate,45.717119,8.693187
+S01903,1,Verolanuova,Verolanuova,45.324989,10.08388
+S01842,1,Viadana Bresciana,Viadana Bresc.,45.373648,10.331792
+S01709,1,Vidalengo,Vidalengo,45.517854,9.639676
+S01061,1,Vigevano,Vigevano,45.312712,8.861977
+S01704,1,Vignate,Vignate,45.493946,9.374083
+S01439,1,Villa Di Tirano,Villa Di Tirano,46.196164,10.13033
+S01487,1,Villa Raverio,Villa Raverio,45.690418,9.261549
+S01825,1,Lodi,Lodi,45.308966,9.497585
+S02083,1,Lonato,Lonato,45.457204,10.486714
+S01113,1,Luino,Luino,45.996643,8.737464
+S01806,1,Lungavilla,Lungavilla,45.049837,9.068968
+S01484,1,Macherio-Canonica,Macherio-C.,45.645533,9.286736
+S01500,1,Macherio Sovico,Macherio Sovico,45.642485,9.266895
+S01910,1,Maleo,Maleo,45.170118,9.755201
+S01415,1,Mandello Del Lario,Mandello Del L.,45.915208,9.322061
+S01902,1,Manerbio,Manerbio,45.357212,10.132348
+S02336,1,Mantova,Mantova,45.158746,10.783165
+S01921,1,Marcaria,Marcaria,45.124518,10.533651
+S00406,1,Mede,Mede,45.095009,8.742594
+S01822,1,Melegnano,Melegnano,45.356321,9.319271
+S01705,1,Melzo,Melzo,45.502191,9.420653
+S01454,1,Merone,Merone,45.781374,9.243772
+S01640,1,Milano Certosa,Milano Certosa,45.507019,9.133863
+S01326,1,Milano Greco Pirelli,Mi Greco Pirelli,45.51272,9.214456
+S01701,1,Milano Lambrate,Milano Lambrate,45.484933,9.237333
+S01645,1,Milano Porta Garibaldi,Mi P. Garibaldi,45.484917,9.187683
+S01631,1,Mi.P.Genova,Mi P.Genova,45.453379,9.169303
+S01633,1,Milano Porta Vittoria,Mi P.Ta Vittoria,45.459579,9.21813
+S01630,1,Milano S. Cristoforo,Mi S.Cristoforo,45.442404,9.130258
+S01064,1,Corsico,Corsico,45.434688,9.105156
+S01401,1,S. Cassiano Valchiavenna,S. Cassiano V.,46.275438,9.397419
+S00403,1,Sannazzaro,Sannazzaro,45.10554,8.905149
+S01063,1,Gaggiano,Gaggiano,45.408827,9.031117
+S00405,1,Lomello,Lomello,45.117276,8.799121
+S01040,1,Magenta,Magenta,45.468204,8.880633
+S01404,1,Verceia,Verceia,46.202832,9.458412
+N00048,1,Malpensa Aeroporto T1,Malp At1,45.627904,8.711085
+S01036,1,Vanzago Pogliano,Vanzago Pogliano,45.525216,8.995531
+S01650,1,Milano Dateo,Milano Dateo,45.462341,9.209277
+S01202,1,Bisuschio Viggiu,Bisuschio Viggiu,45.870658,8.887544
+S01608,1,Arcene,Arcene,45.577162,9.606652
+S01611,1,Levate,Levate,45.626856,9.629984
+S01612,1,Stezzano,Stezzano,45.659219,9.645288
+S01722,1,Pozzuolo Martesana,Poz.Mart,45.510567,9.459096
+S01058,1,Pregnana Milanese,Pregnana,45.511868,9.003943
+N00235,1,Edolo,Edolo,46.179241,10.330333
+N00210,1,Iseo,Iseo,45.659518,10.047464
+N00207,1,Bornato - Calino,Bornato-Calino,45.590595,10.032942
+S01410,1,Regoledo,Regoledo,46.030574,9.292106
+S01489,1,Renate-Veduggio,Renate-Veduggio,45.728304,9.279834
+S00272,1,Robbio,Robbio,45.293542,8.597051
+S01642,1,Milano Bovisa Fnm,Mi Bovisa Fnm,45.502993,9.159235
+S01643,1,Milano Lancetti,Mi Lancetti,45.492632,9.175832
+S01632,1,Milano Porta Romana,Mi P.Ta Romana,45.445844,9.213128
+S01649,1,Milano Venezia,Mi Venezia,45.471121,9.201889
+S01437,1,Tresenda-Aprica-Teglio,Tresenda-A.-T.,46.162082,10.083754
+S01065,1,Trezzano S.N.,Trezzano S.N.,45.422203,9.071196
+S01463,1,Valmadrera,Valmadrera,45.846439,9.368183
+S01807,1,Voghera,Voghera,44.9978,9.007942
+S00408,1,Sairano,Sairano,45.138858,9.046868
+S01451,1,Cantu`,Cantu',45.752316,9.130321
+S01486,1,Carate-Calo`,Carate-Calo',45.676451,9.252304
+S01715,1,Segrate,Segrate,45.480702,9.298873
+S01031,1,Busto Arsizio,Busto Arsizio,45.616164,8.865031
+S01316,1,Camnago-Lentate,Camnago-Lentate,45.668425,9.133451
+S01034,1,Canegrate,Canegrate,45.569235,8.926593
+S01804,1,Cava Manara,Cava Manara,45.144867,9.115332
+S01647,1,Mi P.Gar.Sott.,Mi P.Gar.Sott.,45.484228,9.185122
+S01820,1,Milano Rogoredo,Milano Rogoredo,45.433866,9.2391
+S01405,1,Dubino,Dubino,46.172802,9.432188
+S01440,1,Tirano,Tirano,46.21539,10.166961
+S01620,1,Paratico Sarnico,Paratico Sarnico,45.662478,9.961417
+S01622,1,Capriolo,Capriolo,45.64556,9.933806
+S01932,1,Barbianello,Barbianello,45.07263,9.204165
+S01529,1,Bergamo,Bergamo,45.690271,9.675082
+S01716,1,Ospitaletto Travagliato,Ospitaletto T.,45.546042,10.074363
+S01428,1,S. Pietro Berbenno,S. Pietro B.,46.161347,9.740491
+S01802,1,Villamaggiore,Villamaggiore,45.32045,9.190674
+S00278,1,Villanova D`Ardenghi,Villanova D'Ard.,45.156982,9.037176
+S01481,1,Villasanta,Villasanta,45.603434,9.304923
+S01916,1,Villetta Malagnino,Villetta Malagn.,45.137019,10.111943
+S01844,1,Visano,Visano,45.31531,10.363098
+S01042,1,Vittuone Arluno,Vittuone Arluno,45.491054,8.947299
+S00401,1,Zinasco Nuovo,Zinasco Nuovo,45.124555,8.999657
+S01610,1,Madignano,Madignano,45.34383,9.730179
+S01433,1,Poggiridenti-Tresivio-Piateda,Poggiridenti,46.166888,9.93382
+S01912,1,Ponte D`Adda,Ponte D'Adda,45.184352,9.790737
+S01434,1,Ponte In Valtellina,Ponte In Valt.,46.162631,9.975895
+S02082,1,Ponte S.Marco - Calcinato,Ponte S.Marco,45.473788,10.409018
+S01528,1,Ponte S.Pietro,Ponte S.Pietro,45.69916,9.584322
+S04712,2,Sori,Sori,44.369795,9.106006
+S04506,2,Taggia Arma,Taggia Arma,43.840764,7.835604
+S04531,2,Varazze,Varazze,44.356842,8.566682
+S04501,2,Ventimiglia,Ventimiglia,43.792561,7.610224
+S06006,2,Arcola,Arcola,44.118651,9.914649
+S04481,2,Airole,Airole,43.870494,7.552757
+S04515,2,Alassio,Alassio,44.007889,8.17112
+S04516,2,Albenga,Albenga,44.04722,8.221663
+S04709,2,Bogliasco,Bogliasco,44.379207,9.066042
+S04503,2,Bordighera,Bordighera,43.778313,7.663504
+S04518,2,Borghetto Santo Spirito,Borghetto S.S.,44.109006,8.242346
+S04214,2,Borgo Fornari Per Voltaggio,Borgo Fornari,44.588379,8.938295
+S04215,2,Busalla,Busalla,44.57558,8.943611
+S04716,2,Camogli San Fruttuoso,Camogli S.F.,44.348166,9.156743
+S04105,2,Campoligure Masone,Campoligure M.,44.530909,8.700878
+S04724,2,Cavi,Cavi,44.29354,9.37251
+S04530,2,Celle,Celle,44.34246,8.542626
+S04517,2,Ceriale,Ceriale,44.098922,8.234216
+S04512,2,Cervo San Bartolomeo,Cervo S.Bartol.,43.923901,8.109704
+S04532,2,Cogoleto,Cogoleto,44.389762,8.643906
+S04734,2,Corniglia,Corniglia,44.119938,9.711051
+S04728,2,Deiva Marina,Deiva Marina,44.217306,9.519022
+S04522,2,Finale Ligure Marina,Finale Ligure M.,44.169116,8.34033
+S04729,2,Framura,Framura,44.201903,9.555169
+S04107,2,Genova Acquasanta,Ge Acquasanta,44.458757,8.773197
+S04218,2,Genova Bolzaneto,Genova Bolzaneto,44.459208,8.900193
+S04109,2,Genova Borzoli,Genova Borzoli,44.434704,8.866648
+S04108,2,Genova Granara,Genova Granara,44.442055,8.823453
+S04603,2,Genova Marittima S. Limbania,Ge M. S.Limbania,44.412808,8.911098
+S04707,2,Genova Nervi,Genova Nervi,44.381271,9.039895
+S04536,2,Genova Pegli,Genova Pegli,44.426236,8.816767
+S04700,2,Genova P.Principe,Genova P.Princ.,44.417784,8.9207
+S04217,2,Genova Pontedecimo,Ge Pontedecimo,44.494189,8.905642
+S04704,2,Genova Quarto Dei Mille,Genova Quarto,44.388607,8.99597
+S04219,2,Genova Rivarolo,Genova Rivarolo,44.435955,8.89106
+S04220,2,Genova Sampierdarena,Ge Sampierdarena,44.413102,8.887271
+S04703,2,Genova Sturla,Genova Sturla,44.397977,8.981466
+S04540,2,Genova Vesima,Genova Vesima,44.416176,8.714099
+S04534,2,Genova Voltri,Genova Voltri,44.428467,8.758163
+S04210,2,Isola Del Cantone,Isola Del Cant.,44.646589,8.957578
+S06000,2,La Spezia Centrale,La Spezia C.Le,44.11141,9.813906
+S04514,2,Laigueglia,Laigueglia,43.981283,8.158685
+S04723,2,Lavagna,Lavagna,44.305677,9.346371
+S04731,2,Levanto,Levanto,44.174167,9.616018
+S04519,2,Loano,Loano,44.122429,8.254523
+S04106,2,Mele,Mele,44.472797,8.733953
+S04212,2,Mignanego,Mignanego,44.539031,8.929951
+S04727,2,Moneglia,Moneglia,44.242449,9.486957
+S04732,2,Monterosso,Monterosso,44.145967,9.649009
+S04480,2,Olivetta San Michele,Olivetta S.M.,43.878345,7.535066
+S04216,2,Piano Orizzontale Dei Giovi,Piano Orizzont.,44.530912,8.9192
+S04209,2,Pietrabissara,Pietrabissara,44.658637,8.926969
+S04711,2,Pieve Ligure,Pieve Ligure,44.372644,9.090975
+S06170,2,S. Stefano Di Magra,S.Stefano Magra,44.156857,9.915202
+S04523,2,Imperia,Imperia,43.88051,8.019182
+S04110,2,Genova Costa Di Sestri Ponente,Ge Costa Sestri,44.433535,8.84553
+S04705,2,Genova Quinto Al Mare,Genova Quinto,44.385184,9.020514
+S04223,2,Genova Via Di Francia,Ge Via Francia,44.411126,8.90192
+S06008,2,Bivio/Pc Arcola,Biv/Pc Arcola,44.074771,10.015803
+S04521,2,Borgio Verezzi,Borgio Verezzi,44.157722,8.30908
+S04701,2,Genova P. Principe Sotterranea,Genova P.P.Sott.,44.414803,8.918041
+S00879,2,Cairo Montenotte,Cairo Montenotte,44.394747,8.278786
+S00745,2,Cengio,Cengio,44.390798,8.191824
+S04529,2,Albisola,Albisola,44.33469,8.512092
+S04800,2,Savona Marittima,Savona Marittima,44.308777,8.488243
+S04526,2,Spotorno Noli,Spotorno Noli,44.226528,8.410932
+S04502,2,Vallecrosia,Vallecrosia,43.787619,7.634997
+S04733,2,Vernazza,Vernazza,44.134963,9.684804
+S04721,2,Zoagli,Zoagli,44.33546,9.269126
+S04803,2,Bragno,Bragno,44.371679,8.304473
+S04538,2,Genova Cornigliano,Ge Cornigliano,44.414752,8.865035
+S04520,2,Pietra Ligure,Pietra Ligure,44.145345,8.277403
+S04718,2,S. Margherita Ligure Portofino,S.Margherita,44.33676,9.216673
+S04535,2,Genova Pra,Genova Pra,44.426874,8.785356
+S04537,2,Genova Sestri Ponente,Genova Sestri P.,44.422374,8.847707
+S04702,2,Genova Brignole,Genova Brignole,44.407213,8.947553
+S04710,2,Pontetto,Pontetto,44.377309,9.07696
+S04713,2,Mulinetti,Mulinetti,44.362614,9.129499
+S04722,2,Chiavari,Chiavari,44.315156,9.322464
+S04726,2,Riva Trigoso,Riva Trigoso,44.26391,9.429277
+S04730,2,Bonassola,Bonassola,44.184867,9.582673
+S04735,2,Manarola,Manarola,44.109904,9.727401
+S04804,2,Ferrania,Ferrania,44.365136,8.328885
+S04811,2,Maschio,Maschio,44.326605,8.436686
+S06171,2,Vezzano Ligure,Vezzano Ligure,44.127081,9.88928
+S06200,2,Ponzano Magra,Ponzano Magra,44.136227,9.934115
+S04222,2,Genova S.Biagio,Genova S.Biagio,44.484399,8.900854
+S00890,2,Pont,Pont,45.420436,7.60442
+S00877,2,Dego,Dego,44.448003,8.308469
+S00876,2,Piana,Piana,44.486383,8.308796
+S06044,2,Ca` Di Boschetti,Ca'Di Boschetti,44.117925,9.857449
+S00878,2,Rocchetta Cairo,Rocchetta Cairo,44.427477,8.295356
+S06004,2,La Spezia Migliarina,La Spezia Migl.,44.123391,9.84028
+S06002,2,La Spezia Marittima,La Spezia Mar.,44.110694,9.837445
+S06007,2,Sarzana,Sarzana,44.108865,9.960657
+S04810,2,Altare,Altare,44.336169,8.332753
+S04533,2,Arenzano,Arenzano,44.403089,8.678322
+S04482,2,Bevera,Bevera,43.825303,7.579157
+S04527,2,Quiliano Vado,Quiliano Vado,44.279933,8.435562
+S04720,2,Rapallo,Rapallo,44.351398,9.231282
+S04714,2,Recco,Recco,44.361215,9.146788
+S04736,2,Riomaggiore,Riomaggiore,44.105203,9.729105
+S04211,2,Ronco Scr.,Ronco Scrivia,44.614537,8.949421
+S04104,2,Rossiglione,Rossiglione,44.566955,8.668051
+S04805,2,San Giuseppe Di Cairo,S.Giuseppe Di C.,44.370096,8.28864
+S04505,2,Sanremo,Sanremo,43.821269,7.766693
+S04802,2,Santuario,Santuario,44.34607,8.435756
+S04801,2,Savona,Savona,44.306892,8.470259
+S04725,2,Sestri Levante,Sestri Levante,44.27626,9.397651
+S00173,3,S.Silvestro,S.Silvestro,45.19366,8.148095
+S00229,3,Settimo,Settimo,45.139834,7.769335
+S00862,3,Sezzadio,Sezzadio,44.800082,8.549772
+S00429,3,Chiusano Cossombrone,Chiusano Cossom.,44.985034,8.128822
+S00217,3,Collegno,Collegno,45.078854,7.574131
+S00923,3,Priola,Priola,44.248694,8.023429
+S00053,3,Rovasenda,Rovasenda,45.537291,8.317376
+S00213,3,S. Ambrogio,S. Ambrogio,45.101161,7.360933
+S00347,3,Isola D`Asti,Isola D'Asti,44.830605,8.175113
+S00700,3,Manta,Manta,44.620887,7.494166
+S00545,3,Torre S.Giorgio,Torre S.Giorgio,44.737375,7.525461
+S00239,3,Tronzano,Tronzano,45.342929,8.168395
+S00022,3,Vaprio D`Agogna,Vaprio D'Agogna,45.599085,8.536862
+S00315,3,Borgo S.Martino,Borgo S.Martino,45.087083,8.520661
+S00456,3,Cambiano Santena,Cambiano Santena,44.966491,7.773225
+S00458,3,Villanova,Villanova,44.963159,7.947136
+S00035,3,Torino Porta Susa,Torino P. Susa,45.075906,7.667673
+S00983,3,Marano Ticino,Marano Ticino,45.629485,8.626172
+S01019,3,Meina,Meina,45.794389,8.535452
+S00875,3,Merana,Merana,44.519368,8.298327
+S00156,3,Mercenasco,Mercenasco,45.353436,7.886405
+S00600,3,Villastellone,Villastellone,44.920531,7.749572
+S00004,3,Pieve Vergonte,Pieve Vergonte,46.009783,8.276298
+S00613,3,Borgo San Dalmazzo,Borgo S.Dalmazzo,44.326249,7.486111
+S00209,3,Bruzolo,Bruzolo,45.131032,7.201497
+S00972,3,Casaleggio,Casaleggio,45.491298,8.490369
+S00864,3,Cassine,Cassine,44.751513,8.533613
+S01123,3,Castelletto Ticino,Castelletto Tic.,45.710757,8.638259
+S00465,3,Castello D`Annone,Castel.D'Annone,44.878742,8.312724
+S04000,3,Castellazzo Casalcermelli,Castellazzo C.,44.843839,8.589645
+S00056,3,Rovasenda Alta,Rovasenda Alta,45.537368,8.316722
+S00054,3,Buronzo,Buronzo,45.47179,8.2667
+S00158,3,Caluso,Caluso,45.303194,7.902568
+S00157,3,Candia Canavese,Candia Canavese,45.329824,7.891819
+S00603,3,Cavallermaggiore,Cavallermaggiore,44.708147,7.692108
+S00541,3,Cercenasco,Cercenasco,44.864897,7.495302
+S04006,3,Roccagrimalda,Roccagrimalda,44.675247,8.656154
+S04005,3,San Giacomo,San Giacomo,44.687745,8.663185
+S00224,3,Torino Dora,Torino Dora,45.090085,7.677853
+S01025,3,Dormelletto,Dormelletto,45.7233,8.581906
+S00926,3,Eca Nasago`,Eca Nasago',44.160769,7.965137
+S00869,3,Terzo Montabone,Terzo Montabone,44.671932,8.428705
+S00452,3,Torino Lingotto,To Lingotto,45.0266,7.657469
+S00223,3,Torino S. Paolo,Torino S.Paolo,45.054519,7.639557
+S00450,3,Torino Smistamento Nord,Torino Sm. Nord,45.042785,7.666626
+S00228,3,Torino Stura,Torino Stura,45.121932,7.713202
+S00342,3,Tonco Alfiano,Tonco Alfiano,45.012659,8.216858
+S00219,3,Torino P.Nuova,Torino P.Nuova,45.060969,7.67747
+S00234,3,Torrazza P.,Torrazza,45.211855,7.970255
+S04300,3,Carbonara Scrivia,Carbonara Scriv.,44.860173,8.853772
+S00825,3,Alba,Alba,44.697713,8.030629
+S00462,3,Asti,Asti,44.89479,8.208112
+S00029,3,Bivio Madonna Dell`Olmo,Biv. M. Olmo,44.414078,7.546234
+S00203,3,Beaulard,Beaulard,45.046495,6.759713
+S00177,3,Morano Sul Po,Morano Po,45.170793,8.366168
+S00824,3,Mussotto,Mussotto,44.713227,8.015194
+S00008,3,Omegna Crusinallo,Omegna Crusin.,45.898138,8.413929
+S01007,3,Beura Cardezza,Beura Cardezza,46.068341,8.289627
+S00501,3,Madonna Della Scala,Madonna D. Scala,44.993686,7.780994
+S00220,3,Torino Orbassano Fascio Sud,Torino Orb.F.Sud,45.032898,7.576125
+S00459,3,Villafranca C.,Villafranca C.,44.908916,8.043692
+S00543,3,Villafranca P.,Villafranca P.,44.786739,7.510077
+S01008,3,Vogogna Ossola,Vogogna Ossola,46.005883,8.294664
+S00721,3,Monastero Pratavecchi,Monastero Prat.,44.484517,7.44679
+S00468,3,Felizzano,Felizzano,44.893367,8.437155
+S00904,3,Pogliola,Pogliola,44.399796,7.75057
+S01125,3,Pombia,Pombia,45.649547,8.637037
+S01809,3,Pontecurone,Pontecurone,44.962014,8.929717
+S00871,3,Ponti,Ponti,44.629979,8.365262
+S00247,3,Ponzana,Ponzana,45.402685,8.522689
+S00344,3,Portacomaro,Portacomaro,44.957169,8.224345
+S01124,3,Porto Varallo Pombia,Porto Varallo P.,45.677697,8.638383
+S00469,3,Solero,Solero,44.915886,8.51043
+S00155,3,Strambino,Strambino,45.382508,7.887955
+S00260,3,Susa,Susa,45.138622,7.052311
+S00974,3,Ghislarengo,Ghislarengo,45.526006,8.379453
+S00316,3,Giarole,Giarole,45.056125,8.5609
+S00951,3,Magliano Crava Morozzo,Magliano C.M.,44.445259,7.777852
+S00243,3,S. Germano Vercellese,S. Germano Verc.,45.353603,8.249958
+S00336,3,S.Giorgio Casale,S.Giorgio Casale,45.101495,8.412858
+S01941,3,S.Giuliano Piemonte,S.Giuliano Piem.,44.890543,8.760933
+S00842,3,Pocapaglia,Pocapaglia,44.701066,7.892496
+S01015,3,Baveno,Baveno,45.909105,8.502121
+S00970,3,Biella Chiavazza,Biella Chiavazza,45.568084,8.066787
+S00544,3,Moretta,Moretta,44.765514,7.530303
+S00976,3,Nibbia,Nibbia,45.481363,8.557993
+S00834,3,Nizza Monferrato,Nizza Monferrato,44.772905,8.361146
+S00513,3,None,None,44.938011,7.540068
+S00207,3,Pc. Meana,P.C. Meana,45.124481,7.059748
+S00311,3,Pertengo,Pertengo,45.233305,8.426739
+S00003,3,Piedimulera,Piedimulera,46.024348,8.261237
+S00611,3,Cuneo Gesso,Cuneo Gesso,44.394234,7.556017
+S00051,3,Cureggio,Cureggio,45.672538,8.456282
+S00982,3,Varallo Pombia,Varallo Pombia,45.670032,8.620047
+S00100,3,Varallo Sesia,Varallo Sesia,45.815227,8.256606
+S01013,3,Verbania-Pallanza,Verbania,45.943821,8.47224
+S00245,3,Vercelli,Vercelli,45.329909,8.416028
+S00073,3,Vergnasco,Vergnasco,45.489282,8.091687
+S00616,3,Vernante,Vernante,44.244639,7.535986
+S00170,3,Verolengo,Verolengo,45.193107,7.969511
+S00701,3,Verzuolo,Verzuolo,44.598767,7.48724
+S00031,3,Vespolate,Vespolate,45.351517,8.671947
+S00953,3,Vicoforte San Michele,Vicoforte S.M.,44.37404,7.894687
+S00977,3,Vigliano Candelo,Vigliano Candelo,45.557517,8.108475
+S00802,3,Vigliano D`Asti,Vigliano D'Asti,44.827335,8.218271
+S00021,3,Vignale,Vignale,45.478989,8.613132
+S00542,3,Vigone,Vigone,44.846923,7.491123
+S00001,3,Villadossola,Villadossola,46.064151,8.264675
+S00523,3,Luserna S. Giovanni,Luserna S.Giov.,44.815842,7.246902
+S00607,3,Maddalene,Maddalene,44.518734,7.648022
+S00820,3,Madonna Del Pilone,Madonna Del P.,44.695347,7.747639
+S00902,3,Margarita,Margarita,44.380082,7.685738
+S01012,3,Mergozzo,Mergozzo,45.961303,8.440881
+S00082,3,Pinerolo Olimpica,Pinerolo Olimpi.,44.893325,7.349043
+S00172,3,Crescentino,Crescentino,45.194302,8.107175
+S00017,3,Cressa Fontaneto,Cressa Fontaneto,45.646331,8.498435
+S00610,3,Cuneo,Cuneo,44.387914,7.536235
+S00427,3,Cunico Scandeluzza,Cunico Scandel.,45.036947,8.11007
+S01010,3,Cuzzago,Cuzzago,45.993682,8.373989
+S01003,3,Domodossola,Domodossola,46.115429,8.296684
+S01004,3,Domo Ii,Domo Ii,46.071396,8.286899
+S00980,3,Dormelletto Paese,Dormelletto P.,45.730032,8.574324
+S00722,3,Dronero,Dronero,44.464974,7.423245
+S00251,3,Exilles,Exilles,45.08999,6.927344
+S00112,3,Fara,Fara,45.550556,8.458049
+S00737,3,Farigliano,Farigliano,44.513337,7.90947
+S00511,3,Nichelino,Nichelino,44.99132,7.642068
+S00739,3,Niella,Niella,44.415377,7.926365
+S00248,3,Novara,Novara,45.451376,8.624895
+S00920,3,Nucetto,Nucetto,44.338871,8.061386
+S00244,3,Olcenengo,Olcenengo,45.34147,8.310096
+S00984,3,Oleggio,Oleggio,45.598029,8.632586
+S00010,3,Omegna,Omegna,45.87179,8.413291
+S00006,3,Ornavasso,Ornavasso,45.970296,8.415892
+S00012,3,Orta Miasino,Orta Miasino,45.795865,8.421217
+S00204,3,Oulx Cesana Claviere Sestriere,Oulx Ce.Cl.Ses.,45.038789,6.831432
+S00840,3,Oviglio,Oviglio,44.859537,8.494998
+S00337,3,Ozzano Monferrato,Ozzano Monfer.,45.107581,8.372296
+S00175,3,Palazzolo Vercellese,Palazzolo Verc.,45.189004,8.232787
+S00002,3,Pallanzeno,Pallanzeno,46.043533,8.260645
+S00524,3,Torre Pellice,Torre Pellice,44.818929,7.225901
+S00925,3,Trappa,Trappa,44.185375,7.994435
+S00950,3,Trinita` Bene Vagienna,Trinita' B. V.,44.504656,7.752647
+S00176,3,Trino Vercellese,Trino Verc.,45.190066,8.294093
+S00455,3,Trofarello,Trofarello,44.980471,7.735206
+S00041,3,Valenza,Valenza,45.023527,8.625808
+S00042,3,Valmadonna,Valmadonna,44.972588,8.610667
+S00237,3,Livorno Ferraris,Livorno Ferraris,45.283402,8.073493
+S00617,3,Limone,Limone,44.203799,7.577912
+S00466,3,Rocchetta Tanaro Cerro,Rocchetta T.C.,44.875574,8.351402
+S00159,3,Rodallo,Rodallo,45.278714,7.878025
+S00109,3,Romagnano Sesia,Romagnano Sesia,45.629888,8.384581
+S00215,3,Rosta,Rosta,45.078397,7.463963
+S00434,3,S.Anna Robella,S.Anna Rob.,45.074464,8.08568
+S00236,3,S. Antonino Di Saluggia,S. Ant. Di Sal.,45.253967,8.039728
+S00211,3,S. Antonino Vaie,S. Antonino Vaie,45.109469,7.275931
+S00609,3,S.Benigno Di Cuneo,S.Benigno Di C.,44.461002,7.572712
+S00461,3,S. Damiano D`Asti,S.Damiano D'Asti,44.878914,8.125956
+S00457,3,Pessione,Pessione,44.965132,7.841321
+S00011,3,Pettenasco,Pettenasco,45.820498,8.406802
+S00903,3,Pianfei,Pianfei,44.385228,7.717109
+S00922,3,Pievetta,Pievetta,44.257449,8.021744
+S00517,3,Pinerolo,Pinerolo,44.887673,7.337402
+S00515,3,Piscina Di Pinerolo,Piscina Di Pin.,44.921744,7.425482
+S00838,3,Bergamasco,Bergamasco,44.819891,8.461447
+S00238,3,Bianze`,Bianze',45.309488,8.115523
+S00522,3,Bibiana,Bibiana,44.809941,7.285727
+S00873,3,Mombaldone Roccaverano,Monbaldone Rocc.,44.569891,8.332781
+S00808,3,Mombaruzzo,Mombaruzzo,44.76235,8.441006
+S00019,3,Momo,Momo,45.574646,8.55689
+S00453,3,Moncalieri,Moncalieri,44.998187,7.678027
+S00340,3,Moncalvo,Moncalvo,45.059463,8.261905
+S00735,3,Monchiero Dogliani,Monchiero Dogl.,44.571815,7.917635
+S00952,3,Mondovi`,Mondovi',44.398255,7.816339
+S00801,3,Mongardino,Mongardino,44.84161,8.207411
+S00153,3,Montalto Dora,Montalto Dora,45.490309,7.858986
+S00160,3,Montanaro,Montanaro,45.232674,7.858331
+S00428,3,Montechiaro D`Asti,Montechiaro D'A.,44.999849,8.10982
+S00872,3,Montechiaro Denice,Montechiaro D.,44.600827,8.352185
+S00803,3,Montegrosso,Montegrosso,44.818465,8.239171
+S00606,3,Fossano,Fossano,44.550231,7.717971
+S00861,3,Gamalero,Gamalero,44.817476,8.543427
+S00510,3,Moncalieri Sangone,Monc. Sangone,45.000393,7.667991
+S00240,3,Santhia`,Santhia',45.363726,8.180093
+S00341,3,Penango,Penango,45.032254,8.235138
+S00422,3,Monteu Da Po,Monteu Da Po,45.158353,8.022925
+S00823,3,Monticello D`Alba,Monticello D'A.,44.703736,7.965002
+S00426,3,Montiglio Murisengo,Montiglio Muris.,45.067664,8.106913
+S00734,3,Narzole,Narzole,44.598377,7.881597
+S00827,3,Neive,Neive,44.723048,8.121071
+S00833,3,Calamandrana,Calamandrana,44.738986,8.331572
+S00020,3,Caltignaga,Caltignaga,45.519167,8.591602
+S00108,3,Prato Sesia,Prato Sesia,45.646472,8.370476
+S01009,3,Premosello Chiovenda,Premosello Ch.,46.002188,8.326649
+S00102,3,Quarona,Quarona,45.763547,8.266603
+S00150,3,Quincinetto,Quincinetto,45.567295,7.809711
+S00602,3,Racconigi,Racconigi,44.771179,7.685681
+S00615,3,Robilante,Robilante,44.296496,7.510906
+S00740,3,Roccaciglie`,Roccaciglie',44.425831,7.95274
+S00905,3,Roccadebaldi,Roccadebaldi,44.410446,7.780449
+S00614,3,Roccavione,Roccavione,44.314445,7.485361
+S00015,3,Gozzano,Gozzano,45.741039,8.438726
+S00007,3,Gravellona Toce,Gravellona Toce,45.934051,8.428346
+S00106,3,Grignasco,Grignasco,45.683288,8.332913
+S00835,3,Incisa Scapaccino,Incisa Scapacc.,44.80052,8.388468
+S00154,3,Ivrea,Ivrea,45.461542,7.876348
+S00421,3,Lauriano,Lauriano,45.160761,7.998531
+S01018,3,Lesa,Lesa,45.833042,8.566471
+S00460,3,Baldichieri,Baldichieri,44.899204,8.091198
+S00178,3,Balzola,Balzola,45.173985,8.402174
+S00732,3,Bandito,Bandito,44.722075,7.819452
+S00908,3,Bastia Mondovi`,Bastia Mondovi',44.439398,7.891671
+S00807,3,Bazzana,Bazzana,44.777094,8.401557
+S00901,3,Beinette,Beinette,44.36782,7.644884
+S01017,3,Belgirate,Belgirate,45.843337,8.570821
+S00985,3,Bellinzago,Bellinzago,45.566681,8.627652
+S00463,3,S. Paolo Solbrito,S.Paolo Solbrito,44.951753,7.975779
+S00420,3,S.Sebastiano Po,S.Sebastiano,45.167102,7.953781
+S00831,3,S.Stefano Belbo,S.Stefano Belbo,44.71714,8.241233
+S00822,3,S.Vittoria,S.Vittoria,44.69561,7.916909
+S00205,3,Salbertrand,Salbertrand,45.073478,6.887428
+S00743,3,Sale Langhe,Sale Langhe,44.392425,8.077468
+S00744,3,Saliceto,Saliceto,44.404437,8.172887
+S00235,3,Saluggia,Saluggia,45.23443,8.017112
+S00074,3,Salussola,Salussola,45.44438,8.115195
+S00072,3,Sandigliano,Sandigliano,45.519652,8.081531
+S00731,3,Sanfre`,Sanfre',44.74799,7.796793
+S00050,3,Comignago,Comignago,45.714296,8.566362
+S00212,3,Condove,Condove,45.106689,7.317022
+S00604,3,Savigliano,Savigliano,44.651337,7.663748
+S00540,3,Scalenghe,Scalenghe,44.89018,7.490745
+S00338,3,Serralunga Cereseto,Serralunga Cer.,45.100914,8.30742
+S00431,3,Serravalle D`Asti,Serravalle D'A.,44.948019,8.14808
+S00430,3,Settime Cinaglio Mombarone,Settime C.M.,44.966229,8.128853
+S00151,3,Settimo Tavagnasco,Settimo Tavagn.,45.546214,7.825189
+S00978,3,Sillavengo,Sillavengo,45.521303,8.444987
+S00111,3,Sizzano,Sizzano,45.573834,8.436024
+S00730,3,Sommariva Bosco,Sommariva Bosco,44.770754,7.777086
+S00874,3,Spigno,Spigno,44.539437,8.317924
+S01940,3,Spinetta,Spinetta,44.882378,8.683146
+S01016,3,Stresa,Stresa,45.884486,8.531454
+S00866,3,Strevi,Strevi,44.697771,8.525525
+S00018,3,Suno,Suno,45.620435,8.519344
+S00954,3,Lesegno,Lesegno,44.385891,7.94266
+S00174,3,Fontanetto Po,Fontanetto Po,45.191238,8.188697
+S00973,3,Cossato,Cossato,45.564216,8.175964
+S00348,3,Costigliole (Motta Di),Costigliole,44.807559,8.145712
+S00829,3,Costigliole D`Asti,Costigliole D'A.,44.754882,8.20477
+S00702,3,Costigliole Saluzzo,Costigliole Sal.,44.570196,7.482075
+S00030,3,Garbagna,Garbagna,45.385552,8.66627
+S00924,3,Garessio,Garessio,44.199088,8.015214
+S00052,3,Gattinara,Gattinara,45.611523,8.364288
+S00110,3,Ghemme,Ghemme,45.595882,8.417135
+S00343,3,Castell`Alfero,Castell'Alfero,44.986347,8.220882
+S00720,3,Castelletto Busca,Castellet. Busca,44.501319,7.463939
+S00741,3,Castellino Tanaro,Castellino T.,44.41657,7.974321
+S00836,3,Castelnuovo Belbo,Castelnuovo B.,44.798127,8.42516
+S00233,3,Castelrosso,Castelrosso,45.201802,7.932162
+S00423,3,Cavagnolo Brusasco,Cavagnolo Brus.,45.153655,8.047534
+S00608,3,Centallo,Centallo,44.496223,7.591035
+S00546,3,Cervignasco,Cervignasco,44.699669,7.518644
+S00521,3,Bricherasio,Bricherasio,44.824336,7.307513
+S00113,3,Briona,Briona,45.538568,8.479541
+S00424,3,Brozolo,Brozolo,45.121299,8.05893
+S00837,3,Bruno,Bruno,44.797947,8.439639
+S00704,3,Busca,Busca,44.520585,7.481589
+S00208,3,Bussoleno,Bussoleno,45.139631,7.144819
+S04207,3,Arquata Scrivia,Arquata Scrivia,44.692533,8.885342
+S00742,3,Ceva,Ceva,44.389861,8.031958
+S00733,3,Cherasco,Cherasco,44.65261,7.867211
+S00500,3,Chieri,Chieri,45.007008,7.827077
+S00206,3,Chiomonte,Chiomonte,45.119876,6.988716
+S00232,3,Chivasso,Chivasso,45.193637,7.889666
+S00425,3,Cocconato,Cocconato,45.082926,8.070145
+S00214,3,Avigliana,Avigliana,45.085276,7.401096
+S00027,3,Bivio Castelrosso,Biv. Castelrosso,45.201871,7.932861
+S00005,3,Bivio Sesia,Biv. Sesia,45.338661,8.441797
+S00921,3,Bagnasco,Bagnasco,44.303264,8.046132
+S00070,3,Biella S.Paolo,Biella S.Paolo,45.557334,8.067541
+S00870,3,Bistagno,Bistagno,44.659256,8.372057
+S00014,3,Bolzano Novarese,Bolzano Novarese,45.759357,8.440754
+S00032,3,Borgo Lavezzaro,Borgo Lavezzaro,45.318783,8.703242
+S00171,3,Borgo Revel,Borgo Revel,45.189827,8.02021
+S00981,3,Borgo Ticino,Borgo Ticino,45.691943,8.602483
+S00246,3,Borgo Vercelli,Borgo Vercelli,45.359252,8.461474
+S00152,3,Borgofranco,Borgofranco,45.514775,7.854612
+S00016,3,Borgomanero,Borgomanero,45.701054,8.468093
+S00210,3,Borgone,Borgone,45.123191,7.236037
+S00860,3,Borgoratto,Borgoratto,44.835999,8.538182
+S00104,3,Borgosesia,Borgosesia,45.716798,8.28239
+S00821,3,Bra,Bra,44.693556,7.848643
+S00231,3,Brandizzo,Brandizzo,45.178915,7.841218
+S00622,3,Breil Sur Roya,Breil Sur Roya,43.890267,7.530915
+S00071,3,Candelo,Candelo,45.547433,8.100103
+S00512,3,Candiolo,Candiolo,44.961155,7.598973
+S01011,3,Candoglia Ornavasso,Candoglia Ornav.,45.977489,8.419715
+S00832,3,Canelli,Canelli,44.716716,8.294544
+S00841,3,Cantalupo,Cantalupo,44.864787,8.551357
+S00839,3,Carentino,Carentino,44.831303,8.470474
+S00055,3,Carisio,Carisio,45.403164,8.21249
+S00601,3,Carmagnola,Carmagnola,44.846944,7.72797
+S00971,3,Carpignano Sesia,Carpignano,45.528934,8.422898
+S00738,3,Carru` Clavesana,Carru' Clavesana,44.479548,7.891414
+S00314,3,Casale Monferrato,Casale Monferr.,45.133928,8.460292
+S00179,3,Casale Popolo,Casale Popolo,45.160434,8.44055
+S00828,3,Castagnole Delle Lanze,Castagnole,44.749341,8.152836
+S04101,3,Prasco Cremolino,Prasco Cremolino,44.648906,8.55001
+S04003,3,Predosa,Predosa,44.750978,8.651132
+S04208,3,Rigoroso,Rigoroso,44.670577,8.896487
+S04004,3,Rio Secco,Rio Secco,44.722275,8.658805
+S04331,3,Rivalta Scrivia,Rivalta Scriv.,44.854158,8.809846
+S04206,3,Serravalle Scrivia,Serravalle Scr.,44.72393,8.858548
+S04303,3,Stazzano Serravalle,Stazzano Serrav.,44.719374,8.865301
+S01810,3,Tortona,Tortona,44.900126,8.861777
+S04301,3,Villalvernia,Villalvernia,44.810592,8.855655
+S04100,3,Visone,Visone,44.661951,8.500198
+S00804,3,Agliano Castelnuovo Calcea,Agliano C.C.,44.786108,8.267723
+S00514,3,Airasca,Airasca,44.928093,7.483536
+S00809,3,Alice Belcolle,Alice Belcolle,44.722636,8.440076
+S00216,3,Alpignano,Alpignano,45.091077,7.523745
+S01020,3,Arona,Arona,45.755392,8.559075
+S00867,3,Acqui Terme,Acqui Terme,44.67407,8.474482
+S00470,3,Alessandria,Alessandria,44.909091,8.606498
+S01050,3,Deviatoio Estremo Tortona,De Tortona,44.895759,8.840548
+S04302,3,Cassano Spinola,Cassano Spinola,44.762631,8.858833
+S04001,3,Castelspina Portanova,Castelspina P.,44.796662,8.62203
+S04202,3,Donna,Donna,44.818902,8.712792
+S04200,3,Frugarolo Boscomarengo,Frugarolo B.,44.841687,8.682724
+S04102,3,Molare,Molare,44.621975,8.609904
+S04203,3,Novi Ligure,Novi Ligure,44.762521,8.787289
+S04103,3,Ovada,Ovada,44.630377,8.632301
+S04007,3,Ovada Nord,Ovada Nord,44.646656,8.644633
+S04330,3,Pozzolo Formigaro,Pozzolo Formig.,44.797395,8.782521
+S00148,4,Donnaz,Donnaz,45.602713,7.769563
+S00134,4,Arvier,Arvier,45.704259,7.166681
+S00146,4,Aosta Viale Europa,Aosta V.Europa,45.733294,7.297371
+S00133,4,Avise,Avise,45.706296,7.131285
+S00135,4,Villeneuve,Villeneuve,45.706648,7.213481
+S00149,4,Pont Saint Martin,Pont S.Martin,45.589834,7.795024
+S00140,4,Nus,Nus,45.738786,7.4712
+S00145,4,Verres,Verres,45.659822,7.690012
+S00162,4,Derby,Derby,45.730289,7.087018
+S00136,4,Sarre,Sarre,45.717919,7.258468
+S00144,4,Montjovet,Montjovet,45.704586,7.666871
+S00131,4,Morgex,Morgex,45.757055,7.033898
+S00130,4,Pre` Saint Didier,Pre' S. Didier,45.7636,6.99105
+S00138,4,Quart,Quart,45.741372,7.414645
+S00147,4,Hone Bard,Hone Bard,45.613918,7.741345
+S00132,4,La Salle,La Salle,45.744637,7.061987
+S00161,4,Saint Pierre,Saint Pierre,45.708146,7.229338
+S00141,4,Chambave,Chambave,45.744163,7.557301
+S00142,4,Chatillon Saint Vincent,Chatillon S.V.,45.7434,7.619309
+S00137,4,Aosta,Aosta,45.73407,7.322424
+S00143,4,Aosta Istituto,Aosta Istituto,45.732938,7.303076
+S07403,5,Greccio,Greccio,42.462872,12.777009
+S08301,5,Grotte S.Stefano,Grotte S.Stefano,42.51512,12.169372
+S08858,5,Isola Liri,Isola Liri,41.681712,13.581088
+S08607,5,Itri,Itri,41.271328,13.545549
+S08321,5,La Giustiniana,La Giustiniana,41.985243,12.403457
+S08320,5,La Storta,La Storta,42.001748,12.381254
+S08733,5,Lanuvio,Lanuvio,41.672211,12.690885
+S08608,5,Latina,Latina,41.538372,12.945888
+S08504,5,Bagni Di Tivoli,Bagni Di Tivoli,41.949593,12.722208
+S08312,5,Bassano Romano,Bassano Romano,42.212444,12.152302
+S08502,5,Salone,Salone,41.915253,12.636215
+S08712,5,Sassone,Sassone,41.783777,12.625832
+S08609,5,Sezze Romano,Sezze Romano,41.495542,13.038452
+S08857,5,Sora,Sora,41.716618,13.618601
+S08212,5,Stimigliano,Stimigliano,42.289811,12.568632
+S08661,5,Ferentino-Supino,Ferentino-Supino,41.6564,13.246971
+S08411,5,Fiumicino Aeroporto,Fiumicino Aerop.,41.793673,12.251728
+S08640,5,Formia-Gaeta,Formia-Gaeta,41.258773,13.605996
+S08112,5,Corchiano,Corchiano,42.361351,12.341846
+S08510,5,Castel Madama,Castel Madama,41.988389,12.864938
+S07407,5,Castel S.Angelo,Castel S.Angelo,42.379666,13.017612
+S08732,5,Cecchina,Cecchina,41.692029,12.650992
+S08666,5,Ceprano-Falvaterra,Ceprano-Falvater,41.523962,13.523481
+S08021,5,Ladispoli-Cerveteri,Ladispoli-Cervet,41.953502,12.081675
+S08319,5,Cesano Di Roma,Cesano,42.061833,12.326669
+S08650,5,Ciampino,Ciampino,41.804442,12.599546
+S07406,5,Cittaducale,Cittaducale,42.387764,12.94269
+S08211,5,Civita Castellana,Civita Castel.,42.346593,12.453821
+S08010,5,Civitavecchia,Civitavecchia,42.088287,11.79815
+S08651,5,Colle Mattia,Colle Mattia,41.832756,12.728329
+S08221,5,Collevecchio,Collevecchio,42.298089,12.520546
+S08315,5,Bracciano,Bracciano,42.103667,12.173023
+S08735,5,Cancelliera,Cancelliera,41.710587,12.621758
+S07429,5,Canetra,Canetra,42.391578,13.029159
+S08672,5,Capannelle,Capannelle,41.830713,12.568884
+S08110,5,Caprarola,Caprarola,42.303815,12.258238
+S08730,5,Casabianca,Casabianca,41.788327,12.60431
+S08671,5,Cassino,Cassino,41.484306,13.832125
+S08114,5,Castel Bagnolo Di Orte,Castel Bagnolo,42.400183,12.400781
+S08715,5,Acqua Acetosa,Acqua Acetosa,41.794294,12.616449
+S08704,5,Albano Laziale,Albano Laziale,41.72632,12.658056
+S08658,5,Anagni-Fiuggi,Anagni-Fiuggi,41.71037,13.09597
+S08318,5,Anguillara,Anguillara,42.068133,12.304978
+S07408,5,Antrodoco Borgo Velino,Antrodoco B.V.,42.415393,13.076193
+S07435,5,Antrodoco Centro,Antrodoco Centro,42.409844,13.07096
+S08709,5,Anzio,Anzio,41.4532,12.633205
+S08705,5,Aprilia,Aprilia,41.592386,12.639126
+S08861,5,Arce,Arce,41.583695,13.571848
+S08516,5,Arsoli,Arsoli,42.045852,13.013064
+S08111,5,Fabrica Di Roma,Fabrica Di Roma,42.334416,12.307467
+S08410,5,Deviatoio Estremo Km 2.730-Roma T.Lana,De Km2.730 Rm Tu,41.887491,12.527216
+S08706,5,Campo Di Carne,Campo Di Carne,41.552116,12.635125
+S08713,5,Anzio Colonia,Anzio Colonia,41.459893,12.617442
+S08731,5,Pavona,Pavona,41.723897,12.61116
+S08809,5,Terracina,Terracina,41.29697,13.244055
+S08304,5,Viterbo Porta Fiorentina,Viterbo P.F.,42.425237,12.106204
+S08652,5,Zagarolo,Zagarolo,41.821927,12.82692
+S08235,5,Fidene,Fidene,41.979773,12.508451
+S08601,5,Pomezia - S.Palomba,Pomezia,41.706171,12.573611
+S08009,5,Tarquinia,Tarquinia,42.239463,11.727009
+S08210,5,Gallese In Teverina,Gallese,42.380901,12.439732
+S08808,5,La Fiora,La Fiora,41.331487,13.200365
+S08512,5,Mandela-Sambuci,Mandela-Sambuci,42.016212,12.921976
+S08739,5,S. Eurosia,S. Eurosia,41.675927,12.755105
+S08015,5,Santa Marinella,Santa Marinella,42.035892,11.863122
+S08307,5,S.Martino Al Cimino,S.Martino Cimino,42.382043,12.108104
+S07428,5,Poggio Fidoni,Poggio Fidoni,42.395811,12.795429
+S08660,5,Morolo,Morolo,41.667018,13.194557
+S07432,5,Cotilia,Cotilia,42.372602,12.96871
+S08734,5,Velletri,Velletri,41.682421,12.780864
+S08309,5,Vetralla,Vetralla,42.304619,12.089137
+S08310,5,Vico Matrino,Vico Matrino,42.278028,12.121681
+S08316,5,Vigna Di Valle,Vigna Di Valle,42.076863,12.210716
+S08399,5,Villa Bonelli,Villa Bonelli,41.8477601,12.455223
+S08714,5,Villa Claudia,Villa Claudia,41.484326,12.61709
+S08503,5,Lunghezza,Lunghezza,41.923253,12.667212
+S08020,5,Maccarese,Maccarese,41.879372,12.23695
+S08404,5,Magliana,Magliana,41.834235,12.431017
+S08314,5,Manziana-Canale Monterano,Manziana,42.128246,12.134934
+S08701,5,Marino,Marino,41.768961,12.655994
+S09150,5,Minturno,Minturno,41.257621,13.720664
+S08214,5,Fara Sabina,Fara Sabina,42.155546,12.648323
+S08231,5,Nuovo Salario,Nuovo Salario,41.956195,12.510317
+S08313,5,Oriolo,Oriolo,42.166825,12.138499
+S08209,5,Orte,Orte,42.43728,12.408986
+S08707,5,Padiglione,Padiglione,41.513518,12.629476
+S08019,5,Torre In Pietra-Palidoro,Torre In Piet. P,41.92432,12.183116
+S08600,5,Torricola,Torricola,41.809538,12.557716
+S08308,5,Tre Croci,Tre Croci,42.331525,12.086159
+S07404,5,Contigliano,Contigliano,42.412072,12.779144
+S08708,5,Lido Di Lavinio,Lido Di Lavinio,41.500599,12.625926
+S08109,5,Ronciglione,Ronciglione,42.282499,12.219437
+S08515,5,Roviano,Roviano,42.026476,12.991119
+S08710,5,Nettuno,Nettuno,41.459558,12.662123
+S08605,5,Monte S.Biagio,Monte S.Biagio,41.345967,13.347037
+S08215,5,Monterotondo,Monterotondo,42.06409,12.595753
+S08751,5,Frascati,Frascati,41.806881,12.677962
+S08662,5,Frosinone,Frosinone,41.625333,13.328728
+S08400,5,Muratella,Muratella,41.826182,12.412696
+S08024,5,Civitavecchia Viale Della Vittoria,C.Vecchia V.Vitt,42.086518,11.800599
+S08602,5,Campoleone,Campoleone,41.642396,12.648341
+S07405,5,Rieti,Rieti,42.405918,12.862596
+S08517,5,Riofreddo,Riofreddo,42.060704,13.021419
+S08674,5,Roma Casilina,Roma Casilina,41.87669,12.537297
+S08322,5,Roma Monte Mario,Roma Monte Mario,41.939088,12.421732
+S08326,5,Gemelli,Gemelli,41.927813,12.427797
+S08500,5,Roma Prenestina,Roma Prenestina,41.897571,12.545803
+S08325,5,Roma S.Filippo Neri,Rm S.Filippo N.,41.950262,12.412414
+S07409,5,Rocca Di Fondi,Rocca Di Fondi,42.39799,13.095825
+S08668,5,Roccasecca,Roccasecca,41.526377,13.645814
+S08738,5,S. Maria Delle Mole,S.Maria Mole,41.774417,12.606225
+S08659,5,Sgurgola,Sgurgola,41.687018,13.146199
+S08317,5,Crocicchie,Crocicchie,42.0559,12.238888
+S07425,5,Terria,Terria,42.436334,12.782816
+S08529,5,Ponte Di Nona,Ponte Di Nona,42.061563,13.581585
+S08331,5,Vigna Clara,Vigna Clara,41.96827,12.409026
+S08408,5,Roma Tuscolana,Roma Tuscolana,41.879384,12.523505
+S08656,5,Valmontone,Valmontone,41.774291,12.923696
+S07427,5,Labro Moggio,Labro Moggio,42.506131,12.746224
+S07434,5,Sorgenti Del Peschiera,Sorgenti D.Pesch,42.36428,12.996973
+S08008,5,Montalto Di Castro,Montalto Di Cas.,42.334623,11.595085
+S08012,5,Civitavecchia M.Ma,Civitavecchia M.,42.099843,11.78438
+S08016,5,Santa Severa,Santa Severa,42.020645,11.969077
+S08025,5,Roma Aurelia,Aurelia,41.88344,12.395271
+S08108,5,Madonna Del Piano,Madonna Del Pian,42.259963,12.166357
+S08113,5,Gallese Bassanello,Gallese Bassanel,42.3798,12.371998
+S08213,5,Poggio Mirteto,Poggio Mirteto,42.242187,12.633043
+S08216,5,Sette Bagni,Sette Bagni,42.006438,12.520156
+S08222,5,Piana Bella Montelibretti,Piana Bella Mon.,42.105159,12.632938
+S08300,5,Sipicciano,Sipicciano,42.546495,12.254318
+S08303,5,Montefiascone,Montefiascone,42.520268,12.050448
+S08306,5,Viterbo Porta Romana,Viterbo P.R.,42.411974,12.110482
+S08323,5,Roma S.Pietro,Roma S.Pietro,41.896143,12.454497
+S08403,5,Ponte Galeria,Ponte Galeria,41.818349,12.344733
+S08405,5,Roma Trastevere,Roma Trastevere,41.872279,12.466162
+S08406,5,Roma Ostiense,Roma Ostiense,41.87265,12.483917
+S08409,5,Roma Termini,Roma Termini,41.900636,12.502026
+S08412,5,Parco Leonardo,Parco Leonardo,41.79932,12.29543
+S08506,5,Guidonia-Montecelio-S.Angelo,Guidonia-M.-S.A.,41.993405,12.725681
+S08507,5,Marcellina-Palombara,Marcellina-Palom,41.999609,12.79134
+S08511,5,Vicovaro,Vicovaro,42.010183,12.888294
+S08603,5,Cisterna Di Latina,Cisterna Di Lat.,41.586511,12.827538
+S08604,5,Priverno Fossanova,Priverno Fos.,41.421853,13.186406
+S08606,5,Fondi - Sperlonga,Fondi-Sperlonga,41.337663,13.424893
+S08657,5,Colleferro-Segni-Paliano,Colleferro,41.740062,13.00299
+S08663,5,Castro-Pofi,Castro-Pofi,41.533014,13.410741
+S08005,5,Quattro Venti,Quattro Venti,41.880145,12.459731
+S08413,5,Fiera Di Roma,Fiera Di Roma,41.811863,12.320622
+S08505,5,Serenissima,Serenissima,41.914168,12.622964
+S08334,5,Pineto,Pineto,41.909222,12.438385
+S08218,5,Roma S.Lorenzo,Roma S.Lorenzo,41.893476,12.522057
+S08226,5,Roma Tiburtina Piazzale Est,Roma Tib P.Est,41.910903,12.530749
+S08220,5,Dev.Int. Dd/Av,D.I.Ddav,42.274228,12.607523
+S08667,5,Bivio/P.C. Sgurgola,Biv/Pc Sgurgola,41.527485,13.547101
+S08716,5,Marechiaro,Marechiaro,41.470762,12.6123
+S08022,5,Marina Di Cerveteri,Marina Di Cervet,41.979133,12.047924
+S08711,5,Villetta,Villetta,41.738237,12.649463
+S08311,5,Capranica,Capranica,42.245195,12.157194
+S08703,5,Castel Gandolfo,Castel Gandolfo,41.746946,12.652266
+S08664,5,Ceccano,Ceccano,41.573583,13.336417
+S09200,5,Rocca D`Evandro,Rocca D'Evan.,41.438861,13.911338
+S08665,5,Isoletta-S.Giovanni I.,Isoletta-S.G.I.,41.527873,13.547095
+S08217,5,Roma Tiburtina,Roma Tiburtina,41.910903,12.530749
+S08508,5,Tivoli,Tivoli,41.961849,12.805047
+S08501,5,Tor Sapienza,Tor Sapienza,41.907095,12.594489
+S08236,5,Roma Nomentana L.L.,Roma Nom. L.L.,41.932935,12.523628
+S08655,5,Tor Vergata,Tor Vergata,41.823224,12.666162
+S08330,5,Ipogeo Degli Ottavi,Ipogeo D.Ottavi,41.968391,12.409026
+S08333,5,Olgiata,Olgiata,42.01538,12.363864
+S08328,5,Appiano,Appiano,41.909342,12.43838
+S08329,5,Valle Aurelia,Valle Aurelia,41.899356,12.447667
+S08859,5,Arpino,Arpino,41.648296,13.59959
+S08018,5,Palo Laziale,Palo Laziale,41.939327,12.102739
+S08202,6,Allerona-Castel Viscardo,Allerona,42.78502,12.035236
+S08206,6,Alviano,Alviano,42.591917,12.259583
+S07008,6,Assisi,Assisi,43.058921,12.585304
+S08207,6,Attigliano,Attigliano,42.518054,12.294761
+S07009,6,Cannara,Cannara,43.019591,12.628709
+S07215,6,Capodacqua Pieve Fanonica,Capodacqua P.F.,43.026769,12.7541
+S06923,6,Castiglion Del Lago,Castigl.Del Lago,43.123195,12.032077
+S07216,6,Scanzano Belfiore,Scanzano B.,42.983918,12.737692
+S07226,6,Terni,Terni,42.570768,12.651091
+S07430,6,Terni Cospea,Terni Cospea,42.549615,12.625075
+S07217,6,Foligno,Foligno,42.954261,12.711096
+S06924,6,Pm Panicale Sanfatucchio,P.M.Panicale S.,43.065535,12.056347
+S07001,6,Passignano Sul Trasimeno,Passignano T.,43.188324,12.133128
+S08224,6,Pc Allerona,P.C.  Allerona,42.804432,12.016229
+S07225,6,Giuncano,Giuncano,42.647802,12.637694
+S07211,6,Gualdo Tadino,Gualdo T.,43.233475,12.7672
+S07224,6,Baiano Di Spoleto,Baiano Di S.,42.726238,12.663615
+S08204,6,Baschi-Montecchio,Baschi Montecc.,42.68685,12.203496
+S07007,6,Bastia,Bastia,43.07133,12.547735
+S08225,6,Pc Orvieto,P.C. Orvieto,41.979641,12.508456
+S07229,6,Nera Montoro,Nera Montoro,42.497855,12.476587
+S07219,6,Campello,Campello,42.822814,12.761253
+S07004,6,Perugia,Perugia,43.103808,12.375567
+S07005,6,Perugia Ponte S.Giovanni,Perugia P.S.G.,43.091801,12.438239
+S07014,6,Monte Melino,Monte Melino,43.106303,12.249698
+S07209,6,Fossato Di Vico Gubbio,Fossato Di V.G.,43.283798,12.757258
+S07212,6,Gaifana,Gaifana,43.181837,12.784148
+S08203,6,Orvieto,Orvieto,42.723379,12.127412
+S07012,6,Ospedalicchio,Ospedalicchio,43.082369,12.506572
+S07011,6,Torricella,Torricella,43.159149,12.188249
+S07218,6,Trevi,Trevi,42.8762,12.733709
+S07000,6,Tuoro Sul Trasimeno,Tuoro Sul Tr.,43.196631,12.0796
+S07002,6,Magione,Magione,43.137356,12.202238
+S07003,6,Ellera Corciano,Ellera Corciano,43.094699,12.318574
+S07230,6,Narni Amelia,Narni Amelia,42.53128,12.519592
+S07213,6,Nocera Umbra,Nocera Umbra,43.100663,12.767207
+S07233,6,Ponte Parrano Di Nocera Umbra,Ponte Parrano,43.137437,12.776376
+S07221,6,Spoleto,Spoleto,42.748121,12.736142
+S07220,6,S.Giacomo Di Spoleto,S.Giacomo Di S.,42.79015,12.755445
+S07214,6,Valtopina,Valtopina,43.05689,12.755068
+S07010,6,Spello,Spello,42.9844,12.668884
+S07235,6,S.Liberato,S.Liberato,42.478853,12.443006
+S07400,6,Stroncone,Stroncone,42.517955,12.65372
+S07401,6,Marmore,Marmore,42.547499,12.715224
+S08200,6,Citta` Della Pieve,Citta' D. Pieve,42.936221,11.971127
+S08201,6,Fabro-Ficulle,Fabro Ficulle,42.874851,12.04123
+S08205,6,Castiglione In Teverina,Castiglione In T,42.648544,12.234913
+S09453,7,Boiano,Boiano,41.487883,14.474551
+S09464,7,Bonefro S.Croce,Bonefro S.Croce,41.710522,14.860799
+S08914,7,Carovilli-Roccasicura,Carovilli-Roccas,41.712485,14.299732
+S09050,7,Carpinone,Carpinone,41.588038,14.326783
+S09465,7,Casacalenda Guardialfiera,Casacalenda G.,41.738109,14.849602
+S09501,7,Sepino,Sepino,41.413946,14.657456
+S11019,7,Termoli,Termoli,42.000623,14.992805
+S09469,7,Guglionesi Portocannone,Guglionesi Port.,41.932026,14.986368
+S09466,7,Larino,Larino,41.80015,14.918226
+S08912,7,S. Pietro Avellana-Capracotta,S.Pietro A.-Capr,41.76978,14.19995
+S11020,7,Campomarino,Campomarino,41.957398,15.042416
+S09463,7,Ripabottoni S.Elia,Ripabottoni S.E.,41.669666,14.844353
+S07825,7,Montenero Petacciato,Montenero P.,42.033286,14.851015
+S09467,7,Ururi Rotello,Ururi Rotello,41.801134,14.953072
+S09458,7,Baranello,Baranello,41.5176,14.596314
+S09060,7,Venafro,Venafro,41.482975,14.048722
+S08917,7,Sessano Del Molise,Sessano Del Mol.,41.639587,14.32853
+S08913,7,Vastogirardi,Vastogirardi,41.739482,14.249334
+S08915,7,Pescolanciano-Chiauci,Pescolanciano-C.,41.678996,14.341588
+S09057,7,Monteroduni,Monteroduni,41.528345,14.156514
+S09058,7,Rocca Ravindola,Rocca Ravindola,41.521035,14.122965
+S09457,7,Vinchiaturo,Vinchiaturo,41.49385,14.59801
+S09459,7,Campobasso,Campobasso,41.558137,14.66393
+S09451,7,Cantalupo Del Sannio,Cantalupo Del S.,41.5174,14.6671
+S09462,7,Campolieto Monacilioni,Campolieto M.,41.642573,14.76544
+S09059,7,S.Maria Oliveto,S.Maria Oliveto,41.507208,14.096049
+S09061,7,Capriati Al Volturno,Capriati Al V.,41.44279,14.070664
+S09452,7,Bosco Redole,Bosco Redole,41.459299,14.587884
+S09456,7,Guardiaregia,Guardiaregia,41.457455,14.553753
+S09461,7,Matrice Montagano,Matrice Montag.,41.621321,14.699561
+S09468,7,S.Martino In Pensilis,S.Martino In P.,41.877211,14.984218
+S09062,7,Sesto Campano,Sesto Campano,41.420005,14.088909
+S01961,8,S. Giuliano Piacentino,S.Giuliano Piac.,45.070627,9.985919
+S05021,8,S.Ilario,S.Ilario D¿Enza,44.765795,10.450469
+S05720,8,Poggio Renatico,Poggio Renatico,44.767292,11.483701
+S06101,8,Noceto,Noceto,44.809934,10.147258
+S05107,8,Vergato,Vergato,44.282723,11.114386
+S05319,8,San Giovanni In Persiceto,S.G.Persiceto,44.643151,11.189444
+S05805,8,S.Biagio,S.Biagio,44.594511,11.87054
+S06159,8,Roccamurata,Roccamurata,44.532756,9.876175
+S06615,8,S.Cassiano,S.Cassiano,44.143684,11.687503
+S05302,8,Osteria Nuova,Osteria Nuova,44.586613,11.236525
+S02345,8,Villanova Di Reggiolo,Villanova Regg.,44.915925,10.842455
+S05099,8,Bologna Interporto,Bo Interporto,44.490404,11.274884
+S05102,8,Casteldebole,Casteldebole,44.503974,11.27456
+S05055,8,Ozzano Dell'Emilia,Ozzano Emilia,44.450797,11.487297
+S05111,8,Casalecchio Garibaldi,Casalecchio G.,44.482995,11.272474
+S05726,8,Funo Centergross,Funo Centergross,44.593646,11.370672
+S05138,8,Rastignano,Rastignano,44.443592,11.357617
+S05114,8,Pian Di Venola,Pian Di Venola,44.332136,11.188609
+S05314,8,Camposanto,Camposanto,44.787527,11.143587
+S05053,8,Castel S.Pietro Terme,Castel S.P.,44.407376,11.597681
+S05725,8,Bologna Corticella,Bo.Corticella,44.551985,11.35401
+S07100,8,Rimini Miramare,Rimini Miramare,44.030388,12.618105
+S05042,8,Bologna Ravone,Bo Ravone,44.510244,11.320029
+S05315,8,Posto Movimento Bolognina,P.M. Bolognina,44.765134,11.14448
+S05046,8,Bologna C.Le/Av,Bologna C.Le/Av,44.50626,11.342267
+S05254,8,Reggio Emilia Av,Reggio Emilia Av,44.779886,10.744171
+S05049,8,S.Lazzaro Di Savena,S.Lazzaro Di S.,44.48097,11.416652
+S05020,8,Bologna Fiere,Bologna Fiere,44.512742,11.368809
+S05140,8,Bologna Mazzini,Bo. Mazzini,44.482284,11.376271
+S05819,8,Rimini Torre Pedrera,Torre Pedrera,44.106987,12.508755
+S06613,8,S.Martino In Gattara,S.Martino In G.,44.113211,11.667077
+S01951,8,S.Nicolo',S.Nicolò,45.058843,9.606443
+S06103,8,Felegara - S.Andrea Bagni,Felegara S.A.B.,44.724809,10.114523
+S05816,8,Gatteo A Mare,Gatteo A Mare,44.170691,12.432057
+S05139,8,Musiano-Pian Di Macina,Musiano,44.402423,11.344912
+S05722,8,S.Pietro In Casale,S.Pietro In C.,44.697928,11.404763
+S05090,8,Salsomaggiore T.,Salsomaggiore T.,44.81866,9.988129
+S05039,8,Samoggia,Samoggia,44.567307,11.146221
+S01949,8,Sarmato,Sarmato,45.063043,9.491116
+S01971,8,Monticelli D`Ongina,Moonticelli D'O.,45.075666,9.949036
+S05132,8,Monzuno,Monzuno,44.322277,11.262082
+S05006,8,Cadeo,Cadeo,44.967283,9.853181
+S05811,8,Ravenna,Ravenna,44.419155,12.208404
+S05023,8,Reggio Emilia,Reggio Emilia,44.697793,10.643093
+S05820,8,Rimini Viserba,Rimini Viserba,44.088407,12.533785
+S07101,8,Riccione,Riccione,43.999218,12.658549
+S05071,8,Rimini,Rimini,44.064176,12.574093
+S05108,8,Riola,Riola,44.229851,11.053592
+S02346,8,Rolo Novi Fabbrico,Rolo Novi Fabb.,44.886561,10.867882
+S01950,8,Rottofreno,Rottofreno,45.060546,9.549127
+S05031,8,Rubiera,Rubiera,44.65618,10.780252
+S05903,8,Russi,Russi,44.379011,12.03164
+S05954,8,S.Agata Sul Santerno,S.Agata Sul San.,44.436774,11.858855
+S05069,8,Santarcangelo Di Romagna,Santarcangelo R.,44.070316,12.45454
+S05134,8,San Benedetto Sambro-Cast.Pepoli,S.Benedetto Scp,44.22866,11.19226
+S05000,8,Piacenza,Piacenza,45.052238,9.70633
+S06158,8,Berceto,Berceto,44.555912,9.931759
+S05311,8,Mirandola,Mirandola,44.891638,11.111689
+S05051,8,Posto Mov. Mirandola Ozzano,P.M.Mirandola O.,44.459977,11.464168
+S07119,8,Misano Adriatico,Misano Adriatico,43.977493,12.697121
+S05032,8,Modena,Modena,44.654461,10.930373
+S05112,8,Molino Del Pallone,Molino Del Pall.,44.100128,10.961252
+S05801,8,Montesanto,Montesanto,44.732964,11.73652
+S05721,8,Galliera,Galliera,44.737738,11.441551
+S06160,8,Ostia Parmense,Ostia Parmense,44.520136,9.844981
+S06152,8,Ozzano Taro,Ozzano Taro,44.712268,10.141022
+S05813,8,Lido Di Classe-Lido Di Savio,Lido Clas./Savio,44.314546,12.292722
+S05951,8,Lugo,Lugo,44.414106,11.914723
+S05105,8,Marzabotto,Marzabotto,44.341237,11.207351
+S05952,8,Massalombarda,Massalombarda,44.448948,11.828068
+S06102,8,Medesano,Medesano,44.749265,10.140335
+S01851,8,Mezzani Rondani,Mezzani Rondani,44.966764,10.398818
+S05810,8,Mezzano,Mezzano,44.463,12.098501
+S05316,8,Crevalcore,Crevalcore,44.719156,11.152625
+S05058,8,Faenza,Faenza,44.293594,11.883268
+S05905,8,Barbiano,Barbiano,44.387263,11.878086
+S05119,8,Biagioni Lagacci,Biagioni Lagacci,44.086359,10.948257
+S05131,8,Pianoro,Pianoro,44.380589,11.340675
+S05106,8,Pioppe Di Salvaro,Pioppe Salvaro,44.310761,11.161785
+S05052,8,Varignana,Varignana,44.436796,11.523078
+S06150,8,Vicofertile,Vicofertile,44.778436,10.25834
+S05022,8,Villa Cade`,Villa Cade',44.743203,10.519402
+S01962,8,Villanova D`Arda,Villanova D'Arda,45.028291,9.993291
+S05807,8,Voltana,Voltana,44.540369,11.93605
+S05123,8,Ponte Della Venturina,Ponte Venturina,44.128589,10.990756
+S05103,8,Pontecchio Marconi,Pontecchio Marc.,44.42294,11.26919
+S05711,8,Pontelagoscuro,Pontelagoscuro,44.873216,11.612526
+S05005,8,Pontenure,Pontenure,45.001687,9.792103
+S05110,8,Porretta  Terme,Porretta Terme,44.155757,10.978039
+S05802,8,Portomaggiore,Portomaggiore,44.696699,11.799785
+S05800,8,Gaibanella,Gaibanella,44.778116,11.671325
+S05067,8,Gambettola,Gambettola,44.116718,12.327555
+S05313,8,S.Felice Sp,S.Felice S.P.,44.834527,11.140243
+S05723,8,S.Giorgio P.,S.Giorgio P.,44.646641,11.37901
+S05808,8,Alfonsine,Alfonsine,44.512364,12.039155
+S05008,8,Posto Movimento Alseno,Pm Alseno,44.892903,9.990996
+S05804,8,Argenta,Argenta,44.616867,11.841267
+S05902,8,Bagnacavallo,Bagnacavallo,44.412138,11.969398
+S05100,8,Bologna Borgo Panigale,Borgo Panigale,44.515024,11.284728
+S05130,8,Bologna S.Ruffillo,Bo S.Ruffillo,44.462657,11.372967
+S05043,8,Bologna C.Le,Bologna Centrale,44.50626,11.342267
+S06100,8,Borghetto Parmense,Borghetto Parm.,44.837198,10.1177
+S06161,8,Borgo Val Di Taro,Borgo Val Taro,44.486522,9.781489
+S01970,8,Caorso,Caorso,45.042048,9.868157
+S05120,8,Carbona,Carbona,44.246876,11.09618
+S02349,8,Carpi,Carpi,44.782919,10.891952
+S05101,8,Casalecchio Di Reno,Casalecchio R.,44.474298,11.276097
+S01948,8,Castel S.Giovanni,Castel S.Giovan.,45.063272,9.436856
+S05056,8,Castelbolognese,Castelbolognese,44.325391,11.804174
+S05037,8,Castelfranco D'Emilia,C.Franco Emilia,44.597381,11.056408
+S05012,8,Castelguelfo,Castelguelfo,44.836434,10.176706
+S05724,8,Castelmaggiore,Castelmaggiore,44.576055,11.366901
+S01960,8,Castelvetro,Castelvetro,45.100095,9.982181
+S01964,8,Castione Dei Marchesi,Castione D.March,44.915157,10.044449
+S07102,8,Cattolica S.Giovanni Gabicce,Cattolica S.G.G.,43.959931,12.745087
+S05814,8,Cervia-Milano Marittima,Cervia M.M.,44.258444,12.347096
+S06614,8,Brisighella,Brisighella,44.220565,11.769757
+S01963,8,Busseto,Busseto,44.974692,10.038909
+S05066,8,Cesena,Cesena,44.145449,12.24964
+S05815,8,Cesenatico,Cesenatico,44.20065,12.391186
+S06154,8,Citerna Taro,Citerna Taro,44.63548,10.032939
+S05812,8,Classe,Classe,44.382033,12.234995
+S06151,8,Collecchio,Collecchio,44.755339,10.21228
+S01852,8,Colorno,Colorno,44.927943,10.382935
+S05950,8,Conselice,Conselice,44.510987,11.831949
+S05104,8,Sasso Marconi,Sasso Marconi,44.394939,11.254333
+S05068,8,Savignano Sul Rubicone,Savign.Sul Rub.,44.095191,12.40421
+S06155,8,Selva Del Bocchetto,Selva Del Bocch.,44.62487,10.006253
+S05109,8,Silla,Silla,44.177652,10.980635
+S05900,8,Solarolo,Solarolo,44.356425,11.849183
+S02351,8,Soliera Modenese,Soliera Modenese,44.722667,10.90601
+S06156,8,Solignano,Solignano,44.614024,9.98014
+S06617,8,Strada Casale,Strada Casale,44.183511,11.697496
+S05322,8,Pm Tavernelle Emilia,Pm Tavernelle E.,44.575403,11.243917
+S05712,8,Ferrara,Ferrara,44.843047,11.603594
+S05009,8,Fidenza,Fidenza,44.86773,10.06339
+S05007,8,Fiorenzuola,Fiorenzuola,44.928716,9.917403
+S05059,8,Forli`,Forli',44.22413,12.054871
+S05065,8,Forlimpopoli,Forlimpopoli B.,44.194165,12.128125
+S06153,8,Fornovo,Fornovo,44.693791,10.102014
+S05014,8,Parma,Parma,44.810203,10.32837
+S05809,8,Glorie,Glorie,44.483341,12.075736
+S05904,8,Godo,Godo,44.389322,12.071256
+S05955,8,Granarolo,Granarolo,44.357356,11.937441
+S05133,8,Grizzana,Grizzana,44.258292,11.181194
+S05818,8,Igea Marina,Igea Marina,44.131972,12.481636
+S05054,8,Imola,Imola,44.359418,11.718723
+S05121,8,Lama Di Reno,Lama Di Reno,44.363501,11.216168
+S05806,8,Lavezzola,Lavezzola,44.559591,11.880154
+S05041,8,Lavino,Lavino,44.538306,11.232799
+S05817,8,Bellaria,Bellaria,44.150249,12.461168
+S05956,8,Cotignola,Cotignola,44.387077,11.938037
+S02050,9,Avio,Avio,45.733892,10.955842
+S02226,9,Bolzano Sud,Bolzano Sud,46.472617,11.33334
+S02051,9,Borghetto,Borghetto,45.696721,10.927083
+S02208,9,Castelbello,Castelbello,46.626994,10.897884
+S02105,9,Casteldarne,Casteldarne,46.797708,11.844223
+S02014,9,Bressanone,Bressanone,46.710088,11.649677
+S02030,9,Bronzolo,Bronzolo,46.40505,11.315833
+S02107,9,Brunico,Brunico,46.794922,11.929989
+S02017,9,Chiusa,Chiusa,46.642611,11.572678
+S02209,9,Ciardes,Ciardes,46.635274,10.940542
+S02206,9,Coldrano-Martello,Coldrano-Martell,46.618902,10.821204
+S02005,9,Colle Isarco,Colle Isarco,46.937951,11.441336
+S02048,9,Serravalle,Serravalle,45.808184,11.014942
+S02224,9,Settequerce,Settequerce,46.508448,11.264785
+S02205,9,Silandro,Silandro,46.625613,10.766327
+S02202,9,Spondigna-Prato Venosta,Spondigna-Prato,46.634571,10.60999
+S02223,9,Terlano-Andriano,Terlano-Andriano,46.528517,11.248394
+S02317,9,Grigno,Grigno,46.015059,11.624984
+S02207,9,Laces,Laces,46.619692,10.85863
+S02029,9,Laives,Laives,46.43409,11.323533
+S02204,9,Lasa,Lasa,46.618617,10.694828
+S02037,9,Lavis,Lavis,46.148306,11.095993
+S02046,9,Mori,Mori,45.861216,11.002648
+S02211,9,Naturno,Naturno,46.645095,11.004303
+S02308,9,Caldonazzo,Caldonazzo,45.997575,11.264815
+S02007,9,Campo Di Trens,Campo Di Trens,46.869076,11.488231
+S02312,9,Roncegno Bagni-Marter,Roncegno,46.03618,11.398818
+S02306,9,S.Cristoforo Al Lago-Ischia,S.Cristoforo,46.039743,11.23375
+S02111,9,Monguelfo Valle Di Casies,Monguelfo,46.752775,12.107264
+S02031,9,Ora,Ora,46.36092,11.296781
+S02203,9,Oris,Oris,46.626672,10.645989
+S02110,9,Valdaora - Anterselva,Valdaora - Anter,46.769231,12.02898
+S02309,9,Levico,Levico,46.005729,11.30493
+S02033,9,Magre`- Cortaccia,Magre'-Cortaccia,46.287976,11.232646
+S02200,9,Malles Venosta,Malles Venosta,46.684542,10.546445
+S02217,9,Merano Maia Bassa,Merano Maia Bass,46.656202,11.147931
+S02035,9,Mezzocorona,Mezzocorona,46.207258,11.128595
+S02113,9,Dobbiaco,Dobbiaco,46.725049,12.225122
+S02032,9,Egna-Termeno,Egna-Termeno,46.319418,11.257177
+S02305,9,Pergine,Pergine,46.062482,11.232637
+S02112,9,Villabassa - Braies,Villabassa,46.736492,12.167041
+S02300,9,Villazzano,Villazzano,46.045911,11.13906
+S02222,9,Vilpiano-Nalles,Vilpiano-Nalles,46.554251,11.220143
+S02225,9,Ponte D`Adige,Ponte D'Adige,46.485444,11.297719
+S02020,9,Ponte Gardena,Ponte Gardena,46.6012,11.53251
+S02201,9,Sluderno-Glorenza,Sluderno-Glorenz,46.664329,10.581832
+S02315,9,Strigno,Strigno,46.051003,11.514327
+S02049,9,Ala,Ala,45.760087,10.996775
+S02318,9,Tezze Di Grigno,Tezze Di Grigno,45.990485,11.669726
+S02212,9,Plaus,Plaus,46.65844,11.041057
+S02214,9,Marlengo,Marlengo,46.664558,11.138577
+S02314,9,Borgo Valsugana Est,Borgo Valsug. E.,46.05224,11.462119
+S02307,9,Calceranica,Calceranica,46.007384,11.240713
+S02103,9,Vandoies,Vandoies,46.814822,11.723079
+S02003,9,Trento S.Chiara,Trento S.Chiara,46.056242,11.13624
+S02102,9,Rio Di Pusteria,Rio Di Pusteria,46.79712,11.670028
+S02034,9,Salorno,Salorno,46.245842,11.202681
+S02219,9,Lana-Postal,Lana-Postal,46.608079,11.182252
+S02006,9,Vipiteno,Vipiteno,46.895732,11.440206
+S03032,10,P.M.Vat,P.M.Vat,46.092872,13.247412
+S03015,10,Tarvisio Boscoverde,Tarvisio Boscov.,46.505956,13.608012
+S03036,10,Bivio Cargnacco,Bivio Cargnacco,46.007733,13.247325
+S03085,10,Montereale Valcellina,Montereale Valc.,46.148009,12.658923
+S03124,10,S.Stefano Udinese,S.Stefano Ud.Se,45.953683,13.274971
+S03199,10,S.Giovanni Di Casarsa,S.Giovanni Di C.,45.943448,12.837255
+S03082,10,Meduno,Meduno,46.200678,12.80282
+S03318,10,Confine Italo/Sloveno,Confine Sloveno,45.922748,13.626923
+S03205,10,San Giorgio Di Nogaro,S.Giorgio Nogaro,45.82917,13.210315
+S03150,10,Strassoldo,Strassoldo,45.856617,13.31836
+S03021,10,Artegna,Artegna,46.23115,13.162328
+S03550,10,Aurisina,Aurisina,45.753943,13.687706
+S03087,10,Aviano,Aviano,46.064362,12.590686
+S03313,10,Bivio D`Aurisina,Bivio D'Aurisina,45.754253,13.655777
+S03039,10,Bivio San Polo,Bivio San Polo,45.81393,13.526626
+S03301,10,Capriva,Capriva,45.938764,13.517494
+S03016,10,Carnia,Carnia,46.373634,13.132847
+S02830,10,Casarsa,Casarsa,45.953002,12.8406
+S03207,10,Cervignano A.G.,Cervignano A.G.,45.823948,13.342866
+S03088,10,Budoia Polcenigo,Budoia Polcenigo,46.031464,12.537637
+S02831,10,Codroipo,Codroipo,45.9657,12.976543
+S03151,10,Sevegliano,Sevegliano,45.887451,13.30468
+S03312,10,Sistiana,Sistiana,45.774903,13.645832
+S03022,10,Tarcento,Tarcento,46.209134,13.196211
+S02702,10,Fontanafredda,Fontanafredda,45.967555,12.575266
+S03054,10,Forgaria Bagni Anduins,Forgaria B.A.,46.203472,12.964109
+S02661,10,Cordovado Sesto,Cordovado Sesto,45.850653,12.877784
+S03053,10,Cornino,Cornino,46.220516,13.010581
+S03019,10,Gemona Del Friuli,Gemona Del Fr.,46.274243,13.127978
+S03304,10,Gorizia Centrale,Gorizia Centrale,45.933047,13.60684
+S03315,10,Grignano,Grignano,45.713308,13.710255
+S03202,10,Latisana Lignano B.,Latisana L.B.,45.777733,13.001101
+S02832,10,Basiliano,Basiliano,46.012737,13.109233
+S02660,10,S.Vito Al Tagliamento,S. Vito Al Tagl.,45.912433,12.851594
+S02703,10,Sacile,Sacile,45.948413,12.498498
+S03089,10,Sacile San Liberale,Sacile S.Lib.Le,45.959155,12.514778
+S03307,10,Sagrado,Sagrado,45.872629,13.484004
+S03302,10,Mossa,Mossa,45.935114,13.547281
+S03204,10,Muzzana Del Turgnano,Muzzana Del T.,45.816817,13.132376
+S03029,10,Buttrio,Buttrio,46.012664,13.329039
+S03308,10,Redipuglia,Redipuglia,45.853476,13.486016
+S03120,10,Risano,Risano,45.97487,13.26181
+S03309,10,Ronchi Dei Legionari Nord,Ronchi Leg.Nord,45.830285,13.505962
+S03212,10,Ronchi Dei Legionari Sud,Ronchi Leg. Sud,45.818285,13.501207
+S03055,10,Pinzano,Pinzano,46.179217,12.950779
+S03310,10,Monfalcone,Monfalcone,45.807683,13.542929
+S03050,10,Osoppo,Osoppo,46.249011,13.084758
+S03203,10,Palazzolo Dello Stella,Palazzolo,45.803403,13.083957
+S03122,10,Palmanova,Palmanova,45.906862,13.296461
+S03206,10,Torviscosa,Torviscosa,45.826002,13.282358
+S03081,10,Travesio,Travesio,46.187141,12.876921
+S03317,10,Trieste Centrale,Trieste Centrale,45.657456,13.771873
+S03471,10,Trieste Campo Marzio,Ts Campo Marzio,45.645817,13.755161
+S03856,10,Trieste Aquilinia,Trieste Aq.Linia,45.618107,13.806161
+S03026,10,Udine,Udine,46.055791,13.242003
+S03028,10,Udine Parco,Udine Parco,46.052099,13.260401
+S03006,10,Ugovizza Valbruna,Ugovizza V.,46.502902,13.494972
+S03125,10,Lumignacco,Lumignacco,45.999177,13.250841
+S03051,10,Majano,Majano,46.219372,13.066308
+S02700,10,Cusano,Cusano,45.945427,12.757485
+S03083,10,Fanna - Cavasso,Fanna-Cavasso,46.187072,12.7707
+S03123,10,Bagnaria Arsa,Bagnaria Arsa,45.885513,13.282026
+S03300,10,Cormons,Cormons,45.957519,13.461563
+S03018,10,Venzone,Venzone,46.331883,13.13549
+S03466,10,Villa Opicina,Villa Opicina,45.6944,13.791142
+S03209,10,Villa Vicentina,Villa Vicentina,45.812922,13.395493
+S03010,10,Pontebba,Pontebba,46.508463,13.311357
+S02701,10,Pordenone,Pordenone,45.956281,12.654126
+S03084,10,Maniago,Maniago,46.170057,12.714527
+S03030,10,Manzano,Manzano,45.98811,13.375016
+S03031,10,S.Giovanni Al Natisone,S.Giovanni Al N.,45.976122,13.397437
+S03121,10,S.Maria La Longa,S.Maria La Longa,45.933068,13.287755
+S07059,11,Fabriano Ca` Maiano,Fabriano Ca' M.,43.345598,12.873939
+S07556,11,Marino Del Tronto Folignano,Marino Del Tr.,42.844346,13.632995
+S07207,11,Albacina,Albacina,43.345686,12.986501
+S07113,11,Ancona,Ancona,43.607734,13.497665
+S07116,11,Ancona Marittima,Ancona Mar.,43.619445,13.50911
+S07550,11,Ascoli Piceno,Ascoli P.,42.855474,13.587939
+S07302,11,Castelraimondo Camerino,Castelraimondo,43.210511,13.057274
+S07063,11,Sassoferrato Arcevia,Sassoferrato A.,43.435381,12.851514
+S07205,11,Serra S.Quirico,Serra S.Quirico,43.444879,13.027408
+S07552,11,Spinetoli Colli,Spinetoli C.,42.87032,13.762811
+S07234,11,Pantiere Di Castelbellino,Pantiere Di C.,43.500941,13.183116
+S07510,11,Pedaso,Pedaso,43.094694,13.844906
+S07060,11,Pergola,Pergola,43.549653,12.832973
+S07309,11,Morrovalle Monte S.Giusto,Morrovalle Msg,43.279189,13.58285
+S07312,11,S.Claudio,S.Claudio,43.287357,13.532751
+S07104,11,Pesaro,Pesaro,43.906014,12.904848
+S07110,11,Montemarciano,Montemarciano,43.651397,13.346478
+S07554,11,Monteprandone,Monteprandone,42.894183,13.849996
+S07062,11,Monterosso Marche,Monterosso M.,43.462227,12.818339
+S07551,11,Offida Castel Di Lama,Offida,42.862074,13.720285
+S07502,11,Osimo Castelfidardo,Osimo Castelf.,43.497033,13.547263
+S07112,11,Palombina,Palombina,43.61701,13.429721
+S07503,11,Loreto,Loreto,43.448376,13.620455
+S07307,11,Macerata,Macerata,43.293094,13.455172
+S07555,11,Maltignano Del Tronto,Maltignano T.,42.844918,13.664738
+S07107,11,Marotta Mondolfo,Marotta Mondolfo,43.769748,13.137273
+S07109,11,Marzocca,Marzocca,43.677362,13.287922
+S07301,11,Matelica,Matelica,43.25394,13.01509
+S07511,11,Cupramarittima,Cupramarittima,43.02349,13.860812
+S07208,11,Fabriano,Fabriano,43.345429,12.905336
+S07105,11,Fano,Fano,43.842977,13.02478
+S07505,11,Potenza Picena Montelupone,Potenza Pic.,43.36991,13.59265
+S07500,11,Varano,Varano,43.574729,13.523436
+S07305,11,Pollenza,Pollenza,43.240933,13.367031
+S07504,11,Porto Recanati,Porto Rec.,43.433726,13.661464
+S07508,11,Porto S. Giorgio Fermo,Porto S.Giorgio,43.17972,13.7975
+S07512,11,Grottammare,Grottammare,42.99381,13.870265
+S07202,11,Jesi,Jesi,43.520164,13.251316
+S07306,11,Urbisaglia Sforzacosta,Urbisaglia S.,43.25746,13.416932
+S07117,11,Falconara Stadio,Falconara Stadio,43.626158,13.381179
+S07300,11,Cerreto D`Esi,Cerreto D'Esi,43.32205,12.98319
+S07015,11,Ancona Torrette,Ancona Torrette,43.609936,13.455777
+S07313,11,Macerata Fontescodella,Macerata Fontesc,43.291569,13.44048
+S07200,11,Castelferretti,Castelferretti,43.607303,13.357519
+S07061,11,Bellisio Solfare,Bellisio Solfare,43.520379,12.823977
+S07065,11,Melano Marischio,Melano Marischio,43.345046,12.858866
+S07108,11,Senigallia,Senigallia,43.716277,13.221652
+S07111,11,Falconara Marittima,Falconara M.,43.630577,13.397378
+S07201,11,Chiaravalle,Chiaravalle,43.595503,13.327655
+S07203,11,Montecarotto Castelbellino,Montecarotto C.,43.500005,13.1481
+S07204,11,Castelplanio Cupramontana,Castelplanio C.,43.481403,13.084733
+S07206,11,Genga S.Vittore Terme,Genga S.V.T.,43.403011,12.977163
+S07303,11,S.Severino Marche,S.Severino M.,43.22996,13.183491
+S07304,11,Tolentino,Tolentino,43.214556,13.290501
+S07308,11,Corridonia Mogliano,Corridonia M.,43.281616,13.477697
+S07310,11,Montecosaro,Montecosaro,43.289297,13.646378
+S07311,11,Gagliole,Gagliole,43.220298,13.07522
+S07506,11,Civitanova Marche,Civitanova,43.3091,13.7257
+S07507,11,Porto S. Elpidio,Porto S.Elpidio,43.256855,13.760749
+S07513,11,S.Benedetto Del Tronto,S.Benedetto T.,42.954386,13.882297
+S07553,11,Monsampolo Del Tronto,Monsampolo,42.881488,13.803569
+S07557,11,S.Filippo,S.Filippo,42.849787,13.599949
+S02367,12,Villabartolomea,Villabartolomea,45.153057,11.348728
+S02331,12,Villafranca Di Verona,Villafranca D.V.,45.349801,10.849016
+S02145,12,Villaverla Montecchio,Villaverla,45.656998,11.524271
+S02141,12,Anconetta,Anconetta,45.565249,11.567865
+S02513,12,Ve Asseggiano,Ve Asseggiano,45.499357,12.178101
+S05708,12,Polesella,Polesella,44.961039,11.738498
+S02585,12,Ponte Di Brenta,Ponte Di Brenta,45.429216,11.947734
+S03200,12,Portogruaro Caorle,Portogruaro C.,45.781438,12.832375
+S02736,12,Stazione Per L`Alpago,Stazione Alpago,46.137574,12.316066
+S02579,12,Grisignano Di Zocco,Grisignano Z.,45.48638,11.710762
+S02539,12,Istrana,Istrana,45.676539,12.102781
+S02566,12,Alano Fener Valdobbiadene,Alano Fener Val.,45.90229,11.944546
+S02666,12,S. Dona` Di Piave,S.Dona' Di Piave,45.63983,12.559791
+S05704,12,S.Elena - Este,S.Elena - Este,45.199209,11.712883
+S02526,12,S.Giorgio Delle Pertiche,S.Giorgio D.Pert,45.542538,11.917455
+S02562,12,S.Giustina Cesio,S.Giustina Cesio,46.077655,12.04294
+S02435,12,S.Martino Buon Albergo,S.Martino B.A.,45.421559,11.089155
+S02536,12,S.Martino Di Lupari,S.Martino Di Lup,45.655928,11.857227
+S02503,12,S.Nazario,S.Nazario,45.838117,11.691321
+S02557,12,Fae`Fortogna,Fae'Fortogna,46.239439,12.294121
+S02143,12,Thiene,Thiene,45.700697,11.475407
+S02760,12,Olmi Spercenigo,Olmi S.,45.679467,12.338101
+S02761,12,S.Biagio Di Callalta,S.Biagio C.,45.686134,12.374316
+S02762,12,Fagare,Fagare,45.70705,12.444296
+S02763,12,Ponte Di Piave,Ponte Piave,45.719624,12.460683
+S02765,12,Oderzo,Oderzo,45.775304,12.49293
+S02766,12,Gorgo Al Monticano,Gorgo Montic.,45.784444,12.553737
+S02767,12,Motta Di Livenza,Motta Liv.,45.779114,12.607118
+S02768,12,Pramaggiore,Pramaggiore,45.774579,12.718413
+S02769,12,Annone Veneto,Annone Veneto,45.774904,12.680334
+S02440,12,San Bonifacio,San Bonifacio,45.40276,11.27406
+S02053,12,Posto Comunicazione Dolce`,P.C. Dolce',45.601513,10.850588
+S02733,12,Vittorio Veneto,Vittorio Veneto,45.989946,12.29327
+S02532,12,Carmignano Di Brenta,Carmignano Di Br,45.621354,11.714891
+S02437,12,Caldiero,Caldiero,45.41407,11.169753
+S02527,12,Campodarsego,Campodarsego,45.505721,11.900894
+S05417,12,Ceregnano,Ceregnano,45.05062,11.870958
+S02514,12,Trebaseleghe,Trebaseleghe,45.581509,12.040046
+S02592,12,Venezia Porto Marghera,V.Porto Marghera,45.472381,12.256536
+S02516,12,Spinea,Spinea,45.491568,12.177168
+S02713,12,S.Trovaso,S.Trovaso,45.627623,12.233886
+S02594,12,Venezia Marittima,Ve Marittima,45.43995,12.320091
+S02591,12,Gr Sc Mestre St,Gr Sc St,45.466808,12.242832
+S02319,12,Primolano,Primolano,45.965315,11.700899
+S02670,12,Quarto D`Altino,Quarto D'Altino,45.574576,12.365032
+S02501,12,S.Marino,S.Marino,45.897699,11.692241
+S02706,12,Conegliano,Conegliano,45.884706,12.298909
+S02558,12,Ponte Nelle Alpi Polpet,Ponte Nelle Alpi,46.182328,12.277604
+S02565,12,Quero Vas,Quero Vas,45.939306,11.920189
+S02508,12,Resana,Resana,45.634081,11.964251
+S02373,12,Lendinara,Lendinara,45.081816,11.591667
+S02433,12,Verona Porta Vescovo,Verona P.Vescovo,45.435552,11.018841
+S02715,12,Preganziol,Preganziol,45.60367,12.23138
+S05303,12,Roncanova Di Gazzo Ver.,Roncanova,45.142207,11.097995
+S02521,12,Rosa`,Rosa',45.72054,11.775799
+S05424,12,Rosolina,Rosolina,45.075548,12.239663
+S02522,12,Rossano Veneto,Rossano Veneto,45.702039,11.784812
+S05706,12,Rovigo,Rovigo,45.076993,11.780892
+S02735,12,S.Croce Del Lago,S.Croce Del Lago,46.094795,12.324068
+S02088,12,Peschiera Del Garda,Peschiera Garda,45.438502,10.702509
+S02705,12,Pianzano,Pianzano,45.913397,12.388168
+S02509,12,Piombino Dese,Piombino Dese,45.60944,12.00058
+S02559,12,Belluno,Belluno,46.141594,12.209703
+S02391,12,Bevilacqua,Bevilacqua,45.230145,11.398643
+S02588,12,Mira Mirano,Mira Mirano,45.462943,12.118789
+S02717,12,Mogliano Veneto,Mogliano Veneto,45.561964,12.23274
+S05703,12,Monselice,Monselice,45.246116,11.74789
+S02392,12,Montagnana,Montagnana,45.228238,11.459873
+S02443,12,Montebello,Montebello,45.45251,11.390803
+S02570,12,Montebelluna,Montebelluna,45.776434,12.054
+S02667,12,Fossalta Di Piave,Fossalta Piave,45.624215,12.500393
+S03201,12,Fossalta Di Portogruaro,Fossalta Di P.,45.78324,12.907473
+S02374,12,Fratta,Fratta,45.038673,11.642598
+S02524,12,Fratte Centro,Fratte Centro,45.585849,11.906637
+S02671,12,Gaggio,Gaggio,45.551893,12.326027
+S02541,12,Galliera Veneta Tombolo,Galliera Ven.Tom,45.652901,11.828066
+S02510,12,Noale Scorze`,Noale Scorze',45.553833,12.074888
+S05310,12,Nogara,Nogara,45.179937,11.070572
+S02734,12,Nove,Nove,46.050895,12.313312
+S02704,12,Orsago,Orsago,45.928068,12.434259
+S02395,12,Ospedaletto Euganeo,Ospedaletto Eug.,45.221706,11.606553
+S02554,12,Ospitale Di Cadore,Ospitale Di Cad.,46.325771,12.318429
+S02581,12,Padova,Padova,45.417846,11.880794
+S02540,12,Paese,Paese,45.669207,12.161677
+S02602,12,Paese Castagnole,Paese Castagnole,45.691182,12.182619
+S02600,12,Trevignano Signoressa,Trevignano Sign.,45.74789,12.103123
+S02712,12,Treviso C.,Treviso C.,45.659608,12.24614
+S02568,12,Levada,Levada,45.850158,12.006657
+S02530,12,Lisiera,Lisiera,45.578581,11.610695
+S02663,12,Lison,Lison,45.751947,12.759416
+S02556,12,Longarone Zoldo,Longarone Zoldo,46.267466,12.301953
+S02441,12,Lonigo,Lonigo,45.413269,11.345016
+S05423,12,Loreo,Loreo,45.059476,12.191569
+S02512,12,Maerne Di Martellago,Maerne Di Mart.,45.514799,12.150629
+S02142,12,Marano,Marano,45.706864,11.4246
+S02668,12,Meolo,Meolo,45.61319,12.453969
+S02580,12,Mestrino,Mestrino,45.457878,11.773859
+S02587,12,Dolo,Dolo,45.453466,12.07161
+S02055,12,Domegliara,Domegliara,45.522348,10.820408
+S02330,12,Dossobuono,Dossobuono,45.392382,10.914831
+S02146,12,Dueville,Dueville,45.635,11.546108
+S02396,12,Este,Este,45.220954,11.662931
+S02575,12,Fanzolo,Fanzolo,45.708253,11.992069
+S05710,12,Occhiobello,Occhiobello,44.899384,11.621197
+S02672,12,Venezia Carpenedo,Venezia Carpen.,45.506697,12.247609
+S02589,12,Venezia Mestre,Venezia Mestre,45.482123,12.232069
+S02593,12,Venezia Santa Lucia,Venezia S.Lucia,45.441569,12.320882
+S02061,12,Verona Ca` Di David,Vr Cà Di David,45.384406,10.994897
+S02430,12,Verona Porta Nuova,Verona P.Nuova,45.428603,10.982377
+S02446,12,Vicenza,Vicenza,45.541102,11.540762
+S02528,12,Vigodarzere,Vigodarzere,45.453289,11.891641
+S02586,12,Vigonza Pianiga,Vigonza Pianiga,45.442799,12.017977
+S02523,12,Villa Del Conte,Villa Del Conte,45.607701,11.852518
+S05700,12,Abano Terme,Abano Terme,45.355199,11.811533
+S05420,12,Adria,Adria,45.06058,12.054228
+S02538,12,Albaredo,Albaredo,45.670265,12.015104
+S02444,12,Altavilla Tavernelle,Altavilla Tav.,45.511805,11.454702
+S05707,12,Arqua`,Arqua',45.006465,11.748518
+S02370,12,Badia Polesine,Badia Polesine,45.094439,11.484722
+S02383,12,Bonferraro,Bonferraro,45.185651,11.009247
+S02390,12,Boschi S.Anna,Boschi S.Anna,45.217328,11.362302
+S02363,12,Bovolone,Bovolone,45.254446,11.123862
+S05709,12,P.C.Canaro,P.C. Canaro,44.923012,11.675223
+S02502,12,Carpane`Valstagna,Carpane'Valstag.,45.860128,11.661183
+S02506,12,Cassola,Cassola,45.732291,11.795866
+S02507,12,Castello Di Godego,Castello Godego,45.688082,11.87759
+S02368,12,Castagnaro,Castagnaro,45.119349,11.403936
+S02537,12,Castelfranco Veneto,Castelfranco V.,45.666439,11.934315
+S02093,12,Castelnuovo,Castelnuovo D.G.,45.430843,10.758273
+S05425,12,Cavanella D`Adige,Cavan.Adige,45.111263,12.249312
+S05422,12,Cavanella Po,Cavanella Po,45.052208,12.134893
+S02147,12,Cavazzale,Cavazzale,45.596079,11.569823
+S02665,12,Ceggia,Ceggia,45.688394,12.633987
+S02364,12,Cerea,Cerea,45.196556,11.213921
+S02563,12,Busche Lentiai Mel,Busche Lentiai M,46.040092,11.979251
+S05428,12,Chioggia,Chioggia,45.210243,12.275235
+S02500,12,Cismon Del Grappa,Cismon D.Grappa,45.919664,11.729272
+S02535,12,Cittadella,Cittadella,45.643868,11.789857
+S02140,12,Schio,Schio,45.710848,11.355508
+S02560,12,Sedico Bribano,Sedico Bribano,46.095424,12.086508
+S02732,12,Soffratta,Soffratta,45.976377,12.299346
+S02504,12,Solagna,Solagna,45.815434,11.72134
+S02709,12,Spresiano,Spresiano,45.77763,12.266984
+S05705,12,Stanghella,Stanghella,45.13209,11.749094
+S02708,12,Susegana,Susegana,45.821054,12.258364
+S02662,12,Teglio Veneto,Teglio Veneto,45.809887,12.858938
+S05701,12,Terme Euganee-Abano-Montegr.,Terme Euganee,45.32744,11.79604
+S02564,12,Feltre,Feltre,46.012884,11.911493
+S02534,12,Fontaniva,Fontaniva,45.634723,11.749038
+S02569,12,Cornuda,Cornuda,45.833846,12.012886
+S02375,12,Costa,Costa,45.045766,11.696511
+S05307,12,Isola Della Scala,Isola D. Scala,45.269474,11.013312
+S05418,12,Lama,Lama,45.043466,11.913123
+S02710,12,Lancenigo,Lancenigo,45.710087,12.265663
+S02366,12,Legnago,Legnago,45.189034,11.304724
+S02578,12,Lerino,Lerino,45.518725,11.63567
+S05419,12,Baricetta,Baricetta,45.060889,11.995348
+S02520,12,Bassano Del Grappa,Bassano Del Gr.,45.766697,11.741525
+S05702,12,Battaglia Terme,Battaglia Terme,45.291475,11.77838
+S02531,12,S.Pietro In Gu`,S.Pietro In Gu',45.605039,11.673157
+S02664,12,S. Stino Di Livenza,S. Stino Di Liv.,45.721088,12.682769
+S02394,12,Saletto,Saletto,45.22274,11.535093
+S02511,12,Salzano Robegano,Salzano Robegano,45.535378,12.111485
+S02384,12,Sanguinetto,Sanguinetto,45.188811,11.152467
+S02567,12,Pederobba Cavaso Possagno,Pederobba Cav.P.,45.877299,11.965222
+S02553,12,Perarolo Di Cadore,Perarolo Di Cad.,46.386277,12.352493
+S02052,12,Peri,Peri,45.658402,10.900314
+S02332,12,Mozzecane,Mozzecane,45.306687,10.823657
+S05301,12,Buttapietra,Buttapietra,45.338787,10.988059
+S02550,12,Calalzo Pieve Cadore Cortina,Calalzo Pc Cort.,46.443829,12.388668
+S02525,12,Camposampiero,Camposampiero,45.568922,11.928293
+S02601,12,Postioma,Postioma,45.715862,12.148248
+S02505,12,Pove Del Grappa Campese,Pove S.G.Campese,45.803248,11.719936
+S06516,13,Le Piagge,Le Piagge,43.789684,11.171665
+S06804,13,Cambiano,Cambiano,43.631183,10.958997
+S06024,13,Castellina Marittima,Castellina Marit,43.406122,10.495776
+S06302,13,Castelvecchio Pascoli,Castelvecchio P.,44.09007,10.455061
+S06729,13,Castiglioncello,Castiglioncello,43.404619,10.414354
+S06803,13,Certaldo,Certaldo,43.547124,11.037711
+S06430,13,Firenze Statuto,Firenze Statuto,43.787273,11.249738
+S06920,13,Castiglion Fiorentino,Castigl.Fiorent.,43.34075,11.914362
+S06925,13,Chiusi C.T.,Chiusi C.T.,43.002466,11.957893
+S08007,13,Chiarone,Chiarone,42.387528,11.446123
+S06825,13,Asciano Monte Oliveto Maggiore,Asciano M.O.M.,43.231706,11.563621
+S06950,13,Binario S.Marco Vecchio,Binario.S.M.V.,43.790336,11.267403
+S06402,13,Ripafratta,Ripafratta,43.821711,10.415733
+S06509,13,S.Miniato Fucecchio,S.Miniato F.,43.701383,10.831605
+S06313,13,S. Pietro A Vico,S. Pietro A Vico,43.875094,10.530945
+S06508,13,S.Romano Montopoli S.Croce,S.Romano,43.690575,10.760152
+S06413,13,Serravalle Pistoiese,Serravalle Pist.,43.908016,10.85168
+S06906,13,Rignano Sull`Arno Reggello,Rignano S.Arno,43.720834,11.452383
+S06421,13,Firenze S.M.N.,Firenze S.M.N.,43.776893,11.247373
+S06011,13,Forte Dei Marmi Serravezza Q.,Forte Dei Marmi,43.97777,10.19936
+S06957,13,Il Cionfo Bin. Le Cure,Cionfo Binlecure,43.786182,11.268501
+S06904,13,Pontassieve,Pontassieve,43.773949,11.437904
+S06807,13,Ponte A Elsa,Ponte A Elsa,43.694385,10.906008
+S06312,13,Ponte A Moriano,Ponte A Moriano,43.908371,10.534264
+S06869,13,Ponte A Tressa,Ponte A Tressa,43.250844,11.39617
+S06752,13,Ponte Ginori,Ponte Ginori,43.335594,10.740536
+S06913,13,Ponticino,Ponticino,43.481446,11.71657
+S06163,13,Pontremoli,Pontremoli,44.371976,9.887795
+S06612,13,Popolano,Popolano,44.102323,11.649045
+S06406,13,Porcari,Porcari,43.831263,10.619212
+S06037,13,Giuncarico,Giuncarico,42.915473,11.008362
+S06907,13,Incisa,Incisa,43.656541,11.452728
+S06914,13,Indicatore,Indicatore,43.480067,11.803468
+S06514,13,S.Donnino Badia,S.Donnino Badia,43.785424,11.142169
+S06905,13,S.Ellero,S.Ellero,43.742143,11.469621
+S06504,13,S.Frediano A Settimo,S.Frediano A S.,43.680508,10.517254
+S06909,13,S.Giovanni Valdarno,S.Giovanni V.No,43.56601,11.527033
+S06023,13,Santa Luce,Santa Luce,43.437248,10.48971
+S06805,13,Poggibonsi,Poggibonsi,43.468093,11.149455
+S06323,13,Poggio - Careggine - Vagli,Poggio-Car.-Vag.,44.148541,10.350626
+S06226,13,Equi Terme,Equi Terme,44.170282,10.153624
+S06922,13,Terontola Cortona,Terontola,43.210263,12.007906
+S06167,13,Terrarossa - Tresana,Terrarossa-Tres.,44.237379,9.959675
+S06720,13,Tombolo,Tombolo,43.631726,10.352916
+S06951,13,Il Cionfo Bin. Salviati,Cionfo Bin.Salvi,43.798687,11.273076
+S06952,13,Pian Del Mugnone,Pian Del Mugnone,43.813899,11.265994
+S06953,13,Fiesole Caldine,Fiesole Caldine,43.833697,11.266047
+S06954,13,Mimmole,Mimmole,43.858111,11.265292
+S06601,13,Montorsoli,Montorsoli,43.881903,11.265484
+S06956,13,Cercina,Cercina,43.900121,11.265279
+S06619,13,Fontebuona,Fontebuona,43.91751,11.265553
+S06602,13,Vaglia,Vaglia,43.924442,11.284576
+S06659,13,Campomigliaio,Campomigliaio,43.937241,11.303593
+S06705,13,Scopeti,Scopeti,43.841117,11.497001
+S08003,13,Albinia,Albinia,42.502165,11.21134
+S06811,13,Arbia,Arbia,43.294393,11.406225
+S05118,13,San Momme`,San Momme',44.027999,10.914798
+S05135,13,Vernio Montepiano Cantagallo,Vernio,44.043991,11.152342
+S06029,13,Castagneto Carducci,Castagneto C.,43.16816,10.56399
+S06306,13,Ghivizzano - Coreglia,Ghivizzano-Cor.,44.027583,10.510183
+S06350,13,Massarosa Bozzano,Massarosa Bozzan,43.855652,10.352022
+S06400,13,S.Giuliano Terme,S.Giuliano Terme,43.764895,10.436892
+S06405,13,Tassignano,Tassignano,43.834131,10.570495
+S06410,13,Borgo A Buggiano,Borgo A Buggiano,43.880724,10.730079
+S06411,13,Montecatini Terme,Montecatini T.,43.879327,10.780588
+S06420,13,Firenze Rifredi,Firenze Rifredi,43.800873,11.235729
+S06422,13,Prato Porta Al Serraglio,Prato P.Serragl.,43.884637,11.097385
+S06506,13,Pontedera Casciana Terme,Pontedera C.T.,43.662145,10.628773
+S06511,13,Montelupo Capraia,Montelupo,43.733357,11.018997
+S06725,13,Livorno Centrale,Livorno C.Le,43.55406,10.336593
+S06773,13,Populonia,Populonia,42.996412,10.540659
+S06774,13,Fiorentina Di Piombino,Fiorentina P.,42.969321,10.54235
+S06802,13,Castelfiorentino,Castelfiorentino,43.60542,10.968048
+S06812,13,Castelnuovo Berardenga,Castelnuovo Ber.,43.306882,11.484912
+S06816,13,S.Giovanni D`Asso,S.Giovanni D'As.,43.153292,11.593803
+S06823,13,Roccastrada,Roccastrada,42.957631,11.192942
+S06854,13,Torrita Di Siena,Torrita Di Siena,43.174187,11.78758
+S06857,13,Serre Di Rapolano,Serre Di Rapol.,43.284347,11.558209
+S06867,13,Siena Zona Industriale,Siena Zona Ind.,43.26528,11.376652
+S06871,13,Monteroni D`Arbia,Monteroni D'Arb.,43.230036,11.419662
+S06874,13,Buonconvento,Buonconvento,43.135503,11.483773
+S06901,13,Fi Rovezzano,Fi Rovezzano,43.768657,11.307372
+S06013,13,Aulla Lunigiana,Aulla Lunigiana,44.210555,9.970015
+S06753,13,Volterra Saline - Pomarance,Volterra Saline,43.35962,10.808269
+S06031,13,Campiglia Marittima,Campiglia M.Ma,43.017118,10.586558
+S06324,13,Camporgiano,Camporgiano,44.161448,10.334849
+S06772,13,Piombino Binari Porto Vecchio,Piomb.Bin.P.V.,42.931641,10.539901
+S05113,13,Pracchia,Pracchia,44.05479,10.90691
+S06423,13,Pratignone,Pratignone,43.849273,11.162008
+S06416,13,Prato Centrale,Prato C.Le,43.878737,11.109252
+S06728,13,Quercianella,Quercianella,43.454922,10.37255
+S06850,13,Rapolano Terme,Rapolano Terme,43.283331,11.602504
+S06401,13,Rigoli,Rigoli,43.789681,10.419663
+S06851,13,Rigomagno,Rigomagno,43.256767,11.706492
+S06750,13,Riparbella,Riparbella,43.339461,10.582184
+S06606,13,Ronta,Ronta,44.009432,11.434125
+S06730,13,Rosignano,Rosignano,43.387899,10.438041
+S06703,13,Rufina,Rufina,43.822236,11.485072
+S06325,13,Piazza Al Serchio,Piazza Al Serch.,44.182515,10.296615
+S06012,13,Pietrasanta,Pietrasanta,43.95583,10.229731
+S06770,13,Piombino,Piombino,42.924854,10.530959
+S06775,13,Piombino Binari Mare,Piomb.Bin.Mare,42.928931,10.54525
+S06450,13,Pisa Binari Aeroporto,Pisa Bin.Aerop.,43.698555,10.398436
+S06500,13,Pisa Centrale,Pisa Centrale,43.70794,10.398183
+S06501,13,Pisa San Rossore,Pisa S.Rossore,43.723702,10.387363
+S06414,13,Pistoia,Pistoia,43.926804,10.914624
+S06415,13,Montale Agliana,Montale Agliana,43.912924,11.008309
+S06856,13,Montallese,Montallese,43.064888,11.90928
+S06820,13,Monte Antico,Monte Antico,42.981054,11.359819
+S06408,13,Montecarlo San Salvatore,Montecarlo S.Sal,43.850798,10.68537
+S06412,13,Montecatini Centro,Montecatini C.,43.881216,10.77081
+S06038,13,Montepescali,Montepescali,42.869518,11.068743
+S06855,13,Montepulciano,Montepulciano,43.135353,11.856865
+S06301,13,Fosciandora - Ceserana,Fosciandora-Ces.,44.118559,10.444212
+S06351,13,Nozzano,Nozzano,43.829956,10.40716
+S08004,13,Orbetello,Orbetello,42.450615,11.248972
+S06022,13,Orciano,Orciano,43.500263,10.477566
+S06220,13,Pallerone,Pallerone,44.204232,10.005173
+S06015,13,Torre Del Lago Puccini,Torre Del Lago,43.826501,10.290287
+S06817,13,Torrenieri,Torrenieri,43.086602,11.552385
+S06025,13,Vada,Vada,43.352641,10.470376
+S05136,13,Vaiano,Vaiano,43.961772,11.130773
+S05117,13,Valdibrana,Valdibrana,43.965434,10.909994
+S06702,13,Contea Londa,Contea Londa,43.865124,11.531603
+S06404,13,Lucca,Lucca,43.837186,10.506069
+S06610,13,Marradi,Marradi,44.07973,11.619174
+S06009,13,Massa Centro,Massa Centro,44.023741,10.136041
+S06227,13,Minucciano - Pieve - Casola,Minucciano P. C.,44.194385,10.193837
+S06426,13,Prato Borgonuovo,Prato Borgonuovo,43.893216,11.076222
+S06701,13,Dicomano,Dicomano,43.893489,11.519148
+S06310,13,Diecimo - Pescaglia,Diecimo-Pescagl.,43.959404,10.507844
+S06510,13,Empoli,Empoli,43.715708,10.94915
+S06303,13,Barga Gallicano,Barga-Gallicano,44.068114,10.451938
+S06502,13,Navacchio,Navacchio,43.685941,10.486806
+S06409,13,Pescia,Pescia,43.886811,10.686074
+S05116,13,Piteccio,Piteccio,44.009786,10.9013
+S06040,13,Viareggio,Viareggio,43.865947,10.257886
+S06017,13,Vicarello,Vicarello,43.609253,10.460442
+S06700,13,Vicchio,Vicchio,43.933463,11.457634
+S06032,13,Vignale Riotorto,Vignale Riotorto,42.967587,10.667255
+S06166,13,Villafranca - Bagnone,Villafranca-Bagn,44.294399,9.948096
+S06322,13,Villetta S. Romano,Villetta S. Rom.,44.146764,10.367565
+S06425,13,Zambra,Zambra,43.825856,11.206206
+S06603,13,S.Piero A Sieve,S.Piero A Sieve,43.958317,11.322742
+S06021,13,Fauglia - Lorenzana,Fauglia-Lorenz.,43.551831,10.50304
+S08001,13,Alberese,Alberese,42.634158,11.1352
+S06407,13,Altopascio,Altopascio,43.817418,10.672754
+S06727,13,Antignano,Antignano,43.492482,10.328827
+S06915,13,Arezzo,Arezzo,43.461725,11.874189
+S06813,13,Asciano,Asciano,43.235245,11.579237
+S06168,13,Aulla,Aulla,44.209662,9.970632
+S06056,13,Bivio Mortellini,Bivio Mortellini,43.661224,10.369478
+S06826,13,P.M. Badesse,P.M. Badesse,43.382144,11.277136
+S06611,13,Biforco,Biforco,44.068431,11.602243
+S06028,13,Bolgheri,Bolgheri,43.244664,10.550548
+S06309,13,Borgo A Mozzano,Borgo A Mozzano,43.977207,10.541285
+S06604,13,Borgo S. Lorenzo,Borgo S.L.,43.959822,11.380422
+S06704,13,Borgo S.L.Rimorelli,Borgo S.L.Rimor.,43.953279,11.400076
+S06921,13,Camucia Cortona,Camucia Cortona,43.261104,11.971245
+S08006,13,Capalbio,Capalbio,42.407974,11.370982
+S06005,13,Carrara Avenza,Carrara Avenza,44.051239,10.062927
+S06505,13,Cascina,Cascina,43.674542,10.545225
+S06751,13,Casino Di Terra,Casino Di Terra,43.328581,10.662975
+S05122,13,Castagno,Castagno,44.012359,10.91538
+S06808,13,Castellina Ch,Castellina Ch.,43.408744,11.212379
+S06300,13,Castelnuovo Di Garfagnana,Castelnuovo Gar.,44.116351,10.409054
+S06026,13,Cecina,Cecina,43.31028,10.514225
+S06911,13,Bucine,Bucine,43.480478,11.617609
+S06822,13,Civitella Paganico,Civitella,42.94028,11.283536
+S06840,13,Colle Val D`Elsa,Colle V.D'Elsa,43.421908,11.127681
+S06018,13,Collesalvetti,Collesalvetti,43.586586,10.470534
+S06902,13,Compiobbi,Compiobbi,43.782527,11.358695
+S06035,13,Scarlino,Scarlino,42.942002,10.836798
+S06164,13,Scorcetoli,Scorcetoli,44.34431,9.911853
+S06418,13,Sesto Fiorentino,Sesto Fiorentino,43.833297,11.191941
+S06903,13,Sieci,Sieci,43.790892,11.394608
+S06809,13,Siena,Siena,43.331708,11.322972
+S06513,13,Signa,Signa,43.775441,11.095961
+S06852,13,Sinalunga,Sinalunga,43.216189,11.744866
+S06824,13,Sticciano,Sticciano,42.929333,11.118621
+S08002,13,Talamone,Talamone,42.56461,11.164524
+S06900,13,Firenze Campo Marte,Firenze C.Marte,43.776856,11.27702
+S06515,13,Firenze Cascine,Firenze Cascine,43.792161,11.19844
+S06419,13,Firenze Castello,Firenze Castello,43.819444,11.21838
+S06908,13,Figline Valdarno,Figline Valdarno,43.621596,11.473652
+S06165,13,Filattiera,Filattiera,44.33137,9.933352
+S06223,13,Fivizzano - Gassano,Fivizzano-Gass.,44.202672,10.091691
+S06222,13,Fivizzano Rometta - Soliera,F.Rometta-Solie.,44.201526,10.05953
+S06033,13,Follonica,Follonica,42.926687,10.755775
+S06304,13,Fornaci Di Barga,Fornaci Di Barga,44.045253,10.473173
+S06605,13,Panicaglia,Panicaglia,43.978449,11.407511
+S05115,13,Corbezzi,Corbezzi,43.993948,10.919676
+S06036,13,Gavorrano,Gavorrano,42.947959,10.9338
+S06224,13,Gragnola,Gragnola,44.191069,10.109245
+S06801,13,Granaiolo,Granaiolo,43.652244,10.945223
+S06039,13,Grosseto,Grosseto,42.76728,11.1065
+S06424,13,Il Neto,Il Neto,43.839624,11.182656
+S06912,13,Laterina,Laterina,43.496458,11.660573
+S06308,13,Bagni Di Lucca,Bagni Di Lucca,44.003447,10.551631
+S06030,13,S. Vincenzo,S. Vincenzo,43.100366,10.539823
+S06910,13,Montevarchi Terranuova,Montevarchi T.,43.525165,11.563983
+S06403,13,Doppio Bivio Montuolo,D.B.Montuolo,43.83172,10.428321
+S06225,13,Monzone-M.Dei Banchi-Isolano,Monzone,44.165637,10.123827
+S06876,13,Murlo,Murlo,43.11398,11.400394
+S06417,13,Calenzano,Calenzano,43.856429,11.14537
+S06043,13,Camaiore Lido Capezzano,Camaiore Lido C.,43.912176,10.24765
+S12327,14,Guardia Mangano Santa Venerina,Guardia Mangano,37.661812,15.169447
+S12332,14,Catania Centrale,Catania Centrale,37.506211,15.099417
+S12337,14,Catania Acquicella,Catania Acq.Lla,37.492765,15.074699
+S12342,14,Agnone Di S.,Agnone S.,37.305203,15.077155
+S12344,14,Brucoli,Brucoli,37.272883,15.186876
+S12360,14,Motta Camastra,Motta Camastra,37.890651,15.163764
+S12380,14,Caltanissetta Xirbi,Caltanissetta X.,37.536296,14.056902
+S12408,14,Dirillo,Dirillo,37.006569,14.39154
+S12410,14,Vittoria,Vittoria,36.958721,14.52499
+S12412,14,Donnafugata,Donnafugata,36.882055,14.568968
+S12417,14,Modica,Modica,36.8529,14.754255
+S12428,14,S.Teresa Longarini,S.Teresa Longar.,37.006456,15.246277
+S12430,14,Gela-Anic,Gela-Anic,37.055601,14.284207
+S12799,14,Carini Torre Ciachea,Carini Torre C.,38.16149,13.219641
+S12244,14,Catenanuova,Catenanuova,37.562026,14.688263
+S12121,14,Orsa,Orsa,38.190454,13.119126
+S12019,14,Cefalu`,Cefalu',38.03285,14.019526
+S12003,14,Mili Marina,Mili Marina,38.125758,15.519042
+S12005,14,Ponte S.Stefano,Ponte S.Stefano,38.097147,15.503587
+S12006,14,Villabate,Villabate,38.086094,13.451314
+S12393,14,Priolo Soprano,Priolo Soprano,37.092142,14.377888
+S12416,14,Ragusa Ibla,Ragusa Ibla,36.93133,14.750993
+S12383,14,Serradifalco,Serradifalco,37.431804,13.883299
+S12420,14,Pozzallo,Pozzallo,36.733821,14.848708
+S12201,14,Sciara A.,Sciara A.,37.903207,13.774128
+S12349,14,Siracusa,Siracusa,37.068906,15.280896
+S12243,14,Sparagogna,Sparagogna,37.571355,14.632266
+S12400,14,Licata,Licata,37.106024,13.938114
+S12354,14,Castelluccio Siculo,Castelluc. Sic.,37.302714,15.137547
+S12061,14,Torregrotta,Torregrotta,38.208376,15.352813
+S12131,14,Tommaso Natale,Tommaso Natale,38.190283,13.28819
+S12125,14,Piraineto,Piraineto,38.169148,13.14256
+S12366,14,Gole Di Alcantara,Gole Alcantara,37.878403,15.176039
+S12133,14,Punta Raisi,Punta Raisi,38.188892,13.110059
+S12239,14,Leonforte-Pirato,Leonforte-Pirato,37.606305,14.376063
+S12009,14,S.Flavia,S.Flavia,38.0826,13.530625
+S12026,14,Acquedolci-S.Fratello,Acquedolci S.F.,38.058459,14.587597
+S12034,14,San Giorgio,San Giorgio,38.173967,14.94414
+S12037,14,Oliveri Tindari,Oliveri Tindari,38.128346,15.056573
+S12055,14,Palermo Brancaccio,Pa Brancaccio,38.093141,13.392508
+S12111,14,S.Nicola Di Mazara,S.Nicola Di M.,37.619257,12.675823
+S12113,14,Castelvetrano,Castelvetrano,37.684977,12.799552
+S12115,14,Gallitello,Gallitello,37.857927,12.948785
+S12126,14,Cinisi Terrasini,Cinisi Terrasini,38.155314,13.096673
+S12140,14,Cardillo Zen,Cardillo Z.E.N.,38.17495,13.296897
+S12204,14,Roccapalumba-Alia,Roccapalumba-A.,37.793751,13.673628
+S12235,14,Mimiani-S.Cataldo,Mimiani-S.Catal.,37.547382,13.963966
+S12250,14,Motta Santa Anastasia,Motta S.A.,37.460389,14.936912
+S12276,14,Militello,Militello,37.277194,14.78317
+S12353,14,Targia,Targia,37.10963,15.245908
+S12359,14,Graniti,Graniti,37.869467,15.208633
+S12363,14,Mojo-Alcantara Malvagna,Mojo-Alcantara M,37.896949,15.050228
+S12373,14,Racalmuto,Racalmuto,37.406065,13.72752
+S12386,14,Favarotta,Favarotta,37.20532,13.913217
+S12414,14,Ragusa,Ragusa,36.91927,14.725677
+S12423,14,S.Paolo,S.Paolo,36.840355,15.023799
+S12385,14,Campobello Ravanusa,Campobello Rav.,37.265731,13.946251
+S12004,14,Palermo Sampolo,Palermo Sampolo,38.139247,13.355021
+S12136,14,Federico,Federico,38.144862,13.344966
+S12000,14,Palermo Marittima,Palermo Maritt.,38.130732,13.360768
+S12381,14,Caltanissetta Centrale,Caltanissetta C.,37.48829,14.057396
+S12206,14,Castronovo Di Sicilia,Castronovo Di S.,37.681193,13.643028
+S12011,14,Altavilla M.,Altavilla,38.048392,13.554421
+S12015,14,Fiumetorto,Fiumetorto,37.966939,13.774781
+S12021,14,Pollina,Pollina,38.018,14.175943
+S12024,14,Santo Stefano Di Camastra,S.Stefano Di C.,38.01778,14.35104
+S12027,14,S.Agata M.,S.Agata M.,38.073554,14.640622
+S12031,14,Brolo Ficarra,Brolo Ficarra,38.159204,14.830176
+S12039,14,Novara Montalbano Furnari,Novara Mont.Fur.,38.121516,15.130702
+S12041,14,Barcellona,Barcellona,38.14918,15.212499
+S12042,14,Milazzo,Milazzo,38.21195,15.244203
+S12050,14,Villafranca Tirrena,Villafranca T.,38.233517,15.42892
+S12105,14,Mozia-Birgi,Mozia-Birgi,37.884956,12.499016
+S12108,14,Terrenove,Terrenove,37.748755,12.480604
+S12110,14,Mazara Del Vallo,Mazara Del Vallo,37.652448,12.594565
+S12114,14,Salemi Gibellina,Salemi Gib.,37.806619,12.865517
+S12120,14,Castellammare Del Golfo,Castellammare G.,38.024309,12.912209
+S12130,14,Palazzo Reale-Orleans,P.Reale-Orleans,38.10878,13.353962
+S12152,14,Segesta Tempio,Segesta Tempio,37.949585,12.828118
+S12155,14,Fulgatore,Fulgatore,37.9543,12.686312
+S12211,14,Campofranco,Campofranco,37.510105,13.686777
+S12212,14,Comitini,Comitini,37.423806,13.6528
+S12213,14,Agrigento Bassa,Agrigento Bassa,37.319148,13.588094
+S12231,14,Valledolmo,Valledolmo,37.709073,13.756029
+S12240,14,Dittaino,Dittaino,37.564605,14.462429
+S12272,14,Grammichele,Grammichele,37.209336,14.641256
+S12275,14,Mineo,Mineo,37.24572,14.756907
+S12279,14,Palagonia,Palagonia,37.318146,14.892565
+S12301,14,Messina Centrale,Messina Cent.,38.184975,15.561278
+S12308,14,Giampilieri,Giampilieri,38.080121,15.493863
+S12309,14,Scaletta Zanclea,Scaletta Zanclea,38.04635,15.465376
+S12312,14,Roccalumera Mandanici,Roccalumera M.,37.972946,15.391411
+S12314,14,Santa Teresa Di Riva,S.Teresa Riva,37.946295,15.367682
+S12323,14,Mascali,Mascali,37.765403,15.1942
+S12017,14,Campofelice,Campofelice,37.992615,13.876549
+S12347,14,Priolo Melilli,Priolo Melilli,37.157951,15.197038
+S12241,14,Raddusa Agira,Raddusa,37.544858,14.518863
+S12365,14,Randazzo,Randazzo,37.873782,14.950406
+S12049,14,Rometta Messinese,Rometta Messin.,38.228455,15.405894
+S12422,14,Rosolini,Rosolini,36.81598,14.952955
+S12315,14,S.Alessio Siculo Forza D`Agro`,S.Alessio S.F.A.,37.923992,15.347322
+S12382,14,S.Cataldo,S.Cataldo,37.469615,13.997659
+S12109,14,Petrosino Strasatti,Petrosino Stras.,37.725466,12.509434
+S12338,14,Bicocca,Bicocca,37.460617,15.044594
+S12203,14,Montemaggiore,Montemaggiore,37.859037,13.693193
+S12361,14,Francavilla,Francavilla,37.899892,15.132812
+S12139,14,Francia,Francia,38.155233,13.321938
+S12313,14,Furci,Furci,37.961714,15.380022
+S12358,14,Gaggi,Gaggi,37.858532,15.225095
+S12305,14,Galati,Galati,38.104511,15.505313
+S12392,14,Niscemi,Niscemi,37.145,14.403471
+S12311,14,Nizza Di Sicilia,Nizza Di Sicilia,37.996937,15.412334
+S12424,14,Noto,Noto,36.88247,15.074523
+S12134,14,Palermo Notarbartolo,Pa Notarbartolo,38.132261,13.341572
+S12045,14,Pace Del Mela,Pace Del Mela,38.202459,15.312676
+S12103,14,Paceco,Paceco,37.991354,12.550844
+S12445,14,Pachino,Pachino,36.710144,15.094661
+S12002,14,Palermo Centrale,Palermo C.Le,38.109187,13.367515
+S12053,14,Torre Del Lauro,Torre Del Lauro,38.041045,14.521179
+S12013,14,Trabia,Trabia,37.996408,13.65567
+S12100,14,Trapani,Trapani,38.017092,12.518814
+S12123,14,Trappeto,Trappeto,38.065089,13.036873
+S12303,14,Tremestieri,Tremestieri,38.150323,15.535528
+S12022,14,Tusa,Tusa,38.007989,14.256693
+S12232,14,Vallelunga,Vallelunga,37.691542,13.846428
+S12355,14,Contesse,Contesse,38.16193,15.544717
+S12316,14,Letojanni,Letojanni,37.877581,15.303128
+S12242,14,Libertinia,Libertinia,37.545615,14.591893
+S12104,14,Marausa,Marausa,37.92647,12.504113
+S12230,14,Marcatobianco,Marcatobianco,37.717381,13.719922
+S12234,14,Marianopoli,Marianopoli,37.623011,13.898901
+S12107,14,Marsala,Marsala,37.793514,12.443174
+S12444,14,Marzamemi,Marzamemi,36.7309,15.111238
+S12346,14,Megara G.,Megara G.,37.193164,15.183205
+S12300,14,Messina Marittima,Messina Maritt.,38.14988,15.534997
+S12157,14,Milo,Milo,37.996862,12.577749
+S12384,14,Delia,Delia,37.317685,13.914687
+S12238,14,Enna,Enna,37.581134,14.289579
+S12405,14,Falconara,Falconara,37.113529,14.052516
+S12038,14,Falcone,Falcone,38.119573,15.080467
+S12394,14,Piana Del Signore,Piana Del Signor,37.056089,14.304292
+S12047,14,Venetico,Venetico,38.216502,15.367076
+S12135,14,Vespri,Vespri,38.101996,13.362701
+S12233,14,Villalba,Villalba,37.668526,13.885155
+S12237,14,Villarosa,Villarosa,37.567205,14.200464
+S12391,14,Vituso,Vituso,37.160465,14.451623
+S12273,14,Vizzini,Vizzini,37.182566,14.729457
+S12029,14,Zappulla,Zappulla,38.116962,14.703086
+S12248,14,Portiere Stella,Portiere S.,37.450341,14.890175
+S12214,14,Porto Empedocle,Porto Empedocle,37.291539,13.537862
+S12048,14,Spadafora,Spadafora,38.221922,15.377196
+S12317,14,Taormina,Taormina,37.845429,15.282584
+S12247,14,Gerbini,Gerbini,37.473138,14.845822
+S12129,14,Isola Delle Femmine,Isola D.Femmine,38.194784,13.250188
+S12044,14,S.Filippo-S.Lucia,S.Filippo-S.L.,38.198143,15.288334
+S12132,14,S.Lorenzo Colli,S.Lorenzo Colli,38.16292,13.316449
+S12028,14,San Marco D`Alunzio T.,S.Marco D'Alunz.,38.094202,14.675909
+S12252,14,San Martino Piana,S.Martino Piana,37.455701,14.996912
+S12409,14,Acate,Acate,36.996592,14.42545
+S12328,14,Acireale,Acireale,37.600514,15.163697
+S12209,14,Acquaviva,Acquaviva,37.570258,13.674927
+S12216,14,Agrigento Centrale,Agrigento Centr.,37.309051,13.584412
+S12116,14,Alcamo,Alcamo,37.93891,12.926125
+S12150,14,Alcamo Diramazione,Alcamo Diramaz.,37.978894,12.915916
+S12320,14,Alcantara,Alcantara,37.82145,15.251158
+S12310,14,Ali` Terme,Ali' Terme,38.013952,15.435184
+S12370,14,Aragona Caldare,Aragona Caldare,37.381097,13.636837
+S12345,14,Augusta,Augusta,37.24334,15.218628
+S12426,14,Avola,Avola,36.907434,15.125733
+S12008,14,Bagheria,Bagheria,38.089905,13.507215
+S12375,14,Canicatti`,Canicatti',37.359879,13.855395
+S12330,14,Cannizzaro,Cannizzaro,37.54711,15.129698
+S12145,14,Capaci,Capaci,38.171794,13.232398
+S12030,14,Capo D`Orlando-Naso,Capo D'Orlando,38.157941,14.744844
+S12127,14,Carini,Carini,38.147696,13.186624
+S12025,14,Caronia,Caronia,38.034475,14.443761
+S12326,14,Carruba,Carruba,37.694344,15.196143
+S12427,14,Cassibile,Cassibile,36.962581,15.191895
+S12020,14,Castelbuono,Castelbuono,38.014606,14.108578
+S12010,14,Casteldaccia,Casteldaccia,38.060474,13.536867
+S12362,14,Castiglione Di Sicilia,Castiglione Di S,37.88674,15.097013
+S12374,14,Castrofilippo,Castrofilippo,37.363751,13.780842
+S12200,14,Cerda,Cerda,37.953964,13.78447
+S12153,14,Bruca,Bruca,37.946836,12.793178
+S12016,14,Buonfornello,Buonfornello,37.972052,13.816408
+S12406,14,Butera,Butera,37.145078,14.171691
+S12411,14,Comiso,Comiso,36.947184,14.60037
+S12371,14,Comitini Zolfare,Comitini Zolfare,37.409955,13.661007
+S12418,14,Scicli,Scicli,36.789939,14.698759
+S12278,14,Scordia,Scordia,37.294595,14.851219
+S12246,14,Sferro,Sferro,37.502031,14.792131
+S12351,14,Siracusa M.,Siracusa M.,37.057888,15.293258
+S12106,14,Spagnuola,Spagnuola,37.83631,12.477051
+S12040,14,Terme Vigliatore,Terme Vigliatore,38.133588,15.164396
+S12014,14,Termini Imerese,Termini Imerese,37.980132,13.703631
+S12137,14,Fiera,Fiera,38.144004,13.351336
+S12277,14,Fildidonna,Fildidonna,37.310867,14.808848
+S12322,14,Fiumefreddo Di Sicilia,Fiumefreddo Di S,37.795247,15.205615
+S12124,14,Partinico,Partinico,38.05857,13.108956
+S12339,14,Passomartino,Passomartino,37.396391,15.009698
+S12036,14,Patti-San Piero Patti,Patti-San Piero,38.146905,14.975331
+S12407,14,Gela,Gela,37.07283,14.259461
+S12413,14,Genisi,Genisi,36.882562,14.623413
+S12138,14,Giachery,Giachery,38.138135,13.355856
+S12324,14,Giarre Riposto,Giarre Riposto,37.730346,15.193386
+S12033,14,Giojosa Marea,Giojosa Marea,38.175149,14.894794
+S12372,14,Grotte,Grotte,37.409848,13.702717
+S12236,14,Imera,Imera,37.533814,14.125165
+S12421,14,Ispica,Ispica,36.77804,14.914315
+S12018,14,Lascari,Lascari,38.011672,13.928633
+S12341,14,Lentini,Lentini,37.300916,14.99758
+S12340,14,Lentini Diramazione,Lentini Diramaz.,37.340009,14.98141
+S12205,14,Lercara Bassa,Lercara Bassa,37.737639,13.633053
+S12122,14,Balestrate,Balestrate,38.053364,13.007374
+S12012,14,S.Nicola T.,S.Nicola T.,38.015817,13.612755
+S12387,14,S.Oliva,S.Oliva,37.15773,13.901587
+S12419,14,Sampieri,Sampieri,36.73188,14.744577
+S12321,14,Calatabiano,Calatabiano,37.814684,15.226568
+S12151,14,Calatafimi,Calatafimi,37.938858,12.856156
+S12270,14,Caltagirone,Caltagirone,37.225276,14.521165
+S12207,14,Cammarata S.Giovanni Gemini,Cammarata S.G.G.,37.653759,13.673791
+S12112,14,Campobello Di Mazara,Campobello Di M.,37.636256,12.733165
+S11802,15,Policoro Tursi,Policoro Tursi,40.207304,16.688819
+S11453,15,Albano Di Lucania,Albano Lucania,40.574707,16.021247
+S11722,15,Acquafredda,Acquafredda,40.035527,15.671846
+S11723,15,Maratea,Maratea,39.995028,15.70975
+S11800,15,Marconia,Marconia,40.316896,16.752317
+S11461,15,Metaponto,Metaponto,40.368496,16.815176
+S11211,15,Filiano,Filiano,40.837161,15.752285
+S11210,15,Forenza,Forenza,40.866839,15.725331
+S09831,15,Bella Muro,Bella Muro,40.700914,15.542936
+S11457,15,Salandra,Salandra,40.583446,16.351564
+S09622,15,Monticchio,Monticchio,40.923923,15.539231
+S11455,15,Calciano,Calciano,40.595117,16.202526
+S11454,15,Campomaggiore,Campomaggiore,40.550772,16.086766
+S11217,15,Potenza Superiore,Potenza Sup.Re,40.64586,15.800966
+S11209,15,Rionero Atella Ripacandita,Rionero A.Ripac.,40.922066,15.678699
+S09833,15,Picerno,Picerno,40.640122,15.641612
+S11213,15,Pietragalla,Pietragalla,40.753314,15.79211
+S11459,15,Pisticci,Pisticci,40.420848,16.552181
+S11452,15,Trivigno,Trivigno,40.588598,15.997824
+S11460,15,Bernalda,Bernalda,40.397616,16.682281
+S09830,15,Balvano R.,Balvano R.,40.649993,15.495304
+S11216,15,Tiera,Tiera,40.697817,15.819279
+S11724,15,Marina Di Maratea,Mar.Di Maratea,39.959512,15.735953
+S09624,15,Monteverde,Monteverde,40.967691,15.568502
+S11208,15,Barile,Barile,40.943044,15.670959
+S11420,15,Potenza Centrale,Potenza Centrale,40.629469,15.806808
+S09832,15,Baragiano,Baragiano,40.695213,15.569206
+S11801,15,Scanzano J. Montalbano J.,Scanzano J. M.,40.25362,16.705192
+S11803,15,Nova Siri Rotondella,Nova Siri Roton.,40.130311,16.644044
+S09621,15,Rapone Ruvo S.Fele,Rapone Ruvo S.F.,40.88802,15.47373
+S09625,15,Pisciolo,Pisciolo,41.018914,15.565446
+S09834,15,Tito,Tito,40.607321,15.698194
+S09911,15,Lagonegro,Lagonegro,40.120325,15.7627
+S11206,15,Melfi,Melfi,40.989871,15.646895
+S11212,15,Castel Lagopesole,Castel Lagopes.,40.787682,15.758093
+S11214,15,Avigliano Lucania,Avigliano Luc.,40.714667,15.785619
+S11219,15,Leonessa,Leonessa,41.062304,15.595094
+S11220,15,Possidente,Possidente,40.781144,15.777104
+S11300,15,S. Nicola Di Melfi,S.Nicola Melfi,41.073281,15.677602
+S11302,15,Venosa - Maschito,Venosa Maschito,40.979136,15.846171
+S11303,15,Palazzo S.Gervasio - Montemil.,Palazzo S.G.- M.,40.93929,15.98982
+S11450,15,Vaglio Basilicata,Vaglio Basil.,40.656322,15.880105
+S11451,15,Brindisi Di Montagna,Brindisi Di Mont,40.611991,15.955795
+S11456,15,Grassano,Grassano,40.593317,16.241049
+S11458,15,Ferrandina,Ferrandina,40.516566,16.475276
+S09620,18,Calitri Pescopagano,Calitri Pescop.,40.884932,15.427962
+S09630,15,S.Tommaso Del Piano,S.Tommaso Del P.,40.900403,15.503719
+S11306,16,Gravina In Puglia,Gravina In P.,40.825216,16.418926
+S11509,16,Palagiano Mottola,Palagiano Mott.,40.601744,17.065478
+S11601,16,Monteiasi,Monteiasi,40.523852,17.361457
+S11107,16,Margherita Di Sav./Ofantino,Margherita S.Of.,41.343,16.136024
+S11403,16,Minervino Murge,Minervino Murge,41.081788,16.074974
+S11137,16,Brindisi Marittima,Brindisi Maritt.,40.633543,17.94863
+S11105,16,Candida,Candida,41.346664,15.996588
+S11463,16,Castellaneta Marina,Castellaneta M.,40.481111,16.965434
+S09322,16,Troia Castelluccio Sauri,Troia Cast.Sauri,41.319829,15.421123
+S11021,16,Chieuti Serracapriola,Chieuti Serrac.,41.921962,15.156645
+S11051,16,Amendola,Amendola,41.518025,15.732569
+S11053,16,Frattarolo,Frattarolo,41.58364,15.861727
+S11054,16,Manfredonia,Manfredonia,41.623046,15.908142
+S11106,16,Trinitapoli S.Ferdin. Di P.,Trinitapoli,41.349677,16.090839
+S11130,16,Fasano,Fasano,40.851753,17.3859
+S11133,16,Carovigno,Carovigno,40.737337,17.683791
+S11135,16,S.Vito Dei Normanni,S.Vito Normanni,40.650352,17.818585
+S11142,16,Squinzano,Squinzano,40.439266,18.046097
+S11202,16,Ordona,Ordona,41.315006,15.620567
+S11205,16,Rocchetta S.Ant.Lac.,Rocchetta S.A.L.,41.1518,15.53295
+S11406,16,Canne Della Battaglia,Canne D.Battag.,41.294583,16.146169
+S11504,16,Acquaviva Delle Fonti,Acquaviva,40.892806,16.839826
+S11603,16,Francavilla Fontana,Francavilla Font,40.523145,17.584714
+S11116,16,Bari S. Spirito,Bari S.Spirito,41.159653,16.746324
+S11028,16,Rignano Garganico,Rignano Gargan.,41.579344,15.490229
+S11602,16,Grottaglie,Grottaglie,40.528989,17.424503
+S11307,16,Altamura,Altamura,40.837666,16.551739
+S11024,16,Apricena,Apricena,41.77664,15.387809
+S11203,16,Ascoli Satriano,Ascoli Satriano,41.219859,15.547828
+S11118,16,Bari Palese Macchie,Bari Palese M.,41.151583,16.766902
+S11513,16,Bari S.Andrea,Bari S.Andrea,41.105467,16.830255
+S11150,16,Bari S.Giorgio,Bari S.Giorgio,41.093779,16.950084
+S11113,16,Bisceglie,Bisceglie,41.235445,16.499484
+S11501,16,Bitetto Palo Del Colle,Bitetto,41.041481,16.74053
+S09321,16,Bovino Deliceto,Bovino Deliceto,41.27835,15.369255
+S11204,16,Candela,Candela,41.151439,15.533163
+S11402,16,Canosa Di Puglia,Canosa Di Puglia,41.218556,16.053906
+S11309,16,Casal Sabini,Casal Sabini,40.799021,16.647908
+S11103,16,Cerignola,Cerignola,41.315664,15.897298
+S11200,16,Cervaro,Cervaro,41.397604,15.595704
+S11136,16,Brindisi,Brindisi,40.634339,17.938978
+S11131,16,Cisternino,Cisternino,40.816652,17.456899
+S11056,16,Siponto,Siponto,41.61296,15.895572
+S11304,16,Spinazzola,Spinazzola,40.953396,16.087173
+S11465,16,Taranto,Taranto,40.483727,17.224059
+S11505,16,Gioia Del Colle,Gioia Del Colle,40.796983,16.916569
+S11101,16,Incoronata,Incoronata,41.408174,15.650728
+S11606,16,Latiano,Latiano,40.558074,17.717629
+S11145,16,Lecce,Lecce,40.34566,18.165724
+S11108,16,Barletta,Barletta,41.315227,16.278867
+S11512,16,Bellavista,Bellavista,40.517077,17.176892
+S11141,16,S. Pietro Vernotico,S.Pietro V.Co,40.48902,18.000716
+S11025,16,San Severo,San Severo,41.684512,15.392567
+S11503,16,Sannicandro Di Bari,Sannicandro,40.958821,16.753771
+S11201,16,Santuario Incoronata,Santuario Incor.,41.370726,15.605748
+S11310,16,Santeramo,Santeramo,40.8026,16.76403
+S11022,16,Posto Movimento Ripalta,Pm Ripalta,41.895706,15.27507
+S11515,16,Modugno Citta`,Modugno Citta',41.086437,16.779596
+S11114,16,Molfetta,Molfetta,41.196008,16.596793
+S11129,16,Monopoli,Monopoli,40.952017,17.292455
+S11605,16,Oria,Oria,40.508167,17.646534
+S11102,16,Ortanova,Ortanova,41.350441,15.732059
+S11132,16,Ostuni,Ostuni,40.752356,17.580809
+S11508,16,Palagianello,Palagianello,40.610906,16.975202
+S11464,16,Palagiano Chiatona,Palagiano Chiat.,40.516998,17.059217
+S11112,16,Trani,Trani,41.272693,16.417646
+S11143,16,Trepuzzi,Trepuzzi,40.40964,18.076902
+S11140,16,Tuturano,Tuturano,40.550726,17.979016
+S11510,16,Massafra,Massafra,40.582968,17.107899
+S11607,16,Mesagne,Mesagne,40.563203,17.802082
+S11151,16,Cozze,Cozze,41.017835,17.159396
+S11154,16,Egnazia,Egnazia,40.901727,17.329607
+S11148,16,Bari Parco Nord,Bari Parco Nord,41.123916,16.837018
+S11126,16,Bari Torre A Mare,Ba Torre A Mare,41.082637,16.995772
+S11608,16,Villa Castelli,Villa Castelli,40.523377,17.476149
+S11128,16,Polignano A Mare,Polignano A Mare,40.990926,17.218676
+S09325,16,Ponte Albanito,Ponte Albanito,41.35148,15.532976
+S11462,16,Ginosa,Ginosa,40.429201,16.890968
+S11115,16,Giovinazzo,Giovinazzo,41.180968,16.669346
+S11502,16,Grumo Appula,Grumo Appula,41.01199,16.718777
+S11023,16,Poggio Imperiale,Poggio Imperiale,41.805561,15.35707
+S11305,16,Poggiorsini,Poggiorsini,40.935221,16.266897
+S11125,16,Bari Parco Sud,Bari Parco Sud,41.111822,16.914736
+S11127,16,Mola Di Bari,Mola Di Bari,41.057227,17.080919
+S11600,16,Nasisi,Nasisi,40.50791,17.257802
+S11100,16,Foggia,Foggia,41.466,15.555816
+S11725,17,Praja Ajeta Tortora,Praja A.T.,39.900832,15.780628
+S11776,17,Reggio Di Calabria Catona,Reggio C. Catona,38.185806,15.641205
+S11845,17,Riace,Riace,38.389178,16.528152
+S11804,17,Rocca Imperiale,Rocca Imperiale,40.100043,16.615742
+S11864,17,Saline Di Reggio,Saline Di Reggio,37.938677,15.710664
+S11772,17,Scilla,Scilla,38.251202,15.710886
+S11832,17,Simeri Crichi,Simeri Crichi,38.883068,16.716122
+S11903,17,Tarsia,Tarsia,39.653552,16.24293
+S11780,17,Reggio Calabria Lido,Reggio C. Lido,38.117668,15.649171
+S11866,17,R.C.Aeroporto,R.C.Aero,38.073039,15.642301
+S11741,17,Fiumefreddo Bruzio,Fiumefreddo,39.246369,16.059012
+S11752,17,Francavilla Angitola F.,Francavilla A.F.,38.778074,16.215215
+S11738,17,Fuscaldo,Fuscaldo,39.409692,16.011475
+S11871,17,Gabella Grande,Gabella Grande,39.146447,17.10991
+S11748,17,Gizzeria Lido,Gizzeria Lido,38.933446,16.212563
+S11729,17,Grisolia S.Maria,Grisolia,39.739731,15.821072
+S11843,17,Guardavalle,Guardavalle,38.480266,16.578923
+S11737,17,Guardia Piemontese Terme,Guardia P.T.,39.464259,15.979237
+S11951,17,Lamezia Terme Nicastro,L.Terme Nicastro,38.966779,16.320043
+S11950,17,Lamezia Terme Sambiase,L.Terme Sambiase,38.959927,16.284962
+S11851,17,Locri,Locri,38.233154,16.264787
+S11742,17,Longobardi,Longobardi,39.211493,16.061261
+S11728,17,Marcellina Verbicaro Orsomarso,Marcellina V.O.,39.766974,15.822665
+S11953,17,Marcellinara,Marcellinara,38.923103,16.466939
+S11862,17,Marina Di San Lorenzo,M.D.San Lorenzo,37.919844,15.826365
+S11814,17,Mirto Crosia,Mirto Crosia,39.604876,16.777366
+S11844,17,Monasterace Stilo,Monasterace St.,38.437591,16.574444
+S11905,17,Mongrassano Cervicati,Mongrassano,39.538462,16.222511
+S11836,17,Montepaone - Montauro,Montepaone M.,38.728548,16.541944
+S11865,17,Motta San Giovanni Lazzaro,Motta Sg Lazzaro,37.976978,15.659977
+S11764,17,Nicotera,Nicotera,38.549328,15.933749
+S11746,17,Nocera Tirinese,Nocera,39.015913,16.119677
+S11859,17,Palizzi,Palizzi,37.91881,15.986405
+S11769,17,Palmi,Palmi,38.364914,15.84438
+S11739,17,Paola,Paola,39.359442,16.033093
+S11816,17,Pietrapaola,Pietrapaola,39.540121,16.860819
+S11727,17,Scalea S.Domenica Talao,Scalea,39.8083,15.80139
+S11749,17,Lamezia Terme Centrale,Lamezia T. C.Le,38.921347,16.255577
+S11826,17,Cutro,Cutro,39.02593,16.963809
+S11766,17,Gioia Tauro,Gioia Tauro,38.423436,15.897516
+S11740,17,S.Lucido Marina,S.Lucido Marina,39.313203,16.045546
+S11811,17,Sibari,Sibari,39.749863,16.456922
+S11840,17,S.Andrea Dell`Jonio,S.Andrea Jonio,38.620097,16.553449
+S11908,17,Montalto Rose,Montalto Rose,39.407213,16.247291
+S11956,17,Catanzaro,Catanzaro,38.896222,16.599081
+S11775,17,Villa S.Giovanni Mare,Villa S.Giov.Mar,38.220912,15.632912
+S11763,17,Joppolo,Joppolo,38.580318,15.897025
+S11770,17,Bagnara,Bagnara,38.282695,15.800327
+S11773,17,Villa S.G.Cannitello,V.S.G.Cannitello,38.23409,15.653246
+S11777,17,Reggio Di Calabria Gallico,Reggio C.Gallico,38.165235,15.650716
+S11786,17,Santa Domenica,S.Domenica,38.663764,15.859822
+S11790,17,Mileto,Mileto,38.577082,16.060041
+S11805,17,Monte Giordano,Monte Giordano,40.040812,16.597907
+S11810,17,Villapiana Torre Cerchiara,Villapiana T.C.,39.790568,16.479497
+S11812,17,Corigliano Calabro,Corigliano Cal.,39.628223,16.514949
+S11817,17,Mandatoriccio Campana,Mandatoriccio C.,39.525442,16.893125
+S11825,17,Isola Capo Rizzuto,Isola Capo Rizz.,39.043084,17.071764
+S11833,17,Catanzaro Lido,Catanzaro Lido,38.821788,16.612975
+S11837,17,Soverato,Soverato,38.684339,16.549416
+S11842,17,S.Caterina Dell`Jonio,S.Caterina Jonio,38.530452,16.571093
+S11848,17,Gioiosa Jonica,Gioiosa Jonica,38.300812,16.332501
+S11857,17,Brancaleone,Brancaleone,37.965475,16.103301
+S11860,17,Bova Marina,Bova Marina,37.930269,15.923897
+S11863,17,Melito Di Porto Salvo,Melito P.S.,37.916732,15.780816
+S11868,17,Reggio Di Calabria S.Gregorio,R.C.San Gregorio,38.061274,15.652053
+S11901,17,Spezzano Albanese Terme,Spezzano Alb.T.,39.707307,16.287599
+S11904,17,S.Marco Roggiano,S.Marco Roggiano,39.605223,16.208776
+S11909,17,Castiglione Cosentino,Castiglione C.,39.35542,16.244388
+S11952,17,Feroleto Antica Pianopoli,Feroleto A.P.,38.938255,16.36622
+S11751,17,Bivio Pantani,Biv. Pantani,39.346697,16.046631
+S11774,17,Villa San Giovanni,Villa S.Giovanni,38.216638,15.634336
+S11759,17,Parghelia,Parghelia,38.683341,15.925042
+S11753,17,Pizzo,Pizzo,38.726323,16.150615
+S11781,17,Reggio Calabria Centrale,Reggio C. C.Le,38.103884,15.635844
+S11782,17,Reggio Calabria Marittima,Reggio C. Mar.,38.121947,15.647886
+S11867,17,Reggio Di Calabria Pellaro,Reggio C.Pellaro,38.02561,15.650064
+S11761,17,Ricadi,Ricadi,38.630676,15.839848
+S11828,17,Roccabernarda,Roccabernarda,38.942165,16.900439
+S11847,17,Roccella Jonica,Roccella Jonica,38.322043,16.406917
+S11765,17,Rosarno,Rosarno,38.488593,15.970149
+S11806,17,Roseto Capo Spulico,Roseto C.Spulico,39.972412,16.620275
+S11813,17,Rossano,Rossano,39.603005,16.640859
+S11726,17,S.Nicola Arcella,S.Nicola Arcella,39.850764,15.793165
+S11750,17,S.Pietro A Maida,S.Pietro M.,38.867817,16.276306
+S11827,17,San Leonardo Di Cutro,S.Leonardo Cutro,38.954221,16.964409
+S11733,17,Sangineto,Sangineto,39.592487,15.863973
+S11957,17,Santa Maria Di Catanzaro,Santa Maria,38.864988,16.605785
+S11831,17,Sellia Marina,Sellia Marina,38.903666,16.764788
+S11954,17,Settingiano,Settingiano,38.903198,16.510832
+S11850,17,Siderno,Siderno,38.2708,16.302
+S11835,17,Squillace,Squillace,38.77705,16.570418
+S11822,17,Strongoli,Strongoli,39.228139,17.108256
+S11869,17,Thurio,Thurio,39.69651,16.474098
+S11906,17,Torano Lattarico,Torano Lattarico,39.49455,16.210509
+S11821,17,Torre Melissa,Torre Melissa,39.304391,17.108402
+S11808,17,Trebisacce,Trebisacce,39.865561,16.532173
+S11760,17,Tropea,Tropea,38.672302,15.894568
+S11754,17,Vibo Marina,Vibo Marina,38.713731,16.120199
+S11789,17,Vibo Valenzia Pizzo,Vibo Pizzo,38.714593,16.139887
+S11778,17,Villa S. Giovanni Bolano,V.S.G. Bolano,38.200739,15.635099
+S11809,17,Villapiana Lido,Villapiana Lido,39.811234,16.490988
+S11758,17,Zambrone,Zambrone,38.712738,15.976204
+S11736,17,Acquappesa,Acquappesa,39.48648,15.955992
+S11907,17,Acri Bisignano Luzzi,Acri Bisignano,39.441389,16.245177
+S11872,17,Africo Nuovo,Africo Nuovo,38.053759,16.144283
+S11744,17,Amantea,Amantea,39.134353,16.068448
+S11807,17,Amendolara Oriolo,Amendolara Or.,39.933731,16.60308
+S11853,17,Ardore,Ardore,38.175698,16.207311
+S11841,17,Badolato,Badolato,38.572268,16.567646
+S11743,17,Belmonte Calabro,Belmonte,39.164427,16.064515
+S11732,17,Belvedere Marittimo,Belvedere M.,39.616549,15.853039
+S11855,17,Bianco,Bianco,38.089072,16.153348
+S11755,17,Bivio Settimo,Biv. Settimo,39.381416,16.222002
+S11829,17,Botricello,Botricello,38.933943,16.857433
+S11854,17,Bovalino,Bovalino,38.149087,16.180584
+S11757,17,Briatico,Briatico,38.725447,16.025765
+S11815,17,Calopezzati,Calopezzati,39.579022,16.819361
+S11745,17,Campora S.Giov. Serra Aiello,Campora S.G.,39.068402,16.09102
+S11734,17,Capo Bonifati,Capo Bonifati,39.558342,15.874052
+S11858,17,Capo Spartivento,Capo Spartivento,37.924778,16.058342
+S11818,17,Cariati,Cariati,39.496884,16.952018
+S11900,17,Cassano All`Ionio,Cassano,39.726326,16.35218
+S11846,17,Caulonia,Caulonia,38.343785,16.467278
+S11735,17,Cetraro,Cetraro,39.512553,15.939263
+S11730,17,Cirella Majera`,Cirella,39.708556,15.812289
+S11820,17,Ciro',Cirò,39.368701,17.116997
+S11861,17,Condofuri,Condofuri,37.92761,15.874952
+S11910,17,Cosenza,Cosenza,39.318386,16.260955
+S11830,17,Cropani,Cropani,38.921968,16.813562
+S11823,17,Crotone,Crotone,39.0845,17.108418
+S11819,17,Crucoli,Crucoli,39.449588,17.040718
+S11731,17,Diamante Buonvicino,Diamante,39.67701,15.824278
+S11788,17,Eccellente,Eccellente,38.809696,16.232598
+S11747,17,Falerna,Falerna,38.970726,16.14991
+S11771,17,Favazzina,Favazzina,38.258742,15.756625
+S11856,17,Ferruzzano,Ferruzzano,38.016304,16.134486
+S09813,18,Pagani,Pagani,40.74654,14.616996
+S09826,18,Contursi Terme,Contursi Terme,40.630046,15.235486
+S09714,18,Bivio S.Lucia (Na),Biv. S.Lucia 123,40.742888,14.682744
+S09102,18,Bagnoli Agnano Terme,Bagnoli Agnano T,40.819444,14.166694
+S09004,18,Albanova,Albanova,40.996117,14.128596
+S09304,18,Valle Di Maddaloni,Valle Di Maddal.,41.087558,14.426049
+S09900,18,Galdo,Galdo,40.569272,15.355627
+S09909,18,Montesano Buonabitacolo,Montesano B.,40.286725,15.653794
+S09907,18,Sassano Teggiano,Sassano Teggiano,40.368687,15.604818
+S09216,18,Casalnuovo,Casalnuovo,40.915559,14.35296
+S09828,18,Buccino S.,Buccino,40.600806,15.374199
+S11703,18,Paestum,Paestum,40.421691,15.014915
+S11706,18,Torchiara,Torchiara,40.315916,15.041267
+S09104,18,Napoli Piazza Leopardi,Na P. Leopardi,40.82397,14.199117
+S09108,18,Piazza Cavour,Piazza Cavour,40.855248,14.255175
+S09203,18,Vairano,Vairano,41.317446,14.104022
+S09206,18,Sparanise,Sparanise,41.185707,14.092954
+S09212,18,Maddaloni Inferiore,Maddaloni Inf.,41.035954,14.380504
+S09300,18,Gricignano,Gricignano,40.998742,14.241657
+S09306,18,Amorosi Melizzano,Amorosi Mel.,41.173509,14.470759
+S09309,18,Ponte Casalduni,Ponte Casalduni,41.214169,14.696458
+S09313,18,Paduli,Paduli,41.146232,14.838878
+S09315,18,Montecalvo Buonalbergo Casalb.,Montecalvo B.C.,41.2211,14.9795
+S09326,18,Telese Cerreto,Telese Cerreto,41.211709,14.526165
+S09506,18,Fragneto Monforte,Fragneto Monf.,41.247292,14.76486
+S09507,18,Pescosannita Fragneto L`Abate,Pescosannita F.,41.236154,14.788527
+S09508,18,Pietrelcina,Pietrelcina,41.18865,14.832469
+S09509,18,Benevento Porta Rufina,Bn Porta Rufina,41.123564,14.784315
+S09511,18,Altavilla Irpina,Altavilla Irpina,41.015265,14.782833
+S09512,18,Tufo,Tufo,41.013853,14.815962
+S09513,18,Prata Pratola,Prata Pratola,40.988509,14.842666
+S09524,18,Fratte Villa Comunale,Fratte-Villa Com,40.697895,14.779252
+S09603,18,Montemiletto,Montemiletto,40.993606,14.920685
+S09608,18,Castelvetere,Castelvetere,40.952072,15.011348
+S09617,18,Morra De Sanctis Teora,Morra De S.T.,40.890563,15.239328
+S09629,18,Sanzano Occhino,Sanzano Occhino,40.8869,15.27783
+S09701,18,Palma S.Gennaro,Palma S.Gennaro,40.864149,14.540472
+S09704,18,Castel S.Giorgio Roccapiemonte,Castel S.Giorgio,40.758713,14.692352
+S09705,18,Valle Di Mercato S.Severino,Valle Di Mercato,40.776365,14.722362
+S09800,18,Napoli S.Giov.Barra,Napoli S.G.Barra,40.831269,14.307811
+S09802,18,Portici- Ercolano,Portici Ercolano,40.809907,14.335809
+S09817,18,Vietri Sul Mare,Vietri Sul Mare,40.674996,14.726829
+S09821,18,Pontecagnano,Pontecagnano,40.641033,14.870272
+S09825,18,Campagna Serre Persano,Campagna S.P.,40.595667,15.113986
+S09827,18,Sicignano Degli Alburni,Sicignano D.A.,40.605454,15.290904
+S09904,18,Atena,Atena,40.456676,15.536094
+S11707,18,Rutino,Rutino,40.29259,15.104561
+S11709,18,Vallo Della Luc. Castelnuovo,Vallo D.Lucania,40.233316,15.266511
+S09752,18,S.Giuseppe Vesuviano,S.Giuseppe Ves.,40.834058,14.502954
+S09829,18,Romagnano V.,Romagnano V.,40.610041,15.447651
+S09523,18,S.Michele Di Serino,S.Michele Di S.,40.874511,14.853445
+S09515,18,Serino,Serino,40.858838,14.860182
+S09605,18,Taurasi,Taurasi,40.980838,14.965804
+S09100,18,Giugliano Qualiano,Giugliano Qual.,40.935018,14.10378
+S09837,18,Mercatello,Mercatello,40.606491,15.38979
+S09838,18,Arbostella,Arbostella,40.677263,15.623814
+S09615,18,S.Angelo Dei Lombardi,S.Angelo Dei L.M,40.890372,15.161478
+S09007,18,S.Antimo S.Arpino,S.Antimo S.Arpin,40.949188,14.247415
+S09502,18,S.Croce Del Sannio,S.Croce Del S.,41.37114,14.705455
+S09317,18,Pianerottolo Di Ariano,Pianerottolo A.,41.188984,15.145482
+S09801,18,Pietrarsa,Pietrarsa,40.822433,14.32058
+S09311,18,Benevento,Benevento,41.141901,14.769998
+S09602,18,Montefalcione,Montefalcione,40.951114,14.886432
+S09529,18,Montefredane,Montefredane,40.951143,14.827771
+S09612,18,Montella,Montella,40.845175,15.032758
+S09610,18,Montemarano,Montemarano,40.900728,15.039506
+S09305,18,Frasso T. Dugenta,Frasso Dugenta,41.137244,14.459459
+S09008,18,Frattamaggiore,Frattamaggiore,40.940018,14.263676
+S09522,18,Fratte,Fratte,40.705637,14.778362
+S09814,18,Nocera Inferiore,Nocera Inferiore,40.745318,14.635346
+S09709,18,Nocera Inferiore Mercato,Nocera Mercato,40.745668,14.649129
+S09815,18,Nocera Superiore,Nocera Superiore,40.742597,14.672398
+S09700,18,Nola,Nola,40.923652,14.525004
+S09751,18,Ottaviano,Ottaviano,40.85256,14.493479
+S09806,18,Torre Annunziata Centrale,Torre A.Centrale,40.747131,14.463744
+S09805,18,Torre Annunziata Citta',Torre A. Città,40.754069,14.448628
+S09803,18,Torre Del Greco,Torre Del Greco,40.787631,14.363159
+S09616,18,Lioni,Lioni,40.874869,15.186324
+S09628,18,Lioni Valle Delle Viti,L.Valle D.Viti,40.887025,15.215936
+S09303,18,Maddaloni Superiore,Maddaloni Super.,41.048567,14.396055
+S09301,18,Marcianise,Marcianise,41.03596,14.287658
+S09750,18,Marigliano,Marigliano,40.923733,14.460435
+S09201,18,Mignano Di Monte Lungo,Mignano Mont.,41.407585,13.986672
+S09824,18,Eboli,Eboli,40.611057,15.052382
+S09520,18,Baronissi,Baronissi,40.743779,14.77224
+S09503,18,Morcone,Morcone,41.340445,14.677658
+S09103,18,Napoli Campi Flegrei,Napoli Campi F.,40.822462,14.194649
+S09109,18,Napoli Piazza Garibaldi,Na Piazza Garib.,40.852326,14.275159
+S09521,18,Pellezzano,Pellezzano,40.719928,14.777354
+S09003,18,Villa Literno,Villa Literno,41.004956,14.06753
+S09310,18,Vitulano Foglianise,Vitulano Fogl.,41.163008,14.720027
+S09902,18,Auletta,Auletta,40.534934,15.426706
+S09908,18,Padula,Padula,40.335142,15.629921
+S09901,18,Petina,Petina,40.560347,15.389298
+S09903,18,Polla,Polla,40.512921,15.497238
+S09906,18,Sala Consilina,Sala Consilina,40.405144,15.576057
+S09810,18,Pompei,Pompei,40.745918,14.501109
+S09504,18,Pontelandolfo,Pontelandolfo,41.29578,14.712051
+S09516,18,Solofra,Solofra,40.834504,14.843975
+S09761,18,Spartimento Di Scisciano,S. Di Scisciano,40.891561,14.468487
+S09308,18,S.Lorenzo Maggiore,S.Lorenzo M.,41.219748,14.648419
+S09005,18,S.Marcellino Frignano,S.Marcellino F.,40.992103,14.171976
+S09209,18,S.Maria Capua Vetere,S.Maria Capua V.,41.07353,14.254081
+S09804,18,S.Maria La Bruna,S.Maria La Bruna,40.755435,14.407647
+S09753,18,Terzigno,Terzigno,40.806926,14.503275
+S09202,18,Tora Presenzano,Tora Presenzano,41.358861,14.04514
+S11705,18,Agropoli Castellabate,Agropoli,40.351521,15.002053
+S11702,18,Capaccio Roccadaspide,Capaccio,40.454518,15.013551
+S11712,18,Pisciotta Palinuro,Pisciotta P.,40.091539,15.243601
+S11717,18,Torre Orsaia,Torre Orsaia,40.099017,15.481204
+S09319,18,Montaguto Panni,Montaguto P.,41.235362,15.235132
+S09822,18,Montecorvino,Montecorvino,40.617439,14.944628
+S09614,18,Nusco,Nusco,40.872272,15.095642
+S09001,18,Falciano Mondragone Car.,Falciano Mond.,41.123525,13.971792
+S09207,18,Pignataro Maggiore,Pignataro Mag.,41.17384,14.160545
+S09530,18,Benevento Arco Traiano,Bn Arco Traiano,41.136834,14.777662
+S09606,18,Luogosano,Luogosano,40.980381,14.994305
+S09706,18,Mercato San Severino,Mercato S.Sever.,40.783095,14.759749
+S11714,18,San Mauro La Bruca,S.Mauro La Bruca,40.09683,15.298924
+S11700,18,San Nicola Varco Di Eboli,S.Nicola Varco,40.561479,14.998375
+S11721,18,Sapri,Sapri,40.078013,15.627204
+S09215,18,Acerra,Acerra,40.939066,14.372243
+S09812,18,Angri,Angri,40.746404,14.575366
+S09314,18,Apice S.Arcangelo Bonito,Apice S.A.B.,41.140927,14.918733
+S09623,18,Aquilonia,Aquilonia,40.940252,15.541249
+S09316,18,Ariano Irpino,Ariano Irpino,41.181883,15.117508
+S09514,18,Avellino,Avellino,40.921612,14.820586
+S09006,18,Aversa,Aversa,40.973323,14.218578
+S09763,18,Boccia Al Mauro,Boccia Al Mauro,40.732794,14.471878
+S09526,18,Borgo,Borgo,40.845976,14.784092
+S09754,18,Boscoreale,Boscoreale,40.770786,14.48017
+S09213,18,Cancello,Cancello,40.993063,14.418877
+S09002,18,Cancello Arnone,Cancello Arnone,41.063369,14.02901
+S09208,18,Capua,Capua,41.101306,14.210347
+S09910,18,Casalbuono,Casalbuono,40.214093,15.686095
+S09211,18,Caserta,Caserta,41.068655,14.328457
+S09009,18,Casoria,Casoria,40.907762,14.29874
+S09611,18,Cassano Irpino,Cassano Irpino,40.869227,15.031213
+S09609,18,Castelfranci,Castelfranci,40.935968,15.038655
+S09756,18,Castellammare Di Stabia,Cast.Re Di Stab.,40.701398,14.483737
+S09816,18,Cava Dei Tirreni,Cava Dei Tirreni,40.703662,14.708461
+S09113,18,Cavalleggeri Aosta,Cavalleggeri A.,40.819292,14.185679
+S11711,18,Ascea,Ascea,40.140955,15.172626
+S09823,18,Battipaglia,Battipaglia,40.605789,14.98324
+S11716,18,Celle Bulgheria Roccagloriosa,Celle Bulgheria,40.10287,15.39473
+S11715,18,Centola,Centola,40.090672,15.34674
+S11708,18,Omignano Salento,Omignano,40.252688,15.134406
+S11718,18,Policastro Bussentino,Policastro,40.076482,15.528438
+S09473,18,Cese,Cese,41.210883,14.787329
+S09510,18,Chianche Ceppaloni,Chianche Ceppal.,41.050122,14.777618
+S09703,18,Codola,Codola,40.767687,14.665622
+S09318,18,Savignano Greci,Savignano G.,41.230587,15.167109
+S09811,18,Scafati,Scafati,40.746028,14.523253
+S09000,18,Sessa Aurunca R.,Sessa A.,41.1955,13.8761
+S09307,18,Solopaca,Solopaca,41.210521,14.571413
+S09205,18,Teano,Teano,41.231804,14.077075
+S09519,18,Fisciano,Fisciano,40.759095,14.77486
+S09607,18,Paternopoli,Paternopoli,40.972903,15.009932
+S09324,18,Corsano,Corsano,41.164472,14.958463
+S09758,18,Gragnano,Gragnano,40.688964,14.520445
+S09707,18,Lanzara Fimiani,Lanzara Fimiani,40.769685,14.68115
+S09708,18,Lavorate,Lavorate,40.78733,14.649875
+S09613,18,Bagnoli Irpino,Bagnoli Irpino,40.83917,15.06324
+S09818,18,Salerno,Salerno,40.675137,14.772822
+S09600,18,Salza Irpina,Salza Irpina,40.922251,14.881761
+S09702,18,Sarno,Sarno,40.813063,14.612442
+S09518,18,Montoro Forino,Montoro Forino,40.819987,14.757381
+S09517,18,Montoro Superiore,Montoro Super.,40.831616,14.80217
+S09528,18,Montorsi,Montorsi,41.080487,14.786519
+S09110,18,Napoli Gianturco,Napoli Gianturco,40.853959,14.288213
+S09105,18,Napoli Mergellina,Na Mergellina,40.831531,14.218662
+S09107,18,Napoli Montesanto,Na Montesanto,40.847807,14.244022
+S09106,18,Piazza Amedeo,Piazza Amedeo,40.838506,14.232974
+S09218,18,Napoli Centrale,Napoli Centrale,40.852933,14.272908
+S09626,18,Campo Di Nusco,Campo Di Nusco,40.879143,15.129255
+S09505,18,Campolattaro,Campolattaro,41.285869,14.726853
+S09101,18,Pozzuoli Solfatara,Pozzuoli S.,40.827586,14.126163
+S09111,18,Quarto Di Marano,Quarto Di Marano,40.871086,14.122801
+S09302,18,Recale,Recale,41.06235,14.30323
+S09762,18,Reviglione Di Somma Vesuviana,Reviglione Di S.,40.872234,14.482833
+S09204,18,Riardo,Riardo,41.265177,14.124949
+S08901,19,Pettorano Sul Gizio,Pettorano Sul G.,41.974557,13.965036
+S07819,19,Fossacesia,Fossacesia,42.235097,14.524255
+S08853,19,Civita D`Antino-Morino,Civita D'Antino,41.870632,13.458868
+S08855,19,S.Vincenzo V.R.,S. Vincenzo V.R.,41.832988,13.526148
+S08900,19,Sulmona-Introdacqua,Sulmona-Introd.,42.038241,13.92156
+S08905,19,Rivisondoli-Pescocostanzo,Rivisondoli-Pesc,41.877292,14.079308
+S08910,19,Castel Di Sangro,Castel Di Sangro,41.777829,14.112049
+S07805,19,Scerne Di Pineto,Scerne Di Pineto,42.642427,14.041324
+S08538,19,Bugnara,Bugnara,42.031166,13.862082
+S07704,19,Bussi,Bussi,42.194154,13.849075
+S08903,19,Campo Di Giove,Campo Di Giove,42.007967,14.041492
+S07601,19,Pratola Peligna Superiore,Pratola P.S.,42.080415,13.87223
+S07412,19,Vigliano D`Abruzzo,Vigliano D'Abruz,42.341675,13.231335
+S07426,19,Tione Degli Abruzzi,Tione Degli A.,42.204908,13.64205
+S07703,19,Popoli Vittorito,Popoli Vittorito,42.172354,13.826152
+S07801,19,Tortoreto Lido,Tortoreto Lido,42.804562,13.939012
+S07806,19,Pineto Atri,Pineto Atri,42.607736,14.069072
+S07900,19,Teramo,Teramo,42.660551,13.715882
+S07901,19,Castellalto Canzano,Castellalto C.,42.69564,13.793043
+S08521,19,Sante Marie,Sante Marie,42.096993,13.21696
+S08533,19,Carrito-Ortona,Carrito-Ortona,42.026506,13.720179
+S08919,19,Campo Di Giove-Monte Maiella,Campo G.-Monte M,41.993262,14.069088
+S08534,19,Cocullo,Cocullo,42.040723,13.776636
+S07708,19,Alanno,Alanno,42.287185,14.019595
+S07800,19,Alba Adriatica Nereto Contr.,Alba Adriatica,42.83438,13.91733
+S08908,19,Alfedena-Scontrone,Alfedena-Scontr,41.738222,14.044662
+S08537,19,Anversa-Villalago-Scanno,Anversa V. S.,42.017261,13.835618
+S08526,19,Avezzano,Avezzano,42.039495,13.426446
+S08850,19,Capistrello,Capistrello,41.97051,13.399276
+S08525,19,Cappelle-Magliano,Cappelle-Magl.,42.059369,13.372468
+S08519,19,Carsoli,Carsoli,42.09578,13.080388
+S07821,19,Casalbordino Pollutri,Casalbordino P.,42.193653,14.633045
+S08528,19,Celano-Ovindoli,Celano-Ovindoli,42.076999,13.543398
+S08530,19,Cerchio,Cerchio,42.061082,13.597972
+S07712,19,Chieti,Chieti,42.356905,14.13815
+S08852,19,Civitella Roveto,Civitella Roveto,41.916419,13.424882
+S08520,19,Colli Di Monte Bove,Colli Di M. Bove,42.097103,13.15057
+S07413,19,Sassa Tornimparte,Sassa Tornimpart,42.360549,13.295333
+S07707,19,Scafa S.Valentino Caramanico T,Scafa S.V.C.T.,42.26717,13.99909
+S08524,19,Scurcola Marsicana,Scurcola Mars.,42.053136,13.344374
+S07411,19,Sella Di Corno,Sella Di Corno,42.360461,13.189876
+S07421,19,Fontecchio,Fontecchio,42.222822,13.604445
+S07802,19,Giulianova,Giulianova,42.751673,13.965743
+S07414,19,L`Aquila,L'Aquila,42.351055,13.384959
+S07817,19,S.Vito Lanciano,S.Vito Lanciano,42.307401,14.448093
+S07808,19,Montesilvano,Montesilvano,42.515766,14.152567
+S07904,19,Mosciano S. Angelo,Mosciano S. Ang.,42.710309,13.908563
+S07700,19,Pratola Peligna,Pratola Peligna,42.102423,13.876349
+S08536,19,Prezza,Prezza,42.053699,13.834497
+S07600,19,Raiano,Raiano,42.097931,13.80908
+S08906,19,Roccaraso,Roccaraso,41.850833,14.079292
+S07804,19,Roseto Degli Abruzzi,Roseto Degli Abr,42.677852,14.01535
+S07810,19,Pescara,Pescara,42.467789,14.205066
+S07811,19,Pescara Porta Nuova,Pescara P.N.,42.458072,14.211663
+S08532,19,Pescina,Pescina,42.037564,13.668981
+S08811,19,Pescocanale,Pescocanale,41.9589,13.391624
+S07714,19,Piano D`Orta Bolognano,Piano D'Orta B.,42.254455,13.951514
+S07424,19,Molina Castel Vecchio Subaqueo,Molina C.V.S.,42.143476,13.739644
+S07813,19,Francavilla Al Mare,Francavilla M.,42.421316,14.288062
+S07903,19,Notaresco,Notaresco,42.706502,13.876365
+S08518,19,Oricola-Pereto,Oricola Pereto,42.067835,13.044214
+S07815,19,Ortona,Ortona,42.354196,14.407698
+S07416,19,Paganica,Paganica,42.334751,13.464317
+S08904,19,Palena,Palena,41.918401,14.105189
+S07706,19,Torre Dei Passeri,Torre Dei P.,42.244022,13.937525
+S07710,19,Manoppello,Manoppello,42.305848,14.061057
+S07017,19,Pescara S. Marco,Pescara S. Marco,42.44613,14.208981
+S07018,19,Fossacesia - Torino Di Sangro,Fossacesia/T.S.,42.237648,14.525456
+S08810,19,Cupone,Cupone,41.964628,13.377481
+S07420,19,Fagnano Campana,Fagnano Campana,42.250575,13.562743
+S08856,19,Balsorano,Balsorano,41.809427,13.556546
+S07422,19,Beffi,Beffi,42.197341,13.660759
+S07902,19,Bellante Ripattone,Bellante Ripat.,42.705775,13.837978
+S07824,19,Vasto S.Salvo,Vasto S.Salvo,42.079832,14.739483
+S08523,19,Villa San Sebastiano,Villa San Seb.,42.049331,13.308271
+S07822,19,Porto Di Vasto,Porto Di Vasto,42.167774,14.698057
+S07807,19,Silvi,Silvi,42.55911,14.110365
+S08539,19,Sulmona,Sulmona,42.060836,13.907156
+S08522,19,Tagliacozzo,Tagliacozzo,42.070701,13.255664
+S08535,19,Goriano Sicoli,Goriano Sicoli,42.082698,13.78286
+S07423,19,Acciano,Acciano,42.175994,13.711345
+S07418,19,S.Demetrio De` Vestini,S.Demetrio V.,42.294447,13.536543
+S07705,19,Tocco Castiglione,Tocco C.,42.226619,13.904658
+S07814,19,Tollo Canosa Sannita,Tollo Canosa S.,42.394208,14.339984
+S07820,19,Torino Di Sangro Paglieta,Torino Di Sangro,42.227479,14.552549
+S12889,20,Assemini,Assemini,39.287603,8.997936
+S12867,20,Bonorva,Bonorva,40.417763,8.760707
+S12872,20,Borore,Borore,40.218992,8.809535
+S12812,20,Caniga,Caniga,40.716116,8.526395
+S12899,20,Chirialza,Chirialza,40.830877,9.36732
+S12970,20,Cixerri,Cixerri,39.26982,8.578934
+S12814,20,Scala Di Giocca,Scala Di Giocca,40.698881,8.59695
+S12954,20,Siliqua,Siliqua,39.297005,8.813078
+S12876,20,Solarussa,Solarussa,39.952525,8.679813
+S12896,20,Su Canale,Su Canale,40.838375,9.404226
+S12950,20,Iglesias,Iglesias,39.310563,8.539786
+S12971,20,Barbusi,Barbusi,39.203024,8.501702
+S12875,20,Bauladu Milis,Bauladu Milis,40.020722,8.687123
+S12806,20,Sant`Orsola,Sant'Orsola,40.747117,8.532229
+S12885,20,Samassi Serrenti,Samassi Serrenti,39.483075,8.899035
+S12883,20,Sanluri Stato,Sanluri S.,39.526147,8.850221
+S12897,20,Sant`Anna,Sant'Anna,39.810758,8.641451
+S12857,20,Monti Telti,Monti Telti,40.829632,9.322814
+S12891,20,Cagliari,Cagliari,39.216078,9.107984
+S12890,20,Cagliari Elmas,Cagliari Elmas,39.264193,9.045497
+S12851,20,Cala Sabina,Cala Sabina,41.011012,9.5881
+S12815,20,Campomela,Campomela,40.68139,8.638875
+S12859,20,Berchidda,Berchidda,40.772052,9.181312
+S12973,20,Monte Arcau,Monte Arcau,39.244501,8.543347
+S12850,20,Golfo Aranci Marittima,G.Aranci Mar.Ma,40.995775,9.623843
+S12852,20,Golfo Aranci,Golfo Aranci,40.997261,9.62471
+S12855,20,Olbia,Olbia,40.924595,9.498293
+S12878,20,Oristano,Oristano,39.902033,8.603974
+S12860,20,Oschiri,Oschiri,40.713273,9.107749
+S12881,20,Pabillonis,Pabillonis,39.610878,8.741013
+S12869,20,Macomer,Macomer,40.267899,8.772279
+S12888,20,Decimomannu,Decimomannu,39.304593,8.965808
+S12953,20,Musei,Musei,39.28837,8.676528
+S12816,20,Ploaghe,Ploaghe,40.66132,8.728075
+S12952,20,Villamassargia Domusnovas,Villamassargia D,39.294811,8.641986
+S12887,20,Villasor,Villasor,39.381451,8.935907
+S12802,20,Porto Torres,Porto Torres,40.833045,8.39642
+S12873,20,Abbasanta,Abbasanta,40.128801,8.817733
+S12882,20,San Gavino,San Gavino,39.546206,8.788017
+S12856,20,Enas,Enas,40.85706,9.431095
+S12865,20,Torralba,Torralba,40.482769,8.781619
+S12803,20,Porto Torres Marittima,Porto Torres Mar,40.837914,8.397301
+S12805,20,S.Giorgio Di Sassari,San Giorgio Ss,40.754903,8.516505
+S12853,20,Madonna Di Castro,Madonna Di Castr,40.672018,9.046014
+S12874,20,Paulilatino,Paulilatino,40.077373,8.775812
+S12956,20,Villaspeciosa Uta,Villaspecios Uta,39.304168,8.940501
+S12804,20,San Giovanni,San Giovanni,40.762523,8.499282
+S12807,20,Sassari,Sassari,40.729506,8.554157
+S12813,20,Tissi Usini,Tissi Usini,40.689278,8.530258
+S12817,20,Ardara,Ardara,40.632139,8.818996
+S12854,20,Marinella,Marinella,40.999129,9.55362
+S12861,20,Ozieri Fraigas,Ozieri Fraigas,40.627334,8.986497
+S12862,20,Ozieri Chilivani,Ozieri Chilivani,40.609496,8.933744
+S12864,20,Mores Ittireddu,Mores Ittireddu,40.555954,8.875838
+S12866,20,Giave,Giave,40.455875,8.729388
+S12879,20,Marrubiu Terralba Arborea,Marrubiu Terr.Ar,39.75293,8.641144
+S12886,20,Serramanna Nuraminis,Serramanna Nuram,39.426123,8.916579
+S12895,20,Rudalza,Rudalza,40.994082,9.531214
+S12901,20,Olbia Marittima Isola Bianca,Olbia M.I.B.,40.922597,9.523706
+S12818,20,Carbonia Serbariu,Carbonia Serb.,39.169508,8.509186
+S12880,20,Uras Mogoro,Uras Mogoro,39.692629,8.696459
+S02313,21,Borgo Valsugana Centro,Borgo Valsugana,46.051182,11.453967
+S02044,21,Rovereto,Rovereto,45.890985,11.033518
+S02038,21,Trento,Trento,46.072414,11.118941
+S02026,22,Bolzano,Bolzano,46.496346,11.358556
+S02011,22,Fortezza,Fortezza,46.788841,11.609922
+S02114,22,S.Candido,S.Candido,46.732728,12.271917
+S02216,22,Merano,Merano,46.673066,11.148978
+S05386,0,Anzola,,,
+S11119,16,Bari Centrale,Bari C.Le,41.11774,16.869601
+S02673,0,Gaggio Porta Est,,,
+S12143,0,Lolli,,,
+S01104,0,Pieve Emanuele,,,
+S02595,0,Busa Di Vigonza,,,
+S11121,0,Marconi,,,
+S11004,0,Bari Torre Quetta,,,
+S01139,0,Malpensa Aeroporto T1,Malp At1,45.627904,8.711085
+S01135,0,Rescaldina,,,
+S01136,0,Castellanza,,,
+S01137,0,Busto Arsizio Nord,,,
+S01138,0,Ferno-Lonate Pozzolo,,,
+S09839,0,Arechi,,,
+S09835,0,Torrione,,,
+S09836,0,Pastena,,,
+S08680,0,Piedimonte-V.S.L.-Aquino,,,
+S08654,0,Labico,,,
+S09199,0,Fontanarosa,,,
+S00060,0,Torino Rebaudengo Fossata,,,
+S12023,0,Fontane Bianche,,,
+S12819,0,Elmas Aeroporto,,,
+S05081,0,Bologna San Vitale,,,
+S01853,1,Torrile S. Polo,Torrile S. Polo,44.885677,10.362814
+S12333,0,Catania Ognina,,,
+S12334,0,Picanello,,,
+S12335,0,Catania Europa,,,
+S12066,0,Sferracavallo,,,
+S12069,0,Ems-La Malfa,,,
+S12144,0,Guadagna,,,
+S02001,22,Brennero,Brennero,47.004117,11.505711
+S02218,0,Gargazzone,,,
+S02059,0,Casanova Kaiserau,,,
+S08514,0,La Rustica Uir,,,
+S08513,0,La Rustica Citta',,,
+S08509,0,Palmiro Togliatti,,,
+S06001,0,Lastra A Signa,,,
+S08812,0,Canistro,,,
+S08817,0,Santopadre,,,
+S08819,0,Fontana Liri Inferiore,,,
+S08820,0,Colfelice,,,
+S02517,0,Venezia Mestre Ospedale,,,
+S03311,0,Miramare,,,
+S08324,0,Ottavia,,,
+S08327,0,Roma Balduina,,,
+S05268,0,Quattro Ville,,,
+S09771,0,Rovigliano,,,
+S09819,0,Duomo Via Vernieri,,,
+S05152,0,Borgonuovo,,,
+S05010,0,Calderara-Bargellino,,,
+S08653,0,Colonna Galleria,,,
+S01530,0,Bergamo Ospedale,,,
+S07019,0,Pescara Tribunale,,,
+S01624,0,S.Donato Milanese,,,
+S01648,0,Milano Repubblica,,,
+S01069,0,Milano Quarto Oggiaro,,,
+S01070,0,Novate Milanese,,,
+S01071,0,Bollate Centro,,,
+S01072,0,Bollate Nord,,,
+S01073,0,Garbagnate Parco Delle Groane,,,
+S01074,0,Garbagnate Milanese,,,
+S01075,0,Cesate,,,
+S01076,0,Caronno Pertusella,,,
+S01077,0,Saronno Sud,,,
+S01639,0,Milano Villapizzone,,,
+S01492,0,Milano Forlanini,,,
+S01039,0,Rho Fiera Milano,,,
+S07025,0,Chieti-Mad.D.P.,,,
+S08241,0,Gavignano,,,
+S19919,0,Stabio,,,
+S01206,0,Cantello Gaggiolo,,,
+S01301,1,Chiasso,Chiasso,45.830736,9.03421
+S12054,0,Spadafora,,,
+S12336,0,Catania Aer. Fontanarossa,,,
+S12001,0,Fiumara Gazzi,,,
+S12060,0,Ponte Schiavo,,,
+S12059,0,San Paolo,,,
+S04524,0,Diano,,,
+S04525,0,Andora,,,
+S03213,0,Trieste Airport,,,
+S11516,0,Modugno,,,
+S11003,0,Bari Villaggio Del Lavoratore,,,
+S11507,0,Castellaneta,,,
+S07514,11,Porto D`Ascoli,Porto D'Ascoli,42.912792,13.896813
+S07515,0,Martinsicuro,,,
+S02019,0,Levata,,,
+S02021,0,Borgochiesanuova,,,
+S05183,0,Formigine,,,
+S05189,0,Policlinico,,,
+S05188,0,Modena Piazza Manzoni,,,
+S05187,0,Fornaci,,,
+S05186,0,Baggiovara Ospedale,,,
+S05185,0,Baggiovara,,,
+S05184,0,Casinalbo,,,
+S07021,0,Camerano Aspio,,,
+S02013,0,Trento S.Bartolameo,,,
+S02301,0,Povo,,,
+S05978,0,Vignola,,,
+S05967,0,Ceretolo,,,
+S05968,0,Casalecchio Palasport,,,
+S05969,0,Riate,,,
+S05970,0,Pilastrino,,,
+S05971,0,Zola Centro,,,
+S05918,0,Zola Chiesa,,,
+S05919,0,Ponte Ronca,,,
+S05972,0,Via Lunga,,,
+S05973,0,Crespellano,,,
+S05974,0,Muffa,,,
+S05975,0,Bazzano,,,
+S05976,0,Savignano Mulino,,,
+S05977,0,Savignano Comune,,,
+S11120,0,Bari Zona Industriale,,,
+S06607,0,Crespino Del Lamone,,,
+S06618,0,Fognano,,,
+S12070,0,Lascari,,,
+S12035,0,Ficarazzi,,,
+S12032,0,Roccella,,,
+S11215,0,Potenza Macchia Romana,,,
+S01059,0,Albairate,,,
+S00202,3,Bardonecchia,Bardonecchia,45.076447,6.709959
+S00059,0,Grugliasco,,,
+S05057,0,Riminifiera,,,
+S03023,0,Tricesimo - San Pelagio,,,
+S11970,0,Reggio Di Calabria Omeca,,,
+S01112,0,Cesano Boscone,,,
+S01022,0,Milano Tibaldi - Bocconi,,,
+S01929,0,Seveso Baruccana,,,
+S01086,0,Cesano Maderno,,,
+S01934,0,Ceriano Laghetto-Solaro,,,
+S07410,19,Rocca Di Corno,Rocca Di Corno,42.388164,13.143939
+S07431,0,L`Aquila Campo Di Pile,,,
+S11973,0,Reggio Di Calabria Archi,,,
+S11974,0,Reggio Di Calabria Pentimele,,,
+S11975,0,Reggio Di Calabria S.Caterina,,,
+S08737,0,S. Gennaro,,,
+S00252,1,Trecate,Trecate,45.428589,8.739561
+N00201,0,Brescia,,,
+N00209,0,Provaglio - Timoline,,,
+N00208,0,Borgonato - Adro,,,
+N00206,0,Passirano,,,
+N00205,0,Paderno,,,
+N00204,0,Castegnato,,,
+N00202,0,Borgo S. Giovanni,,,
+S11001,0,Potenza Univ.,,,
+S07013,0,Perugia Silvestrini,,,
+S07026,0,Nepezzano-Piano D'Accio,,,
+N00085,0,Camnago Lentate,,,
+N00003,0,Milano Bovisa,,,
+N00065,0,Seveso,,,
+S02018,0,Brunico Nord,,,
+S02060,0,Perca,,,
+S02016,0,S.Lorenzo,,,
+S09988,0,Napoli Afragola,,,
+S11123,0,Brindisi Ricerca,,,
+S11139,0,Brindisi-Perrino,,,
+S05953,0,S.Patrizio,,,
+S07023,0,Monsampolo Del T,,,
+S07024,0,Colli Del Tronto,,,
+S09798,0,Acquamela,,,
+S09799,0,Salerno Irno,,,
+S08816,0,Compre S.Vincenzo,,,
+S08815,0,Ridotti-Collepiano,,,
+S08814,0,Roccavivi,,,
+S08813,0,Morrea-Castronovo-Rendinara,,,
+S08699,0,Pantanella,,,
+N00005,0,Novate M.Se,,,
+N00001,0,M N Cadorna,,,
+N00068,0,Mariano Comense,,,
+N00044,0,Como Nord Lago,,,
+N00024,0,Varese Nord,,,
+N00043,0,Como Nord Borghi,,,
+N00100,0,Milano Nord Domodossola,,,
+N00013,0,Saronno,,,
+N00034,0,Rovello Porro,,,
+N00035,0,Rovellasca - Manera,,,
+N00036,0,Lomazzo,,,
+N00037,0,Caslino Al Piano,,,
+N00038,0,Cadorago,,,
+N00039,0,Fino Mornasco,,,
+N00040,0,Portichetto - Luisago,,,
+N00041,0,Grandate - Breccia,,,
+N00042,0,Como Nord Camerlata,,,
+N00067,0,Cabiate,,,
+N00066,0,Meda,,,
+N00064,0,Cesano Maderno,,,
+N00063,0,Bovisio M. - Mombello,,,
+N00062,0,Varedo,,,
+N00061,0,Palazzolo M.Se,,,
+N00060,0,Paderno Dugnano,,,
+N00263,0,Cormano-Cusano Milanino,,,
+N00057,0,M.N. Bruzzano,,,
+N00056,0,M.N. Affori,,,
+N00004,0,M.N. Quarto Oggiaro,,,
+N00006,0,Bollate Centro,,,
+N00007,0,Bollate Nord,,,
+N00008,0,Garbagnate Parco Groane,,,
+N00009,0,Garbagnate M.Se,,,
+N00010,0,Cesate,,,
+N00011,0,Caronno - Pertusella,,,
+N00012,0,Saronno Sud,,,
+N00023,0,Malnate,,,
+N00022,0,Vedano,,,
+N00021,0,Venegono Sup. - Castiglio,,,
+N00020,0,Venegono Inf.,,,
+N00019,0,Tradate,,,
+N00018,0,Abbiate Guazzone,,,
+N00017,0,Locate V. - Carbonate,,,
+N00016,0,Mozzate,,,
+N00015,0,Cislago,,,
+N00014,0,Gerenzano - Turate,,,
+S00884,0,Rivarolo,,,
+S09842,0,Franciosa,,,
+S01417,0,Prata Camportaccio,,,
+S12902,0,Olbia Terranova,,,
+N00096,0,Seregno,,,
+N00086,0,Barruccana,,,
+N00087,0,Ceriano Laghetto,,,
+S13104,0,,,,
+N00079,0,Asso,,,
+N00078,0,Canzo,,,
+N00077,0,Caslino D'Erba,,,
+N00076,0,Pontelambro - Castelmarte,,,
+N00074,0,Erba,,,
+N00073,0,Merone,,,
+N00072,0,Lambrugo - Lurago,,,
+N00071,0,Inverigo,,,
+N00070,0,Arosio,,,
+N00069,0,Carugo - Giussano,,,
+S05151,0,Pistoia Ovest,,,
+S07415,0,L'Aquila Sassa N.S.I.,,,
+N00217,0,Pisogne,,,
+N00226,0,Breno,,,
+N00212,0,Sulzano,,,
+N00213,0,Sale Marasino,,,
+N00214,0,Marone - Zone,,,
+N00218,0,Piancamuno - Gratacasolo,,,
+N00220,0,Darfo - Corna,,,
+N00221,0,Boario Terme,,,
+N00223,0,Pian Di Borno,,,
+N00224,0,Cogno - Esine,,,
+N00225,0,Cividate - Malegno,,,
+S05921,0,Ciano D'Enza,,,
+S05936,0,Via Fanti - Tribunale,,,
+S05935,0,Reggio S.Stefano,,,
+S05934,0,Reggio All'Angelo,,,
+S05932,0,Cavriago,,,
+S05931,0,Cavriago S.Nicolo',,,
+S05930,0,C.C.9 Bivio Parco,,,
+S05929,0,Barco,,,
+S05928,0,Fossa,,,
+S05927,0,Bibbiano,,,
+S05925,0,Corniano,,,
+S05924,0,Piazzola,,,
+S05923,0,S.Polo D'Enza,,,
+S05922,0,Ciano Via Tedaldo Da Canossa,,,
+S05960,0,Guastalla,,,
+S05949,0,Reggio S.Croce,,,
+S05191,0,Reggio Stadio Giglio,,,
+S05195,0,Reggio Mediopadana,,,
+S05947,0,Pratofontana,,,
+S05946,0,Bagnolo In Piano,,,
+S05945,0,Bagnolo Soave,,,
+S05944,0,Pieve Rossa,,,
+S05943,0,S.Tomaso,,,
+S05942,0,Vezzola,,,
+S05941,0,S.Giovanni (Fer),,,
+S05940,0,Novellara,,,
+S05939,0,S.Bernardino,,,
+S05938,0,S.Giacomo (Fsc),,,
+S09053,7,Isernia,Isernia,41.596946,14.235421
+S05019,0,Roveri,,,
+S05999,0,Consandolo,,,
+S05018,0,Molinella,,,
+S05998,0,Guarda,,,
+S05997,0,Mezzolara,,,
+S05996,0,Budrio Centro,,,
+S05017,0,Budrio,,,
+S05995,0,Castenaso,,,
+S05994,0,Castenaso Stellina,,,
+S05993,0,Ca' Dell'Orbo,,,
+S05957,0,Codisotto,,,
+S05958,0,Luzzara,,,
+S05959,0,Tagliata,,,
+S05961,0,Gualtieri,,,
+S05962,0,Pieve Saliceto,,,
+S05963,0,Boretto,,,
+S05964,0,Brescello Viadana,,,
+N00211,0,Pilzone,,,
+N00215,0,Vello,,,
+N00216,0,Toline,,,
+S11969,0,Reggio Di Calabria Bocale,,,
+S07006,0,Perugia Universita',,,
+S07020,0,Perugia Capitini,,,
+N00033,0,Laveno,,,
+N00032,0,Cittiglio,,,
+N00031,0,Gemonio,,,
+N00030,0,Cocquio - Trevisago,,,
+N00028,0,Gavirate,,,
+N00027,0,Barasso - Comerio,,,
+N00026,0,Morosolo - Casciago,,,
+N00025,0,Varese Casbeno,,,
+S08302,0,Sipicciano S.Nicola,,,
+S06806,0,Barberino Val D`Elsa,,,
+S06003,0,Luni,,,
+S12810,0,Cagliari S.Gilla,,,
+S12809,0,Assemini Carmine,,,
+S12808,0,Assemini S. Lucia,,,
+S08550,0,Aielli,,,
+S08548,0,Collarmele,,,
+S05011,0,Vaio Ospedale,,,
+S00618,0,Vievola,,,
+S00619,0,Tende,,,
+S00634,0,La Brigue,,,
+S00620,0,St.Dalmas De Tende,,,
+S00621,0,Fontan Saorge,,,
+S01078,0,Milano Affori,,,
+S01079,0,Milano Bruzzano Parco Nord,,,
+S01082,0,Paderno Dugnano,,,
+S01083,0,Palazzolo Milanese,,,
+S01084,0,Varedo,,,
+S01085,0,Bovisio Masciago,,,
+S07314,0,Macerata Universita',,,
+S05799,0,Codigoro,,,
+S05196,0,Ferrara Boschetto,,,
+S05193,0,Ferrara-Cona Ospedale,,,
+S05169,0,Cona F. C.,,,
+S05170,0,Quartesana,,,
+S05171,0,Masi Torello,,,
+S05172,0,Tresigallo - Correggi,,,
+S05173,0,Rovereto - S.V. - Medelana,,,
+S05174,0,Dogato,,,
+S05175,0,Ostellato,,,
+S05176,0,Migliarino,,,
+S05177,0,Valcesura,,,
+S05178,0,Migliaro,,,
+S05179,0,Massafiscaglia,,,
+S05166,0,Vigarano Pieve,,,
+S05165,0,Bondeno,,,
+S05164,0,Stellata Ficarolo,,,
+S05162,0,Felonica Po,,,
+S05161,0,Sermide,,,
+S05159,0,Magnacavallo,,,
+S05158,0,Schivenoglia,,,
+S05156,0,Quistello,,,
+S05155,0,San Benedetto Po,,,
+S05154,0,Pegognaga,,,
+S05719,0,Coronella,,,
+N00055,0,Novara Nord,,,
+S01088,0,Cabiate,,,
+S01087,0,Meda,,,
+N00029,0,Gavirate Verbano,,,
+N00045,0,Rescaldina,,,
+N00046,0,Castellanza,,,
+N00047,0,Busto Arsizio,,,
+N00049,0,Vanzaghello - Magnago,,,
+N00050,0,Castano Primo,,,
+N00051,0,Turbigo,,,
+N00054,0,Galliate,,,
+S00201,0,Modane,Modane,45.235247,6.64102
+N00107,0,Busto Arsizio Rfi,,,
+N00081,0,Ferno Lonate Pozzolo,,,
+S05194,0,Sassuolo Radici,,,
+S05985,0,Pratissolo,,,
+S05984,0,Scandiano,,,
+S05983,0,Chiozza,,,
+S05982,0,Casalgrande,,,
+S05981,0,Dinazzano,,,
+S05980,0,Villalunga,,,
+S05979,0,Veggia,,,
+S05986,0,Pm Bosco,,,
+S09122,0,Traccia,,,
+S05190,0,Citta' Del Ragazzo,,,
+S05926,0,Bibbiano Via Monti,,,
+S05192,0,S.Lazzaro,,,
+S06071,0,Pratovecchio Stia,,,
+S07022,0,Spinet.V.S.Pio X,,,
+S07417,0,L'Aquila S. Gregorio,,,
+S07436,0,Bazzano (Aq),,,
+S02598,0,Piove Di Sacco,,,
+S11756,0,Bivio S.Antonello,,,
+S01109,0,Cormano-Cusano Milanino,,,
+S01066,0,Milano Cadorna,,,
+S01067,0,Milano Domodossola,,,
+S01724,0,Gerenzano-Turate,,,
+S01725,0,Cislago,,,
+S01726,0,Mozzate,,,
+S01727,0,Locate Varesino-Carbonate,,,
+S01728,0,Abbiate Guazzone,,,
+S01729,0,Tradate,,,
+S01734,0,Venegono Inferiore,,,
+S01735,0,Venegono Superiore-Castiglione O.,,,
+S01736,0,Vedano Olona,,,
+S01737,0,Malnate,,,
+S01738,0,Varese Nord,,,
+S01739,0,Varese Casbeno,,,
+S01740,0,Morosolo Casciago,,,
+S01741,0,Barasso-Comerio,,,
+S01742,0,Gavirate,,,
+S01743,0,Gavirate Verbano,,,
+S01744,0,Cocquio Trevisago,,,
+S01745,0,Gemonio,,,
+S01746,0,Cittiglio,,,
+S01747,0,Laveno Mombello Lago,,,
+S01755,0,Rovello Porro,,,
+S01756,0,Rovellasca-Manera,,,
+S01757,0,Lomazzo,,,
+S01758,0,Caslino Al Piano,,,
+S01759,0,Cadorago,,,
+S01760,0,Fino Mornasco,,,
+S01761,0,Portichetto-Luisago,,,
+S01762,0,Grandate-Breccia,,,
+S09998,0,Como Camerlata,,,
+S01764,0,Como Borghi,,,
+S01765,0,Como Lago,,,
+S09999,0,Brescia,,,
+S01797,0,Brescia Borgo San Giovanni,,,
+S01795,0,Castegnato,,,
+S01794,0,Paderno Franciacorta,,,
+S01793,0,Passirano,,,
+S01789,0,Bornato-Calino,,,
+S01788,0,Borgonato-Adro,,,
+S01787,0,Provaglio-Timoline,,,
+S01021,0,Iseo,,,
+S01786,0,Pilzone,,,
+S01785,0,Sulzano,,,
+S01784,0,Sale Marasino,,,
+S01783,0,Marone-Zone,,,
+S01091,0,Carugo-Giussano,,,
+S01092,0,Arosio,,,
+S01093,0,Inverigo,,,
+S01094,0,Lambrugo-Lurago D'Erba,,,
+S01096,0,Erba,,,
+S01097,0,Pontelambro-Castelmarte,,,
+S01098,0,Caslino D'Erba,,,
+S01099,0,Canzo,,,
+S01753,0,Vanzaghello-Magnago,,,
+S01752,0,Castano Primo,,,
+S01751,0,Turbigo,,,
+S01748,0,Galliate,,,
+S00023,0,Novara Nord,,,
+S01906,0,,,,
+S13143,0,Mendrisio,,,
+S01005,0,Breno,,,
+S01774,0,Cividate-Malegno,,,
+S01775,0,Cogno-Esine,,,
+S01776,0,Pian Di Borno,,,
+S01778,0,Boario Terme,,,
+S01006,0,Darfo-Corna,,,
+S01780,0,Pian Camuno-Gratacasolo,,,
+S01014,0,Pisogne,,,
+S01781,0,Toline,,,
+S01782,0,Vello,,,
+S05209,0,Biasca,,,
+S05212,0,Castione,,,
+S05213,0,Bellinzona,,,
+S05214,0,Giubiasco,,,
+S05219,0,Lamone-Cadempino,,,
+S05300,0,Lugano,,,
+Z05304,0,Capolago-Riva S.Vitale,,,
+S19901,0,Mendrisio S. Martino,,,
+S05218,0,Taverne-Torricella,,,
+S05217,0,Mezzovico,,,
+S05216,0,Rivera-Bironico,,,
+S05400,0,Locarno,,,
+S05401,0,Tenero,,,
+S05402,0,Gordola,,,
+S05412,0,Riazzino,,,
+S05404,0,Cadenazzo,,,
+S05415,0,S.Antonino,,,
+N00053,0,Ponte Ticino,,,
+S01749,0,Galliate Parco Del Ticino,,,
+N00091,0,Groane,,,
+S01927,0,Ceriano Laghetto Groane,,,
+S01146,0,Malpensa Aeroporto T2,,,

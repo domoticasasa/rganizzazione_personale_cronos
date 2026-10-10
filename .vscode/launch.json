@@ -1,0 +1,15 @@
+
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Flutter Dev",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--dart-define=SUPABASE_URL=https://vvnpamypxexdtvruzecp.supabase.co",
+        "--dart-define=SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ2bnBhbXlweGV4ZHR2cnV6ZWNwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjgzODE4NzEsImV4cCI6MjA4Mzk1Nzg3MX0.D3Ai9xMiSnrKtc577DVuevUUwJQK3BQ8KBG72_3b8PU"
+      ]
+    }
+  ]
+}

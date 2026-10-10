@@ -1,0 +1,159 @@
+name: organizzazione_personale_cronos
+description: "Applicazione gestione prenotazioni Cronos"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.12.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter
+
+  flutter_web_plugins:
+    sdk: flutter
+
+  # UI
+  data_table_2: ^2.5.10
+  cupertino_icons: ^1.0.8
+  animations: ^2.0.11
+  google_fonts: ^6.2.1
+
+  # Dropdown con ricerca (filtri admin + popup)
+  dropdown_search: ^5.0.6
+
+  # Typeahead per liste grandi (stazioni, aeroporti, ecc.)
+  flutter_typeahead: ^5.0.1
+
+  # Supabase
+  supabase_flutter: 2.15.0
+
+  # HTTP (per controllo aggiornamenti Windows da URL)
+  http: ^1.2.0
+  crypto: ^3.0.6
+
+  flutter_local_notifications: ^18.0.1
+  permission_handler: ^11.3.1
+
+  # Background service Android (polling notifiche anche con app chiusa)
+  flutter_background_service: ^5.1.0
+  flutter_background_service_android: ^6.3.1
+
+  # Calendari
+  calendar_date_picker2: ^0.5.5
+
+  # Preferenze
+  shared_preferences: ^2.2.2
+
+  # URL launcher
+  url_launcher: ^6.3.0
+  app_links: ^6.4.1
+
+  # Notifiche + Audio Windows Desktop
+  local_notifier: ^0.1.5
+  just_audio: ^0.9.36
+  just_audio_windows: ^0.2.3
+  window_manager: ^0.3.0
+  tray_manager: ^0.5.2
+  path: ^1.9.1
+  path_provider: ^2.1.2
+
+  # Internazionalizzazione e formattazione
+  intl: ^0.20.2
+  timezone: ^0.10.1
+
+  # Autostart Windows (Registro)
+  win32_registry: ^1.1.2
+
+  # Win32 API (per future funzioni: badge, overlay, ecc.)
+  win32: ^5.15.0
+  ffi: ^2.1.0   # necessario per funzioni native
+
+  # Excel export + File system
+  archive: ^3.6.1
+  xml: ^6.5.0
+  excel: ^2.1.0
+  file_saver: ^0.2.14
+  file_selector: ^1.1.0
+  image_picker: ^1.1.2
+  image: ^4.3.0
+  pasteboard: ^0.4.0
+  google_mlkit_selfie_segmentation: ^0.10.0
+  google_mlkit_text_recognition: ^0.15.1
+  nfc_manager: ^4.1.1
+  syncfusion_flutter_xlsio: ^29.2.11
+  syncfusion_flutter_pdf: ^29.2.11
+  pdf: ^3.11.3
+  qr_flutter: ^4.1.0
+  mobile_scanner: ^6.0.2
+  geolocator: ^14.0.2
+  google_maps_flutter: ^2.12.1
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  pointer_interceptor: ^0.10.1+2
+  webview_flutter: ^4.13.0
+  webview_windows: ^0.4.0
+  web: ^1.1.0
+  passkeys: 2.23.1
+  passkeys_web: 2.10.1
+  passkeys_platform_interface: 2.10.0
+  video_player: ^2.14.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/app_icon_round.png
+  remove_alpha_ios: true
+  adaptive_icon_background: "#2F6FED"
+  adaptive_icon_foreground: assets/app_icon_round.png
+  web:
+    generate: true
+    image_path: assets/app_icon_round.png
+    background_color: "#2F6FED"
+    theme_color: "#2F6FED"
+  windows:
+    generate: true
+    image_path: assets/app_icon_round.png
+    icon_size: 256
+
+flutter:
+  shaders:
+    - shaders/liquid_water.frag
+    - shaders/ember_fire.frag
+
+  uses-material-design: true
+
+  assets:
+    - assets/bg_train_landscape.png
+    - assets/bg_train_portrait.png
+    - assets/logo.png
+    - assets/gestopro360_watermark.png
+    - assets/app_icon_round.png
+    - assets/tesserino_tes2_header.png
+    - assets/icons/gestopro_grid_icon.png
+    - assets/notification.mp3
+    - assets/Conferma.mp3
+    - assets/gestopro_ambient.mp3
+    - assets/gestopro_click.mp3
+    - assets/gestopro_splash_intro.mp3
+    - assets/icon.ico
+    - assets/icon_tray.ico
+    - assets/icon_tray_notify.ico
+    - assets/Mod.DPI3C_00.xlsx
+    - assets/Mod.DPIE_00.xlsx
+    - assets/Mod.RCC_04.xlsx
+    - assets/Mod.RFP_03.xlsx
+    - assets/Mod.RFP_03_background.pdf
+    - assets/Giustificativo_Carburante_MDO.xlsx
+    - assets/Programma_impegno_personale_mod.xlsx
+    - assets/rfp03_excel_to_pdf.js

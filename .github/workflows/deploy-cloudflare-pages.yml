@@ -1,0 +1,64 @@
+name: Deploy Flutter Web to Cloudflare Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cloudflare-pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build Flutter Web
+        run: flutter build web --release --dart-define=GOOGLE_MAPS_API_KEY=${{ secrets.GOOGLE_MAPS_API_KEY }}
+
+      - name: Stamp web revision (PWA cache bust)
+        run: |
+          python3 - <<'PY'
+          import json, os, time
+          from pathlib import Path
+          sha = (os.environ.get("GITHUB_SHA") or "unknown")[:12]
+          stamp = int(time.time())
+          rev = f"{sha}-{stamp}"
+          out = Path("build/web/app_revision.json")
+          out.write_text(
+              json.dumps(
+                  {
+                      "revision": rev,
+                      "built_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                      "git_sha": sha,
+                  }
+              ),
+              encoding="utf-8",
+          )
+          print(f"Wrote {out} revision={rev}")
+          PY
+
+      # Dominio canonico: https://www.gestopro360.it (progetto Pages gestopro360)
+      # Apex gestopro360.it va aggiunto come custom domain sullo stesso progetto.
+      - name: Deploy to Cloudflare Pages (gestopro360)
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy build/web --project-name=gestopro360 --branch=main --commit-dirty=true

@@ -5,15 +5,25 @@ import 'dart:typed_data';
 import 'package:excel/excel.dart' hide Border;
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import '../services/confirm_sound_service.dart';
 import '../services/deadline_nav_highlight.dart';
 import '../services/mezzi_km_service.dart';
 import '../utils/date_formatters.dart';
 import '../utils/field_timestamps.dart';
 import '../utils/excel_export_helper.dart';
+import '../services/logistica_asset_storico_service.dart';
+import '../utils/logistica_layout.dart';
+import '../utils/logistica_multicard_mezzo_sync.dart';
 import '../utils/modify_feedback.dart';
 import '../widgets/app_logo.dart';
 import '../widgets/async_action_button.dart';
+import '../utils/viaggi_mezzi_qr_export.dart';
+import '../utils/viaggi_mezzi_qr_payload.dart';
 import '../widgets/data_cell_audit_hover.dart';
+import '../widgets/logistica_assignee_giustificativi_confirm_dialog.dart';
+import '../widgets/classic_app_bar_chrome.dart';
+import '../utils/admin_vista_guard.dart';
+import 'employee_mezzi_stradali_page.dart';
 
 class _AssegnatarioOption {
   final String label;
@@ -26,39 +36,55 @@ class _AssegnatarioOption {
   });
 }
 
-class AdminLogisticaMezziStradaliPage extends StatefulWidget {
+class AdminLogisticaMezziStradaliPage extends StatelessWidget {
   final bool dipendenteMode;
   final bool forceMobileLayout;
-  final bool promptMonthlyKmOnOpen;
-  const AdminLogisticaMezziStradaliPage(
-      {super.key,
-      this.dipendenteMode = false,
-      this.forceMobileLayout = false,
-      this.promptMonthlyKmOnOpen = false});
+
+  const AdminLogisticaMezziStradaliPage({
+    super.key,
+    this.dipendenteMode = false,
+    this.forceMobileLayout = false,
+  });
 
   @override
-  State<AdminLogisticaMezziStradaliPage> createState() =>
+  Widget build(BuildContext context) {
+    if (dipendenteMode) {
+      return EmployeeMezziStradaliPage(
+        forceMobileLayout: forceMobileLayout,
+      );
+    }
+    return _AdminLogisticaMezziStradaliPage(
+      forceMobileLayout: forceMobileLayout,
+    );
+  }
+}
+
+class _AdminLogisticaMezziStradaliPage extends StatefulWidget {
+  final bool forceMobileLayout;
+
+  const _AdminLogisticaMezziStradaliPage({
+    this.forceMobileLayout = false,
+  });
+
+  @override
+  State<_AdminLogisticaMezziStradaliPage> createState() =>
       _AdminLogisticaMezziStradaliPageState();
 }
 
 class _AdminLogisticaMezziStradaliPageState
-    extends State<AdminLogisticaMezziStradaliPage> with DeadlineFlashTicker {
+    extends State<_AdminLogisticaMezziStradaliPage> with DeadlineFlashTicker {
   final _supa = Supabase.instance.client;
   final ScrollController _desktopHorizontalCtrl = ScrollController();
   final ScrollController _desktopVerticalCtrl = ScrollController();
   bool _loading = true;
   bool _compactView = true;
   String _search = '';
-  String _myNameNorm = '';
-  String _myUserIdUuid = '';
   Timer? _searchDebounce;
   final Set<String> _expandedMobileRowIds = <String>{};
   List<Map<String, dynamic>> _rows = <Map<String, dynamic>>[];
   final Map<String, String> _utentiByUuid = <String, String>{};
   String? _deadlineScrollUuid;
   final GlobalKey _deadlineScrollAnchorKey = GlobalKey();
-  final Set<String> _mezziConKmMeseInserito = <String>{};
-  bool _promptShownThisOpen = false;
 
   bool _deadlineUuidAnchorsMatch(String rowUuid) {
     final t = _deadlineScrollUuid?.trim().toLowerCase();
@@ -96,49 +122,48 @@ class _AdminLogisticaMezziStradaliPageState
   Future<void> _bootstrap() async {
     setState(() => _loading = true);
     try {
-      await _loadCurrentUserIdentity();
       await _loadRows();
-      if (widget.promptMonthlyKmOnOpen) {
-        await _promptMonthlyKmIfNeeded();
-      }
     } finally {
       if (mounted) setState(() => _loading = false);
     }
   }
 
-  String _normalizeName(String raw) => MezziKmService.normalizePersonName(raw);
-
   bool _showKmColumn(BuildContext context) {
-    if (widget.dipendenteMode) return true;
     if (_loading) return false;
-    return _rows.any(_isRowAssignedToMe);
+    return true;
   }
 
-  Future<void> _loadCurrentUserIdentity() async {
-    final authId = _supa.auth.currentUser?.id;
-    if ((authId ?? '').trim().isEmpty) return;
-    try {
-      final me = await _supa
-          .from('users')
-          .select('id_uuid,full_name,username')
-          .eq('auth_id', authId!)
-          .maybeSingle();
-      _myUserIdUuid = (me?['id_uuid'] ?? '').toString().trim();
-      final full = (me?['full_name'] ?? '').toString().trim();
-      final user = (me?['username'] ?? '').toString().trim();
-      final source = full.isNotEmpty ? full : user;
-      _myNameNorm = _normalizeName(source);
-    } catch (_) {
-      _myUserIdUuid = '';
-      _myNameNorm = '';
+  String _formatKmDisplay(int km) {
+    final negative = km < 0;
+    var n = km.abs();
+    final parts = <String>[];
+    while (n >= 1000) {
+      parts.insert(0, (n % 1000).toString().padLeft(3, '0'));
+      n ~/= 1000;
     }
+    parts.insert(0, n.toString());
+    final body = parts.join('.');
+    return negative ? '-$body' : body;
   }
 
-  bool _isRowAssignedToMe(Map<String, dynamic> row) {
-    return MezziKmService.isRowAssignedToCurrentUser(
-      row,
-      _myUserIdUuid,
-      _myNameNorm,
+  String _kmAttualiLabel(Map<String, dynamic> row) =>
+      MezziKmService.kmAttualiLabel(row, formatKm: _formatKmDisplay);
+
+  String _kmUltimoAggLabel(Map<String, dynamic> row) =>
+      MezziKmService.kmUltimoAggiornamentoLabel(row);
+
+  String _mezzoLabel(Map<String, dynamic> row) => mezzoLabelFromParts(
+        targa: (row['targa'] ?? '').toString(),
+        marca: (row['marca'] ?? '').toString(),
+        modello: (row['modello'] ?? '').toString(),
+      );
+
+  Future<void> _showViaggioQrDialog(Map<String, dynamic> row) async {
+    await showViaggiMezziQrExportDialog(
+      context: context,
+      client: _supa,
+      mezzoIdUuid: (row['id_uuid'] ?? '').toString(),
+      mezzoLabel: _mezzoLabel(row),
     );
   }
 
@@ -150,10 +175,18 @@ class _AdminLogisticaMezziStradaliPageState
         .order('numerazione', ascending: true);
     var list = List<Map<String, dynamic>>.from(
         (res as List).map((e) => Map<String, dynamic>.from(e as Map)));
-    if (widget.dipendenteMode) {
-      list = list.where(_isRowAssignedToMe).toList(growable: false);
-    }
-    if (_search.trim().isNotEmpty) {
+    try {
+      final cardRes = await _supa
+          .from('logistica_multicard')
+          .select('multicard,mezzo_targa');
+      applyGestioneMulticardOntoMezziRows(
+        mezzi: list,
+        multicardRows: List<Map<String, dynamic>>.from(
+          (cardRes as List).map((e) => Map<String, dynamic>.from(e as Map)),
+        ),
+      );
+      } catch (_) {}
+      if (_search.trim().isNotEmpty) {
       final k = _search.toLowerCase().trim();
       list = list.where((r) {
         final fields = [
@@ -164,8 +197,8 @@ class _AdminLogisticaMezziStradaliPageState
           r['tipologia_mezzo'],
           r['assegnatario_attuale'],
           r['noleggiatore'],
+          r['multicard'],
           r['deposito_gomme'],
-          r['tipologia_gomme'],
           r['note'],
         ].map((v) => (v ?? '').toString().toLowerCase());
         return fields.any((f) => f.contains(k));
@@ -206,110 +239,6 @@ class _AdminLogisticaMezziStradaliPageState
       if (showLoader) _loading = false;
     });
     maybeConsumeDeadlineFlashUuid(onHighlight: _onDeadlineHighlightUuid);
-    await _loadKmStatusForCurrentMonth();
-  }
-
-  Future<void> _loadKmStatusForCurrentMonth() async {
-    final pending = await MezziKmService.pendingAssignedMezziForCurrentMonth();
-    final pendingIds = pending
-        .map((e) => (e['id_uuid'] ?? '').toString().trim())
-        .where((e) => e.isNotEmpty)
-        .toSet();
-    if (!mounted) return;
-    setState(() {
-      _mezziConKmMeseInserito.clear();
-      for (final r in _rows) {
-        final id = (r['id_uuid'] ?? '').toString().trim();
-        if (id.isEmpty || !_isRowAssignedToMe(r)) continue;
-        if (!pendingIds.contains(id)) {
-          _mezziConKmMeseInserito.add(id);
-        }
-      }
-    });
-  }
-
-  Future<void> _promptMonthlyKmIfNeeded() async {
-    if (!mounted || _promptShownThisOpen) return;
-    if (!MezziKmService.shouldRequireMonthlyKm()) return;
-    final pending = await MezziKmService.pendingAssignedMezziForCurrentMonth();
-    if (!mounted || pending.isEmpty) return;
-    _promptShownThisOpen = true;
-    await _showPendingKmDialog(forcePrompt: true, pendingRows: pending);
-  }
-
-  Future<void> _showPendingKmDialog({
-    required bool forcePrompt,
-    List<Map<String, dynamic>>? pendingRows,
-  }) async {
-    final pending = pendingRows ??
-        await MezziKmService.pendingAssignedMezziForCurrentMonth();
-    if (!mounted || pending.isEmpty) return;
-    await showDialog<void>(
-      context: context,
-      barrierDismissible: false,
-      builder: (ctx) => AlertDialog(
-        title: const Text('Inserimento km mensile richiesto'),
-        content: SizedBox(
-          width: 420,
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Text(
-                'Dopo il primo del mese devi inserire i km per ogni mezzo assegnato.',
-              ),
-              const SizedBox(height: 10),
-              ...pending.take(6).map((r) => Text(
-                    '- ${(r['targa'] ?? '').toString().trim()} ${(r['modello'] ?? '').toString().trim()}',
-                  )),
-              if (pending.length > 6)
-                Text('...e altri ${pending.length - 6} mezzi'),
-            ],
-          ),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(ctx),
-            child: Text(forcePrompt ? 'Posticipa' : 'Chiudi'),
-          ),
-          FilledButton.icon(
-            onPressed: () async {
-              Navigator.pop(ctx);
-              if (!mounted) return;
-              final first = pending.first;
-              await _openKmDialogForRow(first, forceOpen: true);
-            },
-            icon: const Icon(Icons.speed),
-            label: const Text('Inserisci ora'),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Future<void> _openKmDialogForRow(
-    Map<String, dynamic> row, {
-    bool forceOpen = false,
-  }) async {
-    if (!_isRowAssignedToMe(row)) return;
-    final id = (row['id_uuid'] ?? '').toString().trim();
-    if (id.isEmpty) return;
-    final ok = await showDialog<bool>(
-      context: context,
-      builder: (_) => _KmMensileDialog(row: row),
-    );
-    if (ok == true) {
-      await _loadRows();
-      await _loadKmStatusForCurrentMonth();
-      if (!mounted) return;
-      ModifyFeedback.success(context, 'Km del mese salvati.');
-      if (forceOpen) {
-        final rest = await MezziKmService.pendingAssignedMezziForCurrentMonth();
-        if (rest.isNotEmpty && mounted) {
-          await _showPendingKmDialog(forcePrompt: false, pendingRows: rest);
-        }
-      }
-    }
   }
 
   DataCell _hoverCell(Widget child, Map<String, dynamic> r, String fieldKey) {
@@ -318,6 +247,7 @@ class _AdminLogisticaMezziStradaliPageState
       row: r,
       fieldKey: fieldKey,
       userNamesByUuid: _utentiByUuid,
+      rowAuditWhenFieldMissing: false,
     );
   }
 
@@ -359,7 +289,8 @@ class _AdminLogisticaMezziStradaliPageState
         'Telepass',
         'Kit ruota di scorta',
         'Deposito gomme',
-        'Tipologia gomme',
+        'Km attuali',
+        'Ultimo agg. km',
         'Note',
       ]);
       for (final r in _rows) {
@@ -382,7 +313,8 @@ class _AdminLogisticaMezziStradaliPageState
           (r['telepass'] ?? '').toString(),
           (r['kit_ruota_di_scorta'] ?? '').toString(),
           (r['deposito_gomme'] ?? '').toString(),
-          (r['tipologia_gomme'] ?? '').toString(),
+          MezziKmService.kmAttualiLabel(r, formatKm: _formatKmDisplay),
+          _kmUltimoAggLabel(r),
           (r['note'] ?? '').toString(),
         ]);
       }
@@ -408,12 +340,21 @@ class _AdminLogisticaMezziStradaliPageState
       context: context,
       builder: (_) => _MezzoDialog(row: row),
     );
-    if (ok == true) {
-      await _loadRows();
+    if (ok != true || !mounted) return;
+
+    ModifyFeedback.success(
+      context,
+      row == null ? 'Mezzo salvato.' : 'Mezzo aggiornato.',
+    );
+    unawaited(ConfirmSoundService.play());
+
+    try {
+      await _loadRows(showLoader: false);
+    } catch (e) {
       if (mounted) {
-        ModifyFeedback.success(
+        ModifyFeedback.error(
           context,
-          row == null ? 'Mezzo salvato.' : 'Mezzo aggiornato.',
+          'Mezzo salvato, ma errore nel ricaricamento elenco: $e',
         );
       }
     }
@@ -426,15 +367,25 @@ class _AdminLogisticaMezziStradaliPageState
       context: context,
       builder: (_) => _GommeDialog(row: row),
     );
-    if (ok == true) {
-      await _loadRows();
+    if (ok != true || !mounted) return;
+
+    ModifyFeedback.success(context, 'Dati gomme aggiornati.');
+    unawaited(ConfirmSoundService.play());
+
+    try {
+      await _loadRows(showLoader: false);
+    } catch (e) {
       if (mounted) {
-        ModifyFeedback.success(context, 'Dati gomme aggiornati.');
+        ModifyFeedback.error(
+          context,
+          'Dati salvati, ma errore nel ricaricamento elenco: $e',
+        );
       }
     }
   }
 
   Future<void> _deleteRow(String id) async {
+    if (!await ensureCanPersist(context)) return;
     final ok = await showDialog<bool>(
       context: context,
       builder: (ctx) => AlertDialog(
@@ -458,40 +409,31 @@ class _AdminLogisticaMezziStradaliPageState
   @override
   Widget build(BuildContext context) {
     final isMobileLayout =
-        widget.forceMobileLayout || MediaQuery.of(context).size.width < 900;
+        isLogisticaCompactLayout(context, force: widget.forceMobileLayout);
     final showKm = _showKmColumn(context);
     return Scaffold(
-      appBar: AppBar(
-        title: ResponsiveAppBarTitle(
-          title: widget.dipendenteMode
-              ? 'I miei Mezzi Stradali'
-              : 'Logistica - Mezzi Stradali',
+      appBar: wrapClassicAppBarChrome(context, AppBar(
+        title: const ResponsiveAppBarTitle(
+          title: 'Logistica - Mezzi Stradali',
         ),
         actions: [
-          if (showKm)
-            IconButton(
-              tooltip: 'Verifica km mensili',
-              onPressed: () => _showPendingKmDialog(forcePrompt: false),
-              icon: const Icon(Icons.speed_outlined),
-            ),
           IconButton(
             tooltip: 'Export Excel',
             onPressed: _exportExcel,
             icon: const Icon(Icons.download_outlined),
           ),
-          if (!widget.dipendenteMode)
-            IconButton(
-              tooltip: 'Nuovo mezzo',
-              onPressed: () => _openForm(),
-              icon: const Icon(Icons.add),
-            ),
+          IconButton(
+            tooltip: 'Nuovo mezzo',
+            onPressed: () => _openForm(),
+            icon: const Icon(Icons.add),
+          ),
           IconButton(
             tooltip: 'Ricarica',
             onPressed: () => _loadRows(),
             icon: const Icon(Icons.refresh),
           ),
         ],
-      ),
+      )),
       body: PageWithTopLogo(
         child: _loading
             ? const Center(child: CircularProgressIndicator())
@@ -524,9 +466,7 @@ class _AdminLogisticaMezziStradaliPageState
                                 (r['assegnatario_attuale'] ?? '')
                                     .toString()
                                     .trim();
-                            final kmMeseInserito =
-                                _mezziConKmMeseInserito.contains(
-                                    (r['id_uuid'] ?? '').toString().trim());
+                            final showKmRow = showKm;
                             final detailsExpanded =
                                 _expandedMobileRowIds.contains(rowKey);
                             final flash = id.isNotEmpty && deadlineFlashLit(id);
@@ -546,9 +486,7 @@ class _AdminLogisticaMezziStradaliPageState
                                   ),
                                 ),
                                 child: InkWell(
-                                  onTap: () => widget.dipendenteMode
-                                      ? _openGommeForm(r)
-                                      : _openForm(row: r),
+                                  onTap: () => _openForm(row: r),
                                   child: Padding(
                                     padding: const EdgeInsets.all(10),
                                     child: Column(
@@ -579,18 +517,20 @@ class _AdminLogisticaMezziStradaliPageState
                                         const SizedBox(height: 6),
                                         Text(
                                             '${(r['marca'] ?? '').toString()} ${(r['modello'] ?? '').toString()}'),
-                                        if (_isRowAssignedToMe(r))
+                                        if (showKmRow) ...[
                                           Text(
-                                            kmMeseInserito
-                                                ? 'Km mese corrente: inseriti'
-                                                : 'Km mese corrente: da inserire',
-                                            style: TextStyle(
+                                            'Km attuali: ${_kmAttualiLabel(r)}',
+                                            style: const TextStyle(
                                               fontWeight: FontWeight.w600,
-                                              color: kmMeseInserito
-                                                  ? Colors.green.shade700
-                                                  : Colors.orange.shade800,
                                             ),
                                           ),
+                                          Text(
+                                            'Ultimo agg.: ${_kmUltimoAggLabel(r)}',
+                                            style: Theme.of(context)
+                                                .textTheme
+                                                .bodyMedium,
+                                          ),
+                                        ],
                                         TextButton.icon(
                                           style: TextButton.styleFrom(
                                             padding: const EdgeInsets.symmetric(
@@ -648,8 +588,6 @@ class _AdminLogisticaMezziStradaliPageState
                                         Text(
                                             'Kit ruota: ${(r['kit_ruota_di_scorta'] ?? '').toString()}'),
                                         Text(
-                                            'Tipologia gomme: ${(r['tipologia_gomme'] ?? '').toString()}'),
-                                        Text(
                                             'Deposito gomme: ${(r['deposito_gomme'] ?? '').toString()}'),
                                         if ((r['note'] ?? '')
                                             .toString()
@@ -664,26 +602,22 @@ class _AdminLogisticaMezziStradaliPageState
                                           children: [
                                             FilledButton.tonalIcon(
                                               onPressed: () =>
-                                                  widget.dipendenteMode
-                                                      ? _openGommeForm(r)
-                                                      : _openForm(row: r),
+                                                  _openForm(row: r),
                                               icon: const Icon(
                                                   Icons.edit_outlined,
                                                   size: 18),
-                                              label: Text(widget.dipendenteMode
-                                                  ? 'Modifica gomme'
-                                                  : 'Modifica'),
+                                              label: const Text('Modifica'),
                                             ),
-                                            if (widget.dipendenteMode)
-                                              FilledButton.icon(
+                                            if (id.isNotEmpty)
+                                              FilledButton.tonalIcon(
                                                 onPressed: () =>
-                                                    _openKmDialogForRow(r),
-                                                icon: const Icon(Icons.speed),
-                                                label:
-                                                    const Text('Inserisci km'),
+                                                    _showViaggioQrDialog(r),
+                                                icon: const Icon(
+                                                    Icons.qr_code_2_outlined,
+                                                    size: 18),
+                                                label: const Text('QR viaggio'),
                                               ),
-                                            if (!widget.dipendenteMode &&
-                                                id.isNotEmpty)
+                                            if (id.isNotEmpty)
                                               FilledButton.tonalIcon(
                                                 onPressed: () =>
                                                     _openGommeForm(r),
@@ -693,16 +627,15 @@ class _AdminLogisticaMezziStradaliPageState
                                                 label: const Text(
                                                     'Modifica gomme'),
                                               ),
-                                            if (!widget.dipendenteMode)
-                                              FilledButton.tonalIcon(
-                                                onPressed: id.isEmpty
-                                                    ? null
-                                                    : () => _deleteRow(id),
-                                                icon: const Icon(
-                                                    Icons.delete_outline,
-                                                    size: 18),
-                                                label: const Text('Elimina'),
-                                              ),
+                                            FilledButton.tonalIcon(
+                                              onPressed: id.isEmpty
+                                                  ? null
+                                                  : () => _deleteRow(id),
+                                              icon: const Icon(
+                                                  Icons.delete_outline,
+                                                  size: 18),
+                                              label: const Text('Elimina'),
+                                            ),
                                           ],
                                         ),
                                       ],
@@ -809,15 +742,14 @@ class _AdminLogisticaMezziStradaliPageState
                             if (!_compactView)
                               const DataColumn(
                                   label: Text('Scad. cronotachigrafo')),
-                            if (!_compactView)
-                              const DataColumn(label: Text('Multicard')),
-                            if (!_compactView)
-                              const DataColumn(label: Text('Telepass')),
+                            const DataColumn(label: Text('Multicard')),
+                            const DataColumn(label: Text('Telepass')),
                             const DataColumn(label: Text('Kit ruota')),
                             const DataColumn(label: Text('Deposito gomme')),
-                            const DataColumn(label: Text('Tipologia gomme')),
-                            if (showKm)
-                              const DataColumn(label: Text('Km mese')),
+                            if (showKm) ...[
+                              const DataColumn(label: Text('Km attuali')),
+                              const DataColumn(label: Text('Ultimo agg.')),
+                            ],
                             const DataColumn(label: Text('Note')),
                             const DataColumn(label: Text('Azioni')),
                           ],
@@ -828,9 +760,7 @@ class _AdminLogisticaMezziStradaliPageState
                                     (_) => deadlineFlashLit(id)
                                         ? Colors.amber.withValues(alpha: 0.42)
                                         : null),
-                                onSelectChanged: (_) => widget.dipendenteMode
-                                    ? _openGommeForm(r)
-                                    : _openForm(row: r),
+                                onSelectChanged: (_) => _openForm(row: r),
                                 cells: [
                                   _hoverCell(
                                     SizedBox(
@@ -935,16 +865,14 @@ class _AdminLogisticaMezziStradaliPageState
                                             'scadenza_revisione_biennale_cronotachigrafo'])),
                                         r,
                                         'scadenza_revisione_biennale_cronotachigrafo'),
-                                  if (!_compactView)
-                                    _hoverCell(
-                                        Text((r['multicard'] ?? '').toString()),
-                                        r,
-                                        'multicard'),
-                                  if (!_compactView)
-                                    _hoverCell(
-                                        Text((r['telepass'] ?? '').toString()),
-                                        r,
-                                        'telepass'),
+                                  _hoverCell(
+                                      Text((r['multicard'] ?? '').toString()),
+                                      r,
+                                      'multicard'),
+                                  _hoverCell(
+                                      Text((r['telepass'] ?? '').toString()),
+                                      r,
+                                      'telepass'),
                                   _hoverCell(
                                       Text((r['kit_ruota_di_scorta'] ?? '')
                                           .toString()),
@@ -962,35 +890,23 @@ class _AdminLogisticaMezziStradaliPageState
                                     r,
                                     'deposito_gomme',
                                   ),
-                                  _hoverCell(
-                                      Text((r['tipologia_gomme'] ?? '')
-                                          .toString()),
-                                      r,
-                                      'tipologia_gomme'),
-                                  if (showKm)
+                                  if (showKm) ...[
                                     _hoverCell(
                                       Text(
-                                        !_isRowAssignedToMe(r)
-                                            ? '—'
-                                            : (_mezziConKmMeseInserito
-                                                    .contains(id)
-                                                ? 'Inseriti'
-                                                : 'Da inserire'),
-                                        style: TextStyle(
+                                        _kmAttualiLabel(r),
+                                        style: const TextStyle(
                                           fontWeight: FontWeight.w600,
-                                          color: !_isRowAssignedToMe(r)
-                                              ? Theme.of(context)
-                                                  .colorScheme
-                                                  .onSurfaceVariant
-                                              : (_mezziConKmMeseInserito
-                                                      .contains(id)
-                                                  ? Colors.green.shade700
-                                                  : Colors.orange.shade800),
                                         ),
                                       ),
                                       r,
-                                      'id_uuid',
+                                      'km_attuali',
                                     ),
+                                    _hoverCell(
+                                      Text(_kmUltimoAggLabel(r)),
+                                      r,
+                                      'km_aggiornato_il',
+                                    ),
+                                  ],
                                   _hoverCell(
                                     SizedBox(
                                       width: 220,
@@ -1008,13 +924,8 @@ class _AdminLogisticaMezziStradaliPageState
                                       child: Row(
                                         children: [
                                           IconButton(
-                                            tooltip: widget.dipendenteMode
-                                                ? 'Modifica gomme'
-                                                : 'Modifica',
-                                            onPressed: () =>
-                                                widget.dipendenteMode
-                                                    ? _openGommeForm(r)
-                                                    : _openForm(row: r),
+                                            tooltip: 'Modifica',
+                                            onPressed: () => _openForm(row: r),
                                             icon: const Icon(
                                                 Icons.edit_outlined,
                                                 size: 18),
@@ -1025,31 +936,13 @@ class _AdminLogisticaMezziStradaliPageState
                                                 const BoxConstraints.tightFor(
                                                     width: 24, height: 24),
                                           ),
-                                          if (_isRowAssignedToMe(r))
+                                          if (id.isNotEmpty)
                                             IconButton(
-                                              tooltip: 'Inserisci km mese',
+                                              tooltip: 'QR viaggio',
                                               onPressed: () =>
-                                                  _openKmDialogForRow(r),
+                                                  _showViaggioQrDialog(r),
                                               icon: const Icon(
-                                                Icons.speed,
-                                                size: 18,
-                                              ),
-                                              visualDensity:
-                                                  VisualDensity.compact,
-                                              padding: EdgeInsets.zero,
-                                              constraints:
-                                                  const BoxConstraints.tightFor(
-                                                      width: 24, height: 24),
-                                            ),
-                                          if (!widget.dipendenteMode)
-                                            IconButton(
-                                              tooltip: 'Elimina',
-                                              onPressed: id.isEmpty
-                                                  ? null
-                                                  : () => _deleteRow(id),
-                                              icon: const Icon(
-                                                  Icons.delete_outline,
-                                                  color: Colors.red,
+                                                  Icons.qr_code_2_outlined,
                                                   size: 18),
                                               visualDensity:
                                                   VisualDensity.compact,
@@ -1058,6 +951,22 @@ class _AdminLogisticaMezziStradaliPageState
                                                   const BoxConstraints.tightFor(
                                                       width: 24, height: 24),
                                             ),
+                                          IconButton(
+                                            tooltip: 'Elimina',
+                                            onPressed: id.isEmpty
+                                                ? null
+                                                : () => _deleteRow(id),
+                                            icon: const Icon(
+                                                Icons.delete_outline,
+                                                color: Colors.red,
+                                                size: 18),
+                                            visualDensity:
+                                                VisualDensity.compact,
+                                            padding: EdgeInsets.zero,
+                                            constraints:
+                                                const BoxConstraints.tightFor(
+                                                    width: 24, height: 24),
+                                          ),
                                         ],
                                       ),
                                     ),
@@ -1092,6 +1001,7 @@ class _MezzoDialogState extends State<_MezzoDialog> {
   late final TextEditingController tipologiaMezzoCtrl;
   late final TextEditingController assegnatarioSearchCtrl;
   late final TextEditingController periodoAssegnatarioCtrl;
+  late final TextEditingController dataFineAssegnatarioCtrl;
   late final TextEditingController noleggiatoreCtrl;
   late final TextEditingController scadContrattoCtrl;
   late final TextEditingController scadAssicurazioneCtrl;
@@ -1103,7 +1013,6 @@ class _MezzoDialogState extends State<_MezzoDialog> {
   late final TextEditingController telepassCtrl;
   late final TextEditingController kitRuotaCtrl;
   late final TextEditingController depositoGommeCtrl;
-  late final TextEditingController tipologiaGommeCtrl;
   late final TextEditingController noteCtrl;
   final List<_AssegnatarioOption> _assegnatariOptions = <_AssegnatarioOption>[];
   String? _assegnatarioUserUuid;
@@ -1127,6 +1036,8 @@ class _MezzoDialogState extends State<_MezzoDialog> {
         text: (r['assegnatario_attuale'] ?? '').toString());
     periodoAssegnatarioCtrl = TextEditingController(
         text: formatDateDdMmYyyy(r['periodo_assegnatario_attuale']));
+    dataFineAssegnatarioCtrl = TextEditingController(
+        text: formatDateDdMmYyyy(r['data_fine_assegnatario_attuale']));
     noleggiatoreCtrl =
         TextEditingController(text: (r['noleggiatore'] ?? '').toString());
     scadContrattoCtrl = TextEditingController(
@@ -1150,10 +1061,22 @@ class _MezzoDialogState extends State<_MezzoDialog> {
         text: (r['kit_ruota_di_scorta'] ?? '').toString());
     depositoGommeCtrl =
         TextEditingController(text: (r['deposito_gomme'] ?? '').toString());
-    tipologiaGommeCtrl =
-        TextEditingController(text: (r['tipologia_gomme'] ?? '').toString());
     noteCtrl = TextEditingController(text: (r['note'] ?? '').toString());
     _loadDipendentiOptions();
+    unawaited(_fillMulticardFromGestione());
+  }
+
+  Future<void> _fillMulticardFromGestione() async {
+    final targa = targaCtrl.text.trim();
+    if (targa.isEmpty) return;
+    final rows = await fetchMulticardRowsForTarga(_supa, targa);
+    final nums = <String>[];
+    for (final r in rows) {
+      final n = (r['multicard'] ?? '').toString().trim();
+      if (n.isNotEmpty && !nums.contains(n)) nums.add(n);
+    }
+    if (!mounted) return;
+    multicardCtrl.text = nums.join(' ');
   }
 
   Future<void> _loadDipendentiOptions() async {
@@ -1238,6 +1161,7 @@ class _MezzoDialogState extends State<_MezzoDialog> {
     tipologiaMezzoCtrl.dispose();
     assegnatarioSearchCtrl.dispose();
     periodoAssegnatarioCtrl.dispose();
+    dataFineAssegnatarioCtrl.dispose();
     noleggiatoreCtrl.dispose();
     scadContrattoCtrl.dispose();
     scadAssicurazioneCtrl.dispose();
@@ -1249,13 +1173,56 @@ class _MezzoDialogState extends State<_MezzoDialog> {
     telepassCtrl.dispose();
     kitRuotaCtrl.dispose();
     depositoGommeCtrl.dispose();
-    tipologiaGommeCtrl.dispose();
     noteCtrl.dispose();
     super.dispose();
   }
 
   Future<void> _save() async {
-    String? toIso(String value) => parseFlexibleDateToIsoDate(value.trim());
+    if (!await ensureCanPersist(context)) return;
+    try {
+      String? toIso(String value) => parseFlexibleDateToIsoDate(value.trim());
+      final assigneeName = assegnatarioSearchCtrl.text.trim();
+    if (assigneeName.isNotEmpty && (_assegnatarioUserUuid ?? '').isEmpty) {
+      final map = await MezziKmService.loadAssigneeNameToUserUuidMap();
+      final resolved = MezziKmService.resolveAssigneeUserUuid(
+        <String, dynamic>{'assegnatario_attuale': assigneeName},
+        assigneeNameToUserUuid: map,
+      );
+      if (resolved != null && resolved.isNotEmpty) {
+        _assegnatarioUserUuid = resolved;
+      }
+    }
+    final prevSnap =
+        LogisticaAssigneeSnapshot.fromMezzoRow(widget.row);
+    final nextName = assegnatarioSearchCtrl.text.trim();
+    final nextSnap = LogisticaAssigneeSnapshot(
+      name: nextName.isEmpty ? null : nextName,
+      userUuid: _assegnatarioUserUuid,
+    );
+    final assigneeChanged =
+        LogisticaAssetStoricoService.assigneeChanged(prevSnap, nextSnap);
+    if (assigneeChanged && prevSnap.hasAssignee) {
+      if (!mounted) return;
+      final targaLabel = targaCtrl.text.trim().isNotEmpty
+          ? 'mezzo ${targaCtrl.text.trim()}'
+          : 'questo mezzo';
+      final ok = await confirmPreviousAssigneeGiustificativi(
+        context: context,
+        previousAssigneeName: prevSnap.name ?? '',
+        assetLabel: targaLabel,
+      );
+      if (!ok || !mounted) return;
+    }
+    if (assigneeChanged && nextSnap.hasAssignee) {
+      periodoAssegnatarioCtrl.text =
+          LogisticaAssetStoricoService.todayDisplayDate();
+    }
+    final inizioIso = LogisticaAssetStoricoService.resolveDataInizioOnSave(
+      previous: prevSnap,
+      next: nextSnap,
+      manualInizioIso: toIso(periodoAssegnatarioCtrl.text),
+    );
+
     final payload = <String, dynamic>{
       'numerazione': numerazioneCtrl.text.trim().isEmpty
           ? null
@@ -1268,10 +1235,9 @@ class _MezzoDialogState extends State<_MezzoDialog> {
           ? null
           : tipologiaMezzoCtrl.text.trim(),
       'assegnatario_user_uuid': _assegnatarioUserUuid,
-      'assegnatario_attuale': assegnatarioSearchCtrl.text.trim().isEmpty
-          ? null
-          : assegnatarioSearchCtrl.text.trim(),
-      'periodo_assegnatario_attuale': toIso(periodoAssegnatarioCtrl.text),
+      'assegnatario_attuale': nextName.isEmpty ? null : nextName,
+      'periodo_assegnatario_attuale': inizioIso,
+      'data_fine_assegnatario_attuale': toIso(dataFineAssegnatarioCtrl.text),
       'noleggiatore': noleggiatoreCtrl.text.trim().isEmpty
           ? null
           : noleggiatoreCtrl.text.trim(),
@@ -1281,31 +1247,53 @@ class _MezzoDialogState extends State<_MezzoDialog> {
       'scadenza_revisione': toIso(scadRevisioneCtrl.text),
       'scadenza_verifica_periodica_gru': toIso(scadVerificaGruCtrl.text),
       'scadenza_revisione_biennale_cronotachigrafo': toIso(scadCronoCtrl.text),
-      'multicard':
-          multicardCtrl.text.trim().isEmpty ? null : multicardCtrl.text.trim(),
-      'telepass':
-          telepassCtrl.text.trim().isEmpty ? null : telepassCtrl.text.trim(),
       'kit_ruota_di_scorta':
           kitRuotaCtrl.text.trim().isEmpty ? null : kitRuotaCtrl.text.trim(),
       'deposito_gomme': depositoGommeCtrl.text.trim().isEmpty
           ? null
           : depositoGommeCtrl.text.trim(),
-      'tipologia_gomme': tipologiaGommeCtrl.text.trim().isEmpty
-          ? null
-          : tipologiaGommeCtrl.text.trim(),
       'note': noteCtrl.text.trim().isEmpty ? null : noteCtrl.text.trim(),
       'active': true,
     };
     final id = (widget.row?['id_uuid'] ?? '').toString().trim();
+    final targa = targaCtrl.text.trim();
+
+    await LogisticaAssetStoricoService.handleMezzoAssigneeOnSave(
+      supa: _supa,
+      previousRow: widget.row,
+      targa: targa,
+      mezzoIdUuid: id.isEmpty ? null : id,
+      next: nextSnap,
+      telepass: telepassCtrl.text.trim(),
+      note: noteCtrl.text.trim().isEmpty ? null : noteCtrl.text.trim(),
+    );
+
+    String? savedId = id.isEmpty ? null : id;
     if (id.isEmpty) {
-      await _supa.from('logistica_mezzi_stradali').insert(payload);
+      final inserted = await _supa
+          .from('logistica_mezzi_stradali')
+          .insert(payload)
+          .select('id_uuid')
+          .single();
+      savedId = (inserted['id_uuid'] ?? '').toString();
     } else {
       await _supa
           .from('logistica_mezzi_stradali')
           .update(payload)
           .eq('id_uuid', id);
     }
-    if (mounted) Navigator.pop(context, true);
+    await LogisticaAssetStoricoService.ensureForMezzo(
+      supa: _supa,
+      targa: targa,
+      mezzoIdUuid: savedId,
+      telepass: telepassCtrl.text.trim(),
+    );
+      if (mounted) Navigator.pop(context, true);
+    } catch (e) {
+      if (mounted) {
+        ModifyFeedback.error(context, 'Errore salvataggio: $e');
+      }
+    }
   }
 
   @override
@@ -1346,6 +1334,9 @@ class _MezzoDialogState extends State<_MezzoDialog> {
           setState(() {
             _assegnatarioUserUuid = opt.userUuid;
             assegnatarioSearchCtrl.text = opt.assignedName;
+            periodoAssegnatarioCtrl.text =
+                LogisticaAssetStoricoService.todayDisplayDate();
+            dataFineAssegnatarioCtrl.clear();
           });
         },
         fieldViewBuilder: (context, textCtrl, focusNode, onFieldSubmitted) {
@@ -1388,7 +1379,12 @@ class _MezzoDialogState extends State<_MezzoDialog> {
       TextField(
           controller: periodoAssegnatarioCtrl,
           decoration: const InputDecoration(
-              labelText: 'Periodo assegnatario (GG/MM/AAAA)',
+              labelText: 'Data inizio assegnatario (GG/MM/AAAA)',
+              border: OutlineInputBorder())),
+      TextField(
+          controller: dataFineAssegnatarioCtrl,
+          decoration: const InputDecoration(
+              labelText: 'Data fine assegnatario attuale (GG/MM/AAAA)',
               border: OutlineInputBorder())),
       TextField(
           controller: noleggiatoreCtrl,
@@ -1426,12 +1422,28 @@ class _MezzoDialogState extends State<_MezzoDialog> {
               border: OutlineInputBorder())),
       TextField(
           controller: multicardCtrl,
-          decoration: const InputDecoration(
-              labelText: 'Multicard', border: OutlineInputBorder())),
+          readOnly: true,
+          enableInteractiveSelection: true,
+          decoration: InputDecoration(
+            labelText: 'Multicard',
+            helperText:
+                'Solo lettura: si assegna da Gestione Multicard.',
+            border: const OutlineInputBorder(),
+            filled: true,
+            fillColor: Theme.of(context)
+                .colorScheme
+                .surfaceContainerHighest
+                .withValues(alpha: 0.35),
+          )),
       TextField(
           controller: telepassCtrl,
+          readOnly: true,
+          enableInteractiveSelection: true,
           decoration: const InputDecoration(
-              labelText: 'Telepass', border: OutlineInputBorder())),
+            labelText: 'Telepass',
+            helperText: 'Solo lettura: si assegna da Gestione Telepass.',
+            border: OutlineInputBorder(),
+          )),
       TextField(
           controller: kitRuotaCtrl,
           decoration: const InputDecoration(
@@ -1441,17 +1453,13 @@ class _MezzoDialogState extends State<_MezzoDialog> {
           decoration: const InputDecoration(
               labelText: 'Deposito gomme', border: OutlineInputBorder())),
       TextField(
-          controller: tipologiaGommeCtrl,
-          decoration: const InputDecoration(
-              labelText: 'Tipologia gomme', border: OutlineInputBorder())),
-      TextField(
           controller: noteCtrl,
           minLines: 2,
           maxLines: 4,
           decoration: const InputDecoration(
               labelText: 'Note', border: OutlineInputBorder())),
     ];
-    final dialogW = (MediaQuery.sizeOf(context).width - 48).clamp(280.0, 680.0);
+    final dialogW = logisticaDialogWidth(context, desktop: 680);
     return AlertDialog(
       title: Text(widget.row == null
           ? 'Nuovo mezzo stradale'
@@ -1488,86 +1496,10 @@ class _GommeDialog extends StatefulWidget {
   State<_GommeDialog> createState() => _GommeDialogState();
 }
 
-class _KmMensileDialog extends StatefulWidget {
-  final Map<String, dynamic> row;
-  const _KmMensileDialog({required this.row});
-
-  @override
-  State<_KmMensileDialog> createState() => _KmMensileDialogState();
-}
-
-class _KmMensileDialogState extends State<_KmMensileDialog> {
-  late final TextEditingController _kmCtrl;
-
-  @override
-  void initState() {
-    super.initState();
-    _kmCtrl = TextEditingController();
-  }
-
-  @override
-  void dispose() {
-    _kmCtrl.dispose();
-    super.dispose();
-  }
-
-  Future<void> _save() async {
-    final km = int.tryParse(_kmCtrl.text.trim());
-    if (km == null || km < 0) {
-      if (!mounted) return;
-      ModifyFeedback.error(context, 'Inserisci un valore km valido.');
-      return;
-    }
-    final mezzoId = (widget.row['id_uuid'] ?? '').toString().trim();
-    if (mezzoId.isEmpty) return;
-    await MezziKmService.saveKmForCurrentMonth(
-      mezzoIdUuid: mezzoId,
-      kmInseriti: km,
-    );
-    if (mounted) Navigator.pop(context, true);
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final targa = (widget.row['targa'] ?? '').toString().trim();
-    final modello = (widget.row['modello'] ?? '').toString().trim();
-    return AlertDialog(
-      title: const Text('Inserisci km del mese'),
-      content: SizedBox(
-        width: 420,
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text('Mezzo: $targa ${modello.isEmpty ? '' : '- $modello'}'),
-            const SizedBox(height: 10),
-            TextField(
-              controller: _kmCtrl,
-              keyboardType: TextInputType.number,
-              decoration: const InputDecoration(
-                labelText: 'Km attuali',
-                border: OutlineInputBorder(),
-              ),
-            ),
-          ],
-        ),
-      ),
-      actions: [
-        TextButton(
-          onPressed: () => Navigator.pop(context, false),
-          child: const Text('Posticipa'),
-        ),
-        AsyncFilledButton(onPressed: _save, child: const Text('Salva km')),
-      ],
-    );
-  }
-}
-
 class _GommeDialogState extends State<_GommeDialog> {
   final _supa = Supabase.instance.client;
   late final TextEditingController kitRuotaCtrl;
   late final TextEditingController depositoGommeCtrl;
-  late final TextEditingController tipologiaGommeCtrl;
 
   @override
   void initState() {
@@ -1577,37 +1509,36 @@ class _GommeDialogState extends State<_GommeDialog> {
         text: (r['kit_ruota_di_scorta'] ?? '').toString());
     depositoGommeCtrl =
         TextEditingController(text: (r['deposito_gomme'] ?? '').toString());
-    tipologiaGommeCtrl =
-        TextEditingController(text: (r['tipologia_gomme'] ?? '').toString());
   }
 
   @override
   void dispose() {
     kitRuotaCtrl.dispose();
     depositoGommeCtrl.dispose();
-    tipologiaGommeCtrl.dispose();
     super.dispose();
   }
 
   Future<void> _save() async {
     final id = (widget.row['id_uuid'] ?? '').toString().trim();
     if (id.isEmpty) return;
-    await _supa.from('logistica_mezzi_stradali').update({
-      'kit_ruota_di_scorta':
-          kitRuotaCtrl.text.trim().isEmpty ? null : kitRuotaCtrl.text.trim(),
-      'deposito_gomme': depositoGommeCtrl.text.trim().isEmpty
-          ? null
-          : depositoGommeCtrl.text.trim(),
-      'tipologia_gomme': tipologiaGommeCtrl.text.trim().isEmpty
-          ? null
-          : tipologiaGommeCtrl.text.trim(),
-    }).eq('id_uuid', id);
-    if (mounted) Navigator.pop(context, true);
+    if (!await ensureCanPersist(context)) return;
+    try {
+      await _supa.from('logistica_mezzi_stradali').update({
+        'kit_ruota_di_scorta':
+            kitRuotaCtrl.text.trim().isEmpty ? null : kitRuotaCtrl.text.trim(),
+        'deposito_gomme': depositoGommeCtrl.text.trim().isEmpty
+            ? null
+            : depositoGommeCtrl.text.trim(),
+      }).eq('id_uuid', id);
+      if (mounted) Navigator.pop(context, true);
+    } catch (e) {
+      if (mounted) ModifyFeedback.error(context, 'Errore salvataggio: $e');
+    }
   }
 
   @override
   Widget build(BuildContext context) {
-    final dialogW = (MediaQuery.sizeOf(context).width - 48).clamp(280.0, 540.0);
+    final dialogW = logisticaDialogWidth(context, desktop: 540);
     return AlertDialog(
       title: const Text('Modifica sezione gomme'),
       content: SizedBox(
@@ -1630,12 +1561,6 @@ class _GommeDialogState extends State<_GommeDialog> {
                 maxLines: 4,
                 decoration: const InputDecoration(
                     labelText: 'Deposito gomme', border: OutlineInputBorder()),
-              ),
-              const SizedBox(height: 8),
-              TextField(
-                controller: tipologiaGommeCtrl,
-                decoration: const InputDecoration(
-                    labelText: 'Tipologia gomme', border: OutlineInputBorder()),
               ),
             ],
           ),

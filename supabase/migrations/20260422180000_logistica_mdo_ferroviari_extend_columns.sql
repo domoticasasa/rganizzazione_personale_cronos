@@ -1,0 +1,17 @@
+alter table public.logistica_mdo_ferroviari
+  add column if not exists lunghezza_mt text,
+  add column if not exists lunghezza_piano_carico_mt text,
+  add column if not exists larghezza_mt text,
+  add column if not exists altezza_mt_pf text,
+  add column if not exists tara_ton text,
+  add column if not exists portata_max_ton text,
+  add column if not exists peso_complessivo_ton text,
+  add column if not exists scartamento_mm text,
+  add column if not exists sponde text,
+  add column if not exists twist_lock text,
+  add column if not exists condotta_freno text,
+  add column if not exists organi_repulsione text,
+  add column if not exists organi_aggancio text,
+  add column if not exists gancio text,
+  add column if not exists tenditore text,
+  add column if not exists campana text;

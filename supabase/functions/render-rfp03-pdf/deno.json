@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "jszip": "npm:jszip@3.10.1",
+    "xlsx": "npm:xlsx@0.18.5",
+    "pdf-lib": "npm:pdf-lib@1.17.1"
+  }
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="it" spellcheck="false">
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <!--
+    Copyright (c) GESTOPRO. Tutti i diritti riservati.
+    Software proprietario: vietata la riproduzione non autorizzata.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Cronos Gestopro. Gestione prenotazioni, dipendenti, DPI e vestiario. © GESTOPRO. Tutti i diritti riservati.">
+  <meta name="copyright" content="GESTOPRO">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="Permissions-Policy" content="geolocation=(self), microphone=(), camera=(self)">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Cronos Gestopro">
+  <meta name="theme-color" content="#2F6FED">
+  <link rel="apple-touch-icon" href="icons/Icon-180.png?v=18">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/Icon-180.png?v=18">
+  <link rel="apple-touch-icon" sizes="192x192" href="icons/Icon-192.png?v=18">
+
+  <!-- Favicon / browser (cerchio bianco + logo CRONOS) -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico?v=18">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/Icon-32.png?v=18">
+  <link rel="icon" type="image/png" sizes="48x48" href="icons/Icon-48.png?v=18">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/Icon-192.png?v=18">
+  <link rel="shortcut icon" href="favicon.ico?v=18">
+
+  <title>Cronos Gestopro</title>
+  <script>document.title = "Cronos Gestopro";</script>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    html, body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      overscroll-behavior: none;
+    }
+    ::spelling-error,
+    ::grammar-error {
+      text-decoration: none !important;
+      background-color: transparent !important;
+    }
+  </style>
+  <script src="js/jsQR.min.js" defer></script>
+  <script>
+    // Recovery: un solo host (www) + salva token PRIMA che Flutter tocchi l'URL.
+    (function () {
+      try {
+        var host = (location.hostname || '').toLowerCase();
+        var path = location.pathname || '/';
+        var q = String(location.search || '');
+        var isRecovery =
+          path.indexOf('password-recovery') !== -1 ||
+          q.indexOf('token_hash=') !== -1;
+        if (isRecovery && host === 'gestopro360.it') {
+          location.replace(
+            'https://www.gestopro360.it' + path + q + (location.hash || '')
+          );
+          return;
+        }
+        var h = String(location.hash || '');
+        if (
+          h.indexOf('access_token') !== -1 ||
+          h.indexOf('type=recovery') !== -1 ||
+          h.indexOf('refresh_token') !== -1
+        ) {
+          sessionStorage.setItem('cronos_supabase_auth_hash', h);
+        }
+        if (q.indexOf('code=') !== -1 || q.indexOf('token_hash=') !== -1) {
+          sessionStorage.setItem('cronos_supabase_auth_search', q);
+        }
+        var params = new URLSearchParams(q);
+        var th = params.get('token_hash');
+        if (th) {
+          sessionStorage.setItem('cronos_recovery_token_hash', th);
+          history.replaceState(null, '', '/password-recovery');
+        }
+        var aq = params.get('auth_qr');
+        if (aq) {
+          sessionStorage.setItem('cronos_auth_qr', String(aq).trim().toUpperCase());
+          // Canonico www + /login così non si perde il codice su apex/redirect SPA.
+          if (host === 'gestopro360.it' || path === '/' || path === '') {
+            location.replace(
+              'https://www.gestopro360.it/login?auth_qr=' +
+                encodeURIComponent(String(aq).trim())
+            );
+            return;
+          }
+        }
+        var vm = params.get('vm');
+        if (vm) {
+          sessionStorage.setItem('cronos_viaggio_mezzo_vm', vm);
+        }
+        var bp = params.get('bp');
+        if (bp) {
+          sessionStorage.setItem('cronos_buono_pasto_bp', bp);
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body spellcheck="false">
+  <script>
+    // Migrazione: pernotti/gestopro.pages.dev → gestopro360.it (prima del boot Flutter)
+    (function () {
+      try {
+        var h = (location.hostname || '').toLowerCase();
+        var legacy =
+          h === 'pernotti.pages.dev' ||
+          h === 'gestopro.pages.dev' ||
+          h.endsWith('.pernotti.pages.dev') ||
+          h.endsWith('.gestopro.pages.dev');
+        if (!legacy && h !== 'gestopro360.it') return;
+        var target =
+          'https://www.gestopro360.it' +
+          location.pathname +
+          location.search +
+          location.hash;
+        location.replace(target);
+      } catch (_) {}
+    })();
+  </script>
+  <script>
+    window.CRONOS_VAPID_PUBLIC_KEY = "BByADhgyYhVAy4ZiP88Z8QIqXhKvIoExfLR1brq6Y6yCpIvQICiBnUzClHQ_hO7Cxp48O9U1mxhz1nfN7EePtn8";
+    // Imposta la chiave Maps JavaScript API per la mappa MDO (build/deploy).
+    window.CRONOS_GOOGLE_MAPS_API_KEY = "AIzaSyBycYIntTPSp37bC2O53OCIgBtSiYtZrGs";
+  </script>
+  <script>
+    (function () {
+      var key = (window.CRONOS_GOOGLE_MAPS_API_KEY || "").trim();
+      if (!key) return;
+      var s = document.createElement("script");
+      s.src = "https://maps.googleapis.com/maps/api/js?key=" + encodeURIComponent(key);
+      s.async = true;
+      s.defer = true;
+      document.head.appendChild(s);
+    })();
+  </script>
+  <script src="push_session.js"></script>
+  <script src="pwa_helper.js" defer></script>
+  <script src="cronos_update_check.js"></script>
+  <!-- Passkeys / WebAuthn (SDK locale: più affidabile di GitHub CDN) -->
+  <script src="js/passkeys_bundle.js" type="application/javascript"></script>
+  <script>
+    // Prima di Flutter: se c'è un deploy nuovo, ricarica (fix PWA su build vecchia).
+    (function () {
+      function bootFlutter() {
+        var s = document.createElement("script");
+        s.src = "flutter_bootstrap.js";
+        s.async = true;
+        document.body.appendChild(s);
+      }
+      if (typeof window.cronosEnsureLatestBuild !== "function") {
+        bootFlutter();
+        return;
+      }
+      window.cronosEnsureLatestBuild().then(function (reloading) {
+        if (!reloading) bootFlutter();
+      });
+    })();
+  </script>
+</body>
+</html>

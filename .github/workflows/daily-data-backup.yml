@@ -1,0 +1,116 @@
+# Daily data backup → Supabase Storage + replica automatica.
+# Opzionale off-site S3/R2: secret BACKUP_S3_* sulla Edge Function.
+
+name: Daily data backup
+
+on:
+  schedule:
+    # 01:20 UTC ≈ notte Europe/Rome
+    - cron: "20 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+
+concurrency:
+  group: daily-data-backup
+  cancel-in-progress: false
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Invoke daily-data-backup edge function
+        id: invoke
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          DAILY_BACKUP_SECRET: ${{ secrets.DAILY_BACKUP_SECRET }}
+        run: |
+          set -euo pipefail
+          if [ -z "${SUPABASE_URL:-}" ]; then
+            echo "Missing secret SUPABASE_URL"
+            exit 1
+          fi
+
+          URL="${SUPABASE_URL%/}/functions/v1/daily-data-backup"
+          HDR=(-H "Content-Type: application/json")
+
+          if [ -n "${DAILY_BACKUP_SECRET:-}" ]; then
+            HDR+=(-H "x-cronos-backup-secret: ${DAILY_BACKUP_SECRET}")
+          elif [ -n "${SUPABASE_SERVICE_ROLE_KEY:-}" ]; then
+            HDR+=(-H "Authorization: Bearer ${SUPABASE_SERVICE_ROLE_KEY}")
+          else
+            echo "Need DAILY_BACKUP_SECRET or SUPABASE_SERVICE_ROLE_KEY"
+            exit 1
+          fi
+
+          echo "POST $URL"
+          RESP=$(curl -sS -w "\n%{http_code}" -X POST "$URL" "${HDR[@]}" \
+            -d '{"source":"github_actions"}')
+          BODY=$(echo "$RESP" | head -n -1)
+          CODE=$(echo "$RESP" | tail -n 1)
+          echo "HTTP $CODE"
+          echo "$BODY"
+          test "$CODE" = "200"
+          DATE=$(echo "$BODY" | python3 -c "import sys,json; print(json.load(sys.stdin).get('backup_date',''))" 2>/dev/null || true)
+          echo "backup_date=$DATE" >> "$GITHUB_OUTPUT"
+
+      - name: Download backup snapshot (3rd copy on GitHub Artifacts)
+        if: steps.invoke.outputs.backup_date != ''
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          BACKUP_DATE: ${{ steps.invoke.outputs.backup_date }}
+        run: |
+          set -euo pipefail
+          mkdir -p "backup-${BACKUP_DATE}"
+          PREFIX="daily/${BACKUP_DATE}"
+          # Elenco oggetti via Storage API
+          LIST_URL="${SUPABASE_URL%/}/storage/v1/object/list/cronos_data_backups"
+          curl -sS -X POST "$LIST_URL" \
+            -H "Authorization: Bearer ${SUPABASE_SERVICE_ROLE_KEY}" \
+            -H "apikey: ${SUPABASE_SERVICE_ROLE_KEY}" \
+            -H "Content-Type: application/json" \
+            -d "{\"prefix\":\"${PREFIX}/\",\"limit\":500}" \
+            > list.json
+          python3 <<'PY'
+          import json, os, urllib.request
+          base = os.environ["SUPABASE_URL"].rstrip("/")
+          key = os.environ["SUPABASE_SERVICE_ROLE_KEY"]
+          date = os.environ["BACKUP_DATE"]
+          prefix = f"daily/{date}"
+          with open("list.json") as f:
+              entries = json.load(f)
+          names = []
+          if isinstance(entries, list):
+              for e in entries:
+                  n = (e.get("name") or "").strip()
+                  if n:
+                      names.append(n)
+          out_dir = f"backup-{date}"
+          os.makedirs(out_dir, exist_ok=True)
+          for name in names:
+              path = f"{prefix}/{name}"
+              url = f"{base}/storage/v1/object/authenticated/cronos_data_backups/{path}"
+              req = urllib.request.Request(url, headers={
+                  "Authorization": f"Bearer {key}",
+                  "apikey": key,
+              })
+              dest = os.path.join(out_dir, name)
+              with urllib.request.urlopen(req) as resp, open(dest, "wb") as out:
+                  out.write(resp.read())
+              print("saved", dest)
+          print(f"files={len(names)}")
+          PY
+          tar -czf "cronos-backup-${BACKUP_DATE}.tar.gz" "backup-${BACKUP_DATE}"
+
+      - name: Upload GitHub Artifact
+        if: steps.invoke.outputs.backup_date != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: cronos-backup-${{ steps.invoke.outputs.backup_date }}
+          path: cronos-backup-${{ steps.invoke.outputs.backup_date }}.tar.gz
+          retention-days: 30
+          if-no-files-found: warn

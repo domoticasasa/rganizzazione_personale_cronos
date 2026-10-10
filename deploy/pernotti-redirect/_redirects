@@ -1,0 +1,6 @@
+# Redirect permanente: pernotti.pages.dev → www.gestopro360.it
+# (apex gestopro360.it va aggiunto come custom domain sul progetto Pages gestopro360)
+
+https://pernotti.pages.dev/*              https://www.gestopro360.it/:splat    301
+https://*.pernotti.pages.dev/*            https://www.gestopro360.it/:splat    301
+/*                                        https://www.gestopro360.it/:splat    301

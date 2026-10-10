@@ -1,0 +1,14 @@
+---
+description: Applica sempre le migration Supabase sul progetto remoto
+alwaysApply: true
+---
+
+# Migration Supabase
+
+Quando crei o modifichi file in `supabase/migrations/`:
+
+1. **Applica subito** sul progetto remoto collegato (`supabase db push`), senza chiedere conferma.
+2. Progetto di default: `bjdimalvbdablzoctrsf` (pernotti-prod-2), già linkato.
+3. Se `db push` fallisce, prova `supabase db push --include-all` o esegui lo SQL via `supabase db execute` / Dashboard e segnala l’errore.
+4. Dopo il push, verifica che la migration risulti applicata (output CLI o `supabase migration list`).
+5. Non lasciare migration solo locali “da applicare dopo” salvo errore bloccante di rete/auth.

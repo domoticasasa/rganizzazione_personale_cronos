@@ -1,0 +1,9 @@
+# Cloudflare Pages — progetto gestopro360 (build Flutter web).
+# Canonico: https://www.gestopro360.it (apex gestopro360.it in attivazione DNS)
+
+# Host legacy → dominio ufficiale
+https://gestopro.pages.dev/*              https://www.gestopro360.it/:splat    301
+https://*.gestopro.pages.dev/*            https://www.gestopro360.it/:splat    301
+
+# SPA fallback
+/*    /index.html   200

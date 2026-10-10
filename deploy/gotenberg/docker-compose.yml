@@ -1,0 +1,12 @@
+# Gotenberg per conversione Mod.RFP_03 xlsx -> PDF (usato da Supabase Edge Function convert-office-pdf).
+# Avvio: docker compose up -d
+# Health:  curl http://localhost:3000/health
+services:
+  gotenberg:
+    image: gotenberg/gotenberg:8
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    command:
+      - gotenberg
+      - --api-timeout=120s

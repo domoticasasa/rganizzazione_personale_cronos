@@ -1,0 +1,1113 @@
+﻿PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma import 'package:flutter/material.dart';
+
+import 'package:sup
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma   bool _loading = true;
+
+  String _search = '';
+
+  String? _
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma   @override
+
+  void initState() {
+
+    super.initState();
+
+ 
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma       final corsiRes =
+
+          await corsiQuery.order('pr
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma   @override
+  void initState() {
+    super.initState();
+    
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma       if (!_employeeOnly) {
+        await _applyProgrammazio
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma           const DataColumn(label: Text('Scadenza')),
+
+      
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma   Color _scadenzaColor(dynamic v) {
+    final days = _daysUn
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma   Widget _desktopTable(List<Map<String, dynamic>> items) {
+ 
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma               DataCell(Text(_fmtDate(r['prima_data']))),
+   
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma       sheet.appendRow(<String>[
+        'Data prog.',
+      
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma         sheet.appendRow(<String>[
+          _fmtDate(r['prim
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma   int get _scadenzaSortColumnIndex => _employeeOnly ? 2 : 3;
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma import 'package:excel/excel.dart' hide Border;
+import 'packa
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma     } catch (e) {
+      if (!mounted) return;
+      ModifyFe
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma           IconButton(
+            tooltip: 'Export Excel',
+ 
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma                                   IconButton(
+              
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma                               TextButton.icon(
+             
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma       final corsiRes = await corsiQuery.order('scadenza_atte
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma   int? _daysUntilScadenza(dynamic v) {
+    final d = Formazi
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma     final sorted = List<Map<String, dynamic>>.from(base)
+   
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma       _detailRow('Data attestato', _fmtDate(r['data_attestat
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma   Widget _scadenzaHeaderLabel() {
+    return Container(
+    
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma         sortColumnIndex: _scadenzaSortColumnIndex,
+        s
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma               DataCell(Text(_fmtDate(r['prima_data']))),
+   
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma import '../services/formazione_programmazione_service.dart';
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma       if (!FormazioneProgrammazioneService.shouldClearAfterP
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma       if (prima == null) continue;
+      if (!FormazioneProg
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma   int? _daysUntilDate(dynamic v) {
+    final d = FormazioneP
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma   Widget _progDateText(dynamic v, {TextStyle? baseStyle}) {
+
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma       sheet.appendRow(<String>[
+        'Data prog.',
+      
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma         sheet.appendRow(<String>[
+          _fmtDate(r['prim
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma           DataColumn(label: _progHeaderLabel()),
+          c
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma               DataCell(_progDateText(r['prima_data'])),
+    
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma       _detailRow('Data attestato', _fmtDate(r['data_attestat
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma         _fmtDate(r['scadenza_attestato']),
+        _s(r['pro
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma         'Data prog. dal',
+        'Data prog. al',
+        '
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma           _fmtDate(r['prima_data']),
+          _fmtDate(r['s
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma       _detailRow(
+        'Programmazione',
+        _fmtProg
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma           DataColumn(label: _progHeaderLabel()),
+          c
+PATCH FAILED: c:\flutter_projects\organizzazione_personale_cronos - mod\lib\pages\dt_programma               DataCell(_progDateText(r)),
+              Data
+FINAL LEN 36312
+import 'package:flutter/material.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
+
+import '../services/supabase_service.dart';
+import '../utils/date_formatters.dart';
+import '../utils/formazione_programmazione_dates.dart';
+import '../utils/device.dart';
+import '../utils/modify_feedback.dart';
+import '../widgets/app_logo.dart';
+import '../widgets/note_preview_text.dart';
+
+/// Corsi D.Lgs. 81/08 con **data programmazione** impostata.
+/// Admin / DT / assistente: tutti i dipendenti; dipendente: solo la propria anagrafica.
+class DtProgrammazioneFormazioniPage extends StatefulWidget {
+  final bool employeeOnly;
+  final String? employeeFullName;
+
+  const DtProgrammazioneFormazioniPage({
+    super.key,
+    this.employeeOnly = false,
+    this.employeeFullName,
+  });
+
+  @override
+  State<DtProgrammazioneFormazioniPage> createState() =>
+      _DtProgrammazioneFormazioniPageState();
+}
+
+class _DtProgrammazioneFormazioniPageState
+    extends State<DtProgrammazioneFormazioniPage> {
+  bool _loading = true;
+  String _search = '';
+  String? _ownPersonaleId;
+  final List<Map<String, dynamic>> _rows = <Map<String, dynamic>>[];
+  final Map<String, Map<String, dynamic>> _personaleById =
+      <String, Map<String, dynamic>>{};
+
+  bool get _employeeOnly => widget.employeeOnly;
+  bool get _isMobile =>
+      isMobileDevice() || MediaQuery.sizeOf(context).width < 700;
+  bool get _useCompactList => _isMobile || _employeeOnly;
+  final Set<String> _expandedRowKeys = <String>{};
+
+  @override
+  void initState() {
+    super.initState();
+    _load();
+  }
+
+  String _s(dynamic v) => (v ?? '').toString().trim();
+
+  String _fmtDate(dynamic v) => formatDateDdMmYyyy(v);
+
+  String _normPersonName(String raw) {
+    return raw
+        .toLowerCase()
+        .replaceAll(RegExp(r'[^a-z0-9\s]'), ' ')
+        .replaceAll(RegExp(r'\s+'), ' ')
+        .trim();
+  }
+
+  Set<String> _personNameMatchKeys(String raw) {
+    final n = _normPersonName(raw);
+    if (n.isEmpty) return const {};
+    final parts = n.split(' ').where((p) => p.isNotEmpty).toList();
+    final keys = <String>{n};
+    if (parts.length >= 2) {
+      keys.add('${parts.first} ${parts.last}');
+      keys.add('${parts.last} ${parts.first}');
+      keys.add(parts.reversed.join(' '));
+    }
+    return keys;
+  }
+
+  Future<String?> _resolveOwnPersonaleUuid() async {
+    final authUser = Supabase.instance.client.auth.currentUser;
+    if (authUser != null) {
+      try {
+        final p1 = await SupabaseService.client
+            .from('personale')
+            .select('id_uuid')
+            .eq('user_id', authUser.id)
+            .maybeSingle();
+        final pid1 = _s(p1?['id_uuid']);
+        if (pid1.isNotEmpty) return pid1;
+
+        final u = await SupabaseService.client
+            .from('users')
+            .select('id, id_uuid, full_name')
+            .eq('auth_id', authUser.id)
+            .maybeSingle();
+        final uid = _s(u?['id']);
+        final uuid = _s(u?['id_uuid']);
+        if (uid.isNotEmpty) {
+          final p2 = await SupabaseService.client
+              .from('personale')
+              .select('id_uuid')
+              .eq('user_id', uid)
+              .maybeSingle();
+          final pid2 = _s(p2?['id_uuid']);
+          if (pid2.isNotEmpty) return pid2;
+        }
+        if (uuid.isNotEmpty) {
+          final p3 = await SupabaseService.client
+              .from('personale')
+              .select('id_uuid')
+              .eq('user_id', uuid)
+              .maybeSingle();
+          final pid3 = _s(p3?['id_uuid']);
+          if (pid3.isNotEmpty) return pid3;
+        }
+      } catch (_) {}
+    }
+
+    final namesToTry = <String>{
+      if ((widget.employeeFullName ?? '').trim().isNotEmpty)
+        widget.employeeFullName!.trim(),
+    };
+    try {
+      if (authUser != null) {
+        final u = await SupabaseService.client
+            .from('users')
+            .select('full_name')
+            .eq('auth_id', authUser.id)
+            .maybeSingle();
+        final fn = _s(u?['full_name']);
+        if (fn.isNotEmpty) namesToTry.add(fn);
+      }
+    } catch (_) {}
+
+    final wanted = <String>{};
+    for (final name in namesToTry) {
+      wanted.addAll(_personNameMatchKeys(name));
+    }
+    if (wanted.isEmpty) return null;
+
+    try {
+      final personaleRes = await SupabaseService.client
+          .from('personale')
+          .select('id_uuid, full_name');
+      for (final e in (personaleRes as List)) {
+        final m = Map<String, dynamic>.from(e as Map);
+        final id = _s(m['id_uuid']);
+        final fn = _s(m['full_name']);
+        if (id.isEmpty || fn.isEmpty) continue;
+        if (wanted.contains(_normPersonName(fn))) return id;
+      }
+    } catch (_) {}
+    return null;
+  }
+
+  bool _rowVisibleOnProgrammazioneScreen(Map<String, dynamic> r) {
+    final prima =
+        FormazioneProgrammazioneService.parseDateOnly(r['prima_data']);
+    if (prima == null) return false;
+    final now = DateTime.now();
+    final today = DateTime(now.year, now.month, now.day);
+    return !FormazioneProgrammazioneService.shouldClearAfterProgrammazione(
+      r,
+      today,
+    );
+  }
+
+  Future<void> _load() async {
+    setState(() => _loading = true);
+    try {
+      await _loadRole();
+      String? restrictPid;
+      if (_employeeOnly) {
+        restrictPid = await _resolveOwnPersonaleUuid();
+        _ownPersonaleId = restrictPid;
+        if (restrictPid == null || restrictPid.isEmpty) {
+          _personaleById.clear();
+          _rows.clear();
+          if (mounted) {
+            ModifyFeedback.error(
+              context,
+              'Impossibile collegare la tua anagrafica (nome/cognome).',
+            );
+          }
+          return;
+        }
+      }
+
+      _personaleById.clear();
+      if (_employeeOnly && restrictPid != null) {
+        final p = await SupabaseService.client
+            .from('personale')
+            .select('id_uuid, full_name, matricola, telefono, email, active')
+            .eq('id_uuid', restrictPid)
+            .maybeSingle();
+        if (p != null) {
+          final m = Map<String, dynamic>.from(p);
+          _personaleById[restrictPid] = m;
+        }
+      } else {
+        final personaleRes = await SupabaseService.client
+            .from('personale')
+            .select('id_uuid, full_name, matricola, telefono, email, active');
+        for (final e in (personaleRes as List)) {
+          final m = Map<String, dynamic>.from(e as Map);
+          final id = _s(m['id_uuid']);
+          if (id.isNotEmpty) _personaleById[id] = m;
+        }
+      }
+
+      var corsiQuery = SupabaseService.client
+          .from('formazione_corsi')
+          .select()
+          .not('prima_data', 'is', null);
+      if (restrictPid != null && restrictPid.isNotEmpty) {
+        corsiQuery = corsiQuery.eq('personale_id', restrictPid);
+      }
+      final corsiRes =
+          await corsiQuery.order('prima_data', ascending: true);
+      _rows
+        ..clear()
+        ..addAll(
+          (corsiRes as List).map((e) => Map<String, dynamic>.from(e as Map)),
+        );
+    } catch (e) {
+      if (mounted) {
+        ModifyFeedback.error(context, 'Errore caricamento: $e');
+      }
+    } finally {
+      if (mounted) setState(() => _loading = false);
+    }
+  }
+
+  List<Map<String, dynamic>> get _filteredRows {
+    final q = _search.trim().toLowerCase();
+    if (q.isEmpty) return List<Map<String, dynamic>>.from(_rows);
+    return _rows.where((r) {
+      final pid = _s(r['personale_id']);
+      final p = _personaleById[pid];
+      final tokens = <String>[
+        _s(p?['full_name']),
+        _s(p?['matricola']),
+        _s(p?['telefono']),
+        _s(p?['email']),
+        _s(r['corso']),
+        _s(r['ente']),
+        _s(r['primo_rilascio_aggiornamento']),
+        _s(r['modalita']),
+        _s(r['struttura_link']),
+        _s(r['orario']),
+        _s(r['oda']),
+        _s(r['note']),
+        _fmtProgDalAl(r),
+        _fmtDate(r['data_attestato']),
+        _fmtDate(r['scadenza_attestato']),
+        _s(r['programmazione_pagina']),
+      ];
+      return tokens.any((t) => t.toLowerCase().contains(q));
+    }).toList(growable: false);
+  }
+
+  Widget _personBlock(String personaleId) {
+    final p = _personaleById[personaleId];
+    final name = _s(p?['full_name']);
+    final matr = _s(p?['matricola']);
+    final tel = _s(p?['telefono']);
+    final email = _s(p?['email']);
+    final active = p?['active'] == true;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          name.isEmpty ? 'Dipendente' : name,
+          style: const TextStyle(fontWeight: FontWeight.w700),
+        ),
+        if (matr.isNotEmpty) Text('Matr. $matr', style: _metaStyle),
+        if (tel.isNotEmpty) Text('Tel. $tel', style: _metaStyle),
+        if (email.isNotEmpty) Text(email, style: _metaStyle),
+        if (!active && p != null)
+          Text('Personale non attivo', style: _metaStyle?.copyWith(color: Colors.orange.shade800)),
+      ],
+    );
+  }
+
+  TextStyle? get _metaStyle =>
+      Theme.of(context).textTheme.bodySmall?.copyWith(
+            color: Theme.of(context).colorScheme.onSurfaceVariant,
+          );
+
+  String _rowKey(Map<String, dynamic> r, int index) {
+    final id = _s(r['id']);
+    if (id.isNotEmpty) return 'fc_$id';
+    return 'fc_${_s(r['personale_id'])}_${_s(r['corso'])}_${_s(r['prima_data'])}_$index';
+  }
+
+  Widget _dateChip(Map<String, dynamic> r, {bool compact = false}) {
+    final days = daysUntilProgrammazioneStart(r['prima_data']);
+    final hi = _progDateHighlighted(r);
+    final inRange =
+        isTodayInProgrammazioneRange(r['prima_data'], r['seconda_data']);
+    Color bg;
+    Color fg;
+    if (hi && (inRange || days == 0)) {
+      bg = _blinkOn ? Colors.red : Colors.red.withValues(alpha: 0.18);
+      fg = _blinkOn ? Colors.white : Colors.red.shade900;
+    } else if (hi) {
+      bg = Colors.red.withValues(alpha: 0.12);
+      fg = Colors.red.shade900;
+    } else {
+      bg = Theme.of(context).colorScheme.primaryContainer;
+      fg = Theme.of(context).colorScheme.onPrimaryContainer;
+    }
+    return Container(
+      padding: EdgeInsets.symmetric(
+        horizontal: compact ? 8 : 10,
+        vertical: compact ? 4 : 6,
+      ),
+      decoration: BoxDecoration(
+        color: bg,
+        borderRadius: BorderRadius.circular(8),
+        border: hi ? Border.all(color: Colors.red.shade700, width: 0.8) : null,
+      ),
+      child: Text(
+        _fmtProgDalAl(r),
+        style: TextStyle(
+          fontSize: compact ? 12 : null,
+          fontWeight: FontWeight.w800,
+          color: fg,
+        ),
+      ),
+    );
+  }
+
+  List<Widget> _courseDetailBlocks(Map<String, dynamic> r, String personaleId) {
+    final modalita = _s(r['modalita']);
+    final strutturaLabel =
+        modalita.toLowerCase() == 'online' ? 'Link' : 'Struttura (in presenza)';
+    return [
+      if (!_employeeOnly) ...[
+        _personBlock(personaleId),
+        const Divider(height: 16),
+      ],
+      _detailRow('Ente', _s(r['ente']), compact: _useCompactList),
+      _detailRow(
+        'Tipo rilascio',
+        _s(r['primo_rilascio_aggiornamento']),
+        compact: _useCompactList,
+      ),
+      _detailRow('Data attestato', _fmtDate(r['data_attestato']),
+          compact: _useCompactList),
+      _detailRow('Scadenza attestato', _fmtDate(r['scadenza_attestato']),
+          compact: _useCompactList),
+      _detailRow('ODA', _s(r['oda']), compact: _useCompactList),
+      _detailRow('Orario', _s(r['orario']), compact: _useCompactList),
+      _detailRow('ModalitÓ', modalita, compact: _useCompactList),
+      _detailRow(strutturaLabel, _s(r['struttura_link']),
+          compact: _useCompactList),
+      if (_s(r['note']).isNotEmpty) ...[
+        const SizedBox(height: 4),
+        NotePreviewText(
+          note: _s(r['note']),
+          prefix: 'Note: ',
+          maxChars: _useCompactList ? 120 : 80,
+        ),
+      ],
+    ];
+  }
+
+  Widget _compactCourseCard(Map<String, dynamic> r, int index) {
+    final pid = _s(r['personale_id']);
+    final rowKey = _rowKey(r, index);
+    final expanded = _expandedRowKeys.contains(rowKey);
+    final corso = _s(r['corso']).isEmpty ? 'Corso' : _s(r['corso']);
+    final ente = _s(r['ente']);
+    final orario = _s(r['orario']);
+    final scad = _fmtDate(r['scadenza_attestato']);
+
+    return Card(
+      margin: const EdgeInsets.fromLTRB(8, 4, 8, 6),
+      elevation: 0,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+        side: BorderSide(
+          color: Theme.of(context).colorScheme.outlineVariant.withValues(alpha: 0.6),
+        ),
+      ),
+      child: InkWell(
+        borderRadius: BorderRadius.circular(12),
+        onTap: () => _openCourseDetail(r),
+        child: Padding(
+        padding: const EdgeInsets.fromLTRB(10, 10, 6, 6),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                _dateChip(r, compact: true),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        corso,
+                        style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                              fontWeight: FontWeight.w700,
+                            ),
+                        maxLines: 3,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      if (scad.isNotEmpty ||
+                          ente.isNotEmpty ||
+                          orario.isNotEmpty)
+                        Padding(
+                          padding: const EdgeInsets.only(top: 4),
+                          child: Text.rich(
+                            TextSpan(
+                              style: _metaStyle,
+                              children: [
+                                if (scad.isNotEmpty)
+                                  TextSpan(text: 'Scad. $scad'),
+                                if (scad.isNotEmpty &&
+                                    (ente.isNotEmpty || orario.isNotEmpty))
+                                  const TextSpan(text: ' À '),
+                                if (ente.isNotEmpty)
+                                  TextSpan(
+                                    text: ente +
+                                        (orario.isNotEmpty ? ' À ' : ''),
+                                  ),
+                                if (orario.isNotEmpty) TextSpan(text: orario),
+                              ],
+                            ),
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                        ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: TextButton.icon(
+                style: TextButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(horizontal: 0),
+                  tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  minimumSize: const Size(0, 34),
+                  visualDensity: VisualDensity.compact,
+                ),
+                onPressed: () {
+                  setState(() {
+                    if (expanded) {
+                      _expandedRowKeys.remove(rowKey);
+                    } else {
+                      _expandedRowKeys.add(rowKey);
+                    }
+                  });
+                },
+                icon: Icon(
+                  expanded
+                      ? Icons.keyboard_arrow_up
+                      : Icons.keyboard_arrow_down,
+                  size: 22,
+                ),
+                label: Text(
+                  expanded ? 'Nascondi dettagli' : 'Mostra dettagli',
+                ),
+              ),
+            ),
+            if (expanded) ..._courseDetailBlocks(r, pid),
+          ],
+        ),
+      ),
+      ),
+    );
+  }
+
+  Widget _fullCourseCard(Map<String, dynamic> r) {
+    final pid = _s(r['personale_id']);
+    return Card(
+      margin: const EdgeInsets.only(bottom: 10),
+      child: InkWell(
+        onTap: () => _openCourseDetail(r),
+        child: Padding(
+        padding: const EdgeInsets.all(14),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                _dateChip(r),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Text(
+                    _s(r['corso']).isEmpty ? 'Corso' : _s(r['corso']),
+                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                          fontWeight: FontWeight.w700,
+                        ),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 12),
+            ..._courseDetailBlocks(r, pid),
+          ],
+        ),
+      ),
+      ),
+    );
+  }
+
+  Widget _courseCard(Map<String, dynamic> r, int index) {
+    if (_useCompactList) return _compactCourseCard(r, index);
+    return _fullCourseCard(r);
+  }
+
+  static const List<String> _modalitaOptions = <String>[
+    'Online',
+    'In presenza',
+  ];
+
+  Future<void> _openCourseDetail(Map<String, dynamic> row) async {
+    final pid = _s(row['personale_id']);
+    var progAl = _fmtDate(row['seconda_data']);
+    final progDal = _fmtDate(row['prima_data']);
+    if (progAl == progDal) progAl = '';
+    final programmazioneDalCtrl = TextEditingController(text: progDal);
+    final programmazioneAlCtrl = TextEditingController(text: progAl);
+    final odaCtrl = TextEditingController(text: _s(row['oda']));
+    final orarioCtrl = TextEditingController(text: _s(row['orario']));
+    final modalitaValue =
+        ValueNotifier<String>(_s(row['modalita']));
+    final strutturaLinkCtrl =
+        TextEditingController(text: _s(row['struttura_link']));
+    final noteCtrl = TextEditingController(text: _s(row['note']));
+    final editable = _canEdit;
+
+    final saved = await showDialog<bool>(
+      context: context,
+      builder: (ctx) {
+        return AlertDialog(
+          title: Text(
+            editable ? 'Modifica programmazione' : 'Dettaglio programmazione',
+          ),
+          content: SizedBox(
+            width: 560,
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  ..._courseDetailBlocks(row, pid),
+                  const Divider(height: 24),
+                  Text(
+                    'Programmazione corso',
+                    style: Theme.of(ctx).textTheme.titleSmall?.copyWith(
+                          fontWeight: FontWeight.w700,
+                        ),
+                  ),
+                  const SizedBox(height: 10),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: TextField(
+                          controller: programmazioneDalCtrl,
+                          readOnly: !editable,
+                          keyboardType: TextInputType.datetime,
+                          inputFormatters: editable
+                              ? const [_ProgDateSlashFormatter()]
+                              : null,
+                          decoration: const InputDecoration(
+                            labelText: 'Data programmazione dal (gg/mm/aaaa)',
+                            border: OutlineInputBorder(),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: TextField(
+                          controller: programmazioneAlCtrl,
+                          readOnly: !editable,
+                          keyboardType: TextInputType.datetime,
+                          inputFormatters: editable
+                              ? const [_ProgDateSlashFormatter()]
+                              : null,
+                          decoration: const InputDecoration(
+                            labelText: 'Data programmazione al (gg/mm/aaaa)',
+                            hintText: 'Vuoto = un solo giorno',
+                            border: OutlineInputBorder(),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 8),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: TextField(
+                          controller: odaCtrl,
+                          readOnly: !editable,
+                          decoration: const InputDecoration(
+                            labelText: 'ODA',
+                            border: OutlineInputBorder(),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 8),
+                      Expanded(
+                        child: TextField(
+                          controller: orarioCtrl,
+                          readOnly: !editable,
+                          decoration: const InputDecoration(
+                            labelText: 'Orario',
+                            border: OutlineInputBorder(),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 8),
+                  ValueListenableBuilder<String>(
+                    valueListenable: modalitaValue,
+                    builder: (_, value, __) {
+                      String? selected;
+                      final v = value.trim().toLowerCase();
+                      if (v == 'online') {
+                        selected = 'Online';
+                      } else if (v == 'in presenza') {
+                        selected = 'In presenza';
+                      }
+                      if (!editable) {
+                        return InputDecorator(
+                          decoration: const InputDecoration(
+                            labelText: 'ModalitÓ',
+                            border: OutlineInputBorder(),
+                          ),
+                          child: Text(value.isEmpty ? 'ù' : value),
+                        );
+                      }
+                      return DropdownButtonFormField<String>(
+                        value: selected,
+                        decoration: const InputDecoration(
+                          labelText: 'ModalitÓ',
+                          border: OutlineInputBorder(),
+                        ),
+                        items: _modalitaOptions
+                            .map(
+                              (o) => DropdownMenuItem(
+                                value: o,
+                                child: Text(o),
+                              ),
+                            )
+                            .toList(growable: false),
+                        onChanged: (v) =>
+                            modalitaValue.value = (v ?? '').trim(),
+                      );
+                    },
+                  ),
+                  const SizedBox(height: 8),
+                  ValueListenableBuilder<String>(
+                    valueListenable: modalitaValue,
+                    builder: (_, value, __) {
+                      final isOnline = value.toLowerCase() == 'online';
+                      return TextField(
+                        controller: strutturaLinkCtrl,
+                        readOnly: !editable,
+                        decoration: InputDecoration(
+                          labelText: isOnline
+                              ? 'Link corso (online)'
+                              : 'Struttura (in presenza)',
+                          border: const OutlineInputBorder(),
+                        ),
+                      );
+                    },
+                  ),
+                  const SizedBox(height: 8),
+                  TextField(
+                    controller: noteCtrl,
+                    readOnly: !editable,
+                    maxLines: 3,
+                    decoration: const InputDecoration(
+                      labelText: 'Note',
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(ctx, false),
+              child: Text(editable ? 'Annulla' : 'Chiudi'),
+            ),
+            if (editable)
+              AsyncFilledButton(
+                onPressed: () async {
+                  final norm = normalizeProgrammazioneIso(
+                    dalText: programmazioneDalCtrl.text,
+                    alText: programmazioneAlCtrl.text,
+                  );
+                  if (norm.error != null) {
+                    ModifyFeedback.error(ctx, norm.error!);
+                    return;
+                  }
+                  final id = row['id'];
+                  if (id == null) {
+                    ModifyFeedback.error(ctx, 'Record corso non valido.');
+                    return;
+                  }
+                  final payload = <String, dynamic>{
+                    'prima_data': norm.primaIso,
+                    'seconda_data': norm.secondaIso,
+                    'oda': odaCtrl.text.trim().isEmpty
+                        ? null
+                        : odaCtrl.text.trim(),
+                    'orario': orarioCtrl.text.trim().isEmpty
+                        ? null
+                        : orarioCtrl.text.trim(),
+                    'modalita': modalitaValue.value.trim().isEmpty
+                        ? null
+                        : modalitaValue.value.trim(),
+                    'struttura_link': strutturaLinkCtrl.text.trim().isEmpty
+                        ? null
+                        : strutturaLinkCtrl.text.trim(),
+                    'note': noteCtrl.text.trim().isEmpty
+                        ? null
+                        : noteCtrl.text.trim(),
+                    'updated_at': DateTime.now().toIso8601String(),
+                  };
+                  await SupabaseService.client
+                      .from('formazione_corsi')
+                      .update(payload)
+                      .eq('id', id);
+                  if (ctx.mounted) Navigator.pop(ctx, true);
+                },
+                child: const Text('Salva'),
+              ),
+          ],
+        );
+      },
+    );
+
+    programmazioneDalCtrl.dispose();
+    programmazioneAlCtrl.dispose();
+    odaCtrl.dispose();
+    orarioCtrl.dispose();
+    modalitaValue.dispose();
+    strutturaLinkCtrl.dispose();
+    noteCtrl.dispose();
+
+    if (saved == true && mounted) {
+      ModifyFeedback.success(context, 'Programmazione aggiornata.');
+      await _load();
+    }
+  }
+
+  Widget _detailRow(String label, String value, {bool compact = false}) {
+    final v = value.isEmpty ? 'ù' : value;
+    if (compact) {
+      return Padding(
+        padding: const EdgeInsets.only(bottom: 6),
+        child: RichText(
+          text: TextSpan(
+            style: Theme.of(context).textTheme.bodySmall,
+            children: [
+              TextSpan(
+                text: '$label: ',
+                style: _metaStyle?.copyWith(fontWeight: FontWeight.w600),
+              ),
+              TextSpan(text: v, style: _metaStyle),
+            ],
+          ),
+        ),
+      );
+    }
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 4),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SizedBox(
+            width: 150,
+            child: Text(
+              label,
+              style: _metaStyle?.copyWith(fontWeight: FontWeight.w600),
+            ),
+          ),
+          Expanded(child: Text(v)),
+        ],
+      ),
+    );
+  }
+
+  Widget _desktopTable(List<Map<String, dynamic>> items) {
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: DataTable(
+        columnSpacing: 16,
+        horizontalMargin: 12,
+        columns: [
+          const DataColumn(label: Text('Data prog.')),
+          if (!_employeeOnly) const DataColumn(label: Text('Dipendente')),
+          if (!_employeeOnly) const DataColumn(label: Text('Matricola')),
+          const DataColumn(label: Text('Corso')),
+          const DataColumn(label: Text('Ente')),
+          const DataColumn(label: Text('Attestato')),
+          const DataColumn(label: Text('Scadenza')),
+          const DataColumn(label: Text('Orario')),
+          const DataColumn(label: Text('ModalitÓ')),
+          const DataColumn(label: Text('Struttura / Link')),
+          const DataColumn(label: Text('Note')),
+        ],
+        rows: items.map((r) {
+          final pid = _s(r['personale_id']);
+          final p = _personaleById[pid];
+          return DataRow(
+            onSelectChanged: (_) => _openCourseDetail(r),
+            cells: [
+              DataCell(Text(_fmtDate(r['prima_data']))),
+              if (!_employeeOnly) DataCell(Text(_s(p?['full_name']))),
+              if (!_employeeOnly) DataCell(Text(_s(p?['matricola']))),
+              DataCell(Text(_s(r['corso']))),
+              DataCell(Text(_s(r['ente']))),
+              DataCell(Text(_fmtDate(r['data_attestato']))),
+              DataCell(Text(_fmtDate(r['scadenza_attestato']))),
+              DataCell(Text(_s(r['oda']))),
+              DataCell(Text(_s(r['orario']))),
+              DataCell(Text(_s(r['modalita']))),
+              DataCell(
+                SizedBox(
+                  width: 200,
+                  child: Text(
+                    _s(r['struttura_link']),
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+              ),
+              DataCell(
+                SizedBox(
+                  width: 160,
+                  child: NotePreviewText(
+                    note: _s(r['note']),
+                    maxChars: 24,
+                  ),
+                ),
+              ),
+            ],
+          );
+        }).toList(),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final items = _filteredRows;
+    return Scaffold(
+      appBar: AppBar(
+        title: const ResponsiveAppBarTitle(
+          title: 'Programmazione Formazioni',
+        ),
+        actions: [
+          IconButton(
+            tooltip: 'Aggiorna',
+            onPressed: _loading ? null : _load,
+            icon: const Icon(Icons.refresh),
+          ),
+        ],
+      ),
+      body: Column(
+        children: [
+          if (!_useCompactList)
+            const Padding(
+              padding: EdgeInsets.fromLTRB(16, 8, 16, 0),
+              child: Center(child: PageTopLogo(size: 64)),
+            ),
+          Padding(
+            padding: EdgeInsets.fromLTRB(
+              _useCompactList ? 12 : 16,
+              _useCompactList ? 8 : 8,
+              _useCompactList ? 12 : 16,
+              0,
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  _employeeOnly
+                      ? 'I tuoi corsi D.Lgs. 81/08 con data programmazione.'
+                      : 'Corsi D.Lgs. 81/08 con data programmazione.',
+                  style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                        color: Theme.of(context).colorScheme.onSurfaceVariant,
+                      ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  'Ordinati per inizio programmazione (dal) pi¨ vicino in alto. '
+                  'Data prog. rossa entro 2 giorni; lampeggiante se oggi o in corso.',
+                  style: Theme.of(context).textTheme.labelSmall?.copyWith(
+                        color: Theme.of(context).colorScheme.onSurfaceVariant,
+                      ),
+                ),
+              ],
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.fromLTRB(
+              _useCompactList ? 12 : 16,
+              8,
+              _useCompactList ? 12 : 16,
+              4,
+            ),
+            child: TextField(
+              decoration: InputDecoration(
+                isDense: _useCompactList,
+                prefixIcon: const Icon(Icons.search),
+                hintText: _employeeOnly
+                    ? 'Cerca corso, ente, modalitÓà'
+                    : 'Cerca dipendente, corso, ente, modalitÓà',
+                border: const OutlineInputBorder(),
+                suffixIcon: _search.isEmpty
+                    ? null
+                    : IconButton(
+                        icon: const Icon(Icons.clear),
+                        onPressed: () => setState(() => _search = ''),
+                      ),
+              ),
+              onChanged: (v) => setState(() => _search = v),
+            ),
+          ),
+          if (_loading)
+            const Expanded(child: Center(child: CircularProgressIndicator()))
+          else if (items.isEmpty)
+            Expanded(
+              child: Center(
+                child: Text(
+                  _employeeOnly &&
+                          (_ownPersonaleId == null || _ownPersonaleId!.isEmpty)
+                      ? 'Anagrafica non collegata: impossibile mostrare le programmazioni.'
+                      : _rows.isEmpty
+                          ? (_employeeOnly
+                              ? 'Nessun corso programmato a tuo nome.'
+                              : 'Nessun corso con data programmazione.')
+                          : 'Nessun risultato per la ricerca.',
+                ),
+              ),
+            )
+          else
+            Expanded(
+              child: RefreshIndicator(
+                onRefresh: _load,
+                child: _useCompactList
+                    ? ListView.builder(
+                        physics: const AlwaysScrollableScrollPhysics(),
+                        padding: const EdgeInsets.fromLTRB(0, 4, 0, 20),
+                        itemCount: items.length + 1,
+                        itemBuilder: (context, i) {
+                          if (i == 0) {
+                            return Padding(
+                              padding: const EdgeInsets.fromLTRB(12, 0, 12, 8),
+                              child: Text(
+                                '${items.length} corsi programmati',
+                                style: Theme.of(context).textTheme.labelLarge?.copyWith(
+                                      fontWeight: FontWeight.w700,
+                                    ),
+                              ),
+                            );
+                          }
+                          return _courseCard(items[i - 1], i - 1);
+                        },
+                      )
+                    : ListView(
+                        padding: const EdgeInsets.fromLTRB(16, 0, 16, 24),
+                        children: [
+                          Text(
+                            '${items.length} corsi programmati',
+                            style: Theme.of(context).textTheme.titleSmall,
+                          ),
+                          const SizedBox(height: 8),
+                          _desktopTable(items),
+                        ],
+                      ),
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+}
+
+class _ProgDateSlashFormatter extends TextInputFormatter {
+  const _ProgDateSlashFormatter();
+
+  @override
+  TextEditingValue formatEditUpdate(
+    TextEditingValue oldValue,
+    TextEditingValue newValue,
+  ) {
+    final digits = newValue.text.replaceAll(RegExp(r'[^0-9]'), '');
+    final max = digits.length > 8 ? digits.substring(0, 8) : digits;
+    final b = StringBuffer();
+    for (int i = 0; i < max.length; i++) {
+      b.write(max[i]);
+      if (i == 1 || i == 3) {
+        if (i != max.length - 1) b.write('/');
+      }
+    }
+    final text = b.toString();
+    return TextEditingValue(
+      text: text,
+      selection: TextSelection.collapsed(offset: text.length),
+    );
+  }
+}
+

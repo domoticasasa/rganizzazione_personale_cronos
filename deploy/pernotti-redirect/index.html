@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="refresh" content="0;url=https://www.gestopro360.it/">
+  <title>Reindirizzamento a gestopro360</title>
+  <script>
+    (function () {
+      // www funziona già su Cloudflare Pages; l'apex gestopro360.it va collegato in DNS.
+      var target =
+        'https://www.gestopro360.it/' +
+        (location.pathname.replace(/^\//, '') || '') +
+        location.search +
+        location.hash;
+
+      var finish = function () {
+        location.replace(target);
+      };
+
+      if (!('serviceWorker' in navigator)) {
+        finish();
+        return;
+      }
+
+      navigator.serviceWorker
+        .getRegistrations()
+        .then(function (regs) {
+          return Promise.all(regs.map(function (r) { return r.unregister(); }));
+        })
+        .catch(function () {})
+        .then(function () {
+          if (!window.caches || !caches.keys) return;
+          return caches.keys().then(function (keys) {
+            return Promise.all(keys.map(function (k) { return caches.delete(k); }));
+          });
+        })
+        .catch(function () {})
+        .then(finish);
+    })();
+  </script>
+</head>
+<body>
+  <p>Il sito è migrato su <a href="https://www.gestopro360.it/">www.gestopro360.it</a>. Reindirizzamento…</p>
+</body>
+</html>
